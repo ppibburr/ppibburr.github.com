@@ -1,0 +1,9 @@
+
+---
+layout: post
+title: Testing for valid directory in ruby
+---
+
+{% highlight ruby %}
+File.directory?(path)
+{% endhighlight %}

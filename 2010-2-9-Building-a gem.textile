@@ -1,0 +1,9 @@
+
+---
+layout: post
+title: Building a gem
+---
+
+{% highlight bash %}
+gem build filename.gemspec
+{% endhighlight %}

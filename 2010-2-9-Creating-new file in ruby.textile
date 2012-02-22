@@ -1,0 +1,9 @@
+
+---
+layout: post
+title: Creating new file in ruby
+---
+
+{% highlight ruby %}
+File.new(filename, "w+")
+{% endhighlight %}

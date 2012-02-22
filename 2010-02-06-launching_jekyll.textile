@@ -1,0 +1,7 @@
+---
+layout: post
+title: Jekyll with server and autorefresh options enabled
+---
+{% highlight bash %}
+jekyll --server --auto
+{% endhighlight %}
