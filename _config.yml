@@ -1,27 +1,13 @@
-# standard jekyll configuration
-
-permalink: date
+markdown: maruku
 pygments: true
-exclude: ['Rakefile', 'README.md', 'config.rb']
-markdown: rdiscount
 
-# configuration required for some pages
+permalink: /:year/:month/:title/
+exclude: []
 
-domain: blog.example.com
-title: My Blog Title
-author: Me
-email: me@example.com
+title: 'Benjamin Egelund-Müller'
+email: 'b.em@me.com'
+twitter_url: 'http://twitter.com/bnmuller'
+feedburner_url: 'http://feeds.feedburner.com/bnjmn'
 
-# configuration for ehancements, uncomment to enable
-
-# feedburner:
-#   id: feedburnerid
-
-# google_analytics:
-#   account: UA-XXXXX-X
-
-# github:
-#   username: ghusername
-
-# disqus:
-#   id: disqusid
+# Tagline disabled for now. Uncomment here and in _layouts/default.html to enable.
+# tagline: "It is no use thinking small"
