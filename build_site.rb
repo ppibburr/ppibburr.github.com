@@ -127,8 +127,57 @@ class SiteGen < SitePage
     "Static WebSites written in Ruby via <em>RubyJS</em>"
   end
   
-  def content
-    CodeRay.scan(File.read(__FILE__), :ruby).div(:line_numbers => :table)
+  def content ele
+    ele.innerHTML = ""
+    build ele do
+      p do
+        text "This utility lets you write websites completly in ruby.
+         builders and template classes for StyleSheets and HTML (utilizes RubyJS with a real WebView)
+         Theres no commands or quirky layouts to learn. Just extend the framework to suit your needs"
+      end
+      
+      h3 do
+        text "Template object, Style object, Page object"
+      end
+      p do
+        text "HTML and StyleSheet templates can be loaded from HTML files and CSS files.
+         (note: not yet, a parser/translator has been wrote (thats how i imported the html and css templates for this site), but not ready for automagic)"
+      end
+      
+      p do
+        text "A typical structure follows"
+      end
+      
+      pre do
+        text """
+          html_template:  subclass the Template class
+          style_template: subclass the Template::Style class
+          base_site_page: subclass the Page class
+                          (perform dynamic build-time proccessing common to all pages)
+          site_page_a:    subclass the base_site_page
+                          (perform dynamic build-time page-specific proccessing)
+        """
+      end
+      
+      p do
+        text "When compiling the output for a page, elements with the class `page_data`,
+         will have there contents mangaged by the aPageObject.method(element.id)"
+      end
+      
+      files = {
+        "the style template"=>"./ruby_js_template_style.rb",
+        "the html template"=>"./ruby_js_template.rb",
+        "the site build application" => "./build_site.rb",
+        "the base framework" => "./web_site_generator.rb"
+       }
+       files.each_pair do |desc,path|
+         span do text desc end
+         div("class"=>"code_sample") do
+           self.innerHTML = CodeRay.scan(File.read(path), :ruby).div(:line_numbers => :table)
+         end
+         br()
+       end
+    end
   end
 end
 
