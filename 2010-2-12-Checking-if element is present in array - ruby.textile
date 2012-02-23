@@ -1,9 +1,0 @@
-
----
-layout: post
-title: Checking if element is present in array - ruby
----
-
-{% highlight ruby %}
-array.include?(elemant)
-{% endhighlight %}

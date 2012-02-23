@@ -1,9 +1,0 @@
-
----
-layout: post
-title: Convert cahracter to ASCII in ruby
----
-
-{% highlight ruby %}
-?a == 97
-{% endhighlight %}
