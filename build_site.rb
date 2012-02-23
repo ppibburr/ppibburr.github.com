@@ -221,7 +221,7 @@ class BuildSite < JS::Application
     pages.each_with_index do |pg,i|
       pg.set_index i
       File.open(File.join('ruby_js',pg.file_name),'w') do |f|
-        f.puts pg.to_s
+        f.puts pg.to_s.gsub("file://"+File.expand_path(File.dirname(__FILE__))+"/",'') # webkit dumps urls in css as absolute, change them to relative
       end
     end
   end

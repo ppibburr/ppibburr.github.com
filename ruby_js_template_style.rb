@@ -26,7 +26,7 @@ class SiteTemplate < Template
         margin "0"
         padding "30px 0"
         font "76% tahoma,verdana,sans-serif"
-        background "#047 url(images/bodybg.png) repeat-x fixed"
+        background "#047 url(./images/bodybg.png) repeat-x fixed"
         color "#222"
       end
 
@@ -38,7 +38,7 @@ class SiteTemplate < Template
         width "720px"
         margin "0 auto"
         padding "20px 20px 0 20px"
-        background "#fff url(images/contbg.png) no-repeat"
+        background "#fff url(./images/contbg.png) no-repeat"
         color "#222"
       end
 
@@ -113,7 +113,7 @@ class SiteTemplate < Template
         display "block"
         margin "30px 0 10px 0"
         padding "5px 0 5px 8px"
-        background "#eee url(images/gradient2.png) repeat-x"
+        background "#eee url(./images/gradient2.png) repeat-x"
         color "#222"
         borderTop "1px solid #ddd"
         borderRight "1px solid #bbb"
@@ -154,7 +154,7 @@ class SiteTemplate < Template
         fontSize "1.1em"
         fontWeight "bold"
         textAlign "left"
-        background "#eee url(images/gradient1.png) repeat-x"
+        background "#eee url(./images/gradient1.png) repeat-x"
         color "#26c"
         borderTop "1px solid #ddd"
         borderRight "1px solid #bbb"
@@ -163,7 +163,7 @@ class SiteTemplate < Template
       end
 
       rule('#sidebar #menu li a:hover, #sidebar li.webgen-menu-item-selected a, #sidebar li.webgen-menu-item-selected span, .sidelink:hover, .menuheader ') do
-        background "#fff url(images/gradient2.png) repeat-x"
+        background "#fff url(./images/gradient2.png) repeat-x"
         color "#222"
         borderTop "1px solid #ddd"
         borderRight "1px solid #888"
@@ -175,7 +175,7 @@ class SiteTemplate < Template
       rule('#footer') do
         margin "0 auto 20px auto"
         width "760px"
-        background "#fff url(images/footerbg.png) bottom left no-repeat"
+        background "#fff url(./images/footerbg.png) bottom left no-repeat"
         padding "0 0 5px 0"
         fontSize "0.9em"
         color "#888"
