@@ -1,0 +1,2190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: WebKit::WebFrame
+  
+    &mdash; Documentation by YARD 0.8.6.1
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (W)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../WebKit.html" title="WebKit (module)">WebKit</a></span></span>
+     &raquo; 
+    <span class="title">WebFrame</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: WebKit::WebFrame
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">GObject::Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">GObject::Object</li>
+          
+            <li class="next">WebKit::WebFrame</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">webkit_webframe.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new-class_method" title="new (class method)">+ (WebKit::WebFrame) <strong>new</strong>(web_view) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_new.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_frame-instance_method" title="#find_frame (instance method)">- (WebKit::WebFrame) <strong>find_frame</strong>(name) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_find_frame.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_data_source-instance_method" title="#get_data_source (instance method)">- (WebKit::WebDataSource) <strong>get_data_source</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_data_source.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_dom_document-instance_method" title="#get_dom_document (instance method)">- (WebKit::DOMDocument) <strong>get_dom_document</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_dom_document.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_horizontal_scrollbar_policy-instance_method" title="#get_horizontal_scrollbar_policy (instance method)">- (Integer) <strong>get_horizontal_scrollbar_policy</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_horizontal_scrollbar_policy.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_load_status-instance_method" title="#get_load_status (instance method)">- (Integer) <strong>get_load_status</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_load_status.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_name-instance_method" title="#get_name (instance method)">- (String) <strong>get_name</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_name.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_network_response-instance_method" title="#get_network_response (instance method)">- (WebKit::NetworkResponse) <strong>get_network_response</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_network_response.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_parent-instance_method" title="#get_parent (instance method)">- (WebKit::WebFrame) <strong>get_parent</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_parent.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_provisional_data_source-instance_method" title="#get_provisional_data_source (instance method)">- (WebKit::WebDataSource) <strong>get_provisional_data_source</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_provisional_data_source.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_security_origin-instance_method" title="#get_security_origin (instance method)">- (WebKit::SecurityOrigin) <strong>get_security_origin</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_security_origin.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_title-instance_method" title="#get_title (instance method)">- (String) <strong>get_title</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_title.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_uri-instance_method" title="#get_uri (instance method)">- (String) <strong>get_uri</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_uri.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_vertical_scrollbar_policy-instance_method" title="#get_vertical_scrollbar_policy (instance method)">- (Integer) <strong>get_vertical_scrollbar_policy</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_vertical_scrollbar_policy.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_web_view-instance_method" title="#get_web_view (instance method)">- (WebKit::WebView) <strong>get_web_view</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_get_web_view.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#load_alternate_string-instance_method" title="#load_alternate_string (instance method)">- (NilClass) <strong>load_alternate_string</strong>(content, base_url, unreachable_url) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_load_alternate_string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#load_request-instance_method" title="#load_request (instance method)">- (NilClass) <strong>load_request</strong>(request) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_load_request.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#load_string-instance_method" title="#load_string (instance method)">- (NilClass) <strong>load_string</strong>(content, mime_type, encoding, base_uri) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_load_string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#load_uri-instance_method" title="#load_uri (instance method)">- (NilClass) <strong>load_uri</strong>(uri) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_load_uri.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#print-instance_method" title="#print (instance method)">- (NilClass) <strong>print</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_print.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#print_full-instance_method" title="#print_full (instance method)">- (Integer) <strong>print_full</strong>(operation, action) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_print_full.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reload-instance_method" title="#reload (instance method)">- (NilClass) <strong>reload</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_reload.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#replace_selection-instance_method" title="#replace_selection (instance method)">- (NilClass) <strong>replace_selection</strong>(text) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_replace_selection.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stop_loading-instance_method" title="#stop_loading (instance method)">- (NilClass) <strong>stop_loading</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_frame_stop_loading.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="new-class_method">
+  
+    + (<tt><span class='object_link'><a href="" title="WebKit::WebFrame (class)">WebKit::WebFrame</a></span></tt>) <strong>new</strong>(web_view) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_new</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>web_view</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebView.html" title="WebKit::WebView (class)">WebKit::WebView</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="WebKit::WebFrame (class)">WebKit::WebFrame</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_web_view'>web_view</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="find_frame-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="WebKit::WebFrame (class)">WebKit::WebFrame</a></span></tt>) <strong>find_frame</strong>(name) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_find_frame</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="WebKit::WebFrame (class)">WebKit::WebFrame</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_find_frame'>find_frame</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_data_source-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WebDataSource.html" title="WebKit::WebDataSource (class)">WebKit::WebDataSource</a></span></tt>) <strong>get_data_source</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_data_source</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebDataSource.html" title="WebKit::WebDataSource (class)">WebKit::WebDataSource</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_data_source'>get_data_source</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_dom_document-instance_method">
+  
+    - (<tt><span class='object_link'><a href="DOMDocument.html" title="WebKit::DOMDocument (class)">WebKit::DOMDocument</a></span></tt>) <strong>get_dom_document</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_dom_document</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="DOMDocument.html" title="WebKit::DOMDocument (class)">WebKit::DOMDocument</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_dom_document'>get_dom_document</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_horizontal_scrollbar_policy-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_horizontal_scrollbar_policy</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_horizontal_scrollbar_policy</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a member of enum Gtk::PolicyType</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_horizontal_scrollbar_policy'>get_horizontal_scrollbar_policy</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_load_status-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_load_status</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_load_status</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a member of enum WebKit::LoadStatus</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_load_status'>get_load_status</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_name-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_name</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_name</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_name'>get_name</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_network_response-instance_method">
+  
+    - (<tt><span class='object_link'><a href="NetworkResponse.html" title="WebKit::NetworkResponse (class)">WebKit::NetworkResponse</a></span></tt>) <strong>get_network_response</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_network_response</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="NetworkResponse.html" title="WebKit::NetworkResponse (class)">WebKit::NetworkResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 50</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_network_response'>get_network_response</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_parent-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="WebKit::WebFrame (class)">WebKit::WebFrame</a></span></tt>) <strong>get_parent</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_parent</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="WebKit::WebFrame (class)">WebKit::WebFrame</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_parent'>get_parent</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_provisional_data_source-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WebDataSource.html" title="WebKit::WebDataSource (class)">WebKit::WebDataSource</a></span></tt>) <strong>get_provisional_data_source</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_provisional_data_source</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebDataSource.html" title="WebKit::WebDataSource (class)">WebKit::WebDataSource</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_provisional_data_source'>get_provisional_data_source</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_security_origin-instance_method">
+  
+    - (<tt><span class='object_link'><a href="SecurityOrigin.html" title="WebKit::SecurityOrigin (class)">WebKit::SecurityOrigin</a></span></tt>) <strong>get_security_origin</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_security_origin</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SecurityOrigin.html" title="WebKit::SecurityOrigin (class)">WebKit::SecurityOrigin</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68
+69</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 68</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_security_origin'>get_security_origin</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_title-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_title</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_title</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+74
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 74</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_title'>get_title</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_uri-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_uri</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_uri</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_uri'>get_uri</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_vertical_scrollbar_policy-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_vertical_scrollbar_policy</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_vertical_scrollbar_policy</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a member of enum Gtk::PolicyType</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+86
+87</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 86</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_vertical_scrollbar_policy'>get_vertical_scrollbar_policy</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_web_view-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WebView.html" title="WebKit::WebView (class)">WebKit::WebView</a></span></tt>) <strong>get_web_view</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_get_web_view</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebView.html" title="WebKit::WebView (class)">WebKit::WebView</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_web_view'>get_web_view</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="load_alternate_string-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>load_alternate_string</strong>(content, base_url, unreachable_url) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_load_alternate_string</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>content</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>base_url</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>unreachable_url</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 101</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_load_alternate_string'>load_alternate_string</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='comma'>,</span><span class='id identifier rubyid_base_url'>base_url</span><span class='comma'>,</span><span class='id identifier rubyid_unreachable_url'>unreachable_url</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="load_request-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>load_request</strong>(request) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_load_request</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>request</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="NetworkRequest.html" title="WebKit::NetworkRequest (class)">WebKit::NetworkRequest</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 108</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_load_request'>load_request</span><span class='lparen'>(</span><span class='id identifier rubyid_request'>request</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="load_string-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>load_string</strong>(content, mime_type, encoding, base_uri) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_load_string</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>content</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>mime_type</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>encoding</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>base_uri</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+118
+119</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 118</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_load_string'>load_string</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='comma'>,</span><span class='id identifier rubyid_mime_type'>mime_type</span><span class='comma'>,</span><span class='id identifier rubyid_encoding'>encoding</span><span class='comma'>,</span><span class='id identifier rubyid_base_uri'>base_uri</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="load_uri-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>load_uri</strong>(uri) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_load_uri</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>uri</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+125
+126</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 125</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_load_uri'>load_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="print-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>print</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_print</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+131
+132</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 131</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_print'>print</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="print_full-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>print_full</strong>(operation, action) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_print_full</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>operation</span>
+      
+      
+        <span class='type'>(<tt>Gtk::PrintOperation</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>action</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a member of enum Gtk::PrintOperationAction</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a member of enum Gtk::PrintOperationResult</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+139
+140</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 139</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_print_full'>print_full</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span><span class='id identifier rubyid_action'>action</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reload-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>reload</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_reload</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+145
+146</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 145</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reload'>reload</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="replace_selection-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>replace_selection</strong>(text) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_replace_selection</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>text</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 152</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_replace_selection'>replace_selection</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="stop_loading-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>stop_loading</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_frame_stop_loading</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+158
+159</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 158</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stop_loading'>stop_loading</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Dec  2 20:59:08 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.6.1 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>

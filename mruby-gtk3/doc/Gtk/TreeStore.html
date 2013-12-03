@@ -1,0 +1,2207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Gtk::TreeStore
+  
+    &mdash; Documentation by YARD 0.8.6.1
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (T)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Gtk.html" title="Gtk (module)">Gtk</a></span></span>
+     &raquo; 
+    <span class="title">TreeStore</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Gtk::TreeStore
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">GObject::Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">GObject::Object</li>
+          
+            <li class="next">Gtk::TreeStore</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="Buildable.html" title="Gtk::Buildable (module)">Buildable</a></span>, <span class='object_link'><a href="TreeDragDest.html" title="Gtk::TreeDragDest (module)">TreeDragDest</a></span>, <span class='object_link'><a href="TreeDragSource.html" title="Gtk::TreeDragSource (module)">TreeDragSource</a></span>, <span class='object_link'><a href="TreeModel.html" title="Gtk::TreeModel (module)">TreeModel</a></span>, <span class='object_link'><a href="TreeSortable.html" title="Gtk::TreeSortable (module)">TreeSortable</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">gtk_treestore.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#newv-class_method" title="newv (class method)">+ (Gtk::TreeStore) <strong>newv</strong>(n_columns, types) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_newv.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#append-instance_method" title="#append (instance method)">- (FFI::Pointer) <strong>append</strong>(parent = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_append.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clear-instance_method" title="#clear (instance method)">- (NilClass) <strong>clear</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_clear.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#insert-instance_method" title="#insert (instance method)">- (FFI::Pointer) <strong>insert</strong>(position, parent = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_insert.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#insert_after-instance_method" title="#insert_after (instance method)">- (FFI::Pointer) <strong>insert_after</strong>(parent = nil, sibling = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_insert_after.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#insert_before-instance_method" title="#insert_before (instance method)">- (FFI::Pointer) <strong>insert_before</strong>(parent = nil, sibling = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_insert_before.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#insert_with_valuesv-instance_method" title="#insert_with_valuesv (instance method)">- (FFI::Pointer) <strong>insert_with_valuesv</strong>(position, columns, values, n_values, parent = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_insert_with_valuesv.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is_ancestor-instance_method" title="#is_ancestor (instance method)">- (Boolean) <strong>is_ancestor</strong>(iter, descendant) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_is_ancestor.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#iter_depth-instance_method" title="#iter_depth (instance method)">- (Integer) <strong>iter_depth</strong>(iter) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_iter_depth.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#iter_is_valid-instance_method" title="#iter_is_valid (instance method)">- (Boolean) <strong>iter_is_valid</strong>(iter) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_iter_is_valid.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#move_after-instance_method" title="#move_after (instance method)">- (NilClass) <strong>move_after</strong>(iter, position = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_move_after.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#move_before-instance_method" title="#move_before (instance method)">- (NilClass) <strong>move_before</strong>(iter, position = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_move_before.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#prepend-instance_method" title="#prepend (instance method)">- (FFI::Pointer) <strong>prepend</strong>(parent = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_prepend.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#remove-instance_method" title="#remove (instance method)">- (Boolean) <strong>remove</strong>(iter) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_remove.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reorder-instance_method" title="#reorder (instance method)">- (NilClass) <strong>reorder</strong>(parent, new_order) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_reorder.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_column_types-instance_method" title="#set_column_types (instance method)">- (NilClass) <strong>set_column_types</strong>(n_columns, types) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_set_column_types.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_value-instance_method" title="#set_value (instance method)">- (NilClass) <strong>set_value</strong>(iter, column, value) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_set_value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_valuesv-instance_method" title="#set_valuesv (instance method)">- (NilClass) <strong>set_valuesv</strong>(iter, columns, values, n_values) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_set_valuesv.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#swap-instance_method" title="#swap (instance method)">- (NilClass) <strong>swap</strong>(a, b) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_store_swap.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Buildable.html" title="Gtk::Buildable (module)">Buildable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Buildable.html#add_child-instance_method" title="Gtk::Buildable#add_child (method)">#add_child</a></span>, <span class='object_link'><a href="Buildable.html#construct_child-instance_method" title="Gtk::Buildable#construct_child (method)">#construct_child</a></span>, <span class='object_link'><a href="Buildable.html#custom_finished-instance_method" title="Gtk::Buildable#custom_finished (method)">#custom_finished</a></span>, <span class='object_link'><a href="Buildable.html#custom_tag_end-instance_method" title="Gtk::Buildable#custom_tag_end (method)">#custom_tag_end</a></span>, <span class='object_link'><a href="Buildable.html#custom_tag_start-instance_method" title="Gtk::Buildable#custom_tag_start (method)">#custom_tag_start</a></span>, <span class='object_link'><a href="Buildable.html#get_internal_child-instance_method" title="Gtk::Buildable#get_internal_child (method)">#get_internal_child</a></span>, <span class='object_link'><a href="Buildable.html#get_name-instance_method" title="Gtk::Buildable#get_name (method)">#get_name</a></span>, <span class='object_link'><a href="Buildable.html#parser_finished-instance_method" title="Gtk::Buildable#parser_finished (method)">#parser_finished</a></span>, <span class='object_link'><a href="Buildable.html#set_buildable_property-instance_method" title="Gtk::Buildable#set_buildable_property (method)">#set_buildable_property</a></span>, <span class='object_link'><a href="Buildable.html#set_name-instance_method" title="Gtk::Buildable#set_name (method)">#set_name</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="TreeDragDest.html" title="Gtk::TreeDragDest (module)">TreeDragDest</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="TreeDragDest.html#drag_data_received-instance_method" title="Gtk::TreeDragDest#drag_data_received (method)">#drag_data_received</a></span>, <span class='object_link'><a href="TreeDragDest.html#row_drop_possible-instance_method" title="Gtk::TreeDragDest#row_drop_possible (method)">#row_drop_possible</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="TreeDragSource.html" title="Gtk::TreeDragSource (module)">TreeDragSource</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="TreeDragSource.html#drag_data_delete-instance_method" title="Gtk::TreeDragSource#drag_data_delete (method)">#drag_data_delete</a></span>, <span class='object_link'><a href="TreeDragSource.html#drag_data_get-instance_method" title="Gtk::TreeDragSource#drag_data_get (method)">#drag_data_get</a></span>, <span class='object_link'><a href="TreeDragSource.html#row_draggable-instance_method" title="Gtk::TreeDragSource#row_draggable (method)">#row_draggable</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="TreeModel.html" title="Gtk::TreeModel (module)">TreeModel</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="TreeModel.html#filter_new-instance_method" title="Gtk::TreeModel#filter_new (method)">#filter_new</a></span>, <span class='object_link'><a href="TreeModel.html#foreach-instance_method" title="Gtk::TreeModel#foreach (method)">#foreach</a></span>, <span class='object_link'><a href="TreeModel.html#get_column_type-instance_method" title="Gtk::TreeModel#get_column_type (method)">#get_column_type</a></span>, <span class='object_link'><a href="TreeModel.html#get_flags-instance_method" title="Gtk::TreeModel#get_flags (method)">#get_flags</a></span>, <span class='object_link'><a href="TreeModel.html#get_iter-instance_method" title="Gtk::TreeModel#get_iter (method)">#get_iter</a></span>, <span class='object_link'><a href="TreeModel.html#get_iter_first-instance_method" title="Gtk::TreeModel#get_iter_first (method)">#get_iter_first</a></span>, <span class='object_link'><a href="TreeModel.html#get_iter_from_string-instance_method" title="Gtk::TreeModel#get_iter_from_string (method)">#get_iter_from_string</a></span>, <span class='object_link'><a href="TreeModel.html#get_n_columns-instance_method" title="Gtk::TreeModel#get_n_columns (method)">#get_n_columns</a></span>, <span class='object_link'><a href="TreeModel.html#get_path-instance_method" title="Gtk::TreeModel#get_path (method)">#get_path</a></span>, <span class='object_link'><a href="TreeModel.html#get_string_from_iter-instance_method" title="Gtk::TreeModel#get_string_from_iter (method)">#get_string_from_iter</a></span>, <span class='object_link'><a href="TreeModel.html#get_value-instance_method" title="Gtk::TreeModel#get_value (method)">#get_value</a></span>, <span class='object_link'><a href="TreeModel.html#iter_children-instance_method" title="Gtk::TreeModel#iter_children (method)">#iter_children</a></span>, <span class='object_link'><a href="TreeModel.html#iter_has_child-instance_method" title="Gtk::TreeModel#iter_has_child (method)">#iter_has_child</a></span>, <span class='object_link'><a href="TreeModel.html#iter_n_children-instance_method" title="Gtk::TreeModel#iter_n_children (method)">#iter_n_children</a></span>, <span class='object_link'><a href="TreeModel.html#iter_next-instance_method" title="Gtk::TreeModel#iter_next (method)">#iter_next</a></span>, <span class='object_link'><a href="TreeModel.html#iter_nth_child-instance_method" title="Gtk::TreeModel#iter_nth_child (method)">#iter_nth_child</a></span>, <span class='object_link'><a href="TreeModel.html#iter_parent-instance_method" title="Gtk::TreeModel#iter_parent (method)">#iter_parent</a></span>, <span class='object_link'><a href="TreeModel.html#ref_node-instance_method" title="Gtk::TreeModel#ref_node (method)">#ref_node</a></span>, <span class='object_link'><a href="TreeModel.html#row_changed-instance_method" title="Gtk::TreeModel#row_changed (method)">#row_changed</a></span>, <span class='object_link'><a href="TreeModel.html#row_deleted-instance_method" title="Gtk::TreeModel#row_deleted (method)">#row_deleted</a></span>, <span class='object_link'><a href="TreeModel.html#row_has_child_toggled-instance_method" title="Gtk::TreeModel#row_has_child_toggled (method)">#row_has_child_toggled</a></span>, <span class='object_link'><a href="TreeModel.html#row_inserted-instance_method" title="Gtk::TreeModel#row_inserted (method)">#row_inserted</a></span>, <span class='object_link'><a href="TreeModel.html#rows_reordered-instance_method" title="Gtk::TreeModel#rows_reordered (method)">#rows_reordered</a></span>, <span class='object_link'><a href="TreeModel.html#sort_new_with_model-instance_method" title="Gtk::TreeModel#sort_new_with_model (method)">#sort_new_with_model</a></span>, <span class='object_link'><a href="TreeModel.html#unref_node-instance_method" title="Gtk::TreeModel#unref_node (method)">#unref_node</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="TreeSortable.html" title="Gtk::TreeSortable (module)">TreeSortable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="TreeSortable.html#get_sort_column_id-instance_method" title="Gtk::TreeSortable#get_sort_column_id (method)">#get_sort_column_id</a></span>, <span class='object_link'><a href="TreeSortable.html#has_default_sort_func-instance_method" title="Gtk::TreeSortable#has_default_sort_func (method)">#has_default_sort_func</a></span>, <span class='object_link'><a href="TreeSortable.html#set_default_sort_func-instance_method" title="Gtk::TreeSortable#set_default_sort_func (method)">#set_default_sort_func</a></span>, <span class='object_link'><a href="TreeSortable.html#set_sort_column_id-instance_method" title="Gtk::TreeSortable#set_sort_column_id (method)">#set_sort_column_id</a></span>, <span class='object_link'><a href="TreeSortable.html#set_sort_func-instance_method" title="Gtk::TreeSortable#set_sort_func (method)">#set_sort_func</a></span>, <span class='object_link'><a href="TreeSortable.html#sort_column_changed-instance_method" title="Gtk::TreeSortable#sort_column_changed (method)">#sort_column_changed</a></span></p>
+
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="newv-class_method">
+  
+    + (<tt><span class='object_link'><a href="" title="Gtk::TreeStore (class)">Gtk::TreeStore</a></span></tt>) <strong>newv</strong>(n_columns, types) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_newv</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>n_columns</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>types</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;FFI::Pointer&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Gtk::TreeStore (class)">Gtk::TreeStore</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_newv'>newv</span><span class='lparen'>(</span><span class='id identifier rubyid_n_columns'>n_columns</span><span class='comma'>,</span><span class='id identifier rubyid_types'>types</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="append-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>append</strong>(parent = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_append</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>parent</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='id identifier rubyid_parent'>parent</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="clear-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>clear</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_clear</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_clear'>clear</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="insert-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>insert</strong>(position, parent = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_insert</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>position</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>parent</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_insert'>insert</span><span class='lparen'>(</span><span class='id identifier rubyid_position'>position</span><span class='comma'>,</span><span class='id identifier rubyid_parent'>parent</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="insert_after-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>insert_after</strong>(parent = nil, sibling = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_insert_after</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>parent</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sibling</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_insert_after'>insert_after</span><span class='lparen'>(</span><span class='id identifier rubyid_parent'>parent</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_sibling'>sibling</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="insert_before-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>insert_before</strong>(parent = nil, sibling = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_insert_before</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>parent</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sibling</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 50</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_insert_before'>insert_before</span><span class='lparen'>(</span><span class='id identifier rubyid_parent'>parent</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_sibling'>sibling</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="insert_with_valuesv-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>insert_with_valuesv</strong>(position, columns, values, n_values, parent = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_insert_with_valuesv</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>position</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>columns</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;FFI::Pointer&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>values</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;FFI::Pointer&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>n_values</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>parent</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 61</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_insert_with_valuesv'>insert_with_valuesv</span><span class='lparen'>(</span><span class='id identifier rubyid_position'>position</span><span class='comma'>,</span><span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span><span class='id identifier rubyid_values'>values</span><span class='comma'>,</span><span class='id identifier rubyid_n_values'>n_values</span><span class='comma'>,</span><span class='id identifier rubyid_parent'>parent</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="is_ancestor-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>is_ancestor</strong>(iter, descendant) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_is_ancestor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>descendant</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 69</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_is_ancestor'>is_ancestor</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_descendant'>descendant</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="iter_depth-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>iter_depth</strong>(iter) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_iter_depth</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_iter_depth'>iter_depth</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="iter_is_valid-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>iter_is_valid</strong>(iter) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_iter_is_valid</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_iter_is_valid'>iter_is_valid</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="move_after-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>move_after</strong>(iter, position = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_move_after</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>position</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 91</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_move_after'>move_after</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_position'>position</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="move_before-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>move_before</strong>(iter, position = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_move_before</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>position</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 99</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_move_before'>move_before</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_position'>position</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="prepend-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>prepend</strong>(parent = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_prepend</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>parent</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+106
+107</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 106</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_prepend'>prepend</span><span class='lparen'>(</span><span class='id identifier rubyid_parent'>parent</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="remove-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>remove</strong>(iter) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_remove</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+113
+114</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 113</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reorder-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>reorder</strong>(parent, new_order) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_reorder</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>parent</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>new_order</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;FFI::Pointer&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+121
+122</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 121</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reorder'>reorder</span><span class='lparen'>(</span><span class='id identifier rubyid_parent'>parent</span><span class='comma'>,</span><span class='id identifier rubyid_new_order'>new_order</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_column_types-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_column_types</strong>(n_columns, types) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_set_column_types</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>n_columns</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>types</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;FFI::Pointer&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+129
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 129</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_column_types'>set_column_types</span><span class='lparen'>(</span><span class='id identifier rubyid_n_columns'>n_columns</span><span class='comma'>,</span><span class='id identifier rubyid_types'>types</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_value-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_value</strong>(iter, column, value) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_set_value</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>column</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+138
+139</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 138</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_value'>set_value</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_valuesv-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_valuesv</strong>(iter, columns, values, n_values) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_set_valuesv</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>columns</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;FFI::Pointer&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>values</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;FFI::Pointer&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>n_values</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+148
+149</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 148</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_valuesv'>set_valuesv</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span><span class='id identifier rubyid_values'>values</span><span class='comma'>,</span><span class='id identifier rubyid_n_values'>n_values</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="swap-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>swap</strong>(a, b) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_store_swap</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>a</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>b</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+156
+157</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treestore.rb', line 156</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_swap'>swap</span><span class='lparen'>(</span><span class='id identifier rubyid_a'>a</span><span class='comma'>,</span><span class='id identifier rubyid_b'>b</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Dec  2 20:48:25 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.6.1 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
