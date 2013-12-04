@@ -1,0 +1,2507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Gtk::EntryCompletion
+  
+    &mdash; Documentation by YARD 0.8.6.1
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (E)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Gtk.html" title="Gtk (module)">Gtk</a></span></span>
+     &raquo; 
+    <span class="title">EntryCompletion</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Gtk::EntryCompletion
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">GObject::Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">GObject::Object</li>
+          
+            <li class="next">Gtk::EntryCompletion</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="Buildable.html" title="Gtk::Buildable (module)">Buildable</a></span>, <span class='object_link'><a href="CellLayout.html" title="Gtk::CellLayout (module)">CellLayout</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">gtk_entrycompletion.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new-class_method" title="new (class method)">+ (Gtk::EntryCompletion) <strong>new</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_new.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#new_with_area-class_method" title="new_with_area (class method)">+ (Gtk::EntryCompletion) <strong>new_with_area</strong>(area) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_new_with_area.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#complete-instance_method" title="#complete (instance method)">- (NilClass) <strong>complete</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_complete.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#compute_prefix-instance_method" title="#compute_prefix (instance method)">- (String) <strong>compute_prefix</strong>(key) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_compute_prefix.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_action-instance_method" title="#delete_action (instance method)">- (NilClass) <strong>delete_action</strong>(index_) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_delete_action.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_completion_prefix-instance_method" title="#get_completion_prefix (instance method)">- (String) <strong>get_completion_prefix</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_completion_prefix.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_entry-instance_method" title="#get_entry (instance method)">- (Gtk::Widget) <strong>get_entry</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_entry.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_inline_completion-instance_method" title="#get_inline_completion (instance method)">- (Boolean) <strong>get_inline_completion</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_inline_completion.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_inline_selection-instance_method" title="#get_inline_selection (instance method)">- (Boolean) <strong>get_inline_selection</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_inline_selection.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_minimum_key_length-instance_method" title="#get_minimum_key_length (instance method)">- (Integer) <strong>get_minimum_key_length</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_minimum_key_length.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_model-instance_method" title="#get_model (instance method)">- (FFI::Pointer) <strong>get_model</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_model.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_popup_completion-instance_method" title="#get_popup_completion (instance method)">- (Boolean) <strong>get_popup_completion</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_popup_completion.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_popup_set_width-instance_method" title="#get_popup_set_width (instance method)">- (Boolean) <strong>get_popup_set_width</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_popup_set_width.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_popup_single_match-instance_method" title="#get_popup_single_match (instance method)">- (Boolean) <strong>get_popup_single_match</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_popup_single_match.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_text_column-instance_method" title="#get_text_column (instance method)">- (Integer) <strong>get_text_column</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_get_text_column.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#insert_action_markup-instance_method" title="#insert_action_markup (instance method)">- (NilClass) <strong>insert_action_markup</strong>(index_, markup) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_insert_action_markup.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#insert_action_text-instance_method" title="#insert_action_text (instance method)">- (NilClass) <strong>insert_action_text</strong>(index_, text) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_insert_action_text.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#insert_prefix-instance_method" title="#insert_prefix (instance method)">- (NilClass) <strong>insert_prefix</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_insert_prefix.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_inline_completion-instance_method" title="#set_inline_completion (instance method)">- (NilClass) <strong>set_inline_completion</strong>(inline_completion) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_inline_completion.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_inline_selection-instance_method" title="#set_inline_selection (instance method)">- (NilClass) <strong>set_inline_selection</strong>(inline_selection) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_inline_selection.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_match_func-instance_method" title="#set_match_func (instance method)">- (NilClass) <strong>set_match_func</strong> {|completion, key, iter| ... }</a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_match_func.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_minimum_key_length-instance_method" title="#set_minimum_key_length (instance method)">- (NilClass) <strong>set_minimum_key_length</strong>(length) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_minimum_key_length.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_model-instance_method" title="#set_model (instance method)">- (NilClass) <strong>set_model</strong>(model = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_model.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_popup_completion-instance_method" title="#set_popup_completion (instance method)">- (NilClass) <strong>set_popup_completion</strong>(popup_completion) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_popup_completion.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_popup_set_width-instance_method" title="#set_popup_set_width (instance method)">- (NilClass) <strong>set_popup_set_width</strong>(popup_set_width) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_popup_set_width.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_popup_single_match-instance_method" title="#set_popup_single_match (instance method)">- (NilClass) <strong>set_popup_single_match</strong>(popup_single_match) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_popup_single_match.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_text_column-instance_method" title="#set_text_column (instance method)">- (NilClass) <strong>set_text_column</strong>(column) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_entry_completion_set_text_column.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Buildable.html" title="Gtk::Buildable (module)">Buildable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Buildable.html#add_child-instance_method" title="Gtk::Buildable#add_child (method)">#add_child</a></span>, <span class='object_link'><a href="Buildable.html#construct_child-instance_method" title="Gtk::Buildable#construct_child (method)">#construct_child</a></span>, <span class='object_link'><a href="Buildable.html#custom_finished-instance_method" title="Gtk::Buildable#custom_finished (method)">#custom_finished</a></span>, <span class='object_link'><a href="Buildable.html#custom_tag_end-instance_method" title="Gtk::Buildable#custom_tag_end (method)">#custom_tag_end</a></span>, <span class='object_link'><a href="Buildable.html#custom_tag_start-instance_method" title="Gtk::Buildable#custom_tag_start (method)">#custom_tag_start</a></span>, <span class='object_link'><a href="Buildable.html#get_internal_child-instance_method" title="Gtk::Buildable#get_internal_child (method)">#get_internal_child</a></span>, <span class='object_link'><a href="Buildable.html#get_name-instance_method" title="Gtk::Buildable#get_name (method)">#get_name</a></span>, <span class='object_link'><a href="Buildable.html#parser_finished-instance_method" title="Gtk::Buildable#parser_finished (method)">#parser_finished</a></span>, <span class='object_link'><a href="Buildable.html#set_buildable_property-instance_method" title="Gtk::Buildable#set_buildable_property (method)">#set_buildable_property</a></span>, <span class='object_link'><a href="Buildable.html#set_name-instance_method" title="Gtk::Buildable#set_name (method)">#set_name</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="CellLayout.html" title="Gtk::CellLayout (module)">CellLayout</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="CellLayout.html#add_attribute-instance_method" title="Gtk::CellLayout#add_attribute (method)">#add_attribute</a></span>, <span class='object_link'><a href="CellLayout.html#clear-instance_method" title="Gtk::CellLayout#clear (method)">#clear</a></span>, <span class='object_link'><a href="CellLayout.html#clear_attributes-instance_method" title="Gtk::CellLayout#clear_attributes (method)">#clear_attributes</a></span>, <span class='object_link'><a href="CellLayout.html#get_area-instance_method" title="Gtk::CellLayout#get_area (method)">#get_area</a></span>, <span class='object_link'><a href="CellLayout.html#get_cells-instance_method" title="Gtk::CellLayout#get_cells (method)">#get_cells</a></span>, <span class='object_link'><a href="CellLayout.html#pack_end-instance_method" title="Gtk::CellLayout#pack_end (method)">#pack_end</a></span>, <span class='object_link'><a href="CellLayout.html#pack_start-instance_method" title="Gtk::CellLayout#pack_start (method)">#pack_start</a></span>, <span class='object_link'><a href="CellLayout.html#reorder-instance_method" title="Gtk::CellLayout#reorder (method)">#reorder</a></span>, <span class='object_link'><a href="CellLayout.html#set_cell_data_func-instance_method" title="Gtk::CellLayout#set_cell_data_func (method)">#set_cell_data_func</a></span></p>
+
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="new-class_method">
+  
+    + (<tt><span class='object_link'><a href="" title="Gtk::EntryCompletion (class)">Gtk::EntryCompletion</a></span></tt>) <strong>new</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_new</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Gtk::EntryCompletion (class)">Gtk::EntryCompletion</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="new_with_area-class_method">
+  
+    + (<tt><span class='object_link'><a href="" title="Gtk::EntryCompletion (class)">Gtk::EntryCompletion</a></span></tt>) <strong>new_with_area</strong>(area) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_new_with_area</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>area</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="CellArea.html" title="Gtk::CellArea (class)">Gtk::CellArea</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Gtk::EntryCompletion (class)">Gtk::EntryCompletion</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_area'>new_with_area</span><span class='lparen'>(</span><span class='id identifier rubyid_area'>area</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="complete-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>complete</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_complete</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_complete'>complete</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="compute_prefix-instance_method">
+  
+    - (<tt>String</tt>) <strong>compute_prefix</strong>(key) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_compute_prefix</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>key</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_compute_prefix'>compute_prefix</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_action-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>delete_action</strong>(index_) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_delete_action</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>index_</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_action'>delete_action</span><span class='lparen'>(</span><span class='id identifier rubyid_index_'>index_</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_completion_prefix-instance_method">
+  
+    - (<tt>String</tt>) <strong>get_completion_prefix</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_completion_prefix</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 41</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_completion_prefix'>get_completion_prefix</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_entry-instance_method">
+  
+    - (<tt><span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Gtk::Widget</a></span></tt>) <strong>get_entry</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_entry</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Gtk::Widget</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 47</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_entry'>get_entry</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_inline_completion-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>get_inline_completion</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_inline_completion</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 53</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_inline_completion'>get_inline_completion</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_inline_selection-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>get_inline_selection</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_inline_selection</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 59</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_inline_selection'>get_inline_selection</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_minimum_key_length-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_minimum_key_length</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_minimum_key_length</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 65</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_minimum_key_length'>get_minimum_key_length</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_model-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>get_model</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_model</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 71</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_model'>get_model</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_popup_completion-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>get_popup_completion</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_popup_completion</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_popup_completion'>get_popup_completion</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_popup_set_width-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>get_popup_set_width</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_popup_set_width</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_popup_set_width'>get_popup_set_width</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_popup_single_match-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>get_popup_single_match</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_popup_single_match</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 89</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_popup_single_match'>get_popup_single_match</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_text_column-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_text_column</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_get_text_column</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 95</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_text_column'>get_text_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="insert_action_markup-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>insert_action_markup</strong>(index_, markup) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_insert_action_markup</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>index_</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>markup</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+103
+104</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_insert_action_markup'>insert_action_markup</span><span class='lparen'>(</span><span class='id identifier rubyid_index_'>index_</span><span class='comma'>,</span><span class='id identifier rubyid_markup'>markup</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="insert_action_text-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>insert_action_text</strong>(index_, text) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_insert_action_text</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>index_</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>text</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+111
+112</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 111</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_insert_action_text'>insert_action_text</span><span class='lparen'>(</span><span class='id identifier rubyid_index_'>index_</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="insert_prefix-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>insert_prefix</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_insert_prefix</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+117
+118</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 117</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_insert_prefix'>insert_prefix</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_inline_completion-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_inline_completion</strong>(inline_completion) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_inline_completion</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>inline_completion</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+124
+125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 124</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_inline_completion'>set_inline_completion</span><span class='lparen'>(</span><span class='id identifier rubyid_inline_completion'>inline_completion</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_inline_selection-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_inline_selection</strong>(inline_selection) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_inline_selection</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>inline_selection</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+131
+132</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 131</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_inline_selection'>set_inline_selection</span><span class='lparen'>(</span><span class='id identifier rubyid_inline_selection'>inline_selection</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_match_func-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_match_func</strong> {|completion, key, iter| ... }
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_match_func</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Yield Parameters:</p>
+<ul class="yieldparam">
+  
+    <li>
+      
+        <span class='name'>completion</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Gtk::EntryCompletion (class)">Gtk::EntryCompletion</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>key</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Yield Returns:</p>
+<ul class="yieldreturn">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+141
+142</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 141</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_match_func'>set_match_func</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_minimum_key_length-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_minimum_key_length</strong>(length) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_minimum_key_length</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>length</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+148
+149</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 148</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_minimum_key_length'>set_minimum_key_length</span><span class='lparen'>(</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_model-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_model</strong>(model = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_model</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>model</span>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>defaults to `nil`</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+155
+156</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 155</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_model'>set_model</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_popup_completion-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_popup_completion</strong>(popup_completion) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_popup_completion</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>popup_completion</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+162
+163</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 162</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_popup_completion'>set_popup_completion</span><span class='lparen'>(</span><span class='id identifier rubyid_popup_completion'>popup_completion</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_popup_set_width-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_popup_set_width</strong>(popup_set_width) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_popup_set_width</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>popup_set_width</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+169
+170</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 169</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_popup_set_width'>set_popup_set_width</span><span class='lparen'>(</span><span class='id identifier rubyid_popup_set_width'>popup_set_width</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_popup_single_match-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_popup_single_match</strong>(popup_single_match) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_popup_single_match</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>popup_single_match</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+176
+177</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 176</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_popup_single_match'>set_popup_single_match</span><span class='lparen'>(</span><span class='id identifier rubyid_popup_single_match'>popup_single_match</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_text_column-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_text_column</strong>(column) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_entry_completion_set_text_column</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>column</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+183
+184</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 183</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_text_column'>set_text_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Dec  3 19:47:34 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.6.1 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>

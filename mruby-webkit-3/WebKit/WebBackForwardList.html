@@ -1,0 +1,1461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: WebKit::WebBackForwardList
+  
+    &mdash; Documentation by YARD 0.8.6.1
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (W)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../WebKit.html" title="WebKit (module)">WebKit</a></span></span>
+     &raquo; 
+    <span class="title">WebBackForwardList</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: WebKit::WebBackForwardList
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">GObject::Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">GObject::Object</li>
+          
+            <li class="next">WebKit::WebBackForwardList</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">webkit_webbackforwardlist.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_item-instance_method" title="#add_item (instance method)">- (NilClass) <strong>add_item</strong>(history_item) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_add_item.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clear-instance_method" title="#clear (instance method)">- (NilClass) <strong>clear</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_clear.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#contains_item-instance_method" title="#contains_item (instance method)">- (Boolean) <strong>contains_item</strong>(history_item) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_contains_item.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_back_item-instance_method" title="#get_back_item (instance method)">- (WebKit::WebHistoryItem) <strong>get_back_item</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_back_item.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_back_length-instance_method" title="#get_back_length (instance method)">- (Integer) <strong>get_back_length</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_back_length.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_back_list_with_limit-instance_method" title="#get_back_list_with_limit (instance method)">- (FFI::Pointer) <strong>get_back_list_with_limit</strong>(limit) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_back_list_with_limit.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_current_item-instance_method" title="#get_current_item (instance method)">- (WebKit::WebHistoryItem) <strong>get_current_item</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_current_item.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_forward_item-instance_method" title="#get_forward_item (instance method)">- (WebKit::WebHistoryItem) <strong>get_forward_item</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_forward_item.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_forward_length-instance_method" title="#get_forward_length (instance method)">- (Integer) <strong>get_forward_length</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_forward_length.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_forward_list_with_limit-instance_method" title="#get_forward_list_with_limit (instance method)">- (FFI::Pointer) <strong>get_forward_list_with_limit</strong>(limit) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_forward_list_with_limit.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_limit-instance_method" title="#get_limit (instance method)">- (Integer) <strong>get_limit</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_limit.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_nth_item-instance_method" title="#get_nth_item (instance method)">- (WebKit::WebHistoryItem) <strong>get_nth_item</strong>(index) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_get_nth_item.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#go_back-instance_method" title="#go_back (instance method)">- (NilClass) <strong>go_back</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_go_back.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#go_forward-instance_method" title="#go_forward (instance method)">- (NilClass) <strong>go_forward</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_go_forward.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#go_to_item-instance_method" title="#go_to_item (instance method)">- (NilClass) <strong>go_to_item</strong>(history_item) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_go_to_item.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_limit-instance_method" title="#set_limit (instance method)">- (NilClass) <strong>set_limit</strong>(limit) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>webkit_web_back_forward_list_set_limit.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add_item-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>add_item</strong>(history_item) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_add_item</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>history_item</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_item'>add_item</span><span class='lparen'>(</span><span class='id identifier rubyid_history_item'>history_item</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="clear-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>clear</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_clear</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_clear'>clear</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="contains_item-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>contains_item</strong>(history_item) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_contains_item</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>history_item</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_contains_item'>contains_item</span><span class='lparen'>(</span><span class='id identifier rubyid_history_item'>history_item</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_back_item-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>) <strong>get_back_item</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_back_item</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_back_item'>get_back_item</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_back_length-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_back_length</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_back_length</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_back_length'>get_back_length</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_back_list_with_limit-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>get_back_list_with_limit</strong>(limit) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_back_list_with_limit</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>limit</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_back_list_with_limit'>get_back_list_with_limit</span><span class='lparen'>(</span><span class='id identifier rubyid_limit'>limit</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_current_item-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>) <strong>get_current_item</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_current_item</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 45</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_current_item'>get_current_item</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_forward_item-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>) <strong>get_forward_item</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_forward_item</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 51</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_forward_item'>get_forward_item</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_forward_length-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_forward_length</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_forward_length</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 57</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_forward_length'>get_forward_length</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_forward_list_with_limit-instance_method">
+  
+    - (<tt>FFI::Pointer</tt>) <strong>get_forward_list_with_limit</strong>(limit) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_forward_list_with_limit</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>limit</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>FFI::Pointer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 64</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_forward_list_with_limit'>get_forward_list_with_limit</span><span class='lparen'>(</span><span class='id identifier rubyid_limit'>limit</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_limit-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>get_limit</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_limit</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+70
+71</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 70</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_limit'>get_limit</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_nth_item-instance_method">
+  
+    - (<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>) <strong>get_nth_item</strong>(index) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_get_nth_item</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>index</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_nth_item'>get_nth_item</span><span class='lparen'>(</span><span class='id identifier rubyid_index'>index</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="go_back-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>go_back</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_go_back</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_go_back'>go_back</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="go_forward-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>go_forward</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_go_forward</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 89</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_go_forward'>go_forward</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="go_to_item-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>go_to_item</strong>(history_item) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_go_to_item</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>history_item</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="WebHistoryItem.html" title="WebKit::WebHistoryItem (class)">WebKit::WebHistoryItem</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+96
+97</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 96</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_go_to_item'>go_to_item</span><span class='lparen'>(</span><span class='id identifier rubyid_history_item'>history_item</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_limit-instance_method">
+  
+    - (<tt>NilClass</tt>) <strong>set_limit</strong>(limit) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>webkit_web_back_forward_list_set_limit</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>limit</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+103
+104</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'webkit_webbackforwardlist.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set_limit'>set_limit</span><span class='lparen'>(</span><span class='id identifier rubyid_limit'>limit</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Dec  3 19:36:01 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.6.1 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
