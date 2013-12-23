@@ -97,63 +97,6 @@
 
   
     <h2>
-      Class Method Summary
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#get-class_method" title="get (class method)">+ (::Object) <strong>get</strong>(iter, col) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>gtk_tree_model_get.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#get_value-class_method" title="get_value (class method)">+ (GObject::Value) <strong>get_value</strong>(iter, col) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>gtk_tree_model_get_value.</p>
-</div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
       Instance Method Summary
       <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
     </h2>
@@ -203,6 +146,30 @@
   
     <span class="summary_desc"><div class='inline'>
 <p>gtk_tree_model_foreach.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get-instance_method" title="#get (instance method)">- (::Object) <strong>get</strong>(iter, col) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_model_get.</p>
 </div></span>
   
 </li>
@@ -395,6 +362,30 @@
   
     <span class="summary_desc"><div class='inline'>
 <p>gtk_tree_model_get_string_from_iter.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_value-instance_method" title="#get_value (instance method)">- (GObject::Value) <strong>get_value</strong>(iter, col) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>gtk_tree_model_get_value.</p>
 </div></span>
   
 </li>
@@ -741,198 +732,6 @@
 
 
 
-  <div id="class_method_details" class="method_details_list">
-    <h2>Class Method Details</h2>
-
-    
-      <div class="method_details first">
-  <h3 class="signature first" id="get-class_method">
-  
-    + (<tt>::Object</tt>) <strong>get</strong>(iter, col) 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>gtk_tree_model_get</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>iter</span>
-      
-      
-        <span class='type'>(<tt>Gtk::TreeIter</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>The iter</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>col</span>
-      
-      
-        <span class='type'>(<tt>Integer</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>The column</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>::Object</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the value</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-188
-189</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'gtk_treemodel.rb', line 188</span>
-
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_col'>col</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="get_value-class_method">
-  
-    + (<tt>GObject::Value</tt>) <strong>get_value</strong>(iter, col) 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>gtk_tree_model_get_value</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>iter</span>
-      
-      
-        <span class='type'>(<tt>Gtk::TreeIter</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>The iter</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>col</span>
-      
-      
-        <span class='type'>(<tt>Integer</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>The column</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>GObject::Value</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>that wraps the value</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-79
-80</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'gtk_treemodel.rb', line 79</span>
-
-<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_value'>get_value</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_col'>col</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-  </div>
-
   <div id="instance_method_details" class="method_details_list">
     <h2>Instance Method Details</h2>
 
@@ -1118,6 +917,99 @@
       <pre class="code"><span class="info file"># File 'gtk_treemodel.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_foreach'>foreach</span><span class='lparen'>(</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get-instance_method">
+  
+    - (<tt>::Object</tt>) <strong>get</strong>(iter, col) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_model_get</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>Gtk::TreeIter</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The iter</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>col</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The column</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>::Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+188
+189</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treemodel.rb', line 188</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_col'>col</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1614,6 +1506,99 @@
       <pre class="code"><span class="info file"># File 'gtk_treemodel.rb', line 71</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_string_from_iter'>get_string_from_iter</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_value-instance_method">
+  
+    - (<tt>GObject::Value</tt>) <strong>get_value</strong>(iter, col) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>gtk_tree_model_get_value</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>iter</span>
+      
+      
+        <span class='type'>(<tt>Gtk::TreeIter</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The iter</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>col</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The column</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>GObject::Value</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>that wraps the value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'gtk_treemodel.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_value'>get_value</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_col'>col</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2613,7 +2598,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:45:33 2013 by
+  Generated on Mon Dec 23 16:06:42 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>
