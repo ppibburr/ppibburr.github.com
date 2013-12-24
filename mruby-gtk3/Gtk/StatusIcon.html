@@ -101,7 +101,99 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"activate" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"button-press-event" {|event| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) event</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"button-release-event" {|event| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) event</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"popup-menu" {|button, activate_time| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) button</p>
+</li><li>
+<p>(Integer) activate_time</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"query-tooltip" {|x, y, keyboard_mode, tooltip| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) x</p>
+</li><li>
+<p>(Integer) y</p>
+</li><li>
+<p>(Boolean) keyboard_mode</p>
+</li><li>
+<p>(<span class='object_link'><a href="Tooltip.html" title="Gtk::Tooltip (class)">Tooltip</a></span>) tooltip</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"scroll-event" {|event| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) event</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"size-changed" {|size| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) size</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -990,11 +1082,11 @@
       <pre class="lines">
 
 
-6
-7</pre>
+51
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 6</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 51</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1057,11 +1149,11 @@
       <pre class="lines">
 
 
-13
-14</pre>
+58
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 58</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_from_file'>new_from_file</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1124,11 +1216,11 @@
       <pre class="lines">
 
 
-20
-21</pre>
+65
+66</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_from_gicon'>new_from_gicon</span><span class='lparen'>(</span><span class='id identifier rubyid_icon'>icon</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1191,11 +1283,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 72</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_from_icon_name'>new_from_icon_name</span><span class='lparen'>(</span><span class='id identifier rubyid_icon_name'>icon_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1258,11 +1350,11 @@
       <pre class="lines">
 
 
-34
-35</pre>
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 34</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 79</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_from_pixbuf'>new_from_pixbuf</span><span class='lparen'>(</span><span class='id identifier rubyid_pixbuf'>pixbuf</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1325,11 +1417,11 @@
       <pre class="lines">
 
 
-41
-42</pre>
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 86</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_from_stock'>new_from_stock</span><span class='lparen'>(</span><span class='id identifier rubyid_stock_id'>stock_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1403,11 +1495,11 @@
       <pre class="lines">
 
 
-49
-50</pre>
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_position_menu'>position_menu</span><span class='lparen'>(</span><span class='id identifier rubyid_menu'>menu</span><span class='comma'>,</span><span class='id identifier rubyid_user_data'>user_data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1461,11 +1553,11 @@
       <pre class="lines">
 
 
-55
-56</pre>
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_geometry'>get_geometry</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1513,11 +1605,11 @@
       <pre class="lines">
 
 
-61
-62</pre>
+106
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 61</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_gicon'>get_gicon</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1565,11 +1657,11 @@
       <pre class="lines">
 
 
-67
-68</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 67</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_has_tooltip'>get_has_tooltip</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1617,11 +1709,11 @@
       <pre class="lines">
 
 
-73
-74</pre>
+118
+119</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 73</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_icon_name'>get_icon_name</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1669,11 +1761,11 @@
       <pre class="lines">
 
 
-79
-80</pre>
+124
+125</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 79</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 124</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_pixbuf'>get_pixbuf</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1721,11 +1813,11 @@
       <pre class="lines">
 
 
-85
-86</pre>
+130
+131</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 130</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_screen'>get_screen</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1773,11 +1865,11 @@
       <pre class="lines">
 
 
-91
-92</pre>
+136
+137</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 136</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_size'>get_size</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1825,11 +1917,11 @@
       <pre class="lines">
 
 
-97
-98</pre>
+142
+143</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 97</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 142</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_stock'>get_stock</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1882,11 +1974,11 @@
       <pre class="lines">
 
 
-103
-104</pre>
+148
+149</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 148</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_storage_type'>get_storage_type</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1934,11 +2026,11 @@
       <pre class="lines">
 
 
-109
-110</pre>
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 154</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_title'>get_title</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1986,11 +2078,11 @@
       <pre class="lines">
 
 
-115
-116</pre>
+160
+161</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 160</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tooltip_markup'>get_tooltip_markup</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2038,11 +2130,11 @@
       <pre class="lines">
 
 
-121
-122</pre>
+166
+167</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 121</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 166</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tooltip_text'>get_tooltip_text</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2090,11 +2182,11 @@
       <pre class="lines">
 
 
-127
-128</pre>
+172
+173</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 127</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 172</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_visible'>get_visible</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2142,11 +2234,11 @@
       <pre class="lines">
 
 
-133
-134</pre>
+178
+179</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 133</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 178</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_x11_window_id'>get_x11_window_id</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2194,11 +2286,11 @@
       <pre class="lines">
 
 
-139
-140</pre>
+184
+185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 139</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_is_embedded'>is_embedded</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2261,11 +2353,11 @@
       <pre class="lines">
 
 
-146
-147</pre>
+191
+192</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 146</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 191</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_from_file'>set_from_file</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2328,11 +2420,11 @@
       <pre class="lines">
 
 
-153
-154</pre>
+198
+199</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 153</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 198</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_from_gicon'>set_from_gicon</span><span class='lparen'>(</span><span class='id identifier rubyid_icon'>icon</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2395,11 +2487,11 @@
       <pre class="lines">
 
 
-160
-161</pre>
+205
+206</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 160</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 205</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_from_icon_name'>set_from_icon_name</span><span class='lparen'>(</span><span class='id identifier rubyid_icon_name'>icon_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2469,11 +2561,11 @@
       <pre class="lines">
 
 
-167
-168</pre>
+212
+213</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 167</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 212</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_from_pixbuf'>set_from_pixbuf</span><span class='lparen'>(</span><span class='id identifier rubyid_pixbuf'>pixbuf</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2536,11 +2628,11 @@
       <pre class="lines">
 
 
-174
-175</pre>
+219
+220</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 174</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 219</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_from_stock'>set_from_stock</span><span class='lparen'>(</span><span class='id identifier rubyid_stock_id'>stock_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2603,11 +2695,11 @@
       <pre class="lines">
 
 
-181
-182</pre>
+226
+227</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 181</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 226</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_has_tooltip'>set_has_tooltip</span><span class='lparen'>(</span><span class='id identifier rubyid_has_tooltip'>has_tooltip</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2670,11 +2762,11 @@
       <pre class="lines">
 
 
-188
-189</pre>
+233
+234</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 233</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_name'>set_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2737,11 +2829,11 @@
       <pre class="lines">
 
 
-195
-196</pre>
+240
+241</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 195</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 240</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_screen'>set_screen</span><span class='lparen'>(</span><span class='id identifier rubyid_screen'>screen</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2804,11 +2896,11 @@
       <pre class="lines">
 
 
-202
-203</pre>
+247
+248</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 202</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 247</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_title'>set_title</span><span class='lparen'>(</span><span class='id identifier rubyid_title'>title</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2878,11 +2970,11 @@
       <pre class="lines">
 
 
-209
-210</pre>
+254
+255</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 209</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 254</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_markup'>set_tooltip_markup</span><span class='lparen'>(</span><span class='id identifier rubyid_markup'>markup</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2945,11 +3037,11 @@
       <pre class="lines">
 
 
-216
-217</pre>
+261
+262</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 216</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 261</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_text'>set_tooltip_text</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3012,11 +3104,11 @@
       <pre class="lines">
 
 
-223
-224</pre>
+268
+269</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 223</span>
+      <pre class="code"><span class="info file"># File 'gtk_statusicon.rb', line 268</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_visible'>set_visible</span><span class='lparen'>(</span><span class='id identifier rubyid_visible'>visible</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3030,7 +3122,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:10:36 2013 by
+  Generated on Tue Dec 24 15:57:31 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

@@ -113,7 +113,63 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"start-query" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"stop-query" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"widget-entered" {|object, p0, p1| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) object</p>
+</li><li>
+<p>(String) p0</p>
+</li><li>
+<p>(String) p1</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"widget-selected" {|object, p0, p1, p2| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) object</p>
+</li><li>
+<p>(String) p0</p>
+</li><li>
+<p>(String) p1</p>
+</li><li>
+<p>(FFI::Pointer) p2</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -365,11 +421,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -438,11 +494,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_caller'>set_caller</span><span class='lparen'>(</span><span class='id identifier rubyid_caller'>caller</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -516,11 +572,11 @@
       <pre class="lines">
 
 
-23
-24</pre>
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 49</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_labels'>set_labels</span><span class='lparen'>(</span><span class='id identifier rubyid_label_inactive'>label_inactive</span><span class='comma'>,</span><span class='id identifier rubyid_label_no_tip'>label_no_tip</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -568,11 +624,11 @@
       <pre class="lines">
 
 
-29
-30</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 29</span>
+      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_start_query'>start_query</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -620,11 +676,11 @@
       <pre class="lines">
 
 
-35
-36</pre>
+61
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'gtk_tipsquery.rb', line 61</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_stop_query'>stop_query</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -638,7 +694,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:59:04 2013 by
+  Generated on Tue Dec 24 15:45:08 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

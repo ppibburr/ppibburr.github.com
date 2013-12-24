@@ -115,7 +115,102 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"end-selection" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"extend-selection" {|object, p0, p1| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Float) p0</p>
+</li><li>
+<p>(Boolean) p1</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"scroll-horizontal" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Float) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"scroll-vertical" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Float) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"select-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"start-selection" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-add-mode" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-focus-row" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"undo-selection" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"unselect-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -355,11 +450,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+59
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_listitem.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_listitem.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -422,11 +517,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_listitem.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_listitem.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_label'>new_with_label</span><span class='lparen'>(</span><span class='id identifier rubyid_label'>label</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -480,11 +575,11 @@
       <pre class="lines">
 
 
-21
-22</pre>
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_listitem.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'gtk_listitem.rb', line 72</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deselect'>deselect</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -532,11 +627,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+78
+79</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_listitem.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_listitem.rb', line 78</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -550,7 +645,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:57:21 2013 by
+  Generated on Tue Dec 24 15:43:20 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

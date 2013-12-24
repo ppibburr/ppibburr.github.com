@@ -105,7 +105,67 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"action-activated" {|index| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) index</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"cursor-on-match" {|model, iter| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) model</p>
+</li><li>
+<p>(FFI::Pointer) iter</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"insert-prefix" {|prefix| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) prefix</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"match-selected" {|model, iter| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) model</p>
+</li><li>
+<p>(FFI::Pointer) iter</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -800,11 +860,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -858,11 +918,11 @@
       <pre class="lines">
 
 
-14
-15</pre>
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_complete'>complete</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -925,11 +985,11 @@
       <pre class="lines">
 
 
-21
-22</pre>
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_action'>delete_action</span><span class='lparen'>(</span><span class='id identifier rubyid_index_'>index_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -977,11 +1037,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+54
+55</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 54</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_completion_prefix'>get_completion_prefix</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1029,11 +1089,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 60</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_entry'>get_entry</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1081,11 +1141,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_inline_completion'>get_inline_completion</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1133,11 +1193,11 @@
       <pre class="lines">
 
 
-45
-46</pre>
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 72</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_inline_selection'>get_inline_selection</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1185,11 +1245,11 @@
       <pre class="lines">
 
 
-51
-52</pre>
+78
+79</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 78</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_minimum_key_length'>get_minimum_key_length</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1237,11 +1297,11 @@
       <pre class="lines">
 
 
-57
-58</pre>
+84
+85</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 57</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 84</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_model'>get_model</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1289,11 +1349,11 @@
       <pre class="lines">
 
 
-63
-64</pre>
+90
+91</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 90</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_popup_completion'>get_popup_completion</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1341,11 +1401,11 @@
       <pre class="lines">
 
 
-69
-70</pre>
+96
+97</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 69</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 96</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_popup_set_width'>get_popup_set_width</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1393,11 +1453,11 @@
       <pre class="lines">
 
 
-75
-76</pre>
+102
+103</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 75</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 102</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_popup_single_match'>get_popup_single_match</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1445,11 +1505,11 @@
       <pre class="lines">
 
 
-81
-82</pre>
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 81</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 108</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_text_column'>get_text_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1523,11 +1583,11 @@
       <pre class="lines">
 
 
-89
-90</pre>
+116
+117</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 89</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_action_markup'>insert_action_markup</span><span class='lparen'>(</span><span class='id identifier rubyid_index_'>index_</span><span class='comma'>,</span><span class='id identifier rubyid_markup'>markup</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1601,11 +1661,11 @@
       <pre class="lines">
 
 
-97
-98</pre>
+124
+125</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 97</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 124</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_action_text'>insert_action_text</span><span class='lparen'>(</span><span class='id identifier rubyid_index_'>index_</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1653,11 +1713,11 @@
       <pre class="lines">
 
 
-103
-104</pre>
+130
+131</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 130</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_prefix'>insert_prefix</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1720,11 +1780,11 @@
       <pre class="lines">
 
 
-110
-111</pre>
+137
+138</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 110</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 137</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_inline_completion'>set_inline_completion</span><span class='lparen'>(</span><span class='id identifier rubyid_inline_completion'>inline_completion</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1787,11 +1847,11 @@
       <pre class="lines">
 
 
-117
-118</pre>
+144
+145</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 117</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 144</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_inline_selection'>set_inline_selection</span><span class='lparen'>(</span><span class='id identifier rubyid_inline_selection'>inline_selection</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1889,11 +1949,11 @@
       <pre class="lines">
 
 
-127
-128</pre>
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 127</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 154</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_match_func'>set_match_func</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1956,11 +2016,11 @@
       <pre class="lines">
 
 
-134
-135</pre>
+161
+162</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 134</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 161</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_minimum_key_length'>set_minimum_key_length</span><span class='lparen'>(</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2030,11 +2090,11 @@
       <pre class="lines">
 
 
-141
-142</pre>
+168
+169</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 141</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 168</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_model'>set_model</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2097,11 +2157,11 @@
       <pre class="lines">
 
 
-148
-149</pre>
+175
+176</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 148</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 175</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_popup_completion'>set_popup_completion</span><span class='lparen'>(</span><span class='id identifier rubyid_popup_completion'>popup_completion</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2164,11 +2224,11 @@
       <pre class="lines">
 
 
-155
-156</pre>
+182
+183</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 155</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 182</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_popup_set_width'>set_popup_set_width</span><span class='lparen'>(</span><span class='id identifier rubyid_popup_set_width'>popup_set_width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2231,11 +2291,11 @@
       <pre class="lines">
 
 
-162
-163</pre>
+189
+190</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 162</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 189</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_popup_single_match'>set_popup_single_match</span><span class='lparen'>(</span><span class='id identifier rubyid_popup_single_match'>popup_single_match</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2298,11 +2358,11 @@
       <pre class="lines">
 
 
-169
-170</pre>
+196
+197</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 169</span>
+      <pre class="code"><span class="info file"># File 'gtk_entrycompletion.rb', line 196</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_text_column'>set_text_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2316,7 +2376,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:56:10 2013 by
+  Generated on Tue Dec 24 15:42:05 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

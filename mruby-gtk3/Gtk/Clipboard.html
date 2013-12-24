@@ -101,7 +101,30 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"owner-change" {|event| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) event</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -813,11 +836,11 @@
       <pre class="lines">
 
 
-7
-8</pre>
+14
+15</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 14</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_selection'>selection</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -891,11 +914,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+22
+23</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 22</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_for_display'>get_for_display</span><span class='lparen'>(</span><span class='id identifier rubyid_display'>display</span><span class='comma'>,</span><span class='id identifier rubyid_selection'>selection</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -949,11 +972,11 @@
       <pre class="lines">
 
 
-21
-22</pre>
+28
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 28</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_clear'>clear</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1001,11 +1024,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_display'>get_display</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1053,11 +1076,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+40
+41</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 40</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_owner'>get_owner</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1170,11 +1193,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+51
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 51</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_request_contents'>request_contents</span><span class='lparen'>(</span><span class='id identifier rubyid_target'>target</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1272,11 +1295,11 @@
       <pre class="lines">
 
 
-54
-55</pre>
+61
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 54</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 61</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_request_image'>request_image</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1411,11 +1434,11 @@
       <pre class="lines">
 
 
-67
-68</pre>
+74
+75</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 67</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 74</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_request_rich_text'>request_rich_text</span><span class='lparen'>(</span><span class='id identifier rubyid_buffer'>buffer</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1524,11 +1547,11 @@
       <pre class="lines">
 
 
-78
-79</pre>
+85
+86</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_request_targets'>request_targets</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1626,11 +1649,11 @@
       <pre class="lines">
 
 
-88
-89</pre>
+95
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 88</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_request_text'>request_text</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1728,11 +1751,11 @@
       <pre class="lines">
 
 
-98
-99</pre>
+105
+106</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 105</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_request_uris'>request_uris</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1813,11 +1836,11 @@
       <pre class="lines">
 
 
-106
-107</pre>
+113
+114</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 106</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 113</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_can_store'>set_can_store</span><span class='lparen'>(</span><span class='id identifier rubyid_n_targets'>n_targets</span><span class='comma'>,</span><span class='id identifier rubyid_targets'>targets</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1880,11 +1903,11 @@
       <pre class="lines">
 
 
-113
-114</pre>
+120
+121</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 120</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_image'>set_image</span><span class='lparen'>(</span><span class='id identifier rubyid_pixbuf'>pixbuf</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1958,11 +1981,11 @@
       <pre class="lines">
 
 
-121
-122</pre>
+128
+129</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 121</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_text'>set_text</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_len'>len</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2010,11 +2033,11 @@
       <pre class="lines">
 
 
-127
-128</pre>
+134
+135</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 127</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 134</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_store'>store</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2077,11 +2100,11 @@
       <pre class="lines">
 
 
-134
-135</pre>
+141
+142</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 134</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 141</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_for_contents'>wait_for_contents</span><span class='lparen'>(</span><span class='id identifier rubyid_target'>target</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2129,11 +2152,11 @@
       <pre class="lines">
 
 
-140
-141</pre>
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 140</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 147</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_for_image'>wait_for_image</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2196,11 +2219,11 @@
       <pre class="lines">
 
 
-147
-148</pre>
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 147</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 154</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_for_rich_text'>wait_for_rich_text</span><span class='lparen'>(</span><span class='id identifier rubyid_buffer'>buffer</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2248,11 +2271,11 @@
       <pre class="lines">
 
 
-153
-154</pre>
+160
+161</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 153</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 160</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_for_targets'>wait_for_targets</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2300,11 +2323,11 @@
       <pre class="lines">
 
 
-159
-160</pre>
+166
+167</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 159</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 166</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_for_text'>wait_for_text</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2352,11 +2375,11 @@
       <pre class="lines">
 
 
-165
-166</pre>
+172
+173</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 165</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 172</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_for_uris'>wait_for_uris</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2404,11 +2427,11 @@
       <pre class="lines">
 
 
-171
-172</pre>
+178
+179</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 171</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 178</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_is_image_available'>wait_is_image_available</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2471,11 +2494,11 @@
       <pre class="lines">
 
 
-178
-179</pre>
+185
+186</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 185</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_is_rich_text_available'>wait_is_rich_text_available</span><span class='lparen'>(</span><span class='id identifier rubyid_buffer'>buffer</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2538,11 +2561,11 @@
       <pre class="lines">
 
 
-185
-186</pre>
+192
+193</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 185</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 192</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_is_target_available'>wait_is_target_available</span><span class='lparen'>(</span><span class='id identifier rubyid_target'>target</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2590,11 +2613,11 @@
       <pre class="lines">
 
 
-191
-192</pre>
+198
+199</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 191</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 198</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_is_text_available'>wait_is_text_available</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2642,11 +2665,11 @@
       <pre class="lines">
 
 
-197
-198</pre>
+204
+205</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 197</span>
+      <pre class="code"><span class="info file"># File 'gtk_clipboard.rb', line 204</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_wait_is_uris_available'>wait_is_uris_available</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2660,7 +2683,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:07:38 2013 by
+  Generated on Tue Dec 24 15:54:27 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

@@ -105,7 +105,741 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"close-web-view" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"console-message" {|message, line, source_id| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) message</p>
+</li><li>
+<p>(Integer) line</p>
+</li><li>
+<p>(String) source_id</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"context-menu" {|default_menu, hit_test_result, triggered_with_keyboard| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Gtk::Widget) default_menu</p>
+</li><li>
+<p>(<span class='object_link'><a href="HitTestResult.html" title="WebKit::HitTestResult (class)">HitTestResult</a></span>) hit_test_result</p>
+</li><li>
+<p>(Boolean) triggered_with_keyboard</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"copy-clipboard" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"create-plugin-widget" {|mime_type, uri, param| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) mime_type</p>
+</li><li>
+<p>(String) uri</p>
+</li><li>
+<p>(FFI::Pointer) param</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Gtk::Widget)</p>
+</li></ul>
+</dd><dt>"create-web-view" {|frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="" title="WebKit::WebView (class)">WebView</a></span>)</p>
+</li></ul>
+</dd><dt>"cut-clipboard" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"database-quota-exceeded" {|frame, database| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(GObject::Object) frame</p>
+</li><li>
+<p>(GObject::Object) database</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"document-load-finished" {|web_frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"download-requested" {|download| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(GObject::Object) download</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"editing-began" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"editing-ended" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"entering-fullscreen" {|element| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMHTMLElement.html" title="WebKit::DOMHTMLElement (class)">DOMHTMLElement</a></span>) element</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"frame-created" {|web_frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"geolocation-policy-decision-cancelled" {|frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"geolocation-policy-decision-requested" {|frame, policy_decision| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="GeolocationPolicyDecision.html" title="WebKit::GeolocationPolicyDecision (class)">GeolocationPolicyDecision</a></span>) policy_decision</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"hovering-over-link" {|title, uri| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) title</p>
+</li><li>
+<p>(String) uri</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"icon-loaded" {|icon_uri| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) icon_uri</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"leaving-fullscreen" {|element| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMHTMLElement.html" title="WebKit::DOMHTMLElement (class)">DOMHTMLElement</a></span>) element</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"load-committed" {|frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"load-error" {|web_frame, uri, web_error| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li><li>
+<p>(String) uri</p>
+</li><li>
+<p>(FFI::Pointer) web_error</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"load-finished" {|frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"load-progress-changed" {|progress| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) progress</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"load-started" {|frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"mime-type-policy-decision-requested" {|frame, request, mimetype, policy_decision| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkRequest.html" title="WebKit::NetworkRequest (class)">NetworkRequest</a></span>) request</p>
+</li><li>
+<p>(String) mimetype</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebPolicyDecision.html" title="WebKit::WebPolicyDecision (class)">WebPolicyDecision</a></span>) policy_decision</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"move-cursor" {|step, count| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) step</p>
+</li><li>
+<p>(Integer) count</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"navigation-policy-decision-requested" {|frame, request, navigation_action, policy_decision| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkRequest.html" title="WebKit::NetworkRequest (class)">NetworkRequest</a></span>) request</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebNavigationAction.html" title="WebKit::WebNavigationAction (class)">WebNavigationAction</a></span>) navigation_action</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebPolicyDecision.html" title="WebKit::WebPolicyDecision (class)">WebPolicyDecision</a></span>) policy_decision</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"navigation-requested" {|frame, request| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkRequest.html" title="WebKit::NetworkRequest (class)">NetworkRequest</a></span>) request</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Integer)</p>
+</li></ul>
+</dd><dt>"new-window-policy-decision-requested" {|frame, request, navigation_action, policy_decision| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkRequest.html" title="WebKit::NetworkRequest (class)">NetworkRequest</a></span>) request</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebNavigationAction.html" title="WebKit::WebNavigationAction (class)">WebNavigationAction</a></span>) navigation_action</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebPolicyDecision.html" title="WebKit::WebPolicyDecision (class)">WebPolicyDecision</a></span>) policy_decision</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"onload-event" {|frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"paste-clipboard" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"populate-popup" {|menu| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Gtk::Menu) menu</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"print-requested" {|web_frame| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"redo" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-content-length-received" {|web_frame, web_resource, length_received| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li><li>
+<p>(Integer) length_received</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-load-failed" {|web_frame, web_resource, error| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li><li>
+<p>(FFI::Pointer) error</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-load-finished" {|web_frame, web_resource| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-request-starting" {|web_frame, web_resource, request, response| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkRequest.html" title="WebKit::NetworkRequest (class)">NetworkRequest</a></span>) request</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkResponse.html" title="WebKit::NetworkResponse (class)">NetworkResponse</a></span>) response</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-response-received" {|web_frame, web_resource, response| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) web_frame</p>
+</li><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkResponse.html" title="WebKit::NetworkResponse (class)">NetworkResponse</a></span>) response</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"run-file-chooser" {|request| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="FileChooserRequest.html" title="WebKit::FileChooserRequest (class)">FileChooserRequest</a></span>) request</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"script-alert" {|frame, message| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(String) message</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"script-confirm" {|frame, message, confirmed| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(String) message</p>
+</li><li>
+<p>(void) confirmed</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"script-prompt" {|frame, message, default, text| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(String) message</p>
+</li><li>
+<p>(String) default</p>
+</li><li>
+<p>(void) text</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"select-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"selection-changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"set-scroll-adjustments" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Gtk::Adjustment) object</p>
+</li><li>
+<p>(Gtk::Adjustment) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"should-apply-style" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMCSSStyleDeclaration.html" title="WebKit::DOMCSSStyleDeclaration (class)">DOMCSSStyleDeclaration</a></span>) object</p>
+</li><li>
+<p>(<span class='object_link'><a href="DOMRange.html" title="WebKit::DOMRange (class)">DOMRange</a></span>) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"should-begin-editing" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMRange.html" title="WebKit::DOMRange (class)">DOMRange</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"should-change-selected-range" {|object, p0, p1, p2| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMRange.html" title="WebKit::DOMRange (class)">DOMRange</a></span>) object</p>
+</li><li>
+<p>(<span class='object_link'><a href="DOMRange.html" title="WebKit::DOMRange (class)">DOMRange</a></span>) p0</p>
+</li><li>
+<p>(Integer) p1</p>
+</li><li>
+<p>(Boolean) p2</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"should-delete-range" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMRange.html" title="WebKit::DOMRange (class)">DOMRange</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"should-end-editing" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMRange.html" title="WebKit::DOMRange (class)">DOMRange</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"should-insert-node" {|object, p0, p1| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMNode.html" title="WebKit::DOMNode (class)">DOMNode</a></span>) object</p>
+</li><li>
+<p>(<span class='object_link'><a href="DOMRange.html" title="WebKit::DOMRange (class)">DOMRange</a></span>) p0</p>
+</li><li>
+<p>(Integer) p1</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"should-insert-text" {|object, p0, p1| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) object</p>
+</li><li>
+<p>(<span class='object_link'><a href="DOMRange.html" title="WebKit::DOMRange (class)">DOMRange</a></span>) p0</p>
+</li><li>
+<p>(Integer) p1</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"should-show-delete-interface-for-element" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="DOMHTMLElement.html" title="WebKit::DOMHTMLElement (class)">DOMHTMLElement</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"status-bar-text-changed" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"title-changed" {|frame, title| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(String) title</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"undo" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"user-changed-contents" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"viewport-attributes-changed" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="ViewportAttributes.html" title="WebKit::ViewportAttributes (class)">ViewportAttributes</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"viewport-attributes-recompute-requested" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="ViewportAttributes.html" title="WebKit::ViewportAttributes (class)">ViewportAttributes</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"web-view-ready" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"window-object-cleared" {|frame, context, window_object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebFrame.html" title="WebKit::WebFrame (class)">WebFrame</a></span>) frame</p>
+</li><li>
+<p>(void) context</p>
+</li><li>
+<p>(void) window_object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -1956,11 +2690,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+407
+408</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 407</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2014,11 +2748,11 @@
       <pre class="lines">
 
 
-14
-15</pre>
+413
+414</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 413</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_copy_clipboard'>can_copy_clipboard</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2066,11 +2800,11 @@
       <pre class="lines">
 
 
-20
-21</pre>
+419
+420</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 419</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_cut_clipboard'>can_cut_clipboard</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2118,11 +2852,11 @@
       <pre class="lines">
 
 
-26
-27</pre>
+425
+426</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 425</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_go_back'>can_go_back</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2185,11 +2919,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+432
+433</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 432</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_go_back_or_forward'>can_go_back_or_forward</span><span class='lparen'>(</span><span class='id identifier rubyid_steps'>steps</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2237,11 +2971,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+438
+439</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 438</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_go_forward'>can_go_forward</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2289,11 +3023,11 @@
       <pre class="lines">
 
 
-45
-46</pre>
+444
+445</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 444</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_paste_clipboard'>can_paste_clipboard</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2341,11 +3075,11 @@
       <pre class="lines">
 
 
-51
-52</pre>
+450
+451</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 450</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_redo'>can_redo</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2408,11 +3142,11 @@
       <pre class="lines">
 
 
-58
-59</pre>
+457
+458</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 457</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_show_mime_type'>can_show_mime_type</span><span class='lparen'>(</span><span class='id identifier rubyid_mime_type'>mime_type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2460,11 +3194,11 @@
       <pre class="lines">
 
 
-64
-65</pre>
+463
+464</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 64</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 463</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_can_undo'>can_undo</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2512,11 +3246,11 @@
       <pre class="lines">
 
 
-70
-71</pre>
+469
+470</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 70</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 469</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_copy_clipboard'>copy_clipboard</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2564,11 +3298,11 @@
       <pre class="lines">
 
 
-76
-77</pre>
+475
+476</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 76</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 475</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cut_clipboard'>cut_clipboard</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2616,11 +3350,11 @@
       <pre class="lines">
 
 
-82
-83</pre>
+481
+482</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 82</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 481</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_selection'>delete_selection</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2683,11 +3417,11 @@
       <pre class="lines">
 
 
-89
-90</pre>
+488
+489</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 89</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 488</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_execute_script'>execute_script</span><span class='lparen'>(</span><span class='id identifier rubyid_script'>script</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2735,11 +3469,11 @@
       <pre class="lines">
 
 
-95
-96</pre>
+494
+495</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 494</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_back_forward_list'>get_back_forward_list</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2787,11 +3521,11 @@
       <pre class="lines">
 
 
-101
-102</pre>
+500
+501</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 101</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 500</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_copy_target_list'>get_copy_target_list</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2839,11 +3573,11 @@
       <pre class="lines">
 
 
-107
-108</pre>
+506
+507</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 107</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 506</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_custom_encoding'>get_custom_encoding</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2891,11 +3625,11 @@
       <pre class="lines">
 
 
-113
-114</pre>
+512
+513</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 512</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_dom_document'>get_dom_document</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2943,11 +3677,11 @@
       <pre class="lines">
 
 
-119
-120</pre>
+518
+519</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 518</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_editable'>get_editable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2995,11 +3729,11 @@
       <pre class="lines">
 
 
-125
-126</pre>
+524
+525</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 524</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_encoding'>get_encoding</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3047,11 +3781,11 @@
       <pre class="lines">
 
 
-131
-132</pre>
+530
+531</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 131</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 530</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_focused_frame'>get_focused_frame</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3099,11 +3833,11 @@
       <pre class="lines">
 
 
-137
-138</pre>
+536
+537</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 137</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 536</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_full_content_zoom'>get_full_content_zoom</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3166,11 +3900,11 @@
       <pre class="lines">
 
 
-144
-145</pre>
+543
+544</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 144</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 543</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hit_test_result'>get_hit_test_result</span><span class='lparen'>(</span><span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3218,11 +3952,11 @@
       <pre class="lines">
 
 
-150
-151</pre>
+549
+550</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 549</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_icon_pixbuf'>get_icon_pixbuf</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3270,11 +4004,11 @@
       <pre class="lines">
 
 
-156
-157</pre>
+555
+556</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 156</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 555</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_icon_uri'>get_icon_uri</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3322,11 +4056,11 @@
       <pre class="lines">
 
 
-162
-163</pre>
+561
+562</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 162</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 561</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_inspector'>get_inspector</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3379,11 +4113,11 @@
       <pre class="lines">
 
 
-168
-169</pre>
+567
+568</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 168</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 567</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_load_status'>get_load_status</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3431,11 +4165,11 @@
       <pre class="lines">
 
 
-174
-175</pre>
+573
+574</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 174</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 573</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_main_frame'>get_main_frame</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3483,11 +4217,11 @@
       <pre class="lines">
 
 
-180
-181</pre>
+579
+580</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 579</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_paste_target_list'>get_paste_target_list</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3535,11 +4269,11 @@
       <pre class="lines">
 
 
-186
-187</pre>
+585
+586</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 186</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 585</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_progress'>get_progress</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3587,11 +4321,11 @@
       <pre class="lines">
 
 
-192
-193</pre>
+591
+592</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 192</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 591</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_settings'>get_settings</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3639,11 +4373,11 @@
       <pre class="lines">
 
 
-198
-199</pre>
+597
+598</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 198</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 597</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_snapshot'>get_snapshot</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3691,11 +4425,11 @@
       <pre class="lines">
 
 
-204
-205</pre>
+603
+604</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 204</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 603</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_title'>get_title</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3743,11 +4477,11 @@
       <pre class="lines">
 
 
-210
-211</pre>
+609
+610</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 210</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 609</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_transparent'>get_transparent</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3795,11 +4529,11 @@
       <pre class="lines">
 
 
-216
-217</pre>
+615
+616</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 216</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 615</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_uri'>get_uri</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3852,11 +4586,11 @@
       <pre class="lines">
 
 
-222
-223</pre>
+621
+622</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 222</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 621</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_view_mode'>get_view_mode</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3904,11 +4638,11 @@
       <pre class="lines">
 
 
-228
-229</pre>
+627
+628</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 228</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 627</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_view_source_mode'>get_view_source_mode</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3956,11 +4690,11 @@
       <pre class="lines">
 
 
-234
-235</pre>
+633
+634</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 234</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 633</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_viewport_attributes'>get_viewport_attributes</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4008,11 +4742,11 @@
       <pre class="lines">
 
 
-240
-241</pre>
+639
+640</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 240</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 639</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_window_features'>get_window_features</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4060,11 +4794,11 @@
       <pre class="lines">
 
 
-246
-247</pre>
+645
+646</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 246</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 645</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_zoom_level'>get_zoom_level</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4112,11 +4846,11 @@
       <pre class="lines">
 
 
-252
-253</pre>
+651
+652</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 252</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 651</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_go_back'>go_back</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4179,11 +4913,11 @@
       <pre class="lines">
 
 
-259
-260</pre>
+658
+659</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 259</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 658</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_go_back_or_forward'>go_back_or_forward</span><span class='lparen'>(</span><span class='id identifier rubyid_steps'>steps</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4231,11 +4965,11 @@
       <pre class="lines">
 
 
-265
-266</pre>
+664
+665</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 265</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 664</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_go_forward'>go_forward</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4298,11 +5032,11 @@
       <pre class="lines">
 
 
-272
-273</pre>
+671
+672</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 272</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 671</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_go_to_back_forward_item'>go_to_back_forward_item</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4350,11 +5084,11 @@
       <pre class="lines">
 
 
-278
-279</pre>
+677
+678</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 278</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 677</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_has_selection'>has_selection</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4428,11 +5162,11 @@
       <pre class="lines">
 
 
-286
-287</pre>
+685
+686</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 286</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 685</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_html_string'>load_html_string</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='comma'>,</span><span class='id identifier rubyid_base_uri'>base_uri</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4495,11 +5229,11 @@
       <pre class="lines">
 
 
-293
-294</pre>
+692
+693</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 293</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 692</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_request'>load_request</span><span class='lparen'>(</span><span class='id identifier rubyid_request'>request</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4595,11 +5329,11 @@
       <pre class="lines">
 
 
-303
-304</pre>
+702
+703</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 303</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 702</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_string'>load_string</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='comma'>,</span><span class='id identifier rubyid_mime_type'>mime_type</span><span class='comma'>,</span><span class='id identifier rubyid_encoding'>encoding</span><span class='comma'>,</span><span class='id identifier rubyid_base_uri'>base_uri</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4662,11 +5396,11 @@
       <pre class="lines">
 
 
-310
-311</pre>
+709
+710</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 310</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 709</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_uri'>load_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4751,11 +5485,11 @@
       <pre class="lines">
 
 
-319
-320</pre>
+718
+719</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 319</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 718</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_mark_text_matches'>mark_text_matches</span><span class='lparen'>(</span><span class='id identifier rubyid_string'>string</span><span class='comma'>,</span><span class='id identifier rubyid_case_sensitive'>case_sensitive</span><span class='comma'>,</span><span class='id identifier rubyid_limit'>limit</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4834,11 +5568,11 @@
       <pre class="lines">
 
 
-327
-328</pre>
+726
+727</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 327</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 726</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move_cursor'>move_cursor</span><span class='lparen'>(</span><span class='id identifier rubyid_step'>step</span><span class='comma'>,</span><span class='id identifier rubyid_count'>count</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4901,11 +5635,11 @@
       <pre class="lines">
 
 
-334
-335</pre>
+733
+734</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 334</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 733</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_open'>open</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4953,11 +5687,11 @@
       <pre class="lines">
 
 
-340
-341</pre>
+739
+740</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 340</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 739</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_paste_clipboard'>paste_clipboard</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5005,11 +5739,11 @@
       <pre class="lines">
 
 
-346
-347</pre>
+745
+746</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 346</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 745</span>
 
 <span class='kw'>def</span> <span class='kw'>redo</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5057,11 +5791,11 @@
       <pre class="lines">
 
 
-352
-353</pre>
+751
+752</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 352</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 751</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reload'>reload</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5109,11 +5843,11 @@
       <pre class="lines">
 
 
-358
-359</pre>
+757
+758</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 358</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 757</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reload_bypass_cache'>reload_bypass_cache</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5209,11 +5943,11 @@
       <pre class="lines">
 
 
-368
-369</pre>
+767
+768</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 368</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 767</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_search_text'>search_text</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_case_sensitive'>case_sensitive</span><span class='comma'>,</span><span class='id identifier rubyid_forward'>forward</span><span class='comma'>,</span><span class='id identifier rubyid_wrap'>wrap</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5261,11 +5995,11 @@
       <pre class="lines">
 
 
-374
-375</pre>
+773
+774</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 374</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 773</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_all'>select_all</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5328,11 +6062,11 @@
       <pre class="lines">
 
 
-381
-382</pre>
+780
+781</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 381</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 780</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_custom_encoding'>set_custom_encoding</span><span class='lparen'>(</span><span class='id identifier rubyid_encoding'>encoding</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5395,11 +6129,11 @@
       <pre class="lines">
 
 
-388
-389</pre>
+787
+788</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 388</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 787</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_editable'>set_editable</span><span class='lparen'>(</span><span class='id identifier rubyid_flag'>flag</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5462,11 +6196,11 @@
       <pre class="lines">
 
 
-395
-396</pre>
+794
+795</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 395</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 794</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_full_content_zoom'>set_full_content_zoom</span><span class='lparen'>(</span><span class='id identifier rubyid_full_content_zoom'>full_content_zoom</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5529,11 +6263,11 @@
       <pre class="lines">
 
 
-402
-403</pre>
+801
+802</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 402</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 801</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_highlight_text_matches'>set_highlight_text_matches</span><span class='lparen'>(</span><span class='id identifier rubyid_highlight'>highlight</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5596,11 +6330,11 @@
       <pre class="lines">
 
 
-409
-410</pre>
+808
+809</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 409</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 808</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_maintains_back_forward_list'>set_maintains_back_forward_list</span><span class='lparen'>(</span><span class='id identifier rubyid_flag'>flag</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5663,11 +6397,11 @@
       <pre class="lines">
 
 
-416
-417</pre>
+815
+816</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 416</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 815</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_settings'>set_settings</span><span class='lparen'>(</span><span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5730,11 +6464,11 @@
       <pre class="lines">
 
 
-423
-424</pre>
+822
+823</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 423</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 822</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_transparent'>set_transparent</span><span class='lparen'>(</span><span class='id identifier rubyid_flag'>flag</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5802,11 +6536,11 @@
       <pre class="lines">
 
 
-430
-431</pre>
+829
+830</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 430</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 829</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_view_mode'>set_view_mode</span><span class='lparen'>(</span><span class='id identifier rubyid_mode'>mode</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5869,11 +6603,11 @@
       <pre class="lines">
 
 
-437
-438</pre>
+836
+837</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 437</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 836</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_view_source_mode'>set_view_source_mode</span><span class='lparen'>(</span><span class='id identifier rubyid_view_source_mode'>view_source_mode</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5936,11 +6670,11 @@
       <pre class="lines">
 
 
-444
-445</pre>
+843
+844</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 444</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 843</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_zoom_level'>set_zoom_level</span><span class='lparen'>(</span><span class='id identifier rubyid_zoom_level'>zoom_level</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5988,11 +6722,11 @@
       <pre class="lines">
 
 
-450
-451</pre>
+849
+850</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 450</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 849</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_stop_loading'>stop_loading</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6066,11 +6800,11 @@
       <pre class="lines">
 
 
-458
-459</pre>
+857
+858</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 458</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 857</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_try_get_favicon_pixbuf'>try_get_favicon_pixbuf</span><span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span><span class='comma'>,</span><span class='id identifier rubyid_height'>height</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6118,11 +6852,11 @@
       <pre class="lines">
 
 
-464
-465</pre>
+863
+864</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 464</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 863</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_undo'>undo</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6170,11 +6904,11 @@
       <pre class="lines">
 
 
-470
-471</pre>
+869
+870</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 470</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 869</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unmark_text_matches'>unmark_text_matches</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6222,11 +6956,11 @@
       <pre class="lines">
 
 
-476
-477</pre>
+875
+876</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 476</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 875</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_zoom_in'>zoom_in</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6274,11 +7008,11 @@
       <pre class="lines">
 
 
-482
-483</pre>
+881
+882</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 482</span>
+      <pre class="code"><span class="info file"># File 'webkit_webview.rb', line 881</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_zoom_out'>zoom_out</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6292,7 +7026,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:02:23 2013 by
+  Generated on Tue Dec 24 15:48:36 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

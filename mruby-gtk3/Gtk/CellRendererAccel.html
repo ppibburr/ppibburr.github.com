@@ -105,7 +105,47 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"accel-cleared" {|path_string| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) path_string</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"accel-edited" {|path_string, accel_key, accel_mods, hardware_keycode| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) path_string</p>
+</li><li>
+<p>(Integer) accel_key</p>
+</li><li>
+<p>(Integer) accel_mods</p>
+</li><li>
+<p>(Integer) hardware_keycode</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -215,11 +255,11 @@
       <pre class="lines">
 
 
-6
-7</pre>
+22
+23</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrendereraccel.rb', line 6</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrendereraccel.rb', line 22</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -233,7 +273,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:07:29 2013 by
+  Generated on Tue Dec 24 15:54:17 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

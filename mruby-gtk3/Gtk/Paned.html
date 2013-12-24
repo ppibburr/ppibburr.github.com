@@ -109,7 +109,70 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"accept-position" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"cancel-position" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"cycle-child-focus" {|reversed| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) reversed</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"cycle-handle-focus" {|reversed| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) reversed</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"move-handle" {|scroll_type| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) scroll_type</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"toggle-handle-focus" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="HPaned.html" title="Gtk::HPaned (class)">HPaned</a></span>, <span class='object_link'><a href="VPaned.html" title="Gtk::VPaned (class)">VPaned</a></span></p>
 </div>
@@ -493,11 +556,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_orientation'>orientation</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -566,11 +629,11 @@
       <pre class="lines">
 
 
-17
-18</pre>
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add1'>add1</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -633,11 +696,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add2'>add2</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -685,11 +748,11 @@
       <pre class="lines">
 
 
-30
-31</pre>
+61
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 61</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_child1'>get_child1</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -737,11 +800,11 @@
       <pre class="lines">
 
 
-36
-37</pre>
+67
+68</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 67</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_child2'>get_child2</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -789,11 +852,11 @@
       <pre class="lines">
 
 
-42
-43</pre>
+73
+74</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 73</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_handle_window'>get_handle_window</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -841,11 +904,11 @@
       <pre class="lines">
 
 
-48
-49</pre>
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 79</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_position'>get_position</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -930,11 +993,11 @@
       <pre class="lines">
 
 
-57
-58</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 57</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_pack1'>pack1</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_resize'>resize</span><span class='comma'>,</span><span class='id identifier rubyid_shrink'>shrink</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1019,11 +1082,11 @@
       <pre class="lines">
 
 
-66
-67</pre>
+97
+98</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 66</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 97</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_pack2'>pack2</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_resize'>resize</span><span class='comma'>,</span><span class='id identifier rubyid_shrink'>shrink</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1086,11 +1149,11 @@
       <pre class="lines">
 
 
-73
-74</pre>
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 73</span>
+      <pre class="code"><span class="info file"># File 'gtk_paned.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_position'>set_position</span><span class='lparen'>(</span><span class='id identifier rubyid_position'>position</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1104,7 +1167,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:09:43 2013 by
+  Generated on Tue Dec 24 15:56:37 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

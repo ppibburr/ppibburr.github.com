@@ -111,7 +111,59 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"format-entry-text" {|path| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) path</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(String)</p>
+</li></ul>
+</dd><dt>"move-active" {|scroll_type| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) scroll_type</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"popdown" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"popup" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="AppChooserButton.html" title="Gtk::AppChooserButton (class)">AppChooserButton</a></span>, <span class='object_link'><a href="ComboBoxText.html" title="Gtk::ComboBoxText (class)">ComboBoxText</a></span></p>
 </div>
@@ -1218,11 +1270,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1285,11 +1337,11 @@
       <pre class="lines">
 
 
-17
-18</pre>
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 42</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_area'>new_with_area</span><span class='lparen'>(</span><span class='id identifier rubyid_area'>area</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1352,11 +1404,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 49</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_area_and_entry'>new_with_area_and_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_area'>area</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1404,11 +1456,11 @@
       <pre class="lines">
 
 
-30
-31</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_entry'>new_with_entry</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1471,11 +1523,11 @@
       <pre class="lines">
 
 
-37
-38</pre>
+62
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_model'>new_with_model</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1538,11 +1590,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+69
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 69</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_model_and_entry'>new_with_model_and_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1596,11 +1648,11 @@
       <pre class="lines">
 
 
-50
-51</pre>
+75
+76</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 75</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_active'>get_active</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1648,11 +1700,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_active_id'>get_active_id</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1700,11 +1752,11 @@
       <pre class="lines">
 
 
-62
-63</pre>
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 87</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_active_iter'>get_active_iter</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1752,11 +1804,11 @@
       <pre class="lines">
 
 
-68
-69</pre>
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 68</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_add_tearoffs'>get_add_tearoffs</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1809,11 +1861,11 @@
       <pre class="lines">
 
 
-74
-75</pre>
+99
+100</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 74</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 99</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_button_sensitivity'>get_button_sensitivity</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1861,11 +1913,11 @@
       <pre class="lines">
 
 
-80
-81</pre>
+105
+106</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 105</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_column_span_column'>get_column_span_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1913,11 +1965,11 @@
       <pre class="lines">
 
 
-86
-87</pre>
+111
+112</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 86</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 111</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_entry_text_column'>get_entry_text_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1965,11 +2017,11 @@
       <pre class="lines">
 
 
-92
-93</pre>
+117
+118</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 117</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_focus_on_click'>get_focus_on_click</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2017,11 +2069,11 @@
       <pre class="lines">
 
 
-98
-99</pre>
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 123</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_has_entry'>get_has_entry</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2069,11 +2121,11 @@
       <pre class="lines">
 
 
-104
-105</pre>
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 104</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 129</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_id_column'>get_id_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2121,11 +2173,11 @@
       <pre class="lines">
 
 
-110
-111</pre>
+135
+136</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 110</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 135</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_model'>get_model</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2173,11 +2225,11 @@
       <pre class="lines">
 
 
-116
-117</pre>
+141
+142</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 141</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_popup_accessible'>get_popup_accessible</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2225,11 +2277,11 @@
       <pre class="lines">
 
 
-122
-123</pre>
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 122</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 147</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_popup_fixed_width'>get_popup_fixed_width</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2277,11 +2329,11 @@
       <pre class="lines">
 
 
-128
-129</pre>
+153
+154</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 128</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 153</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_row_span_column'>get_row_span_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2329,11 +2381,11 @@
       <pre class="lines">
 
 
-134
-135</pre>
+159
+160</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 134</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 159</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_title'>get_title</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2381,11 +2433,11 @@
       <pre class="lines">
 
 
-140
-141</pre>
+165
+166</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 140</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 165</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_wrap_width'>get_wrap_width</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2433,11 +2485,11 @@
       <pre class="lines">
 
 
-146
-147</pre>
+171
+172</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 146</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 171</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_popdown'>popdown</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2485,11 +2537,11 @@
       <pre class="lines">
 
 
-152
-153</pre>
+177
+178</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 152</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 177</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_popup'>popup</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2552,11 +2604,11 @@
       <pre class="lines">
 
 
-159
-160</pre>
+184
+185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 159</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_popup_for_device'>popup_for_device</span><span class='lparen'>(</span><span class='id identifier rubyid_device'>device</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2619,11 +2671,11 @@
       <pre class="lines">
 
 
-166
-167</pre>
+191
+192</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 166</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 191</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_active'>set_active</span><span class='lparen'>(</span><span class='id identifier rubyid_index_'>index_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2693,11 +2745,11 @@
       <pre class="lines">
 
 
-173
-174</pre>
+198
+199</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 173</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 198</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_active_id'>set_active_id</span><span class='lparen'>(</span><span class='id identifier rubyid_active_id'>active_id</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2767,11 +2819,11 @@
       <pre class="lines">
 
 
-180
-181</pre>
+205
+206</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 205</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_active_iter'>set_active_iter</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2834,11 +2886,11 @@
       <pre class="lines">
 
 
-187
-188</pre>
+212
+213</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 187</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 212</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_add_tearoffs'>set_add_tearoffs</span><span class='lparen'>(</span><span class='id identifier rubyid_add_tearoffs'>add_tearoffs</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2906,11 +2958,11 @@
       <pre class="lines">
 
 
-194
-195</pre>
+219
+220</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 194</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 219</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_button_sensitivity'>set_button_sensitivity</span><span class='lparen'>(</span><span class='id identifier rubyid_sensitivity'>sensitivity</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2973,11 +3025,11 @@
       <pre class="lines">
 
 
-201
-202</pre>
+226
+227</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 201</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 226</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_span_column'>set_column_span_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column_span'>column_span</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3040,11 +3092,11 @@
       <pre class="lines">
 
 
-208
-209</pre>
+233
+234</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 208</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 233</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_entry_text_column'>set_entry_text_column</span><span class='lparen'>(</span><span class='id identifier rubyid_text_column'>text_column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3107,11 +3159,11 @@
       <pre class="lines">
 
 
-215
-216</pre>
+240
+241</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 215</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 240</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_focus_on_click'>set_focus_on_click</span><span class='lparen'>(</span><span class='id identifier rubyid_focus_on_click'>focus_on_click</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3174,11 +3226,11 @@
       <pre class="lines">
 
 
-222
-223</pre>
+247
+248</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 222</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 247</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_id_column'>set_id_column</span><span class='lparen'>(</span><span class='id identifier rubyid_id_column'>id_column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3248,11 +3300,11 @@
       <pre class="lines">
 
 
-229
-230</pre>
+254
+255</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 229</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 254</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_model'>set_model</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3315,11 +3367,11 @@
       <pre class="lines">
 
 
-236
-237</pre>
+261
+262</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 236</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 261</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_popup_fixed_width'>set_popup_fixed_width</span><span class='lparen'>(</span><span class='id identifier rubyid_fixed'>fixed</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3417,11 +3469,11 @@
       <pre class="lines">
 
 
-246
-247</pre>
+271
+272</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 246</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 271</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_row_separator_func'>set_row_separator_func</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3484,11 +3536,11 @@
       <pre class="lines">
 
 
-253
-254</pre>
+278
+279</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 253</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 278</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_row_span_column'>set_row_span_column</span><span class='lparen'>(</span><span class='id identifier rubyid_row_span'>row_span</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3551,11 +3603,11 @@
       <pre class="lines">
 
 
-260
-261</pre>
+285
+286</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 260</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 285</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_title'>set_title</span><span class='lparen'>(</span><span class='id identifier rubyid_title'>title</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3618,11 +3670,11 @@
       <pre class="lines">
 
 
-267
-268</pre>
+292
+293</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 267</span>
+      <pre class="code"><span class="info file"># File 'gtk_combobox.rb', line 292</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_wrap_width'>set_wrap_width</span><span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3636,7 +3688,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:07:57 2013 by
+  Generated on Tue Dec 24 15:54:46 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

@@ -101,7 +101,25 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"destroy" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="Adjustment.html" title="Gtk::Adjustment (class)">Adjustment</a></span>, <span class='object_link'><a href="CellRenderer.html" title="Gtk::CellRenderer (class)">CellRenderer</a></span>, <span class='object_link'><a href="FileFilter.html" title="Gtk::FileFilter (class)">FileFilter</a></span>, <span class='object_link'><a href="ItemFactory.html" title="Gtk::ItemFactory (class)">ItemFactory</a></span>, <span class='object_link'><a href="RecentFilter.html" title="Gtk::RecentFilter (class)">RecentFilter</a></span>, <span class='object_link'><a href="Tooltips.html" title="Gtk::Tooltips (class)">Tooltips</a></span>, <span class='object_link'><a href="TreeViewColumn.html" title="Gtk::TreeViewColumn (class)">TreeViewColumn</a></span>, <span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span></p>
 </div>
@@ -586,11 +604,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+15
+16</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 15</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_add_arg_type'>add_arg_type</span><span class='lparen'>(</span><span class='id identifier rubyid_arg_name'>arg_name</span><span class='comma'>,</span><span class='id identifier rubyid_arg_type'>arg_type</span><span class='comma'>,</span><span class='id identifier rubyid_arg_flags'>arg_flags</span><span class='comma'>,</span><span class='id identifier rubyid_arg_id'>arg_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -644,11 +662,11 @@
       <pre class="lines">
 
 
-16
-17</pre>
+21
+22</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 21</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -711,11 +729,11 @@
       <pre class="lines">
 
 
-23
-24</pre>
+28
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 28</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_data'>remove_data</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -778,11 +796,11 @@
       <pre class="lines">
 
 
-30
-31</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_data_by_id'>remove_data_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_data_id'>data_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -845,11 +863,11 @@
       <pre class="lines">
 
 
-37
-38</pre>
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 42</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_no_notify'>remove_no_notify</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -912,11 +930,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 49</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_no_notify_by_id'>remove_no_notify_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_key_id'>key_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -990,11 +1008,11 @@
       <pre class="lines">
 
 
-52
-53</pre>
+57
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 57</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_data'>set_data</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1068,11 +1086,11 @@
       <pre class="lines">
 
 
-60
-61</pre>
+65
+66</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 60</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_data_by_id'>set_data_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_data_id'>data_id</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1174,11 +1192,11 @@
       <pre class="lines">
 
 
-70
-71</pre>
+75
+76</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 70</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 75</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_data_by_id_full'>set_data_by_id_full</span><span class='lparen'>(</span><span class='id identifier rubyid_data_id'>data_id</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1280,11 +1298,11 @@
       <pre class="lines">
 
 
-80
-81</pre>
+85
+86</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_data_full'>set_data_full</span><span class='lparen'>(</span><span class='id identifier rubyid_key'>key</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1347,11 +1365,11 @@
       <pre class="lines">
 
 
-87
-88</pre>
+92
+93</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 87</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 92</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_user_data'>set_user_data</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1399,11 +1417,11 @@
       <pre class="lines">
 
 
-93
-94</pre>
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 93</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 98</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sink'>sink</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1451,11 +1469,11 @@
       <pre class="lines">
 
 
-99
-100</pre>
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 99</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unref'>unref</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1546,11 +1564,11 @@
       <pre class="lines">
 
 
-108
-109</pre>
+113
+114</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 108</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 113</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_weakref'>weakref</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1641,11 +1659,11 @@
       <pre class="lines">
 
 
-117
-118</pre>
+122
+123</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 117</span>
+      <pre class="code"><span class="info file"># File 'gtk_object.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_weakunref'>weakunref</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1659,7 +1677,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:57:44 2013 by
+  Generated on Tue Dec 24 15:43:44 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

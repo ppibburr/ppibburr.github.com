@@ -109,7 +109,94 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"activate-current" {|force_hide| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) force_hide</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"cancel" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"cycle-focus" {|direction| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) direction</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"deactivate" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"insert" {|child, position| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) child</p>
+</li><li>
+<p>(Integer) position</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"move-current" {|direction| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) direction</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"move-selected" {|distance| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) distance</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"selection-done" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="Menu.html" title="Gtk::Menu (class)">Menu</a></span>, <span class='object_link'><a href="MenuBar.html" title="Gtk::MenuBar (class)">MenuBar</a></span></p>
 </div>
@@ -575,11 +662,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+54
+55</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 54</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_activate_item'>activate_item</span><span class='lparen'>(</span><span class='id identifier rubyid_menu_item'>menu_item</span><span class='comma'>,</span><span class='id identifier rubyid_force_deactivate'>force_deactivate</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -642,11 +729,11 @@
       <pre class="lines">
 
 
-17
-18</pre>
+61
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 61</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -745,11 +832,11 @@
       <pre class="lines">
 
 
-26
-27</pre>
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 70</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_bind_model'>bind_model</span><span class='lparen'>(</span><span class='id identifier rubyid_with_separators'>with_separators</span><span class='comma'>,</span><span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_action_namespace'>action_namespace</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -797,11 +884,11 @@
       <pre class="lines">
 
 
-32
-33</pre>
+76
+77</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 76</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cancel'>cancel</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -849,11 +936,11 @@
       <pre class="lines">
 
 
-38
-39</pre>
+82
+83</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 82</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deactivate'>deactivate</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -901,11 +988,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deselect'>deselect</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -953,11 +1040,11 @@
       <pre class="lines">
 
 
-50
-51</pre>
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_parent_shell'>get_parent_shell</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1005,11 +1092,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_selected_item'>get_selected_item</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1057,11 +1144,11 @@
       <pre class="lines">
 
 
-62
-63</pre>
+106
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_take_focus'>get_take_focus</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1135,11 +1222,11 @@
       <pre class="lines">
 
 
-70
-71</pre>
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 70</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 114</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert'>insert</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_position'>position</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1202,11 +1289,11 @@
       <pre class="lines">
 
 
-77
-78</pre>
+121
+122</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 121</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_prepend'>prepend</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1269,11 +1356,11 @@
       <pre class="lines">
 
 
-84
-85</pre>
+128
+129</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 84</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_first'>select_first</span><span class='lparen'>(</span><span class='id identifier rubyid_search_sensitive'>search_sensitive</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1336,11 +1423,11 @@
       <pre class="lines">
 
 
-91
-92</pre>
+135
+136</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 135</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_item'>select_item</span><span class='lparen'>(</span><span class='id identifier rubyid_menu_item'>menu_item</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1403,11 +1490,11 @@
       <pre class="lines">
 
 
-98
-99</pre>
+142
+143</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'gtk_menushell.rb', line 142</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_take_focus'>set_take_focus</span><span class='lparen'>(</span><span class='id identifier rubyid_take_focus'>take_focus</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1421,7 +1508,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:09:25 2013 by
+  Generated on Tue Dec 24 15:56:18 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

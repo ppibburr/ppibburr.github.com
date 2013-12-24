@@ -101,7 +101,34 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"event" {|object, event, iter| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(GObject::Object) object</p>
+</li><li>
+<p>(FFI::Pointer) event</p>
+</li><li>
+<p>(FFI::Pointer) iter</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -292,11 +319,11 @@
       <pre class="lines">
 
 
-7
-8</pre>
+16
+17</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttag.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttag.rb', line 16</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -387,11 +414,11 @@
       <pre class="lines">
 
 
-16
-17</pre>
+25
+26</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttag.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttag.rb', line 25</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_event'>event</span><span class='lparen'>(</span><span class='id identifier rubyid_event_object'>event_object</span><span class='comma'>,</span><span class='id identifier rubyid_event'>event</span><span class='comma'>,</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -439,11 +466,11 @@
       <pre class="lines">
 
 
-22
-23</pre>
+31
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttag.rb', line 22</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttag.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_priority'>get_priority</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -506,11 +533,11 @@
       <pre class="lines">
 
 
-29
-30</pre>
+38
+39</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttag.rb', line 29</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttag.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_priority'>set_priority</span><span class='lparen'>(</span><span class='id identifier rubyid_priority'>priority</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -524,7 +551,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:58:59 2013 by
+  Generated on Tue Dec 24 15:45:00 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

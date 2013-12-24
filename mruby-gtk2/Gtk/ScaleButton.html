@@ -115,7 +115,42 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"popdown" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"popup" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"value-changed" {|value| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Float) value</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="VolumeButton.html" title="Gtk::VolumeButton (class)">VolumeButton</a></span></p>
 </div>
@@ -615,11 +650,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+30
+31</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span><span class='id identifier rubyid_min'>min</span><span class='comma'>,</span><span class='id identifier rubyid_max'>max</span><span class='comma'>,</span><span class='id identifier rubyid_step'>step</span><span class='comma'>,</span><span class='id identifier rubyid_icons'>icons</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -673,11 +708,11 @@
       <pre class="lines">
 
 
-21
-22</pre>
+36
+37</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 36</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_adjustment'>get_adjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -725,11 +760,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 42</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_minus_button'>get_minus_button</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -782,11 +817,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_orientation'>get_orientation</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -834,11 +869,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+54
+55</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 54</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_plus_button'>get_plus_button</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -886,11 +921,11 @@
       <pre class="lines">
 
 
-45
-46</pre>
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 60</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_popup'>get_popup</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -938,11 +973,11 @@
       <pre class="lines">
 
 
-51
-52</pre>
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_value'>get_value</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1005,11 +1040,11 @@
       <pre class="lines">
 
 
-58
-59</pre>
+73
+74</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 73</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_adjustment'>set_adjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1072,11 +1107,11 @@
       <pre class="lines">
 
 
-65
-66</pre>
+80
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 80</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_icons'>set_icons</span><span class='lparen'>(</span><span class='id identifier rubyid_icons'>icons</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1144,11 +1179,11 @@
       <pre class="lines">
 
 
-72
-73</pre>
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 72</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 87</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_orientation'>set_orientation</span><span class='lparen'>(</span><span class='id identifier rubyid_orientation'>orientation</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1211,11 +1246,11 @@
       <pre class="lines">
 
 
-79
-80</pre>
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 79</span>
+      <pre class="code"><span class="info file"># File 'gtk_scalebutton.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_value'>set_value</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1229,7 +1264,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:58:36 2013 by
+  Generated on Tue Dec 24 15:44:35 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

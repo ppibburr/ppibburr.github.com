@@ -101,7 +101,60 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"attach-window" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"close-window" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"detach-window" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"finished" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"inspect-web-view" {|web_view| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebView.html" title="WebKit::WebView (class)">WebView</a></span>) web_view</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebView.html" title="WebKit::WebView (class)">WebView</a></span>)</p>
+</li></ul>
+</dd><dt>"show-window" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -309,11 +362,11 @@
       <pre class="lines">
 
 
-6
-7</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 6</span>
+      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 33</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_close'>close</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -361,11 +414,11 @@
       <pre class="lines">
 
 
-12
-13</pre>
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 12</span>
+      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_inspected_uri'>get_inspected_uri</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -413,11 +466,11 @@
       <pre class="lines">
 
 
-18
-19</pre>
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 18</span>
+      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_web_view'>get_web_view</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -491,11 +544,11 @@
       <pre class="lines">
 
 
-26
-27</pre>
+53
+54</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_inspect_coordinates'>inspect_coordinates</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -558,11 +611,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 60</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_inspect_node'>inspect_node</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -610,11 +663,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'webkit_webinspector.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -628,7 +681,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:04:58 2013 by
+  Generated on Tue Dec 24 15:51:38 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

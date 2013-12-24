@@ -101,7 +101,49 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"accel-activate" {|acceleratable, keyval, modifier| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(GObject::Object) acceleratable</p>
+</li><li>
+<p>(Integer) keyval</p>
+</li><li>
+<p>(Integer) modifier</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"accel-changed" {|keyval, modifier, accel_closure| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) keyval</p>
+</li><li>
+<p>(Integer) modifier</p>
+</li><li>
+<p>(FFI::Pointer) accel_closure</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -501,11 +543,11 @@
       <pre class="lines">
 
 
-13
-14</pre>
+30
+31</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_from_accel_closure'>from_accel_closure</span><span class='lparen'>(</span><span class='id identifier rubyid_closure'>closure</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -553,11 +595,11 @@
       <pre class="lines">
 
 
-6
-7</pre>
+23
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 6</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -664,11 +706,11 @@
       <pre class="lines">
 
 
-23
-24</pre>
+40
+41</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 40</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_activate'>activate</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_quark'>accel_quark</span><span class='comma'>,</span><span class='id identifier rubyid_acceleratable'>acceleratable</span><span class='comma'>,</span><span class='id identifier rubyid_accel_key'>accel_key</span><span class='comma'>,</span><span class='id identifier rubyid_accel_mods'>accel_mods</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -774,11 +816,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+50
+51</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_connect'>connect</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_key'>accel_key</span><span class='comma'>,</span><span class='id identifier rubyid_accel_mods'>accel_mods</span><span class='comma'>,</span><span class='id identifier rubyid_accel_flags'>accel_flags</span><span class='comma'>,</span><span class='id identifier rubyid_closure'>closure</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -852,11 +894,11 @@
       <pre class="lines">
 
 
-41
-42</pre>
+58
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 58</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_connect_by_path'>connect_by_path</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_path'>accel_path</span><span class='comma'>,</span><span class='id identifier rubyid_closure'>closure</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -926,11 +968,11 @@
       <pre class="lines">
 
 
-48
-49</pre>
+65
+66</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_disconnect'>disconnect</span><span class='lparen'>(</span><span class='id identifier rubyid_closure'>closure</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1009,11 +1051,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+73
+74</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 73</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_disconnect_key'>disconnect_key</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_key'>accel_key</span><span class='comma'>,</span><span class='id identifier rubyid_accel_mods'>accel_mods</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1111,11 +1153,11 @@
       <pre class="lines">
 
 
-66
-67</pre>
+83
+84</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 66</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1163,11 +1205,11 @@
       <pre class="lines">
 
 
-72
-73</pre>
+89
+90</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 72</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 89</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_is_locked'>get_is_locked</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1220,11 +1262,11 @@
       <pre class="lines">
 
 
-78
-79</pre>
+95
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_modifier_mask'>get_modifier_mask</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1272,11 +1314,11 @@
       <pre class="lines">
 
 
-84
-85</pre>
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 84</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 101</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lock'>lock</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1355,11 +1397,11 @@
       <pre class="lines">
 
 
-92
-93</pre>
+109
+110</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 109</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_query'>query</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_key'>accel_key</span><span class='comma'>,</span><span class='id identifier rubyid_accel_mods'>accel_mods</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1407,11 +1449,11 @@
       <pre class="lines">
 
 
-98
-99</pre>
+115
+116</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelgroup.rb', line 115</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unlock'>unlock</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1425,7 +1467,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:06:52 2013 by
+  Generated on Tue Dec 24 15:53:40 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

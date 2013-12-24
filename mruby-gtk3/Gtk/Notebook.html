@@ -109,7 +109,143 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"change-current-page" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"create-window" {|page, x, y| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) page</p>
+</li><li>
+<p>(Integer) x</p>
+</li><li>
+<p>(Integer) y</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="" title="Gtk::Notebook (class)">Notebook</a></span>)</p>
+</li></ul>
+</dd><dt>"focus-tab" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"move-focus-out" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"page-added" {|child, page_num| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) child</p>
+</li><li>
+<p>(Integer) page_num</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"page-removed" {|child, page_num| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) child</p>
+</li><li>
+<p>(Integer) page_num</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"page-reordered" {|child, page_num| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) child</p>
+</li><li>
+<p>(Integer) page_num</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"reorder-tab" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Boolean) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"select-page" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"switch-page" {|page, page_num| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) page</p>
+</li><li>
+<p>(Integer) page_num</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -1274,11 +1410,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+76
+77</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 76</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1365,11 +1501,11 @@
       <pre class="lines">
 
 
-16
-17</pre>
+84
+85</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 84</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_append_page'>append_page</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_tab_label'>tab_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1468,11 +1604,11 @@
       <pre class="lines">
 
 
-25
-26</pre>
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 25</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_append_page_menu'>append_page_menu</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_tab_label'>tab_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_menu_label'>menu_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1540,11 +1676,11 @@
       <pre class="lines">
 
 
-32
-33</pre>
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_action_widget'>get_action_widget</span><span class='lparen'>(</span><span class='id identifier rubyid_pack_type'>pack_type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1592,11 +1728,11 @@
       <pre class="lines">
 
 
-38
-39</pre>
+106
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_current_page'>get_current_page</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1644,11 +1780,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_group_name'>get_group_name</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1711,11 +1847,11 @@
       <pre class="lines">
 
 
-51
-52</pre>
+119
+120</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 119</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_menu_label'>get_menu_label</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1778,11 +1914,11 @@
       <pre class="lines">
 
 
-58
-59</pre>
+126
+127</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 126</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_menu_label_text'>get_menu_label_text</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1830,11 +1966,11 @@
       <pre class="lines">
 
 
-64
-65</pre>
+132
+133</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 64</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 132</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_n_pages'>get_n_pages</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1897,11 +2033,11 @@
       <pre class="lines">
 
 
-71
-72</pre>
+139
+140</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 71</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 139</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_nth_page'>get_nth_page</span><span class='lparen'>(</span><span class='id identifier rubyid_page_num'>page_num</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1949,11 +2085,11 @@
       <pre class="lines">
 
 
-77
-78</pre>
+145
+146</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 145</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_scrollable'>get_scrollable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2001,11 +2137,11 @@
       <pre class="lines">
 
 
-83
-84</pre>
+151
+152</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 83</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 151</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_show_border'>get_show_border</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2053,11 +2189,11 @@
       <pre class="lines">
 
 
-89
-90</pre>
+157
+158</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 89</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 157</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_show_tabs'>get_show_tabs</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2120,11 +2256,11 @@
       <pre class="lines">
 
 
-96
-97</pre>
+164
+165</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 96</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 164</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tab_detachable'>get_tab_detachable</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2172,11 +2308,11 @@
       <pre class="lines">
 
 
-102
-103</pre>
+170
+171</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 102</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 170</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tab_hborder'>get_tab_hborder</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2239,11 +2375,11 @@
       <pre class="lines">
 
 
-109
-110</pre>
+177
+178</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 177</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tab_label'>get_tab_label</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2306,11 +2442,11 @@
       <pre class="lines">
 
 
-116
-117</pre>
+184
+185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tab_label_text'>get_tab_label_text</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2363,11 +2499,11 @@
       <pre class="lines">
 
 
-122
-123</pre>
+190
+191</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 122</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 190</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tab_pos'>get_tab_pos</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2430,11 +2566,11 @@
       <pre class="lines">
 
 
-129
-130</pre>
+197
+198</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 129</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 197</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tab_reorderable'>get_tab_reorderable</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2482,11 +2618,11 @@
       <pre class="lines">
 
 
-135
-136</pre>
+203
+204</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 135</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 203</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tab_vborder'>get_tab_vborder</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2578,11 +2714,11 @@
       <pre class="lines">
 
 
-144
-145</pre>
+212
+213</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 144</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 212</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_page'>insert_page</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_position'>position</span><span class='comma'>,</span><span class='id identifier rubyid_tab_label'>tab_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2692,11 +2828,11 @@
       <pre class="lines">
 
 
-154
-155</pre>
+222
+223</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 154</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 222</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_page_menu'>insert_page_menu</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_position'>position</span><span class='comma'>,</span><span class='id identifier rubyid_tab_label'>tab_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_menu_label'>menu_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2744,11 +2880,11 @@
       <pre class="lines">
 
 
-160
-161</pre>
+228
+229</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 160</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 228</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_next_page'>next_page</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2811,11 +2947,11 @@
       <pre class="lines">
 
 
-167
-168</pre>
+235
+236</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 167</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 235</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_page_num'>page_num</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2863,11 +2999,11 @@
       <pre class="lines">
 
 
-173
-174</pre>
+241
+242</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 173</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 241</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_popup_disable'>popup_disable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2915,11 +3051,11 @@
       <pre class="lines">
 
 
-179
-180</pre>
+247
+248</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 179</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 247</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_popup_enable'>popup_enable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3000,11 +3136,11 @@
       <pre class="lines">
 
 
-187
-188</pre>
+255
+256</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 187</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 255</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_prepend_page'>prepend_page</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_tab_label'>tab_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3103,11 +3239,11 @@
       <pre class="lines">
 
 
-196
-197</pre>
+264
+265</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 196</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 264</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_prepend_page_menu'>prepend_page_menu</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_tab_label'>tab_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_menu_label'>menu_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3155,11 +3291,11 @@
       <pre class="lines">
 
 
-202
-203</pre>
+270
+271</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 202</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 270</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_prev_page'>prev_page</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3222,11 +3358,11 @@
       <pre class="lines">
 
 
-209
-210</pre>
+277
+278</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 209</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 277</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_page'>remove_page</span><span class='lparen'>(</span><span class='id identifier rubyid_page_num'>page_num</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3300,11 +3436,11 @@
       <pre class="lines">
 
 
-217
-218</pre>
+285
+286</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 217</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 285</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reorder_child'>reorder_child</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_position'>position</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3383,11 +3519,11 @@
       <pre class="lines">
 
 
-225
-226</pre>
+293
+294</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 225</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 293</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_action_widget'>set_action_widget</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_pack_type'>pack_type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3450,11 +3586,11 @@
       <pre class="lines">
 
 
-232
-233</pre>
+300
+301</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 232</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 300</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_current_page'>set_current_page</span><span class='lparen'>(</span><span class='id identifier rubyid_page_num'>page_num</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3524,11 +3660,11 @@
       <pre class="lines">
 
 
-239
-240</pre>
+307
+308</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 239</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 307</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_group_name'>set_group_name</span><span class='lparen'>(</span><span class='id identifier rubyid_group_name'>group_name</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3609,11 +3745,11 @@
       <pre class="lines">
 
 
-247
-248</pre>
+315
+316</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 247</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 315</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_menu_label'>set_menu_label</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_menu_label'>menu_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3687,11 +3823,11 @@
       <pre class="lines">
 
 
-255
-256</pre>
+323
+324</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 255</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 323</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_menu_label_text'>set_menu_label_text</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_menu_text'>menu_text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3754,11 +3890,11 @@
       <pre class="lines">
 
 
-262
-263</pre>
+330
+331</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 262</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 330</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_scrollable'>set_scrollable</span><span class='lparen'>(</span><span class='id identifier rubyid_scrollable'>scrollable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3821,11 +3957,11 @@
       <pre class="lines">
 
 
-269
-270</pre>
+337
+338</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 269</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 337</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_show_border'>set_show_border</span><span class='lparen'>(</span><span class='id identifier rubyid_show_border'>show_border</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3888,11 +4024,11 @@
       <pre class="lines">
 
 
-276
-277</pre>
+344
+345</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 276</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 344</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_show_tabs'>set_show_tabs</span><span class='lparen'>(</span><span class='id identifier rubyid_show_tabs'>show_tabs</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3966,11 +4102,11 @@
       <pre class="lines">
 
 
-284
-285</pre>
+352
+353</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 284</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 352</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tab_detachable'>set_tab_detachable</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_detachable'>detachable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4051,11 +4187,11 @@
       <pre class="lines">
 
 
-292
-293</pre>
+360
+361</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 292</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 360</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tab_label'>set_tab_label</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_tab_label'>tab_label</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4129,11 +4265,11 @@
       <pre class="lines">
 
 
-300
-301</pre>
+368
+369</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 300</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 368</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tab_label_text'>set_tab_label_text</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_tab_text'>tab_text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4201,11 +4337,11 @@
       <pre class="lines">
 
 
-307
-308</pre>
+375
+376</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 307</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 375</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tab_pos'>set_tab_pos</span><span class='lparen'>(</span><span class='id identifier rubyid_pos'>pos</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4279,11 +4415,11 @@
       <pre class="lines">
 
 
-315
-316</pre>
+383
+384</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 315</span>
+      <pre class="code"><span class="info file"># File 'gtk_notebook.rb', line 383</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tab_reorderable'>set_tab_reorderable</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_reorderable'>reorderable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4297,7 +4433,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:09:38 2013 by
+  Generated on Tue Dec 24 15:56:31 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

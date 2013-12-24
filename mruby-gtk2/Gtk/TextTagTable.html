@@ -105,7 +105,54 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"tag-added" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="TextTag.html" title="Gtk::TextTag (class)">TextTag</a></span>) object</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"tag-changed" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="TextTag.html" title="Gtk::TextTag (class)">TextTag</a></span>) object</p>
+</li><li>
+<p>(Boolean) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"tag-removed" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="TextTag.html" title="Gtk::TextTag (class)">TextTag</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -333,11 +380,11 @@
       <pre class="lines">
 
 
-7
-8</pre>
+27
+28</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -406,11 +453,11 @@
       <pre class="lines">
 
 
-14
-15</pre>
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add'>add</span><span class='lparen'>(</span><span class='id identifier rubyid_tag'>tag</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -497,11 +544,11 @@
       <pre class="lines">
 
 
-23
-24</pre>
+43
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 43</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_foreach'>foreach</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -549,11 +596,11 @@
       <pre class="lines">
 
 
-29
-30</pre>
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 29</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 49</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_size'>get_size</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -616,11 +663,11 @@
       <pre class="lines">
 
 
-36
-37</pre>
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lookup'>lookup</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -683,11 +730,11 @@
       <pre class="lines">
 
 
-43
-44</pre>
+63
+64</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'gtk_texttagtable.rb', line 63</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='id identifier rubyid_tag'>tag</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -701,7 +748,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:58:59 2013 by
+  Generated on Tue Dec 24 15:45:00 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

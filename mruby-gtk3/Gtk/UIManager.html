@@ -105,7 +105,84 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"actions-changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"add-widget" {|widget| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) widget</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"connect-proxy" {|action, proxy| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Action.html" title="Gtk::Action (class)">Action</a></span>) action</p>
+</li><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) proxy</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"disconnect-proxy" {|action, proxy| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Action.html" title="Gtk::Action (class)">Action</a></span>) action</p>
+</li><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) proxy</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"post-activate" {|action| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Action.html" title="Gtk::Action (class)">Action</a></span>) action</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"pre-activate" {|action| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Action.html" title="Gtk::Action (class)">Action</a></span>) action</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -621,11 +698,11 @@
       <pre class="lines">
 
 
-7
-8</pre>
+44
+45</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -761,11 +838,11 @@
       <pre class="lines">
 
 
-19
-20</pre>
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_ui'>add_ui</span><span class='lparen'>(</span><span class='id identifier rubyid_merge_id'>merge_id</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span><span class='id identifier rubyid_top'>top</span><span class='comma'>,</span><span class='id identifier rubyid_action'>action</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -841,11 +918,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+64
+65</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 64</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_ui_from_file'>add_ui_from_file</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -921,11 +998,11 @@
       <pre class="lines">
 
 
-35
-36</pre>
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 72</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_ui_from_resource'>add_ui_from_resource</span><span class='lparen'>(</span><span class='id identifier rubyid_resource_path'>resource_path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1012,11 +1089,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_ui_from_string'>add_ui_from_string</span><span class='lparen'>(</span><span class='id identifier rubyid_buffer'>buffer</span><span class='comma'>,</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1064,11 +1141,11 @@
       <pre class="lines">
 
 
-50
-51</pre>
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 87</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ensure_update'>ensure_update</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1116,11 +1193,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_accel_group'>get_accel_group</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1183,11 +1260,11 @@
       <pre class="lines">
 
 
-63
-64</pre>
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_action'>get_action</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1235,11 +1312,11 @@
       <pre class="lines">
 
 
-69
-70</pre>
+106
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 69</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_action_groups'>get_action_groups</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1287,11 +1364,11 @@
       <pre class="lines">
 
 
-75
-76</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 75</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_add_tearoffs'>get_add_tearoffs</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1359,11 +1436,11 @@
       <pre class="lines">
 
 
-82
-83</pre>
+119
+120</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 82</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 119</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_toplevels'>get_toplevels</span><span class='lparen'>(</span><span class='id identifier rubyid_types'>types</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1411,11 +1488,11 @@
       <pre class="lines">
 
 
-88
-89</pre>
+125
+126</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 88</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 125</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_ui'>get_ui</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1478,11 +1555,11 @@
       <pre class="lines">
 
 
-95
-96</pre>
+132
+133</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 132</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_widget'>get_widget</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1556,11 +1633,11 @@
       <pre class="lines">
 
 
-103
-104</pre>
+140
+141</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 140</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_action_group'>insert_action_group</span><span class='lparen'>(</span><span class='id identifier rubyid_action_group'>action_group</span><span class='comma'>,</span><span class='id identifier rubyid_pos'>pos</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1608,11 +1685,11 @@
       <pre class="lines">
 
 
-109
-110</pre>
+146
+147</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 146</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_new_merge_id'>new_merge_id</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1675,11 +1752,11 @@
       <pre class="lines">
 
 
-116
-117</pre>
+153
+154</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 153</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_action_group'>remove_action_group</span><span class='lparen'>(</span><span class='id identifier rubyid_action_group'>action_group</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1742,11 +1819,11 @@
       <pre class="lines">
 
 
-123
-124</pre>
+160
+161</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 123</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 160</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_ui'>remove_ui</span><span class='lparen'>(</span><span class='id identifier rubyid_merge_id'>merge_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1809,11 +1886,11 @@
       <pre class="lines">
 
 
-130
-131</pre>
+167
+168</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 130</span>
+      <pre class="code"><span class="info file"># File 'gtk_uimanager.rb', line 167</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_add_tearoffs'>set_add_tearoffs</span><span class='lparen'>(</span><span class='id identifier rubyid_add_tearoffs'>add_tearoffs</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1827,7 +1904,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:11:20 2013 by
+  Generated on Tue Dec 24 15:58:16 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

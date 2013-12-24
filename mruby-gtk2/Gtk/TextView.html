@@ -111,7 +111,172 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"backspace" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"copy-clipboard" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"cut-clipboard" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"delete-from-cursor" {|type, count| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) type</p>
+</li><li>
+<p>(Integer) count</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"insert-at-cursor" {|string| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) string</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"move-cursor" {|step, count, extend_selection| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) step</p>
+</li><li>
+<p>(Integer) count</p>
+</li><li>
+<p>(Boolean) extend_selection</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"move-viewport" {|step, count| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) step</p>
+</li><li>
+<p>(Integer) count</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"page-horizontally" {|count, extend_selection| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) count</p>
+</li><li>
+<p>(Boolean) extend_selection</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"paste-clipboard" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"populate-popup" {|menu| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Menu.html" title="Gtk::Menu (class)">Menu</a></span>) menu</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"preedit-changed" {|preedit| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) preedit</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"select-all" {|select| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) select</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"set-anchor" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"set-scroll-adjustments" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Adjustment.html" title="Gtk::Adjustment (class)">Adjustment</a></span>) object</p>
+</li><li>
+<p>(<span class='object_link'><a href="Adjustment.html" title="Gtk::Adjustment (class)">Adjustment</a></span>) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-cursor-visible" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-overwrite" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -1695,11 +1860,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+97
+98</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 97</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1762,11 +1927,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_buffer'>new_with_buffer</span><span class='lparen'>(</span><span class='id identifier rubyid_buffer'>buffer</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1846,11 +2011,11 @@
       <pre class="lines">
 
 
-23
-24</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_child_at_anchor'>add_child_at_anchor</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_anchor'>anchor</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1951,11 +2116,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+122
+123</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_child_in_window'>add_child_in_window</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_which_window'>which_window</span><span class='comma'>,</span><span class='id identifier rubyid_xpos'>xpos</span><span class='comma'>,</span><span class='id identifier rubyid_ypos'>ypos</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2018,11 +2183,11 @@
       <pre class="lines">
 
 
-40
-41</pre>
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 129</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_backward_display_line'>backward_display_line</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2085,11 +2250,11 @@
       <pre class="lines">
 
 
-47
-48</pre>
+136
+137</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 136</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_backward_display_line_start'>backward_display_line_start</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2179,11 +2344,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+145
+146</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 145</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_buffer_to_window_coords'>buffer_to_window_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_win'>win</span><span class='comma'>,</span><span class='id identifier rubyid_buffer_x'>buffer_x</span><span class='comma'>,</span><span class='id identifier rubyid_buffer_y'>buffer_y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2246,11 +2411,11 @@
       <pre class="lines">
 
 
-63
-64</pre>
+152
+153</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 152</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_forward_display_line'>forward_display_line</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2313,11 +2478,11 @@
       <pre class="lines">
 
 
-70
-71</pre>
+159
+160</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 70</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 159</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_forward_display_line_end'>forward_display_line_end</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2365,11 +2530,11 @@
       <pre class="lines">
 
 
-76
-77</pre>
+165
+166</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 76</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 165</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_accepts_tab'>get_accepts_tab</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2437,11 +2602,11 @@
       <pre class="lines">
 
 
-83
-84</pre>
+172
+173</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 83</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 172</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_border_window_size'>get_border_window_size</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2489,11 +2654,11 @@
       <pre class="lines">
 
 
-89
-90</pre>
+178
+179</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 89</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 178</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_buffer'>get_buffer</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2541,11 +2706,11 @@
       <pre class="lines">
 
 
-95
-96</pre>
+184
+185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_cursor_visible'>get_cursor_visible</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2593,11 +2758,11 @@
       <pre class="lines">
 
 
-101
-102</pre>
+190
+191</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 101</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 190</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_default_attributes'>get_default_attributes</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2645,11 +2810,11 @@
       <pre class="lines">
 
 
-107
-108</pre>
+196
+197</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 107</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 196</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_editable'>get_editable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2697,11 +2862,11 @@
       <pre class="lines">
 
 
-113
-114</pre>
+202
+203</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 202</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hadjustment'>get_hadjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2749,11 +2914,11 @@
       <pre class="lines">
 
 
-119
-120</pre>
+208
+209</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 208</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_indent'>get_indent</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2827,11 +2992,11 @@
       <pre class="lines">
 
 
-127
-128</pre>
+216
+217</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 127</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 216</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_at_location'>get_iter_at_location</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2905,11 +3070,11 @@
       <pre class="lines">
 
 
-135
-136</pre>
+224
+225</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 135</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 224</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_at_position'>get_iter_at_position</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2972,11 +3137,11 @@
       <pre class="lines">
 
 
-142
-143</pre>
+231
+232</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 142</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 231</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_location'>get_iter_location</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3029,11 +3194,11 @@
       <pre class="lines">
 
 
-148
-149</pre>
+237
+238</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 148</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 237</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_justification'>get_justification</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3081,11 +3246,11 @@
       <pre class="lines">
 
 
-154
-155</pre>
+243
+244</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 154</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 243</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_left_margin'>get_left_margin</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3148,11 +3313,11 @@
       <pre class="lines">
 
 
-161
-162</pre>
+250
+251</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 161</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 250</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_line_at_y'>get_line_at_y</span><span class='lparen'>(</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3215,11 +3380,11 @@
       <pre class="lines">
 
 
-168
-169</pre>
+257
+258</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 168</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 257</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_line_yrange'>get_line_yrange</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3267,11 +3432,11 @@
       <pre class="lines">
 
 
-174
-175</pre>
+263
+264</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 174</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 263</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_overwrite'>get_overwrite</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3319,11 +3484,11 @@
       <pre class="lines">
 
 
-180
-181</pre>
+269
+270</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 180</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 269</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_pixels_above_lines'>get_pixels_above_lines</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3371,11 +3536,11 @@
       <pre class="lines">
 
 
-186
-187</pre>
+275
+276</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 186</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 275</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_pixels_below_lines'>get_pixels_below_lines</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3423,11 +3588,11 @@
       <pre class="lines">
 
 
-192
-193</pre>
+281
+282</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 192</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 281</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_pixels_inside_wrap'>get_pixels_inside_wrap</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3475,11 +3640,11 @@
       <pre class="lines">
 
 
-198
-199</pre>
+287
+288</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 198</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 287</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_right_margin'>get_right_margin</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3527,11 +3692,11 @@
       <pre class="lines">
 
 
-204
-205</pre>
+293
+294</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 204</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 293</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tabs'>get_tabs</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3579,11 +3744,11 @@
       <pre class="lines">
 
 
-210
-211</pre>
+299
+300</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 210</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 299</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_vadjustment'>get_vadjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3631,11 +3796,11 @@
       <pre class="lines">
 
 
-216
-217</pre>
+305
+306</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 216</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 305</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_visible_rect'>get_visible_rect</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3703,11 +3868,11 @@
       <pre class="lines">
 
 
-223
-224</pre>
+312
+313</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 223</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 312</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_window'>get_window</span><span class='lparen'>(</span><span class='id identifier rubyid_win'>win</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3775,11 +3940,11 @@
       <pre class="lines">
 
 
-230
-231</pre>
+319
+320</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 230</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 319</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_window_type'>get_window_type</span><span class='lparen'>(</span><span class='id identifier rubyid_window'>window</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3832,11 +3997,11 @@
       <pre class="lines">
 
 
-236
-237</pre>
+325
+326</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 236</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 325</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_wrap_mode'>get_wrap_mode</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3899,11 +4064,11 @@
       <pre class="lines">
 
 
-243
-244</pre>
+332
+333</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 243</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 332</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_im_context_filter_keypress'>im_context_filter_keypress</span><span class='lparen'>(</span><span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3988,11 +4153,11 @@
       <pre class="lines">
 
 
-252
-253</pre>
+341
+342</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 252</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 341</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move_child'>move_child</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_xpos'>xpos</span><span class='comma'>,</span><span class='id identifier rubyid_ypos'>ypos</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4055,11 +4220,11 @@
       <pre class="lines">
 
 
-259
-260</pre>
+348
+349</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 259</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 348</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move_mark_onscreen'>move_mark_onscreen</span><span class='lparen'>(</span><span class='id identifier rubyid_mark'>mark</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4133,11 +4298,11 @@
       <pre class="lines">
 
 
-267
-268</pre>
+356
+357</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 267</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 356</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move_visually'>move_visually</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_count'>count</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4185,11 +4350,11 @@
       <pre class="lines">
 
 
-273
-274</pre>
+362
+363</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 273</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 362</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_place_cursor_onscreen'>place_cursor_onscreen</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4237,11 +4402,11 @@
       <pre class="lines">
 
 
-279
-280</pre>
+368
+369</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 279</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 368</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reset_im_context'>reset_im_context</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4304,11 +4469,11 @@
       <pre class="lines">
 
 
-286
-287</pre>
+375
+376</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 286</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 375</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_scroll_mark_onscreen'>scroll_mark_onscreen</span><span class='lparen'>(</span><span class='id identifier rubyid_mark'>mark</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4415,11 +4580,11 @@
       <pre class="lines">
 
 
-297
-298</pre>
+386
+387</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 297</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 386</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_scroll_to_iter'>scroll_to_iter</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_within_margin'>within_margin</span><span class='comma'>,</span><span class='id identifier rubyid_use_align'>use_align</span><span class='comma'>,</span><span class='id identifier rubyid_xalign'>xalign</span><span class='comma'>,</span><span class='id identifier rubyid_yalign'>yalign</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4526,11 +4691,11 @@
       <pre class="lines">
 
 
-308
-309</pre>
+397
+398</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 308</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 397</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_scroll_to_mark'>scroll_to_mark</span><span class='lparen'>(</span><span class='id identifier rubyid_mark'>mark</span><span class='comma'>,</span><span class='id identifier rubyid_within_margin'>within_margin</span><span class='comma'>,</span><span class='id identifier rubyid_use_align'>use_align</span><span class='comma'>,</span><span class='id identifier rubyid_xalign'>xalign</span><span class='comma'>,</span><span class='id identifier rubyid_yalign'>yalign</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4593,11 +4758,11 @@
       <pre class="lines">
 
 
-315
-316</pre>
+404
+405</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 315</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 404</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_accepts_tab'>set_accepts_tab</span><span class='lparen'>(</span><span class='id identifier rubyid_accepts_tab'>accepts_tab</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4676,11 +4841,11 @@
       <pre class="lines">
 
 
-323
-324</pre>
+412
+413</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 323</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 412</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_border_window_size'>set_border_window_size</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4750,11 +4915,11 @@
       <pre class="lines">
 
 
-330
-331</pre>
+419
+420</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 330</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 419</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_buffer'>set_buffer</span><span class='lparen'>(</span><span class='id identifier rubyid_buffer'>buffer</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4817,11 +4982,11 @@
       <pre class="lines">
 
 
-337
-338</pre>
+426
+427</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 337</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 426</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_cursor_visible'>set_cursor_visible</span><span class='lparen'>(</span><span class='id identifier rubyid_setting'>setting</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4884,11 +5049,11 @@
       <pre class="lines">
 
 
-344
-345</pre>
+433
+434</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 344</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 433</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_editable'>set_editable</span><span class='lparen'>(</span><span class='id identifier rubyid_setting'>setting</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4951,11 +5116,11 @@
       <pre class="lines">
 
 
-351
-352</pre>
+440
+441</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 351</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 440</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_indent'>set_indent</span><span class='lparen'>(</span><span class='id identifier rubyid_indent'>indent</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5023,11 +5188,11 @@
       <pre class="lines">
 
 
-358
-359</pre>
+447
+448</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 358</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 447</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_justification'>set_justification</span><span class='lparen'>(</span><span class='id identifier rubyid_justification'>justification</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5090,11 +5255,11 @@
       <pre class="lines">
 
 
-365
-366</pre>
+454
+455</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 365</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 454</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_left_margin'>set_left_margin</span><span class='lparen'>(</span><span class='id identifier rubyid_left_margin'>left_margin</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5157,11 +5322,11 @@
       <pre class="lines">
 
 
-372
-373</pre>
+461
+462</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 372</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 461</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_overwrite'>set_overwrite</span><span class='lparen'>(</span><span class='id identifier rubyid_overwrite'>overwrite</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5224,11 +5389,11 @@
       <pre class="lines">
 
 
-379
-380</pre>
+468
+469</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 379</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 468</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_pixels_above_lines'>set_pixels_above_lines</span><span class='lparen'>(</span><span class='id identifier rubyid_pixels_above_lines'>pixels_above_lines</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5291,11 +5456,11 @@
       <pre class="lines">
 
 
-386
-387</pre>
+475
+476</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 386</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 475</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_pixels_below_lines'>set_pixels_below_lines</span><span class='lparen'>(</span><span class='id identifier rubyid_pixels_below_lines'>pixels_below_lines</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5358,11 +5523,11 @@
       <pre class="lines">
 
 
-393
-394</pre>
+482
+483</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 393</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 482</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_pixels_inside_wrap'>set_pixels_inside_wrap</span><span class='lparen'>(</span><span class='id identifier rubyid_pixels_inside_wrap'>pixels_inside_wrap</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5425,11 +5590,11 @@
       <pre class="lines">
 
 
-400
-401</pre>
+489
+490</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 400</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 489</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_right_margin'>set_right_margin</span><span class='lparen'>(</span><span class='id identifier rubyid_right_margin'>right_margin</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5492,11 +5657,11 @@
       <pre class="lines">
 
 
-407
-408</pre>
+496
+497</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 407</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 496</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tabs'>set_tabs</span><span class='lparen'>(</span><span class='id identifier rubyid_tabs'>tabs</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5564,11 +5729,11 @@
       <pre class="lines">
 
 
-414
-415</pre>
+503
+504</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 414</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 503</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_wrap_mode'>set_wrap_mode</span><span class='lparen'>(</span><span class='id identifier rubyid_wrap_mode'>wrap_mode</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5631,11 +5796,11 @@
       <pre class="lines">
 
 
-421
-422</pre>
+510
+511</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 421</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 510</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_starts_display_line'>starts_display_line</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5725,11 +5890,11 @@
       <pre class="lines">
 
 
-430
-431</pre>
+519
+520</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 430</span>
+      <pre class="code"><span class="info file"># File 'gtk_textview.rb', line 519</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_window_to_buffer_coords'>window_to_buffer_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_win'>win</span><span class='comma'>,</span><span class='id identifier rubyid_window_x'>window_x</span><span class='comma'>,</span><span class='id identifier rubyid_window_y'>window_y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5743,7 +5908,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:59:03 2013 by
+  Generated on Tue Dec 24 15:45:07 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

@@ -101,7 +101,34 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"changed" {|accel_path, accel_key, accel_mods| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) accel_path</p>
+</li><li>
+<p>(Integer) accel_key</p>
+</li><li>
+<p>(Integer) accel_mods</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -543,11 +570,11 @@
       <pre class="lines">
 
 
-9
-10</pre>
+18
+19</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_add_entry'>add_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_path'>accel_path</span><span class='comma'>,</span><span class='id identifier rubyid_accel_key'>accel_key</span><span class='comma'>,</span><span class='id identifier rubyid_accel_mods'>accel_mods</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -610,11 +637,11 @@
       <pre class="lines">
 
 
-16
-17</pre>
+25
+26</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 25</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_add_filter'>add_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_filter_pattern'>filter_pattern</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -715,11 +742,11 @@
       <pre class="lines">
 
 
-26
-27</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_change_entry'>change_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_path'>accel_path</span><span class='comma'>,</span><span class='id identifier rubyid_accel_key'>accel_key</span><span class='comma'>,</span><span class='id identifier rubyid_accel_mods'>accel_mods</span><span class='comma'>,</span><span class='id identifier rubyid_replace'>replace</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -866,11 +893,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_foreach'>foreach</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1010,11 +1037,11 @@
       <pre class="lines">
 
 
-52
-53</pre>
+61
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 61</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_foreach_unfiltered'>foreach_unfiltered</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1062,11 +1089,11 @@
       <pre class="lines">
 
 
-58
-59</pre>
+67
+68</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 67</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1129,11 +1156,11 @@
       <pre class="lines">
 
 
-65
-66</pre>
+74
+75</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 74</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span><span class='lparen'>(</span><span class='id identifier rubyid_file_name'>file_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1196,11 +1223,11 @@
       <pre class="lines">
 
 
-72
-73</pre>
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 72</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_load_fd'>load_fd</span><span class='lparen'>(</span><span class='id identifier rubyid_fd'>fd</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1263,11 +1290,11 @@
       <pre class="lines">
 
 
-79
-80</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 79</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_load_scanner'>load_scanner</span><span class='lparen'>(</span><span class='id identifier rubyid_scanner'>scanner</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1330,11 +1357,11 @@
       <pre class="lines">
 
 
-86
-87</pre>
+95
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 86</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_lock_path'>lock_path</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_path'>accel_path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1397,11 +1424,11 @@
       <pre class="lines">
 
 
-93
-94</pre>
+102
+103</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 93</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 102</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_lookup_entry'>lookup_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_path'>accel_path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1464,11 +1491,11 @@
       <pre class="lines">
 
 
-100
-101</pre>
+109
+110</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 100</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 109</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span><span class='lparen'>(</span><span class='id identifier rubyid_file_name'>file_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1531,11 +1558,11 @@
       <pre class="lines">
 
 
-107
-108</pre>
+116
+117</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 107</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_save_fd'>save_fd</span><span class='lparen'>(</span><span class='id identifier rubyid_fd'>fd</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1598,11 +1625,11 @@
       <pre class="lines">
 
 
-114
-115</pre>
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 114</span>
+      <pre class="code"><span class="info file"># File 'gtk_accelmap.rb', line 123</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_unlock_path'>unlock_path</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_path'>accel_path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1616,7 +1643,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:06:53 2013 by
+  Generated on Tue Dec 24 15:53:42 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

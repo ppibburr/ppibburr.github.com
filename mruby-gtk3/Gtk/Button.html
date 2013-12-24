@@ -111,7 +111,55 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"activate" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"clicked" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"enter" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"leave" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"pressed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"released" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="ColorButton.html" title="Gtk::ColorButton (class)">ColorButton</a></span>, <span class='object_link'><a href="FontButton.html" title="Gtk::FontButton (class)">FontButton</a></span>, <span class='object_link'><a href="LinkButton.html" title="Gtk::LinkButton (class)">LinkButton</a></span>, <span class='object_link'><a href="LockButton.html" title="Gtk::LockButton (class)">LockButton</a></span>, <span class='object_link'><a href="ScaleButton.html" title="Gtk::ScaleButton (class)">ScaleButton</a></span>, <span class='object_link'><a href="ToggleButton.html" title="Gtk::ToggleButton (class)">ToggleButton</a></span></p>
 </div>
@@ -930,11 +978,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -997,11 +1045,11 @@
       <pre class="lines">
 
 
-17
-18</pre>
+42
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 42</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_from_stock'>new_from_stock</span><span class='lparen'>(</span><span class='id identifier rubyid_stock_id'>stock_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1064,11 +1112,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 49</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_label'>new_with_label</span><span class='lparen'>(</span><span class='id identifier rubyid_label'>label</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1131,11 +1179,11 @@
       <pre class="lines">
 
 
-31
-32</pre>
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_mnemonic'>new_with_mnemonic</span><span class='lparen'>(</span><span class='id identifier rubyid_label'>label</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1189,11 +1237,11 @@
       <pre class="lines">
 
 
-37
-38</pre>
+62
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_clicked'>clicked</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1241,11 +1289,11 @@
       <pre class="lines">
 
 
-43
-44</pre>
+68
+69</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 68</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_enter'>enter</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1293,11 +1341,11 @@
       <pre class="lines">
 
 
-49
-50</pre>
+74
+75</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 74</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_alignment'>get_alignment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1345,11 +1393,11 @@
       <pre class="lines">
 
 
-55
-56</pre>
+80
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 80</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_always_show_image'>get_always_show_image</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1397,11 +1445,11 @@
       <pre class="lines">
 
 
-61
-62</pre>
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 61</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 86</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_event_window'>get_event_window</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1449,11 +1497,11 @@
       <pre class="lines">
 
 
-67
-68</pre>
+92
+93</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 67</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 92</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_focus_on_click'>get_focus_on_click</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1501,11 +1549,11 @@
       <pre class="lines">
 
 
-73
-74</pre>
+98
+99</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 73</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 98</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_image'>get_image</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1558,11 +1606,11 @@
       <pre class="lines">
 
 
-79
-80</pre>
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 79</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_image_position'>get_image_position</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1610,11 +1658,11 @@
       <pre class="lines">
 
 
-85
-86</pre>
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 110</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_label'>get_label</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1667,11 +1715,11 @@
       <pre class="lines">
 
 
-91
-92</pre>
+116
+117</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_relief'>get_relief</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1719,11 +1767,11 @@
       <pre class="lines">
 
 
-97
-98</pre>
+122
+123</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 97</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_use_stock'>get_use_stock</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1771,11 +1819,11 @@
       <pre class="lines">
 
 
-103
-104</pre>
+128
+129</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_use_underline'>get_use_underline</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1823,11 +1871,11 @@
       <pre class="lines">
 
 
-109
-110</pre>
+134
+135</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 134</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_leave'>leave</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1875,11 +1923,11 @@
       <pre class="lines">
 
 
-115
-116</pre>
+140
+141</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 140</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_pressed'>pressed</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1927,11 +1975,11 @@
       <pre class="lines">
 
 
-121
-122</pre>
+146
+147</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 121</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 146</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_released'>released</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2005,11 +2053,11 @@
       <pre class="lines">
 
 
-129
-130</pre>
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 129</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 154</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_alignment'>set_alignment</span><span class='lparen'>(</span><span class='id identifier rubyid_xalign'>xalign</span><span class='comma'>,</span><span class='id identifier rubyid_yalign'>yalign</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2072,11 +2120,11 @@
       <pre class="lines">
 
 
-136
-137</pre>
+161
+162</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 136</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 161</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_always_show_image'>set_always_show_image</span><span class='lparen'>(</span><span class='id identifier rubyid_always_show'>always_show</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2139,11 +2187,11 @@
       <pre class="lines">
 
 
-143
-144</pre>
+168
+169</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 168</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_focus_on_click'>set_focus_on_click</span><span class='lparen'>(</span><span class='id identifier rubyid_focus_on_click'>focus_on_click</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2206,11 +2254,11 @@
       <pre class="lines">
 
 
-150
-151</pre>
+175
+176</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 175</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_image'>set_image</span><span class='lparen'>(</span><span class='id identifier rubyid_image'>image</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2278,11 +2326,11 @@
       <pre class="lines">
 
 
-157
-158</pre>
+182
+183</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 157</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 182</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_image_position'>set_image_position</span><span class='lparen'>(</span><span class='id identifier rubyid_position'>position</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2345,11 +2393,11 @@
       <pre class="lines">
 
 
-164
-165</pre>
+189
+190</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 164</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 189</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_label'>set_label</span><span class='lparen'>(</span><span class='id identifier rubyid_label'>label</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2417,11 +2465,11 @@
       <pre class="lines">
 
 
-171
-172</pre>
+196
+197</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 171</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 196</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_relief'>set_relief</span><span class='lparen'>(</span><span class='id identifier rubyid_newstyle'>newstyle</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2484,11 +2532,11 @@
       <pre class="lines">
 
 
-178
-179</pre>
+203
+204</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 203</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_use_stock'>set_use_stock</span><span class='lparen'>(</span><span class='id identifier rubyid_use_stock'>use_stock</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2551,11 +2599,11 @@
       <pre class="lines">
 
 
-185
-186</pre>
+210
+211</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 185</span>
+      <pre class="code"><span class="info file"># File 'gtk_button.rb', line 210</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_use_underline'>set_use_underline</span><span class='lparen'>(</span><span class='id identifier rubyid_use_underline'>use_underline</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2569,7 +2617,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:07:23 2013 by
+  Generated on Tue Dec 24 15:54:11 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

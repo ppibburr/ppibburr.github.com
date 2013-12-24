@@ -101,7 +101,31 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"realize" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"unrealize" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -414,11 +438,11 @@
       <pre class="lines">
 
 
-6
-7</pre>
+15
+16</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 6</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 15</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -558,11 +582,11 @@
       <pre class="lines">
 
 
-19
-20</pre>
+28
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 28</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_apply_default_background'>apply_default_background</span><span class='lparen'>(</span><span class='id identifier rubyid_cr'>cr</span><span class='comma'>,</span><span class='id identifier rubyid_window'>window</span><span class='comma'>,</span><span class='id identifier rubyid_state_type'>state_type</span><span class='comma'>,</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='comma'>,</span><span class='id identifier rubyid_width'>width</span><span class='comma'>,</span><span class='id identifier rubyid_height'>height</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -610,11 +634,11 @@
       <pre class="lines">
 
 
-25
-26</pre>
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 25</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_copy'>copy</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -662,11 +686,11 @@
       <pre class="lines">
 
 
-31
-32</pre>
+40
+41</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 40</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_detach'>detach</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -751,11 +775,11 @@
       <pre class="lines">
 
 
-40
-41</pre>
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 49</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_style_property'>get_style_property</span><span class='lparen'>(</span><span class='id identifier rubyid_widget_type'>widget_type</span><span class='comma'>,</span><span class='id identifier rubyid_property_name'>property_name</span><span class='comma'>,</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -803,11 +827,11 @@
       <pre class="lines">
 
 
-46
-47</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 46</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_has_context'>has_context</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -870,11 +894,11 @@
       <pre class="lines">
 
 
-53
-54</pre>
+62
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lookup_color'>lookup_color</span><span class='lparen'>(</span><span class='id identifier rubyid_color_name'>color_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -937,11 +961,11 @@
       <pre class="lines">
 
 
-60
-61</pre>
+69
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 60</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 69</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_lookup_icon_set'>lookup_icon_set</span><span class='lparen'>(</span><span class='id identifier rubyid_stock_id'>stock_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1083,11 +1107,11 @@
       <pre class="lines">
 
 
-72
-73</pre>
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 72</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_render_icon'>render_icon</span><span class='lparen'>(</span><span class='id identifier rubyid_source'>source</span><span class='comma'>,</span><span class='id identifier rubyid_direction'>direction</span><span class='comma'>,</span><span class='id identifier rubyid_state'>state</span><span class='comma'>,</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span><span class='id identifier rubyid_widget'>widget</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_detail'>detail</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1166,11 +1190,11 @@
       <pre class="lines">
 
 
-80
-81</pre>
+89
+90</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'gtk_style.rb', line 89</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_background'>set_background</span><span class='lparen'>(</span><span class='id identifier rubyid_window'>window</span><span class='comma'>,</span><span class='id identifier rubyid_state_type'>state_type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1184,7 +1208,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:10:37 2013 by
+  Generated on Tue Dec 24 15:57:31 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

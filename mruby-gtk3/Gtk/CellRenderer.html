@@ -101,7 +101,38 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"editing-canceled" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"editing-started" {|editable, path| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) editable</p>
+</li><li>
+<p>(String) path</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="CellRendererPixbuf.html" title="Gtk::CellRendererPixbuf (class)">CellRendererPixbuf</a></span>, <span class='object_link'><a href="CellRendererProgress.html" title="Gtk::CellRendererProgress (class)">CellRendererProgress</a></span>, <span class='object_link'><a href="CellRendererSpinner.html" title="Gtk::CellRendererSpinner (class)">CellRendererSpinner</a></span>, <span class='object_link'><a href="CellRendererText.html" title="Gtk::CellRendererText (class)">CellRendererText</a></span>, <span class='object_link'><a href="CellRendererToggle.html" title="Gtk::CellRendererToggle (class)">CellRendererToggle</a></span></p>
 </div>
@@ -820,11 +851,11 @@
       <pre class="lines">
 
 
-12
-13</pre>
+24
+25</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 12</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 24</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_activate'>activate</span><span class='lparen'>(</span><span class='id identifier rubyid_event'>event</span><span class='comma'>,</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_background_area'>background_area</span><span class='comma'>,</span><span class='id identifier rubyid_cell_area'>cell_area</span><span class='comma'>,</span><span class='id identifier rubyid_flags'>flags</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -914,11 +945,11 @@
       <pre class="lines">
 
 
-21
-22</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 33</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_aligned_area'>get_aligned_area</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_flags'>flags</span><span class='comma'>,</span><span class='id identifier rubyid_cell_area'>cell_area</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -966,11 +997,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_alignment'>get_alignment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1018,11 +1049,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_fixed_size'>get_fixed_size</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1070,11 +1101,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+51
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 51</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_padding'>get_padding</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1137,11 +1168,11 @@
       <pre class="lines">
 
 
-46
-47</pre>
+58
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 46</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 58</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_preferred_height'>get_preferred_height</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1215,11 +1246,11 @@
       <pre class="lines">
 
 
-54
-55</pre>
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 54</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_preferred_height_for_width'>get_preferred_height_for_width</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_width'>width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1282,11 +1313,11 @@
       <pre class="lines">
 
 
-61
-62</pre>
+73
+74</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 61</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 73</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_preferred_size'>get_preferred_size</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1349,11 +1380,11 @@
       <pre class="lines">
 
 
-68
-69</pre>
+80
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 68</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 80</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_preferred_width'>get_preferred_width</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1427,11 +1458,11 @@
       <pre class="lines">
 
 
-76
-77</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 76</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_preferred_width_for_height'>get_preferred_width_for_height</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_height'>height</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1484,11 +1515,11 @@
       <pre class="lines">
 
 
-82
-83</pre>
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 82</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_request_mode'>get_request_mode</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1536,11 +1567,11 @@
       <pre class="lines">
 
 
-88
-89</pre>
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 88</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_sensitive'>get_sensitive</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1621,11 +1652,11 @@
       <pre class="lines">
 
 
-96
-97</pre>
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 96</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 108</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_size'>get_size</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_cell_area'>cell_area</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1709,11 +1740,11 @@
       <pre class="lines">
 
 
-104
-105</pre>
+116
+117</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 104</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_state'>get_state</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_cell_state'>cell_state</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1761,11 +1792,11 @@
       <pre class="lines">
 
 
-110
-111</pre>
+122
+123</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 110</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_visible'>get_visible</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1813,11 +1844,11 @@
       <pre class="lines">
 
 
-116
-117</pre>
+128
+129</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 116</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_is_activatable'>is_activatable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1929,11 +1960,11 @@
       <pre class="lines">
 
 
-127
-128</pre>
+139
+140</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 127</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 139</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_render'>render</span><span class='lparen'>(</span><span class='id identifier rubyid_cr'>cr</span><span class='comma'>,</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_background_area'>background_area</span><span class='comma'>,</span><span class='id identifier rubyid_cell_area'>cell_area</span><span class='comma'>,</span><span class='id identifier rubyid_flags'>flags</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2007,11 +2038,11 @@
       <pre class="lines">
 
 
-135
-136</pre>
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 135</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 147</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_alignment'>set_alignment</span><span class='lparen'>(</span><span class='id identifier rubyid_xalign'>xalign</span><span class='comma'>,</span><span class='id identifier rubyid_yalign'>yalign</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2085,11 +2116,11 @@
       <pre class="lines">
 
 
-143
-144</pre>
+155
+156</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 155</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_fixed_size'>set_fixed_size</span><span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span><span class='comma'>,</span><span class='id identifier rubyid_height'>height</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2163,11 +2194,11 @@
       <pre class="lines">
 
 
-151
-152</pre>
+163
+164</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 151</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 163</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_padding'>set_padding</span><span class='lparen'>(</span><span class='id identifier rubyid_xpad'>xpad</span><span class='comma'>,</span><span class='id identifier rubyid_ypad'>ypad</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2230,11 +2261,11 @@
       <pre class="lines">
 
 
-158
-159</pre>
+170
+171</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 158</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 170</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_sensitive'>set_sensitive</span><span class='lparen'>(</span><span class='id identifier rubyid_sensitive'>sensitive</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2297,11 +2328,11 @@
       <pre class="lines">
 
 
-165
-166</pre>
+177
+178</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 165</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 177</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_visible'>set_visible</span><span class='lparen'>(</span><span class='id identifier rubyid_visible'>visible</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2424,11 +2455,11 @@
       <pre class="lines">
 
 
-177
-178</pre>
+189
+190</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 177</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 189</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_start_editing'>start_editing</span><span class='lparen'>(</span><span class='id identifier rubyid_event'>event</span><span class='comma'>,</span><span class='id identifier rubyid_widget'>widget</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_background_area'>background_area</span><span class='comma'>,</span><span class='id identifier rubyid_cell_area'>cell_area</span><span class='comma'>,</span><span class='id identifier rubyid_flags'>flags</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2491,11 +2522,11 @@
       <pre class="lines">
 
 
-184
-185</pre>
+196
+197</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 184</span>
+      <pre class="code"><span class="info file"># File 'gtk_cellrenderer.rb', line 196</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_stop_editing'>stop_editing</span><span class='lparen'>(</span><span class='id identifier rubyid_canceled'>canceled</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2509,7 +2540,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:07:29 2013 by
+  Generated on Tue Dec 24 15:54:17 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

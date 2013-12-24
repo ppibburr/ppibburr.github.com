@@ -111,7 +111,188 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"abort-column-resize" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"click-column" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"end-selection" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"extend-selection" {|object, p0, p1| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Float) p0</p>
+</li><li>
+<p>(Boolean) p1</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resize-column" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Integer) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"row-move" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Integer) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"scroll-horizontal" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Float) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"scroll-vertical" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Float) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"select-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"select-row" {|object, p0, p1| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Integer) p0</p>
+</li><li>
+<p>(FFI::Pointer) p1</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"set-scroll-adjustments" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Adjustment.html" title="Gtk::Adjustment (class)">Adjustment</a></span>) object</p>
+</li><li>
+<p>(<span class='object_link'><a href="Adjustment.html" title="Gtk::Adjustment (class)">Adjustment</a></span>) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"start-selection" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-add-mode" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-focus-row" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"undo-selection" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"unselect-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"unselect-row" {|object, p0, p1| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Integer) p0</p>
+</li><li>
+<p>(FFI::Pointer) p1</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="CTree.html" title="Gtk::CTree (class)">CTree</a></span></p>
 </div>
@@ -1834,11 +2015,11 @@
       <pre class="lines">
 
 
-9
-10</pre>
+107
+108</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 107</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1912,11 +2093,11 @@
       <pre class="lines">
 
 
-17
-18</pre>
+115
+116</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 115</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_titles'>new_with_titles</span><span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span><span class='id identifier rubyid_titles'>titles</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1985,11 +2166,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+122
+123</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_append'>append</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2037,11 +2218,11 @@
       <pre class="lines">
 
 
-30
-31</pre>
+128
+129</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_clear'>clear</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2104,11 +2285,11 @@
       <pre class="lines">
 
 
-37
-38</pre>
+135
+136</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 135</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_column_title_active'>column_title_active</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2171,11 +2352,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+142
+143</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 142</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_column_title_passive'>column_title_passive</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2223,11 +2404,11 @@
       <pre class="lines">
 
 
-50
-51</pre>
+148
+149</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 148</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_column_titles_active'>column_titles_active</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2275,11 +2456,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 154</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_column_titles_hide'>column_titles_hide</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2327,11 +2508,11 @@
       <pre class="lines">
 
 
-62
-63</pre>
+160
+161</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 160</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_column_titles_passive'>column_titles_passive</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2379,11 +2560,11 @@
       <pre class="lines">
 
 
-68
-69</pre>
+166
+167</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 68</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 166</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_column_titles_show'>column_titles_show</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2431,11 +2612,11 @@
       <pre class="lines">
 
 
-74
-75</pre>
+172
+173</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 74</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 172</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_columns_autosize'>columns_autosize</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2498,11 +2679,11 @@
       <pre class="lines">
 
 
-81
-82</pre>
+179
+180</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 81</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 179</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_find_row_from_data'>find_row_from_data</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2550,11 +2731,11 @@
       <pre class="lines">
 
 
-87
-88</pre>
+185
+186</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 87</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 185</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_freeze'>freeze</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2633,11 +2814,11 @@
       <pre class="lines">
 
 
-95
-96</pre>
+193
+194</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 193</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_cell_type'>get_cell_type</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2700,11 +2881,11 @@
       <pre class="lines">
 
 
-102
-103</pre>
+200
+201</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 102</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 200</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_column_title'>get_column_title</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2800,11 +2981,11 @@
       <pre class="lines">
 
 
-112
-113</pre>
+210
+211</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 112</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 210</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_pixmap'>get_pixmap</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap'>pixmap</span><span class='comma'>,</span><span class='id identifier rubyid_mask'>mask</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2922,11 +3103,11 @@
       <pre class="lines">
 
 
-124
-125</pre>
+222
+223</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 124</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 222</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_pixtext'>get_pixtext</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_spacing'>spacing</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap'>pixmap</span><span class='comma'>,</span><span class='id identifier rubyid_mask'>mask</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2989,11 +3170,11 @@
       <pre class="lines">
 
 
-131
-132</pre>
+229
+230</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 131</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 229</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_selectable'>get_selectable</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3089,11 +3270,11 @@
       <pre class="lines">
 
 
-141
-142</pre>
+239
+240</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 141</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 239</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_selection_info'>get_selection_info</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='comma'>,</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3178,11 +3359,11 @@
       <pre class="lines">
 
 
-150
-151</pre>
+248
+249</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 248</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_text'>get_text</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3256,11 +3437,11 @@
       <pre class="lines">
 
 
-158
-159</pre>
+256
+257</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 158</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 256</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert'>insert</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3356,11 +3537,11 @@
       <pre class="lines">
 
 
-168
-169</pre>
+266
+267</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 168</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 266</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_moveto'>moveto</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_row_align'>row_align</span><span class='comma'>,</span><span class='id identifier rubyid_col_align'>col_align</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3423,11 +3604,11 @@
       <pre class="lines">
 
 
-175
-176</pre>
+273
+274</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 175</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 273</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_optimal_column_width'>optimal_column_width</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3490,11 +3671,11 @@
       <pre class="lines">
 
 
-182
-183</pre>
+280
+281</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 182</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 280</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_prepend'>prepend</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3557,11 +3738,11 @@
       <pre class="lines">
 
 
-189
-190</pre>
+287
+288</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 189</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 287</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3629,11 +3810,11 @@
       <pre class="lines">
 
 
-196
-197</pre>
+294
+295</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 196</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 294</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_row_is_visible'>row_is_visible</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3707,11 +3888,11 @@
       <pre class="lines">
 
 
-204
-205</pre>
+302
+303</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 204</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 302</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_row_move'>row_move</span><span class='lparen'>(</span><span class='id identifier rubyid_source_row'>source_row</span><span class='comma'>,</span><span class='id identifier rubyid_dest_row'>dest_row</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3759,11 +3940,11 @@
       <pre class="lines">
 
 
-210
-211</pre>
+308
+309</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 210</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 308</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_all'>select_all</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3837,11 +4018,11 @@
       <pre class="lines">
 
 
-218
-219</pre>
+316
+317</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 218</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 316</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_row'>select_row</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3904,11 +4085,11 @@
       <pre class="lines">
 
 
-225
-226</pre>
+323
+324</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 225</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 323</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_auto_sort'>set_auto_sort</span><span class='lparen'>(</span><span class='id identifier rubyid_auto_sort'>auto_sort</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3982,11 +4163,11 @@
       <pre class="lines">
 
 
-233
-234</pre>
+331
+332</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 233</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 331</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_background'>set_background</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_color'>color</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4060,11 +4241,11 @@
       <pre class="lines">
 
 
-241
-242</pre>
+339
+340</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 241</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 339</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_button_actions'>set_button_actions</span><span class='lparen'>(</span><span class='id identifier rubyid_button'>button</span><span class='comma'>,</span><span class='id identifier rubyid_button_actions'>button_actions</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4149,11 +4330,11 @@
       <pre class="lines">
 
 
-250
-251</pre>
+348
+349</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 250</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 348</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_cell_style'>set_cell_style</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_style'>style</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4227,11 +4408,11 @@
       <pre class="lines">
 
 
-258
-259</pre>
+356
+357</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 258</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 356</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_auto_resize'>set_column_auto_resize</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_auto_resize'>auto_resize</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4310,11 +4491,11 @@
       <pre class="lines">
 
 
-266
-267</pre>
+364
+365</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 266</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 364</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_justification'>set_column_justification</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_justification'>justification</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4388,11 +4569,11 @@
       <pre class="lines">
 
 
-274
-275</pre>
+372
+373</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 274</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 372</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_max_width'>set_column_max_width</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_max_width'>max_width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4466,11 +4647,11 @@
       <pre class="lines">
 
 
-282
-283</pre>
+380
+381</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 282</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 380</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_min_width'>set_column_min_width</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_min_width'>min_width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4544,11 +4725,11 @@
       <pre class="lines">
 
 
-290
-291</pre>
+388
+389</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 290</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 388</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_resizeable'>set_column_resizeable</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_resizeable'>resizeable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4622,11 +4803,11 @@
       <pre class="lines">
 
 
-298
-299</pre>
+396
+397</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 298</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 396</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_title'>set_column_title</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_title'>title</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4700,11 +4881,11 @@
       <pre class="lines">
 
 
-306
-307</pre>
+404
+405</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 306</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 404</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_visibility'>set_column_visibility</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_visible'>visible</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4778,11 +4959,11 @@
       <pre class="lines">
 
 
-314
-315</pre>
+412
+413</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 314</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 412</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_widget'>set_column_widget</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_widget'>widget</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4856,11 +5037,11 @@
       <pre class="lines">
 
 
-322
-323</pre>
+420
+421</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 322</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 420</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_width'>set_column_width</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_width'>width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4934,11 +5115,11 @@
       <pre class="lines">
 
 
-330
-331</pre>
+428
+429</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 330</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 428</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_foreground'>set_foreground</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_color'>color</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5001,11 +5182,11 @@
       <pre class="lines">
 
 
-337
-338</pre>
+435
+436</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 337</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 435</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_hadjustment'>set_hadjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5108,11 +5289,11 @@
       <pre class="lines">
 
 
-347
-348</pre>
+445
+446</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 347</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 445</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_pixmap'>set_pixmap</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap'>pixmap</span><span class='comma'>,</span><span class='id identifier rubyid_mask'>mask</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5230,11 +5411,11 @@
       <pre class="lines">
 
 
-359
-360</pre>
+457
+458</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 359</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 457</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_pixtext'>set_pixtext</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_spacing'>spacing</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap'>pixmap</span><span class='comma'>,</span><span class='id identifier rubyid_mask'>mask</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5297,11 +5478,11 @@
       <pre class="lines">
 
 
-366
-367</pre>
+464
+465</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 366</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 464</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_reorderable'>set_reorderable</span><span class='lparen'>(</span><span class='id identifier rubyid_reorderable'>reorderable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5375,11 +5556,11 @@
       <pre class="lines">
 
 
-374
-375</pre>
+472
+473</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 374</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 472</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_row_data'>set_row_data</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5481,11 +5662,11 @@
       <pre class="lines">
 
 
-384
-385</pre>
+482
+483</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 384</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 482</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_row_data_full'>set_row_data_full</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5548,11 +5729,11 @@
       <pre class="lines">
 
 
-391
-392</pre>
+489
+490</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 391</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 489</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_row_height'>set_row_height</span><span class='lparen'>(</span><span class='id identifier rubyid_height'>height</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5626,11 +5807,11 @@
       <pre class="lines">
 
 
-399
-400</pre>
+497
+498</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 399</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 497</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_row_style'>set_row_style</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_style'>style</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5704,11 +5885,11 @@
       <pre class="lines">
 
 
-407
-408</pre>
+505
+506</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 407</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 505</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_selectable'>set_selectable</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_selectable'>selectable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5776,11 +5957,11 @@
       <pre class="lines">
 
 
-414
-415</pre>
+512
+513</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 414</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 512</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_selection_mode'>set_selection_mode</span><span class='lparen'>(</span><span class='id identifier rubyid_mode'>mode</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5848,11 +6029,11 @@
       <pre class="lines">
 
 
-421
-422</pre>
+519
+520</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 421</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 519</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_shadow_type'>set_shadow_type</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5948,11 +6129,11 @@
       <pre class="lines">
 
 
-431
-432</pre>
+529
+530</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 431</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 529</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_shift'>set_shift</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_vertical'>vertical</span><span class='comma'>,</span><span class='id identifier rubyid_horizontal'>horizontal</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6015,11 +6196,11 @@
       <pre class="lines">
 
 
-438
-439</pre>
+536
+537</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 438</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 536</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_sort_column'>set_sort_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6087,11 +6268,11 @@
       <pre class="lines">
 
 
-445
-446</pre>
+543
+544</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 445</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 543</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_sort_type'>set_sort_type</span><span class='lparen'>(</span><span class='id identifier rubyid_sort_type'>sort_type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6176,11 +6357,11 @@
       <pre class="lines">
 
 
-454
-455</pre>
+552
+553</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 454</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 552</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_text'>set_text</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6243,11 +6424,11 @@
       <pre class="lines">
 
 
-461
-462</pre>
+559
+560</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 461</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 559</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_use_drag_icons'>set_use_drag_icons</span><span class='lparen'>(</span><span class='id identifier rubyid_use_icons'>use_icons</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6310,11 +6491,11 @@
       <pre class="lines">
 
 
-468
-469</pre>
+566
+567</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 468</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 566</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_vadjustment'>set_vadjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6362,11 +6543,11 @@
       <pre class="lines">
 
 
-474
-475</pre>
+572
+573</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 474</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 572</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sort'>sort</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6440,11 +6621,11 @@
       <pre class="lines">
 
 
-482
-483</pre>
+580
+581</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 482</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 580</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_swap_rows'>swap_rows</span><span class='lparen'>(</span><span class='id identifier rubyid_row1'>row1</span><span class='comma'>,</span><span class='id identifier rubyid_row2'>row2</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6492,11 +6673,11 @@
       <pre class="lines">
 
 
-488
-489</pre>
+586
+587</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 488</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 586</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_thaw'>thaw</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6544,11 +6725,11 @@
       <pre class="lines">
 
 
-494
-495</pre>
+592
+593</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 494</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 592</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_undo_selection'>undo_selection</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6596,11 +6777,11 @@
       <pre class="lines">
 
 
-500
-501</pre>
+598
+599</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 500</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 598</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unselect_all'>unselect_all</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6674,11 +6855,11 @@
       <pre class="lines">
 
 
-508
-509</pre>
+606
+607</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 508</span>
+      <pre class="code"><span class="info file"># File 'gtk_clist.rb', line 606</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unselect_row'>unselect_row</span><span class='lparen'>(</span><span class='id identifier rubyid_row'>row</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6692,7 +6873,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:55:30 2013 by
+  Generated on Tue Dec 24 15:41:20 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

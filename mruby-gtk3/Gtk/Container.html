@@ -107,7 +107,58 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"add" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"check-resize" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"remove" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"set-focus-child" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="Bin.html" title="Gtk::Bin (class)">Bin</a></span>, <span class='object_link'><a href="Box.html" title="Gtk::Box (class)">Box</a></span>, <span class='object_link'><a href="Fixed.html" title="Gtk::Fixed (class)">Fixed</a></span>, <span class='object_link'><a href="Grid.html" title="Gtk::Grid (class)">Grid</a></span>, <span class='object_link'><a href="IconView.html" title="Gtk::IconView (class)">IconView</a></span>, <span class='object_link'><a href="Layout.html" title="Gtk::Layout (class)">Layout</a></span>, <span class='object_link'><a href="MenuShell.html" title="Gtk::MenuShell (class)">MenuShell</a></span>, <span class='object_link'><a href="Notebook.html" title="Gtk::Notebook (class)">Notebook</a></span>, <span class='object_link'><a href="Paned.html" title="Gtk::Paned (class)">Paned</a></span>, <span class='object_link'><a href="Socket.html" title="Gtk::Socket (class)">Socket</a></span>, <span class='object_link'><a href="Table.html" title="Gtk::Table (class)">Table</a></span>, <span class='object_link'><a href="TextView.html" title="Gtk::TextView (class)">TextView</a></span>, <span class='object_link'><a href="ToolItemGroup.html" title="Gtk::ToolItemGroup (class)">ToolItemGroup</a></span>, <span class='object_link'><a href="ToolPalette.html" title="Gtk::ToolPalette (class)">ToolPalette</a></span>, <span class='object_link'><a href="Toolbar.html" title="Gtk::Toolbar (class)">Toolbar</a></span>, <span class='object_link'><a href="TreeView.html" title="Gtk::TreeView (class)">TreeView</a></span></p>
 </div>
@@ -862,11 +913,11 @@
       <pre class="lines">
 
 
-9
-10</pre>
+32
+33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 32</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add'>add</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -914,11 +965,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+38
+39</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_check_resize'>check_resize</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1003,11 +1054,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+47
+48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_child_get_property'>child_get_property</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_property_name'>property_name</span><span class='comma'>,</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1081,11 +1132,11 @@
       <pre class="lines">
 
 
-32
-33</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_child_notify'>child_notify</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_child_property'>child_property</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1170,11 +1221,11 @@
       <pre class="lines">
 
 
-41
-42</pre>
+64
+65</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 64</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_child_set_property'>child_set_property</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_property_name'>property_name</span><span class='comma'>,</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1222,11 +1273,11 @@
       <pre class="lines">
 
 
-47
-48</pre>
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 70</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_child_type'>child_type</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1313,11 +1364,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 79</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_forall'>forall</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1404,11 +1455,11 @@
       <pre class="lines">
 
 
-65
-66</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_foreach'>foreach</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1456,11 +1507,11 @@
       <pre class="lines">
 
 
-71
-72</pre>
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 71</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_border_width'>get_border_width</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1508,11 +1559,11 @@
       <pre class="lines">
 
 
-77
-78</pre>
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_children'>get_children</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1560,11 +1611,11 @@
       <pre class="lines">
 
 
-83
-84</pre>
+106
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 83</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_focus_chain'>get_focus_chain</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1612,11 +1663,11 @@
       <pre class="lines">
 
 
-89
-90</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 89</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_focus_child'>get_focus_child</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1664,11 +1715,11 @@
       <pre class="lines">
 
 
-95
-96</pre>
+118
+119</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_focus_hadjustment'>get_focus_hadjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1716,11 +1767,11 @@
       <pre class="lines">
 
 
-101
-102</pre>
+124
+125</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 101</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 124</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_focus_vadjustment'>get_focus_vadjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1783,11 +1834,11 @@
       <pre class="lines">
 
 
-108
-109</pre>
+131
+132</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 108</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 131</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_path_for_child'>get_path_for_child</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1840,11 +1891,11 @@
       <pre class="lines">
 
 
-114
-115</pre>
+137
+138</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 114</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 137</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_resize_mode'>get_resize_mode</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1918,11 +1969,11 @@
       <pre class="lines">
 
 
-122
-123</pre>
+145
+146</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 122</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 145</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_propagate_draw'>propagate_draw</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_cr'>cr</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1985,11 +2036,11 @@
       <pre class="lines">
 
 
-129
-130</pre>
+152
+153</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 129</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 152</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2037,11 +2088,11 @@
       <pre class="lines">
 
 
-135
-136</pre>
+158
+159</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 135</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 158</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_resize_children'>resize_children</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2104,11 +2155,11 @@
       <pre class="lines">
 
 
-142
-143</pre>
+165
+166</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 142</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 165</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_border_width'>set_border_width</span><span class='lparen'>(</span><span class='id identifier rubyid_border_width'>border_width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2171,11 +2222,11 @@
       <pre class="lines">
 
 
-149
-150</pre>
+172
+173</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 149</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 172</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_focus_chain'>set_focus_chain</span><span class='lparen'>(</span><span class='id identifier rubyid_focusable_widgets'>focusable_widgets</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2245,11 +2296,11 @@
       <pre class="lines">
 
 
-156
-157</pre>
+179
+180</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 156</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 179</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_focus_child'>set_focus_child</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2312,11 +2363,11 @@
       <pre class="lines">
 
 
-163
-164</pre>
+186
+187</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 163</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 186</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_focus_hadjustment'>set_focus_hadjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2379,11 +2430,11 @@
       <pre class="lines">
 
 
-170
-171</pre>
+193
+194</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 170</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 193</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_focus_vadjustment'>set_focus_vadjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_adjustment'>adjustment</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2446,11 +2497,11 @@
       <pre class="lines">
 
 
-177
-178</pre>
+200
+201</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 177</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 200</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_reallocate_redraws'>set_reallocate_redraws</span><span class='lparen'>(</span><span class='id identifier rubyid_needs_redraws'>needs_redraws</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2518,11 +2569,11 @@
       <pre class="lines">
 
 
-184
-185</pre>
+207
+208</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 184</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 207</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_resize_mode'>set_resize_mode</span><span class='lparen'>(</span><span class='id identifier rubyid_resize_mode'>resize_mode</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2570,11 +2621,11 @@
       <pre class="lines">
 
 
-190
-191</pre>
+213
+214</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 190</span>
+      <pre class="code"><span class="info file"># File 'gtk_container.rb', line 213</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unset_focus_chain'>unset_focus_chain</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2588,7 +2639,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:08:02 2013 by
+  Generated on Tue Dec 24 15:54:51 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

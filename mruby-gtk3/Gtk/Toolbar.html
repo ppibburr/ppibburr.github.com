@@ -109,7 +109,67 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"focus-home-or-end" {|focus_home| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) focus_home</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"orientation-changed" {|orientation| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) orientation</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"popup-context-menu" {|x, y, button| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) x</p>
+</li><li>
+<p>(Integer) y</p>
+</li><li>
+<p>(Integer) button</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"style-changed" {|style| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) style</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -624,11 +684,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+37
+38</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 37</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -708,11 +768,11 @@
       <pre class="lines">
 
 
-18
-19</pre>
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 18</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_drop_index'>get_drop_index</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -760,11 +820,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+51
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 51</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_icon_size'>get_icon_size</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -827,11 +887,11 @@
       <pre class="lines">
 
 
-31
-32</pre>
+58
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 58</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_item_index'>get_item_index</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -879,11 +939,11 @@
       <pre class="lines">
 
 
-37
-38</pre>
+64
+65</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 64</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_n_items'>get_n_items</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -946,11 +1006,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+71
+72</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 71</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_nth_item'>get_nth_item</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1003,11 +1063,11 @@
       <pre class="lines">
 
 
-50
-51</pre>
+77
+78</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 77</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_relief_style'>get_relief_style</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1055,11 +1115,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+83
+84</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_show_arrow'>get_show_arrow</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1112,11 +1172,11 @@
       <pre class="lines">
 
 
-62
-63</pre>
+89
+90</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 89</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_style'>get_style</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1190,11 +1250,11 @@
       <pre class="lines">
 
 
-70
-71</pre>
+97
+98</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 70</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 97</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert'>insert</span><span class='lparen'>(</span><span class='id identifier rubyid_item'>item</span><span class='comma'>,</span><span class='id identifier rubyid_pos'>pos</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1275,11 +1335,11 @@
       <pre class="lines">
 
 
-78
-79</pre>
+105
+106</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 105</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_drop_highlight_item'>set_drop_highlight_item</span><span class='lparen'>(</span><span class='id identifier rubyid_index_'>index_</span><span class='comma'>,</span><span class='id identifier rubyid_tool_item'>tool_item</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1342,11 +1402,11 @@
       <pre class="lines">
 
 
-85
-86</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_icon_size'>set_icon_size</span><span class='lparen'>(</span><span class='id identifier rubyid_icon_size'>icon_size</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1409,11 +1469,11 @@
       <pre class="lines">
 
 
-92
-93</pre>
+119
+120</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 119</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_show_arrow'>set_show_arrow</span><span class='lparen'>(</span><span class='id identifier rubyid_show_arrow'>show_arrow</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1481,11 +1541,11 @@
       <pre class="lines">
 
 
-99
-100</pre>
+126
+127</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 99</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 126</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_style'>set_style</span><span class='lparen'>(</span><span class='id identifier rubyid_style'>style</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1533,11 +1593,11 @@
       <pre class="lines">
 
 
-105
-106</pre>
+132
+133</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 132</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unset_icon_size'>unset_icon_size</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1585,11 +1645,11 @@
       <pre class="lines">
 
 
-111
-112</pre>
+138
+139</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 111</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolbar.rb', line 138</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unset_style'>unset_style</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1603,7 +1663,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:10:57 2013 by
+  Generated on Tue Dec 24 15:57:53 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

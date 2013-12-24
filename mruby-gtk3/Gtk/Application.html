@@ -105,7 +105,41 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"window-added" {|window| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Window.html" title="Gtk::Window (class)">Window</a></span>) window</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"window-removed" {|window| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Window.html" title="Gtk::Window (class)">Window</a></span>) window</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -578,11 +612,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+23
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_flags'>flags</span><span class='comma'>,</span><span class='id identifier rubyid_application_id'>application_id</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -680,11 +714,11 @@
       <pre class="lines">
 
 
-19
-20</pre>
+32
+33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 32</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_accelerator'>add_accelerator</span><span class='lparen'>(</span><span class='id identifier rubyid_accelerator'>accelerator</span><span class='comma'>,</span><span class='id identifier rubyid_action_name'>action_name</span><span class='comma'>,</span><span class='id identifier rubyid_parameter'>parameter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -747,11 +781,11 @@
       <pre class="lines">
 
 
-26
-27</pre>
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_window'>add_window</span><span class='lparen'>(</span><span class='id identifier rubyid_window'>window</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -799,11 +833,11 @@
       <pre class="lines">
 
 
-32
-33</pre>
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_active_window'>get_active_window</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -851,11 +885,11 @@
       <pre class="lines">
 
 
-38
-39</pre>
+51
+52</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 51</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_app_menu'>get_app_menu</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -903,11 +937,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+57
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 57</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_menubar'>get_menubar</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -970,11 +1004,11 @@
       <pre class="lines">
 
 
-51
-52</pre>
+64
+65</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 64</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_window_by_id'>get_window_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1022,11 +1056,11 @@
       <pre class="lines">
 
 
-57
-58</pre>
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 57</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 70</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_windows'>get_windows</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1130,11 +1164,11 @@
       <pre class="lines">
 
 
-66
-67</pre>
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 66</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 79</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_inhibit'>inhibit</span><span class='lparen'>(</span><span class='id identifier rubyid_flags'>flags</span><span class='comma'>,</span><span class='id identifier rubyid_window'>window</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_reason'>reason</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1202,11 +1236,11 @@
       <pre class="lines">
 
 
-73
-74</pre>
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 73</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 86</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_is_inhibited'>is_inhibited</span><span class='lparen'>(</span><span class='id identifier rubyid_flags'>flags</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1287,11 +1321,11 @@
       <pre class="lines">
 
 
-81
-82</pre>
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 81</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_accelerator'>remove_accelerator</span><span class='lparen'>(</span><span class='id identifier rubyid_action_name'>action_name</span><span class='comma'>,</span><span class='id identifier rubyid_parameter'>parameter</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1354,11 +1388,11 @@
       <pre class="lines">
 
 
-88
-89</pre>
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 88</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 101</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_window'>remove_window</span><span class='lparen'>(</span><span class='id identifier rubyid_window'>window</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1428,11 +1462,11 @@
       <pre class="lines">
 
 
-95
-96</pre>
+108
+109</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 95</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 108</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_app_menu'>set_app_menu</span><span class='lparen'>(</span><span class='id identifier rubyid_app_menu'>app_menu</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1502,11 +1536,11 @@
       <pre class="lines">
 
 
-102
-103</pre>
+115
+116</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 102</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 115</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_menubar'>set_menubar</span><span class='lparen'>(</span><span class='id identifier rubyid_menubar'>menubar</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1569,11 +1603,11 @@
       <pre class="lines">
 
 
-109
-110</pre>
+122
+123</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'gtk_application.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_uninhibit'>uninhibit</span><span class='lparen'>(</span><span class='id identifier rubyid_cookie'>cookie</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1587,7 +1621,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:07:08 2013 by
+  Generated on Tue Dec 24 15:53:57 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

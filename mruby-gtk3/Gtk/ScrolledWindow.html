@@ -111,7 +111,43 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"move-focus-out" {|direction_type| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) direction_type</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"scroll-child" {|scroll, horizontal| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) scroll</p>
+</li><li>
+<p>(Boolean) horizontal</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -824,11 +860,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+24
+25</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 24</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hadjustment'>hadjustment</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_vadjustment'>vadjustment</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -897,11 +933,11 @@
       <pre class="lines">
 
 
-17
-18</pre>
+31
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_with_viewport'>add_with_viewport</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -949,11 +985,11 @@
       <pre class="lines">
 
 
-23
-24</pre>
+37
+38</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 37</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_capture_button_press'>get_capture_button_press</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1001,11 +1037,11 @@
       <pre class="lines">
 
 
-29
-30</pre>
+43
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 29</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 43</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hadjustment'>get_hadjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1053,11 +1089,11 @@
       <pre class="lines">
 
 
-35
-36</pre>
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 49</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hscrollbar'>get_hscrollbar</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1105,11 +1141,11 @@
       <pre class="lines">
 
 
-41
-42</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_kinetic_scrolling'>get_kinetic_scrolling</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1157,11 +1193,11 @@
       <pre class="lines">
 
 
-47
-48</pre>
+61
+62</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 61</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_min_content_height'>get_min_content_height</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1209,11 +1245,11 @@
       <pre class="lines">
 
 
-53
-54</pre>
+67
+68</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 67</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_min_content_width'>get_min_content_width</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1266,11 +1302,11 @@
       <pre class="lines">
 
 
-59
-60</pre>
+73
+74</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 73</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_placement'>get_placement</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1318,11 +1354,11 @@
       <pre class="lines">
 
 
-65
-66</pre>
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 79</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_policy'>get_policy</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1375,11 +1411,11 @@
       <pre class="lines">
 
 
-71
-72</pre>
+85
+86</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 71</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_shadow_type'>get_shadow_type</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1427,11 +1463,11 @@
       <pre class="lines">
 
 
-77
-78</pre>
+91
+92</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 91</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_vadjustment'>get_vadjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1479,11 +1515,11 @@
       <pre class="lines">
 
 
-83
-84</pre>
+97
+98</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 83</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 97</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_vscrollbar'>get_vscrollbar</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1546,11 +1582,11 @@
       <pre class="lines">
 
 
-90
-91</pre>
+104
+105</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 90</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 104</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_capture_button_press'>set_capture_button_press</span><span class='lparen'>(</span><span class='id identifier rubyid_capture_button_press'>capture_button_press</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1613,11 +1649,11 @@
       <pre class="lines">
 
 
-97
-98</pre>
+111
+112</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 97</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 111</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_hadjustment'>set_hadjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_hadjustment'>hadjustment</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1680,11 +1716,11 @@
       <pre class="lines">
 
 
-104
-105</pre>
+118
+119</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 104</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_kinetic_scrolling'>set_kinetic_scrolling</span><span class='lparen'>(</span><span class='id identifier rubyid_kinetic_scrolling'>kinetic_scrolling</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1747,11 +1783,11 @@
       <pre class="lines">
 
 
-111
-112</pre>
+125
+126</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 111</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 125</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_min_content_height'>set_min_content_height</span><span class='lparen'>(</span><span class='id identifier rubyid_height'>height</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1814,11 +1850,11 @@
       <pre class="lines">
 
 
-118
-119</pre>
+132
+133</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 118</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 132</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_min_content_width'>set_min_content_width</span><span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1886,11 +1922,11 @@
       <pre class="lines">
 
 
-125
-126</pre>
+139
+140</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 139</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_placement'>set_placement</span><span class='lparen'>(</span><span class='id identifier rubyid_window_placement'>window_placement</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1974,11 +2010,11 @@
       <pre class="lines">
 
 
-133
-134</pre>
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 133</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 147</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_policy'>set_policy</span><span class='lparen'>(</span><span class='id identifier rubyid_hscrollbar_policy'>hscrollbar_policy</span><span class='comma'>,</span><span class='id identifier rubyid_vscrollbar_policy'>vscrollbar_policy</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2046,11 +2082,11 @@
       <pre class="lines">
 
 
-140
-141</pre>
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 140</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 154</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_shadow_type'>set_shadow_type</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2113,11 +2149,11 @@
       <pre class="lines">
 
 
-147
-148</pre>
+161
+162</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 147</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 161</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_vadjustment'>set_vadjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_vadjustment'>vadjustment</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2165,11 +2201,11 @@
       <pre class="lines">
 
 
-153
-154</pre>
+167
+168</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 153</span>
+      <pre class="code"><span class="info file"># File 'gtk_scrolledwindow.rb', line 167</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unset_placement'>unset_placement</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2183,7 +2219,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:10:25 2013 by
+  Generated on Tue Dec 24 15:57:20 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

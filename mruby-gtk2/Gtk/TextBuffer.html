@@ -101,7 +101,162 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"apply-tag" {|tag, start, end_| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="TextTag.html" title="Gtk::TextTag (class)">TextTag</a></span>) tag</p>
+</li><li>
+<p>(FFI::Pointer) start</p>
+</li><li>
+<p>(FFI::Pointer) end_</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"begin-user-action" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"delete-range" {|start, end_| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) start</p>
+</li><li>
+<p>(FFI::Pointer) end_</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"end-user-action" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"insert-child-anchor" {|location, anchor| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) location</p>
+</li><li>
+<p>(<span class='object_link'><a href="TextChildAnchor.html" title="Gtk::TextChildAnchor (class)">TextChildAnchor</a></span>) anchor</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"insert-pixbuf" {|location, pixbuf| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) location</p>
+</li><li>
+<p>(GdkPixbuf::Pixbuf) pixbuf</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"insert-text" {|location, text, len| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) location</p>
+</li><li>
+<p>(String) text</p>
+</li><li>
+<p>(Integer) len</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"mark-deleted" {|mark| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="TextMark.html" title="Gtk::TextMark (class)">TextMark</a></span>) mark</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"mark-set" {|location, mark| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) location</p>
+</li><li>
+<p>(<span class='object_link'><a href="TextMark.html" title="Gtk::TextMark (class)">TextMark</a></span>) mark</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"modified-changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"paste-done" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Clipboard.html" title="Gtk::Clipboard (class)">Clipboard</a></span>) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"remove-tag" {|tag, start, end_| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="TextTag.html" title="Gtk::TextTag (class)">TextTag</a></span>) tag</p>
+</li><li>
+<p>(FFI::Pointer) start</p>
+</li><li>
+<p>(FFI::Pointer) end_</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -1876,11 +2031,11 @@
       <pre class="lines">
 
 
-7
-8</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_table'>table</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1960,11 +2115,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+96
+97</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 96</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_mark'>add_mark</span><span class='lparen'>(</span><span class='id identifier rubyid_mark'>mark</span><span class='comma'>,</span><span class='id identifier rubyid_where'>where</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2027,11 +2182,11 @@
       <pre class="lines">
 
 
-22
-23</pre>
+103
+104</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 22</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 103</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_selection_clipboard'>add_selection_clipboard</span><span class='lparen'>(</span><span class='id identifier rubyid_clipboard'>clipboard</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2116,11 +2271,11 @@
       <pre class="lines">
 
 
-31
-32</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_apply_tag'>apply_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_tag'>tag</span><span class='comma'>,</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2205,11 +2360,11 @@
       <pre class="lines">
 
 
-40
-41</pre>
+121
+122</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 40</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 121</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_apply_tag_by_name'>apply_tag_by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2294,11 +2449,11 @@
       <pre class="lines">
 
 
-49
-50</pre>
+130
+131</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 130</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_backspace'>backspace</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_interactive'>interactive</span><span class='comma'>,</span><span class='id identifier rubyid_default_editable'>default_editable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2346,11 +2501,11 @@
       <pre class="lines">
 
 
-55
-56</pre>
+136
+137</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 136</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_begin_user_action'>begin_user_action</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2413,11 +2568,11 @@
       <pre class="lines">
 
 
-62
-63</pre>
+143
+144</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 143</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_copy_clipboard'>copy_clipboard</span><span class='lparen'>(</span><span class='id identifier rubyid_clipboard'>clipboard</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2480,11 +2635,11 @@
       <pre class="lines">
 
 
-69
-70</pre>
+150
+151</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 69</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 150</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_child_anchor'>create_child_anchor</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2576,11 +2731,11 @@
       <pre class="lines">
 
 
-78
-79</pre>
+159
+160</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 159</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_mark'>create_mark</span><span class='lparen'>(</span><span class='id identifier rubyid_where'>where</span><span class='comma'>,</span><span class='id identifier rubyid_left_gravity'>left_gravity</span><span class='comma'>,</span><span class='id identifier rubyid_mark_name'>mark_name</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2654,11 +2809,11 @@
       <pre class="lines">
 
 
-86
-87</pre>
+167
+168</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 86</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 167</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_cut_clipboard'>cut_clipboard</span><span class='lparen'>(</span><span class='id identifier rubyid_clipboard'>clipboard</span><span class='comma'>,</span><span class='id identifier rubyid_default_editable'>default_editable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2732,11 +2887,11 @@
       <pre class="lines">
 
 
-94
-95</pre>
+175
+176</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 94</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 175</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2821,11 +2976,11 @@
       <pre class="lines">
 
 
-103
-104</pre>
+184
+185</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_interactive'>delete_interactive</span><span class='lparen'>(</span><span class='id identifier rubyid_start_iter'>start_iter</span><span class='comma'>,</span><span class='id identifier rubyid_end_iter'>end_iter</span><span class='comma'>,</span><span class='id identifier rubyid_default_editable'>default_editable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2888,11 +3043,11 @@
       <pre class="lines">
 
 
-110
-111</pre>
+191
+192</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 110</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 191</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_mark'>delete_mark</span><span class='lparen'>(</span><span class='id identifier rubyid_mark'>mark</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2955,11 +3110,11 @@
       <pre class="lines">
 
 
-117
-118</pre>
+198
+199</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 117</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 198</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_mark_by_name'>delete_mark_by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3033,11 +3188,11 @@
       <pre class="lines">
 
 
-125
-126</pre>
+206
+207</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 206</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_delete_selection'>delete_selection</span><span class='lparen'>(</span><span class='id identifier rubyid_interactive'>interactive</span><span class='comma'>,</span><span class='id identifier rubyid_default_editable'>default_editable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3157,11 +3312,11 @@
       <pre class="lines">
 
 
-137
-138</pre>
+218
+219</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 137</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 218</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deserialize'>deserialize</span><span class='lparen'>(</span><span class='id identifier rubyid_content_buffer'>content_buffer</span><span class='comma'>,</span><span class='id identifier rubyid_format'>format</span><span class='comma'>,</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3224,11 +3379,11 @@
       <pre class="lines">
 
 
-144
-145</pre>
+225
+226</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 144</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 225</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deserialize_get_can_create_tags'>deserialize_get_can_create_tags</span><span class='lparen'>(</span><span class='id identifier rubyid_format'>format</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3302,11 +3457,11 @@
       <pre class="lines">
 
 
-152
-153</pre>
+233
+234</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 152</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 233</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deserialize_set_can_create_tags'>deserialize_set_can_create_tags</span><span class='lparen'>(</span><span class='id identifier rubyid_format'>format</span><span class='comma'>,</span><span class='id identifier rubyid_can_create_tags'>can_create_tags</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3354,11 +3509,11 @@
       <pre class="lines">
 
 
-158
-159</pre>
+239
+240</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 158</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 239</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_end_user_action'>end_user_action</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3406,11 +3561,11 @@
       <pre class="lines">
 
 
-164
-165</pre>
+245
+246</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 164</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 245</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_bounds'>get_bounds</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3458,11 +3613,11 @@
       <pre class="lines">
 
 
-170
-171</pre>
+251
+252</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 170</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 251</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_char_count'>get_char_count</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3510,11 +3665,11 @@
       <pre class="lines">
 
 
-176
-177</pre>
+257
+258</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 176</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 257</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_copy_target_list'>get_copy_target_list</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3562,11 +3717,11 @@
       <pre class="lines">
 
 
-182
-183</pre>
+263
+264</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 182</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 263</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_deserialize_formats'>get_deserialize_formats</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3614,11 +3769,11 @@
       <pre class="lines">
 
 
-188
-189</pre>
+269
+270</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 269</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_end_iter'>get_end_iter</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3666,11 +3821,11 @@
       <pre class="lines">
 
 
-194
-195</pre>
+275
+276</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 194</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 275</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_has_selection'>get_has_selection</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3718,11 +3873,11 @@
       <pre class="lines">
 
 
-200
-201</pre>
+281
+282</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 200</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 281</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_insert'>get_insert</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3785,11 +3940,11 @@
       <pre class="lines">
 
 
-207
-208</pre>
+288
+289</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 207</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 288</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_at_child_anchor'>get_iter_at_child_anchor</span><span class='lparen'>(</span><span class='id identifier rubyid_anchor'>anchor</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3852,11 +4007,11 @@
       <pre class="lines">
 
 
-214
-215</pre>
+295
+296</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 214</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 295</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_at_line'>get_iter_at_line</span><span class='lparen'>(</span><span class='id identifier rubyid_line_number'>line_number</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3930,11 +4085,11 @@
       <pre class="lines">
 
 
-222
-223</pre>
+303
+304</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 222</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 303</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_at_line_index'>get_iter_at_line_index</span><span class='lparen'>(</span><span class='id identifier rubyid_line_number'>line_number</span><span class='comma'>,</span><span class='id identifier rubyid_byte_index'>byte_index</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4008,11 +4163,11 @@
       <pre class="lines">
 
 
-230
-231</pre>
+311
+312</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 230</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 311</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_at_line_offset'>get_iter_at_line_offset</span><span class='lparen'>(</span><span class='id identifier rubyid_line_number'>line_number</span><span class='comma'>,</span><span class='id identifier rubyid_char_offset'>char_offset</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4075,11 +4230,11 @@
       <pre class="lines">
 
 
-237
-238</pre>
+318
+319</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 237</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 318</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_at_mark'>get_iter_at_mark</span><span class='lparen'>(</span><span class='id identifier rubyid_mark'>mark</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4142,11 +4297,11 @@
       <pre class="lines">
 
 
-244
-245</pre>
+325
+326</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 244</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 325</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_iter_at_offset'>get_iter_at_offset</span><span class='lparen'>(</span><span class='id identifier rubyid_char_offset'>char_offset</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4194,11 +4349,11 @@
       <pre class="lines">
 
 
-250
-251</pre>
+331
+332</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 250</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 331</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_line_count'>get_line_count</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4261,11 +4416,11 @@
       <pre class="lines">
 
 
-257
-258</pre>
+338
+339</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 338</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_mark'>get_mark</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4313,11 +4468,11 @@
       <pre class="lines">
 
 
-263
-264</pre>
+344
+345</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 263</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 344</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_modified'>get_modified</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4365,11 +4520,11 @@
       <pre class="lines">
 
 
-269
-270</pre>
+350
+351</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 269</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 350</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_paste_target_list'>get_paste_target_list</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4417,11 +4572,11 @@
       <pre class="lines">
 
 
-275
-276</pre>
+356
+357</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 275</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 356</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_selection_bound'>get_selection_bound</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4469,11 +4624,11 @@
       <pre class="lines">
 
 
-281
-282</pre>
+362
+363</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 281</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 362</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_selection_bounds'>get_selection_bounds</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4521,11 +4676,11 @@
       <pre class="lines">
 
 
-287
-288</pre>
+368
+369</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 287</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 368</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_serialize_formats'>get_serialize_formats</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4610,11 +4765,11 @@
       <pre class="lines">
 
 
-296
-297</pre>
+377
+378</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 296</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 377</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_slice'>get_slice</span><span class='lparen'>(</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='comma'>,</span><span class='id identifier rubyid_include_hidden_chars'>include_hidden_chars</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4662,11 +4817,11 @@
       <pre class="lines">
 
 
-302
-303</pre>
+383
+384</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 302</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 383</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_start_iter'>get_start_iter</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4714,11 +4869,11 @@
       <pre class="lines">
 
 
-308
-309</pre>
+389
+390</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 308</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 389</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tag_table'>get_tag_table</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4803,11 +4958,11 @@
       <pre class="lines">
 
 
-317
-318</pre>
+398
+399</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 317</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 398</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_text'>get_text</span><span class='lparen'>(</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='comma'>,</span><span class='id identifier rubyid_include_hidden_chars'>include_hidden_chars</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4892,11 +5047,11 @@
       <pre class="lines">
 
 
-326
-327</pre>
+407
+408</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 326</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 407</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert'>insert</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_len'>len</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4970,11 +5125,11 @@
       <pre class="lines">
 
 
-334
-335</pre>
+415
+416</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 334</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 415</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_at_cursor'>insert_at_cursor</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_len'>len</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5048,11 +5203,11 @@
       <pre class="lines">
 
 
-342
-343</pre>
+423
+424</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 342</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 423</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_child_anchor'>insert_child_anchor</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_anchor'>anchor</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5148,11 +5303,11 @@
       <pre class="lines">
 
 
-352
-353</pre>
+433
+434</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 352</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 433</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_interactive'>insert_interactive</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_len'>len</span><span class='comma'>,</span><span class='id identifier rubyid_default_editable'>default_editable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5237,11 +5392,11 @@
       <pre class="lines">
 
 
-361
-362</pre>
+442
+443</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 361</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 442</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_interactive_at_cursor'>insert_interactive_at_cursor</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_len'>len</span><span class='comma'>,</span><span class='id identifier rubyid_default_editable'>default_editable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5315,11 +5470,11 @@
       <pre class="lines">
 
 
-369
-370</pre>
+450
+451</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 369</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 450</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_pixbuf'>insert_pixbuf</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_pixbuf'>pixbuf</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5404,11 +5559,11 @@
       <pre class="lines">
 
 
-378
-379</pre>
+459
+460</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 378</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 459</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_range'>insert_range</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5504,11 +5659,11 @@
       <pre class="lines">
 
 
-388
-389</pre>
+469
+470</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 388</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 469</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_range_interactive'>insert_range_interactive</span><span class='lparen'>(</span><span class='id identifier rubyid_iter'>iter</span><span class='comma'>,</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='comma'>,</span><span class='id identifier rubyid_default_editable'>default_editable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5582,11 +5737,11 @@
       <pre class="lines">
 
 
-396
-397</pre>
+477
+478</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 396</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 477</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move_mark'>move_mark</span><span class='lparen'>(</span><span class='id identifier rubyid_mark'>mark</span><span class='comma'>,</span><span class='id identifier rubyid_where'>where</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5660,11 +5815,11 @@
       <pre class="lines">
 
 
-404
-405</pre>
+485
+486</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 404</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 485</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move_mark_by_name'>move_mark_by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span><span class='id identifier rubyid_where'>where</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5756,11 +5911,11 @@
       <pre class="lines">
 
 
-413
-414</pre>
+494
+495</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 413</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 494</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_paste_clipboard'>paste_clipboard</span><span class='lparen'>(</span><span class='id identifier rubyid_clipboard'>clipboard</span><span class='comma'>,</span><span class='id identifier rubyid_default_editable'>default_editable</span><span class='comma'>,</span><span class='id identifier rubyid_override_location'>override_location</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5823,11 +5978,11 @@
       <pre class="lines">
 
 
-420
-421</pre>
+501
+502</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 420</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 501</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_place_cursor'>place_cursor</span><span class='lparen'>(</span><span class='id identifier rubyid_where'>where</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5973,11 +6128,11 @@
       <pre class="lines">
 
 
-434
-435</pre>
+515
+516</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 434</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 515</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_register_deserialize_format'>register_deserialize_format</span><span class='lparen'>(</span><span class='id identifier rubyid_mime_type'>mime_type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6047,11 +6202,11 @@
       <pre class="lines">
 
 
-441
-442</pre>
+522
+523</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 441</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 522</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_register_deserialize_tagset'>register_deserialize_tagset</span><span class='lparen'>(</span><span class='id identifier rubyid_tagset_name'>tagset_name</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6186,11 +6341,11 @@
       <pre class="lines">
 
 
-454
-455</pre>
+535
+536</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 454</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 535</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_register_serialize_format'>register_serialize_format</span><span class='lparen'>(</span><span class='id identifier rubyid_mime_type'>mime_type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6260,11 +6415,11 @@
       <pre class="lines">
 
 
-461
-462</pre>
+542
+543</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 461</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 542</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_register_serialize_tagset'>register_serialize_tagset</span><span class='lparen'>(</span><span class='id identifier rubyid_tagset_name'>tagset_name</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6338,11 +6493,11 @@
       <pre class="lines">
 
 
-469
-470</pre>
+550
+551</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 469</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 550</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_all_tags'>remove_all_tags</span><span class='lparen'>(</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6405,11 +6560,11 @@
       <pre class="lines">
 
 
-476
-477</pre>
+557
+558</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 476</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 557</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_selection_clipboard'>remove_selection_clipboard</span><span class='lparen'>(</span><span class='id identifier rubyid_clipboard'>clipboard</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6494,11 +6649,11 @@
       <pre class="lines">
 
 
-485
-486</pre>
+566
+567</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 485</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 566</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_tag'>remove_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_tag'>tag</span><span class='comma'>,</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6583,11 +6738,11 @@
       <pre class="lines">
 
 
-494
-495</pre>
+575
+576</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 494</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 575</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_tag_by_name'>remove_tag_by_name</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6661,11 +6816,11 @@
       <pre class="lines">
 
 
-502
-503</pre>
+583
+584</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 502</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 583</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_range'>select_range</span><span class='lparen'>(</span><span class='id identifier rubyid_ins'>ins</span><span class='comma'>,</span><span class='id identifier rubyid_bound'>bound</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6761,11 +6916,11 @@
       <pre class="lines">
 
 
-512
-513</pre>
+593
+594</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 512</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 593</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_serialize'>serialize</span><span class='lparen'>(</span><span class='id identifier rubyid_content_buffer'>content_buffer</span><span class='comma'>,</span><span class='id identifier rubyid_format'>format</span><span class='comma'>,</span><span class='id identifier rubyid_start'>start</span><span class='comma'>,</span><span class='id identifier rubyid_end_'>end_</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6828,11 +6983,11 @@
       <pre class="lines">
 
 
-519
-520</pre>
+600
+601</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 519</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 600</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_modified'>set_modified</span><span class='lparen'>(</span><span class='id identifier rubyid_setting'>setting</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6906,11 +7061,11 @@
       <pre class="lines">
 
 
-527
-528</pre>
+608
+609</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 527</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 608</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_text'>set_text</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_len'>len</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6973,11 +7128,11 @@
       <pre class="lines">
 
 
-534
-535</pre>
+615
+616</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 534</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 615</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unregister_deserialize_format'>unregister_deserialize_format</span><span class='lparen'>(</span><span class='id identifier rubyid_format'>format</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7040,11 +7195,11 @@
       <pre class="lines">
 
 
-541
-542</pre>
+622
+623</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 541</span>
+      <pre class="code"><span class="info file"># File 'gtk_textbuffer.rb', line 622</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unregister_serialize_format'>unregister_serialize_format</span><span class='lparen'>(</span><span class='id identifier rubyid_format'>format</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7058,7 +7213,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:58:57 2013 by
+  Generated on Tue Dec 24 15:44:59 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

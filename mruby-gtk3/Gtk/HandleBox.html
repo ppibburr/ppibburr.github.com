@@ -111,7 +111,41 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"child-attached" {|widget| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) widget</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"child-detached" {|widget| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Widget.html" title="Gtk::Widget (class)">Widget</a></span>) widget</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -424,11 +458,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+21
+22</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 21</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -482,11 +516,11 @@
       <pre class="lines">
 
 
-14
-15</pre>
+27
+28</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_child_detached'>get_child_detached</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -539,11 +573,11 @@
       <pre class="lines">
 
 
-20
-21</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 33</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_handle_position'>get_handle_position</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -596,11 +630,11 @@
       <pre class="lines">
 
 
-26
-27</pre>
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_shadow_type'>get_shadow_type</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -653,11 +687,11 @@
       <pre class="lines">
 
 
-32
-33</pre>
+45
+46</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 45</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_snap_edge'>get_snap_edge</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -725,11 +759,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+52
+53</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 52</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_handle_position'>set_handle_position</span><span class='lparen'>(</span><span class='id identifier rubyid_position'>position</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -797,11 +831,11 @@
       <pre class="lines">
 
 
-46
-47</pre>
+59
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 46</span>
+      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_shadow_type'>set_shadow_type</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -869,11 +903,11 @@
       <pre class="lines">
 
 
-53
-54</pre>
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'gtk_handlebox.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_snap_edge'>set_snap_edge</span><span class='lparen'>(</span><span class='id identifier rubyid_edge'>edge</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -887,7 +921,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:08:40 2013 by
+  Generated on Tue Dec 24 15:55:31 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

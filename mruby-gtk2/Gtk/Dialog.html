@@ -115,7 +115,36 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"close" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"response" {|response_id| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) response_id</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="AboutDialog.html" title="Gtk::AboutDialog (class)">AboutDialog</a></span>, <span class='object_link'><a href="ColorSelectionDialog.html" title="Gtk::ColorSelectionDialog (class)">ColorSelectionDialog</a></span>, <span class='object_link'><a href="FileChooserDialog.html" title="Gtk::FileChooserDialog (class)">FileChooserDialog</a></span>, <span class='object_link'><a href="FileSelection.html" title="Gtk::FileSelection (class)">FileSelection</a></span>, <span class='object_link'><a href="FontSelectionDialog.html" title="Gtk::FontSelectionDialog (class)">FontSelectionDialog</a></span>, <span class='object_link'><a href="InputDialog.html" title="Gtk::InputDialog (class)">InputDialog</a></span>, <span class='object_link'><a href="MessageDialog.html" title="Gtk::MessageDialog (class)">MessageDialog</a></span>, <span class='object_link'><a href="RecentChooserDialog.html" title="Gtk::RecentChooserDialog (class)">RecentChooserDialog</a></span></p>
 </div>
@@ -599,11 +628,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+19
+20</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 19</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -683,11 +712,11 @@
       <pre class="lines">
 
 
-16
-17</pre>
+27
+28</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_action_widget'>add_action_widget</span><span class='lparen'>(</span><span class='id identifier rubyid_child'>child</span><span class='comma'>,</span><span class='id identifier rubyid_response_id'>response_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -761,11 +790,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_button'>add_button</span><span class='lparen'>(</span><span class='id identifier rubyid_button_text'>button_text</span><span class='comma'>,</span><span class='id identifier rubyid_response_id'>response_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -813,11 +842,11 @@
       <pre class="lines">
 
 
-30
-31</pre>
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_action_area'>get_action_area</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -865,11 +894,11 @@
       <pre class="lines">
 
 
-36
-37</pre>
+47
+48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_content_area'>get_content_area</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -917,11 +946,11 @@
       <pre class="lines">
 
 
-42
-43</pre>
+53
+54</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_has_separator'>get_has_separator</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -984,11 +1013,11 @@
       <pre class="lines">
 
 
-49
-50</pre>
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 60</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_response_for_widget'>get_response_for_widget</span><span class='lparen'>(</span><span class='id identifier rubyid_widget'>widget</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1051,11 +1080,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+67
+68</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 67</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_widget_for_response'>get_widget_for_response</span><span class='lparen'>(</span><span class='id identifier rubyid_response_id'>response_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1118,11 +1147,11 @@
       <pre class="lines">
 
 
-63
-64</pre>
+74
+75</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 74</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_response'>response</span><span class='lparen'>(</span><span class='id identifier rubyid_response_id'>response_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1170,11 +1199,11 @@
       <pre class="lines">
 
 
-69
-70</pre>
+80
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 69</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 80</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_run'>run</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1248,11 +1277,11 @@
       <pre class="lines">
 
 
-77
-78</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_alternative_button_order_from_array'>set_alternative_button_order_from_array</span><span class='lparen'>(</span><span class='id identifier rubyid_n_params'>n_params</span><span class='comma'>,</span><span class='id identifier rubyid_new_order'>new_order</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1315,11 +1344,11 @@
       <pre class="lines">
 
 
-84
-85</pre>
+95
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 84</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_default_response'>set_default_response</span><span class='lparen'>(</span><span class='id identifier rubyid_response_id'>response_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1382,11 +1411,11 @@
       <pre class="lines">
 
 
-91
-92</pre>
+102
+103</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 102</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_has_separator'>set_has_separator</span><span class='lparen'>(</span><span class='id identifier rubyid_setting'>setting</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1460,11 +1489,11 @@
       <pre class="lines">
 
 
-99
-100</pre>
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 99</span>
+      <pre class="code"><span class="info file"># File 'gtk_dialog.rb', line 110</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_response_sensitive'>set_response_sensitive</span><span class='lparen'>(</span><span class='id identifier rubyid_response_id'>response_id</span><span class='comma'>,</span><span class='id identifier rubyid_setting'>setting</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1478,7 +1507,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:56:04 2013 by
+  Generated on Tue Dec 24 15:41:59 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

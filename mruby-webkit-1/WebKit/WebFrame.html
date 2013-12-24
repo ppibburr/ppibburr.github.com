@@ -101,7 +101,150 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"cleared" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"hovering-over-link" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) object</p>
+</li><li>
+<p>(String) p0</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"insecure-content-run" {|security_origin, url| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="SecurityOrigin.html" title="WebKit::SecurityOrigin (class)">SecurityOrigin</a></span>) security_origin</p>
+</li><li>
+<p>(String) url</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"load-committed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"load-done" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-content-length-received" {|web_resource, length_received| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li><li>
+<p>(Integer) length_received</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-load-failed" {|web_resource, error| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li><li>
+<p>(void) error</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-load-finished" {|web_resource| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-request-starting" {|web_resource, request, response| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkRequest.html" title="WebKit::NetworkRequest (class)">NetworkRequest</a></span>) request</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkResponse.html" title="WebKit::NetworkResponse (class)">NetworkResponse</a></span>) response</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"resource-response-received" {|web_resource, response| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="WebResource.html" title="WebKit::WebResource (class)">WebResource</a></span>) web_resource</p>
+</li><li>
+<p>(<span class='object_link'><a href="NetworkResponse.html" title="WebKit::NetworkResponse (class)">NetworkResponse</a></span>) response</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"scrollbars-policy-changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"title-changed" {|title| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(String) title</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -765,11 +908,11 @@
       <pre class="lines">
 
 
-7
-8</pre>
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_web_view'>web_view</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -838,11 +981,11 @@
       <pre class="lines">
 
 
-14
-15</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 88</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_find_frame'>find_frame</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -890,11 +1033,11 @@
       <pre class="lines">
 
 
-20
-21</pre>
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_data_source'>get_data_source</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -942,11 +1085,11 @@
       <pre class="lines">
 
 
-26
-27</pre>
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_dom_document'>get_dom_document</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -999,11 +1142,11 @@
       <pre class="lines">
 
 
-32
-33</pre>
+106
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 106</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_horizontal_scrollbar_policy'>get_horizontal_scrollbar_policy</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1056,11 +1199,11 @@
       <pre class="lines">
 
 
-38
-39</pre>
+112
+113</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 112</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_load_status'>get_load_status</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1108,11 +1251,11 @@
       <pre class="lines">
 
 
-44
-45</pre>
+118
+119</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 118</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_name'>get_name</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1160,11 +1303,11 @@
       <pre class="lines">
 
 
-50
-51</pre>
+124
+125</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 124</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_network_response'>get_network_response</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1212,11 +1355,11 @@
       <pre class="lines">
 
 
-56
-57</pre>
+130
+131</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 130</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_parent'>get_parent</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1264,11 +1407,11 @@
       <pre class="lines">
 
 
-62
-63</pre>
+136
+137</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 62</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 136</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_provisional_data_source'>get_provisional_data_source</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1316,11 +1459,11 @@
       <pre class="lines">
 
 
-68
-69</pre>
+142
+143</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 68</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 142</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_security_origin'>get_security_origin</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1368,11 +1511,11 @@
       <pre class="lines">
 
 
-74
-75</pre>
+148
+149</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 74</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 148</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_title'>get_title</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1420,11 +1563,11 @@
       <pre class="lines">
 
 
-80
-81</pre>
+154
+155</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 154</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_uri'>get_uri</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1477,11 +1620,11 @@
       <pre class="lines">
 
 
-86
-87</pre>
+160
+161</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 86</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 160</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_vertical_scrollbar_policy'>get_vertical_scrollbar_policy</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1529,11 +1672,11 @@
       <pre class="lines">
 
 
-92
-93</pre>
+166
+167</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 166</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_web_view'>get_web_view</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1618,11 +1761,11 @@
       <pre class="lines">
 
 
-101
-102</pre>
+175
+176</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 101</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 175</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_alternate_string'>load_alternate_string</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='comma'>,</span><span class='id identifier rubyid_base_url'>base_url</span><span class='comma'>,</span><span class='id identifier rubyid_unreachable_url'>unreachable_url</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1685,11 +1828,11 @@
       <pre class="lines">
 
 
-108
-109</pre>
+182
+183</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 108</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 182</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_request'>load_request</span><span class='lparen'>(</span><span class='id identifier rubyid_request'>request</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1785,11 +1928,11 @@
       <pre class="lines">
 
 
-118
-119</pre>
+192
+193</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 118</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 192</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_string'>load_string</span><span class='lparen'>(</span><span class='id identifier rubyid_content'>content</span><span class='comma'>,</span><span class='id identifier rubyid_mime_type'>mime_type</span><span class='comma'>,</span><span class='id identifier rubyid_encoding'>encoding</span><span class='comma'>,</span><span class='id identifier rubyid_base_uri'>base_uri</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1852,11 +1995,11 @@
       <pre class="lines">
 
 
-125
-126</pre>
+199
+200</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 199</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_uri'>load_uri</span><span class='lparen'>(</span><span class='id identifier rubyid_uri'>uri</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1904,11 +2047,11 @@
       <pre class="lines">
 
 
-131
-132</pre>
+205
+206</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 131</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 205</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_print'>print</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2005,11 +2148,11 @@
       <pre class="lines">
 
 
-140
-141</pre>
+214
+215</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 140</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 214</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_print_full'>print_full</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span><span class='id identifier rubyid_action'>action</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2057,11 +2200,11 @@
       <pre class="lines">
 
 
-146
-147</pre>
+220
+221</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 146</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 220</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reload'>reload</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2124,11 +2267,11 @@
       <pre class="lines">
 
 
-153
-154</pre>
+227
+228</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 153</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 227</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_replace_selection'>replace_selection</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2176,11 +2319,11 @@
       <pre class="lines">
 
 
-159
-160</pre>
+233
+234</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 159</span>
+      <pre class="code"><span class="info file"># File 'webkit_webframe.rb', line 233</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_stop_loading'>stop_loading</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2194,7 +2337,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:02:18 2013 by
+  Generated on Tue Dec 24 15:48:30 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

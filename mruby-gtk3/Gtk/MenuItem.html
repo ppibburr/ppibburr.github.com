@@ -111,7 +111,65 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"activate" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"activate-item" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"deselect" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"select" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-size-allocate" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-size-request" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(void) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="CheckMenuItem.html" title="Gtk::CheckMenuItem (class)">CheckMenuItem</a></span>, <span class='object_link'><a href="ImageMenuItem.html" title="Gtk::ImageMenuItem (class)">ImageMenuItem</a></span>, <span class='object_link'><a href="SeparatorMenuItem.html" title="Gtk::SeparatorMenuItem (class)">SeparatorMenuItem</a></span>, <span class='object_link'><a href="TearoffMenuItem.html" title="Gtk::TearoffMenuItem (class)">TearoffMenuItem</a></span></p>
 </div>
@@ -738,11 +796,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+39
+40</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 39</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -805,11 +863,11 @@
       <pre class="lines">
 
 
-17
-18</pre>
+46
+47</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 46</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_label'>new_with_label</span><span class='lparen'>(</span><span class='id identifier rubyid_label'>label</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -872,11 +930,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+53
+54</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_mnemonic'>new_with_mnemonic</span><span class='lparen'>(</span><span class='id identifier rubyid_label'>label</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -930,11 +988,11 @@
       <pre class="lines">
 
 
-30
-31</pre>
+59
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_activate'>activate</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -982,11 +1040,11 @@
       <pre class="lines">
 
 
-36
-37</pre>
+65
+66</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_deselect'>deselect</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1034,11 +1092,11 @@
       <pre class="lines">
 
 
-42
-43</pre>
+71
+72</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 71</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_accel_path'>get_accel_path</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1086,11 +1144,11 @@
       <pre class="lines">
 
 
-48
-49</pre>
+77
+78</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 77</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_label'>get_label</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1138,11 +1196,11 @@
       <pre class="lines">
 
 
-54
-55</pre>
+83
+84</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 54</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_reserve_indicator'>get_reserve_indicator</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1190,11 +1248,11 @@
       <pre class="lines">
 
 
-60
-61</pre>
+89
+90</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 60</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 89</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_right_justified'>get_right_justified</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1242,11 +1300,11 @@
       <pre class="lines">
 
 
-66
-67</pre>
+95
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 66</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 95</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_submenu'>get_submenu</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1294,11 +1352,11 @@
       <pre class="lines">
 
 
-72
-73</pre>
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 72</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 101</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_use_underline'>get_use_underline</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1346,11 +1404,11 @@
       <pre class="lines">
 
 
-78
-79</pre>
+107
+108</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 107</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1420,11 +1478,11 @@
       <pre class="lines">
 
 
-85
-86</pre>
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 114</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_accel_path'>set_accel_path</span><span class='lparen'>(</span><span class='id identifier rubyid_accel_path'>accel_path</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1487,11 +1545,11 @@
       <pre class="lines">
 
 
-92
-93</pre>
+121
+122</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 121</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_label'>set_label</span><span class='lparen'>(</span><span class='id identifier rubyid_label'>label</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1554,11 +1612,11 @@
       <pre class="lines">
 
 
-99
-100</pre>
+128
+129</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 99</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_reserve_indicator'>set_reserve_indicator</span><span class='lparen'>(</span><span class='id identifier rubyid_reserve'>reserve</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1621,11 +1679,11 @@
       <pre class="lines">
 
 
-106
-107</pre>
+135
+136</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 106</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 135</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_right_justified'>set_right_justified</span><span class='lparen'>(</span><span class='id identifier rubyid_right_justified'>right_justified</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1695,11 +1753,11 @@
       <pre class="lines">
 
 
-113
-114</pre>
+142
+143</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 113</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 142</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_submenu'>set_submenu</span><span class='lparen'>(</span><span class='id identifier rubyid_submenu'>submenu</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1762,11 +1820,11 @@
       <pre class="lines">
 
 
-120
-121</pre>
+149
+150</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 120</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 149</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_use_underline'>set_use_underline</span><span class='lparen'>(</span><span class='id identifier rubyid_setting'>setting</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1829,11 +1887,11 @@
       <pre class="lines">
 
 
-127
-128</pre>
+156
+157</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 127</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 156</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_toggle_size_allocate'>toggle_size_allocate</span><span class='lparen'>(</span><span class='id identifier rubyid_allocation'>allocation</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1896,11 +1954,11 @@
       <pre class="lines">
 
 
-134
-135</pre>
+163
+164</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 134</span>
+      <pre class="code"><span class="info file"># File 'gtk_menuitem.rb', line 163</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_toggle_size_request'>toggle_size_request</span><span class='lparen'>(</span><span class='id identifier rubyid_requisition'>requisition</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1914,7 +1972,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:09:23 2013 by
+  Generated on Tue Dec 24 15:56:16 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

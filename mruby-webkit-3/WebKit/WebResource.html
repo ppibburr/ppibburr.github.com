@@ -101,7 +101,58 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"content-length-received" {|length_received| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) length_received</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"load-failed" {|error| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(void) error</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"load-finished" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"response-received" {|response| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="NetworkResponse.html" title="WebKit::NetworkResponse (class)">NetworkResponse</a></span>) response</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -388,11 +439,11 @@
       <pre class="lines">
 
 
-12
-13</pre>
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 12</span>
+      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 35</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span><span class='id identifier rubyid_uri'>uri</span><span class='comma'>,</span><span class='id identifier rubyid_mime_type'>mime_type</span><span class='comma'>,</span><span class='id identifier rubyid_encoding'>encoding</span><span class='comma'>,</span><span class='id identifier rubyid_frame_name'>frame_name</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -446,11 +497,11 @@
       <pre class="lines">
 
 
-18
-19</pre>
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 18</span>
+      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 41</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_data'>get_data</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -498,11 +549,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+47
+48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_encoding'>get_encoding</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -550,11 +601,11 @@
       <pre class="lines">
 
 
-30
-31</pre>
+53
+54</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_frame_name'>get_frame_name</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -602,11 +653,11 @@
       <pre class="lines">
 
 
-36
-37</pre>
+59
+60</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_mime_type'>get_mime_type</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -654,11 +705,11 @@
       <pre class="lines">
 
 
-42
-43</pre>
+65
+66</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'webkit_webresource.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_uri'>get_uri</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -672,7 +723,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:04:59 2013 by
+  Generated on Tue Dec 24 15:51:39 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

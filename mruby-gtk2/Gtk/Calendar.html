@@ -109,7 +109,61 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"day-selected" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"day-selected-double-click" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"month-changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"next-month" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"next-year" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"prev-month" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"prev-year" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -625,11 +679,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+37
+38</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 37</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -683,11 +737,11 @@
       <pre class="lines">
 
 
-14
-15</pre>
+43
+44</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 43</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_clear_marks'>clear_marks</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -755,11 +809,11 @@
       <pre class="lines">
 
 
-21
-22</pre>
+50
+51</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_display_options'>display_options</span><span class='lparen'>(</span><span class='id identifier rubyid_flags'>flags</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -807,11 +861,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_freeze'>freeze</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -859,11 +913,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+62
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_date'>get_date</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -911,11 +965,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+68
+69</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 68</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_detail_height_rows'>get_detail_height_rows</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -963,11 +1017,11 @@
       <pre class="lines">
 
 
-45
-46</pre>
+74
+75</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 74</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_detail_width_chars'>get_detail_width_chars</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1020,11 +1074,11 @@
       <pre class="lines">
 
 
-51
-52</pre>
+80
+81</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 51</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 80</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_display_options'>get_display_options</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1087,11 +1141,11 @@
       <pre class="lines">
 
 
-58
-59</pre>
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 87</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_mark_day'>mark_day</span><span class='lparen'>(</span><span class='id identifier rubyid_day'>day</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1154,11 +1208,11 @@
       <pre class="lines">
 
 
-65
-66</pre>
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 94</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_day'>select_day</span><span class='lparen'>(</span><span class='id identifier rubyid_day'>day</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1232,11 +1286,11 @@
       <pre class="lines">
 
 
-73
-74</pre>
+102
+103</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 73</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 102</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_month'>select_month</span><span class='lparen'>(</span><span class='id identifier rubyid_month'>month</span><span class='comma'>,</span><span class='id identifier rubyid_year'>year</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1345,11 +1399,11 @@
       <pre class="lines">
 
 
-84
-85</pre>
+113
+114</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 84</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 113</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_detail_func'>set_detail_func</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1412,11 +1466,11 @@
       <pre class="lines">
 
 
-91
-92</pre>
+120
+121</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 120</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_detail_height_rows'>set_detail_height_rows</span><span class='lparen'>(</span><span class='id identifier rubyid_rows'>rows</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1479,11 +1533,11 @@
       <pre class="lines">
 
 
-98
-99</pre>
+127
+128</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 127</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_detail_width_chars'>set_detail_width_chars</span><span class='lparen'>(</span><span class='id identifier rubyid_chars'>chars</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1551,11 +1605,11 @@
       <pre class="lines">
 
 
-105
-106</pre>
+134
+135</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 134</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_display_options'>set_display_options</span><span class='lparen'>(</span><span class='id identifier rubyid_flags'>flags</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1603,11 +1657,11 @@
       <pre class="lines">
 
 
-111
-112</pre>
+140
+141</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 111</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 140</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_thaw'>thaw</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1670,11 +1724,11 @@
       <pre class="lines">
 
 
-118
-119</pre>
+147
+148</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 118</span>
+      <pre class="code"><span class="info file"># File 'gtk_calendar.rb', line 147</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unmark_day'>unmark_day</span><span class='lparen'>(</span><span class='id identifier rubyid_day'>day</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1688,7 +1742,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:55:14 2013 by
+  Generated on Tue Dec 24 15:41:06 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

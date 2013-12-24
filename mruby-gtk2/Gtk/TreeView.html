@@ -111,7 +111,178 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"columns-changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"cursor-changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"expand-collapse-cursor-row" {|object, p0, p1| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) object</p>
+</li><li>
+<p>(Boolean) p0</p>
+</li><li>
+<p>(Boolean) p1</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"move-cursor" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li><li>
+<p>(Integer) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"row-activated" {|path, column| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) path</p>
+</li><li>
+<p>(<span class='object_link'><a href="TreeViewColumn.html" title="Gtk::TreeViewColumn (class)">TreeViewColumn</a></span>) column</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"row-collapsed" {|iter, path| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) iter</p>
+</li><li>
+<p>(FFI::Pointer) path</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"row-expanded" {|iter, path| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) iter</p>
+</li><li>
+<p>(FFI::Pointer) path</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"select-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"select-cursor-parent" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"select-cursor-row" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Boolean) object</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"set-scroll-adjustments" {|object, p0| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Adjustment.html" title="Gtk::Adjustment (class)">Adjustment</a></span>) object</p>
+</li><li>
+<p>(<span class='object_link'><a href="Adjustment.html" title="Gtk::Adjustment (class)">Adjustment</a></span>) p0</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"start-interactive-search" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"test-collapse-row" {|iter, path| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) iter</p>
+</li><li>
+<p>(FFI::Pointer) path</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"test-expand-row" {|iter, path| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) iter</p>
+</li><li>
+<p>(FFI::Pointer) path</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"toggle-cursor-row" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"unselect-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -2511,11 +2682,11 @@
       <pre class="lines">
 
 
-8
-9</pre>
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2578,11 +2749,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+107
+108</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 107</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_model'>new_with_model</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2651,11 +2822,11 @@
       <pre class="lines">
 
 
-22
-23</pre>
+114
+115</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 22</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 114</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_append_column'>append_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2703,11 +2874,11 @@
       <pre class="lines">
 
 
-28
-29</pre>
+120
+121</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 28</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 120</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_collapse_all'>collapse_all</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2770,11 +2941,11 @@
       <pre class="lines">
 
 
-35
-36</pre>
+127
+128</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 127</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_collapse_row'>collapse_row</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2822,11 +2993,11 @@
       <pre class="lines">
 
 
-41
-42</pre>
+133
+134</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 133</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_columns_autosize'>columns_autosize</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2900,11 +3071,11 @@
       <pre class="lines">
 
 
-49
-50</pre>
+141
+142</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 141</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_convert_bin_window_to_tree_coords'>convert_bin_window_to_tree_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_bx'>bx</span><span class='comma'>,</span><span class='id identifier rubyid_by'>by</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2978,11 +3149,11 @@
       <pre class="lines">
 
 
-57
-58</pre>
+149
+150</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 57</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 149</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_convert_bin_window_to_widget_coords'>convert_bin_window_to_widget_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_bx'>bx</span><span class='comma'>,</span><span class='id identifier rubyid_by'>by</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3056,11 +3227,11 @@
       <pre class="lines">
 
 
-65
-66</pre>
+157
+158</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 157</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_convert_tree_to_bin_window_coords'>convert_tree_to_bin_window_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_tx'>tx</span><span class='comma'>,</span><span class='id identifier rubyid_ty'>ty</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3134,11 +3305,11 @@
       <pre class="lines">
 
 
-73
-74</pre>
+165
+166</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 73</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 165</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_convert_tree_to_widget_coords'>convert_tree_to_widget_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_tx'>tx</span><span class='comma'>,</span><span class='id identifier rubyid_ty'>ty</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3212,11 +3383,11 @@
       <pre class="lines">
 
 
-81
-82</pre>
+173
+174</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 81</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 173</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_convert_widget_to_bin_window_coords'>convert_widget_to_bin_window_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_wx'>wx</span><span class='comma'>,</span><span class='id identifier rubyid_wy'>wy</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3290,11 +3461,11 @@
       <pre class="lines">
 
 
-89
-90</pre>
+181
+182</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 89</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 181</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_convert_widget_to_tree_coords'>convert_widget_to_tree_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_wx'>wx</span><span class='comma'>,</span><span class='id identifier rubyid_wy'>wy</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3357,11 +3528,11 @@
       <pre class="lines">
 
 
-96
-97</pre>
+188
+189</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 96</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 188</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_row_drag_icon'>create_row_drag_icon</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3451,11 +3622,11 @@
       <pre class="lines">
 
 
-105
-106</pre>
+197
+198</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 105</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 197</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_enable_model_drag_dest'>enable_model_drag_dest</span><span class='lparen'>(</span><span class='id identifier rubyid_targets'>targets</span><span class='comma'>,</span><span class='id identifier rubyid_n_targets'>n_targets</span><span class='comma'>,</span><span class='id identifier rubyid_actions'>actions</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3561,11 +3732,11 @@
       <pre class="lines">
 
 
-115
-116</pre>
+207
+208</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 115</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 207</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_enable_model_drag_source'>enable_model_drag_source</span><span class='lparen'>(</span><span class='id identifier rubyid_start_button_mask'>start_button_mask</span><span class='comma'>,</span><span class='id identifier rubyid_targets'>targets</span><span class='comma'>,</span><span class='id identifier rubyid_n_targets'>n_targets</span><span class='comma'>,</span><span class='id identifier rubyid_actions'>actions</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3613,11 +3784,11 @@
       <pre class="lines">
 
 
-121
-122</pre>
+213
+214</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 121</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 213</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_expand_all'>expand_all</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3691,11 +3862,11 @@
       <pre class="lines">
 
 
-129
-130</pre>
+221
+222</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 129</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 221</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_expand_row'>expand_row</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_open_all'>open_all</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3758,11 +3929,11 @@
       <pre class="lines">
 
 
-136
-137</pre>
+228
+229</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 136</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 228</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_expand_to_path'>expand_to_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3850,11 +4021,11 @@
       <pre class="lines">
 
 
-144
-145</pre>
+236
+237</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 144</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 236</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_background_area'>get_background_area</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3902,11 +4073,11 @@
       <pre class="lines">
 
 
-150
-151</pre>
+242
+243</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 242</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_bin_window'>get_bin_window</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3994,11 +4165,11 @@
       <pre class="lines">
 
 
-158
-159</pre>
+250
+251</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 158</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 250</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_cell_area'>get_cell_area</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4061,11 +4232,11 @@
       <pre class="lines">
 
 
-165
-166</pre>
+257
+258</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 165</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 257</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_column'>get_column</span><span class='lparen'>(</span><span class='id identifier rubyid_n'>n</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4113,11 +4284,11 @@
       <pre class="lines">
 
 
-171
-172</pre>
+263
+264</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 171</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 263</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_columns'>get_columns</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4165,11 +4336,11 @@
       <pre class="lines">
 
 
-177
-178</pre>
+269
+270</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 177</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 269</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_cursor'>get_cursor</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4243,11 +4414,11 @@
       <pre class="lines">
 
 
-185
-186</pre>
+277
+278</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 185</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 277</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_dest_row_at_pos'>get_dest_row_at_pos</span><span class='lparen'>(</span><span class='id identifier rubyid_drag_x'>drag_x</span><span class='comma'>,</span><span class='id identifier rubyid_drag_y'>drag_y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4295,11 +4466,11 @@
       <pre class="lines">
 
 
-191
-192</pre>
+283
+284</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 191</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 283</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_drag_dest_row'>get_drag_dest_row</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4347,11 +4518,11 @@
       <pre class="lines">
 
 
-197
-198</pre>
+289
+290</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 197</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 289</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_enable_search'>get_enable_search</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4399,11 +4570,11 @@
       <pre class="lines">
 
 
-203
-204</pre>
+295
+296</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 203</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 295</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_enable_tree_lines'>get_enable_tree_lines</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4451,11 +4622,11 @@
       <pre class="lines">
 
 
-209
-210</pre>
+301
+302</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 209</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 301</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_expander_column'>get_expander_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4503,11 +4674,11 @@
       <pre class="lines">
 
 
-215
-216</pre>
+307
+308</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 215</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 307</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_fixed_height_mode'>get_fixed_height_mode</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4560,11 +4731,11 @@
       <pre class="lines">
 
 
-221
-222</pre>
+313
+314</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 221</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 313</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_grid_lines'>get_grid_lines</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4612,11 +4783,11 @@
       <pre class="lines">
 
 
-227
-228</pre>
+319
+320</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 227</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 319</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hadjustment'>get_hadjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4664,11 +4835,11 @@
       <pre class="lines">
 
 
-233
-234</pre>
+325
+326</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 233</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 325</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_headers_clickable'>get_headers_clickable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4716,11 +4887,11 @@
       <pre class="lines">
 
 
-239
-240</pre>
+331
+332</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 239</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 331</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_headers_visible'>get_headers_visible</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4768,11 +4939,11 @@
       <pre class="lines">
 
 
-245
-246</pre>
+337
+338</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 245</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 337</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hover_expand'>get_hover_expand</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4820,11 +4991,11 @@
       <pre class="lines">
 
 
-251
-252</pre>
+343
+344</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 251</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 343</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_hover_selection'>get_hover_selection</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4872,11 +5043,11 @@
       <pre class="lines">
 
 
-257
-258</pre>
+349
+350</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 349</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_level_indentation'>get_level_indentation</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4924,11 +5095,11 @@
       <pre class="lines">
 
 
-263
-264</pre>
+355
+356</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 263</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 355</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_model'>get_model</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5002,11 +5173,11 @@
       <pre class="lines">
 
 
-271
-272</pre>
+363
+364</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 271</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 363</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_path_at_pos'>get_path_at_pos</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5054,11 +5225,11 @@
       <pre class="lines">
 
 
-277
-278</pre>
+369
+370</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 277</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 369</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_reorderable'>get_reorderable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5106,11 +5277,11 @@
       <pre class="lines">
 
 
-283
-284</pre>
+375
+376</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 283</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 375</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_rubber_banding'>get_rubber_banding</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5158,11 +5329,11 @@
       <pre class="lines">
 
 
-289
-290</pre>
+381
+382</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 289</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 381</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_rules_hint'>get_rules_hint</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5210,11 +5381,11 @@
       <pre class="lines">
 
 
-295
-296</pre>
+387
+388</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 295</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 387</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_search_column'>get_search_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5262,11 +5433,11 @@
       <pre class="lines">
 
 
-301
-302</pre>
+393
+394</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 301</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 393</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_search_entry'>get_search_entry</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5314,11 +5485,11 @@
       <pre class="lines">
 
 
-307
-308</pre>
+399
+400</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 307</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 399</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_selection'>get_selection</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5366,11 +5537,11 @@
       <pre class="lines">
 
 
-313
-314</pre>
+405
+406</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 313</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 405</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_show_expanders'>get_show_expanders</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5418,11 +5589,11 @@
       <pre class="lines">
 
 
-319
-320</pre>
+411
+412</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 319</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 411</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tooltip_column'>get_tooltip_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5507,11 +5678,11 @@
       <pre class="lines">
 
 
-328
-329</pre>
+420
+421</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 328</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 420</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tooltip_context'>get_tooltip_context</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='comma'>,</span><span class='id identifier rubyid_keyboard_tip'>keyboard_tip</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5559,11 +5730,11 @@
       <pre class="lines">
 
 
-334
-335</pre>
+426
+427</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 334</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 426</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_vadjustment'>get_vadjustment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5611,11 +5782,11 @@
       <pre class="lines">
 
 
-340
-341</pre>
+432
+433</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 340</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 432</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_visible_range'>get_visible_range</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5663,11 +5834,11 @@
       <pre class="lines">
 
 
-346
-347</pre>
+438
+439</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 346</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 438</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_visible_rect'>get_visible_rect</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5741,11 +5912,11 @@
       <pre class="lines">
 
 
-354
-355</pre>
+446
+447</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 354</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 446</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_column'>insert_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_position'>position</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5902,11 +6073,11 @@
       <pre class="lines">
 
 
-369
-370</pre>
+461
+462</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 369</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 461</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_column_with_data_func'>insert_column_with_data_func</span><span class='lparen'>(</span><span class='id identifier rubyid_position'>position</span><span class='comma'>,</span><span class='id identifier rubyid_title'>title</span><span class='comma'>,</span><span class='id identifier rubyid_cell'>cell</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5954,11 +6125,11 @@
       <pre class="lines">
 
 
-375
-376</pre>
+467
+468</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 375</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 467</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_is_rubber_banding_active'>is_rubber_banding_active</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6045,11 +6216,11 @@
       <pre class="lines">
 
 
-384
-385</pre>
+476
+477</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 384</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 476</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_map_expanded_rows'>map_expanded_rows</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6130,11 +6301,11 @@
       <pre class="lines">
 
 
-392
-393</pre>
+484
+485</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 392</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 484</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move_column_after'>move_column_after</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_base_column'>base_column</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6197,11 +6368,11 @@
       <pre class="lines">
 
 
-399
-400</pre>
+491
+492</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 399</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 491</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_column'>remove_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6275,11 +6446,11 @@
       <pre class="lines">
 
 
-407
-408</pre>
+499
+500</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 407</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 499</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_row_activated'>row_activated</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6342,11 +6513,11 @@
       <pre class="lines">
 
 
-414
-415</pre>
+506
+507</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 414</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 506</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_row_expanded'>row_expanded</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6467,11 +6638,11 @@
       <pre class="lines">
 
 
-425
-426</pre>
+517
+518</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 425</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 517</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_scroll_to_cell'>scroll_to_cell</span><span class='lparen'>(</span><span class='id identifier rubyid_use_align'>use_align</span><span class='comma'>,</span><span class='id identifier rubyid_row_align'>row_align</span><span class='comma'>,</span><span class='id identifier rubyid_col_align'>col_align</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6545,11 +6716,11 @@
       <pre class="lines">
 
 
-433
-434</pre>
+525
+526</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 433</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 525</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_scroll_to_point'>scroll_to_point</span><span class='lparen'>(</span><span class='id identifier rubyid_tree_x'>tree_x</span><span class='comma'>,</span><span class='id identifier rubyid_tree_y'>tree_y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6669,11 +6840,11 @@
       <pre class="lines">
 
 
-445
-446</pre>
+537
+538</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 445</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 537</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_drag_function'>set_column_drag_function</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6765,11 +6936,11 @@
       <pre class="lines">
 
 
-454
-455</pre>
+546
+547</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 454</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 546</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_cursor'>set_cursor</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_start_editing'>start_editing</span><span class='comma'>,</span><span class='id identifier rubyid_focus_column'>focus_column</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6879,11 +7050,11 @@
       <pre class="lines">
 
 
-464
-465</pre>
+556
+557</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 464</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 556</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_cursor_on_cell'>set_cursor_on_cell</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_start_editing'>start_editing</span><span class='comma'>,</span><span class='id identifier rubyid_focus_column'>focus_column</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_focus_cell'>focus_cell</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6981,11 +7152,11 @@
       <pre class="lines">
 
 
-474
-475</pre>
+566
+567</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 474</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 566</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_destroy_count_func'>set_destroy_count_func</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7071,11 +7242,11 @@
       <pre class="lines">
 
 
-482
-483</pre>
+574
+575</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 482</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 574</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_drag_dest_row'>set_drag_dest_row</span><span class='lparen'>(</span><span class='id identifier rubyid_pos'>pos</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7138,11 +7309,11 @@
       <pre class="lines">
 
 
-489
-490</pre>
+581
+582</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 489</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 581</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_enable_search'>set_enable_search</span><span class='lparen'>(</span><span class='id identifier rubyid_enable_search'>enable_search</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7205,11 +7376,11 @@
       <pre class="lines">
 
 
-496
-497</pre>
+588
+589</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 496</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 588</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_enable_tree_lines'>set_enable_tree_lines</span><span class='lparen'>(</span><span class='id identifier rubyid_enabled'>enabled</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7272,11 +7443,11 @@
       <pre class="lines">
 
 
-503
-504</pre>
+595
+596</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 503</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 595</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_expander_column'>set_expander_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7339,11 +7510,11 @@
       <pre class="lines">
 
 
-510
-511</pre>
+602
+603</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 510</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 602</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_fixed_height_mode'>set_fixed_height_mode</span><span class='lparen'>(</span><span class='id identifier rubyid_enable'>enable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7411,11 +7582,11 @@
       <pre class="lines">
 
 
-517
-518</pre>
+609
+610</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 517</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 609</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_grid_lines'>set_grid_lines</span><span class='lparen'>(</span><span class='id identifier rubyid_grid_lines'>grid_lines</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7485,11 +7656,11 @@
       <pre class="lines">
 
 
-524
-525</pre>
+616
+617</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 524</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 616</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_hadjustment'>set_hadjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_adjustment'>adjustment</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7552,11 +7723,11 @@
       <pre class="lines">
 
 
-531
-532</pre>
+623
+624</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 531</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 623</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_headers_clickable'>set_headers_clickable</span><span class='lparen'>(</span><span class='id identifier rubyid_setting'>setting</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7619,11 +7790,11 @@
       <pre class="lines">
 
 
-538
-539</pre>
+630
+631</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 538</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 630</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_headers_visible'>set_headers_visible</span><span class='lparen'>(</span><span class='id identifier rubyid_headers_visible'>headers_visible</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7686,11 +7857,11 @@
       <pre class="lines">
 
 
-545
-546</pre>
+637
+638</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 545</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 637</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_hover_expand'>set_hover_expand</span><span class='lparen'>(</span><span class='id identifier rubyid_expand'>expand</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7753,11 +7924,11 @@
       <pre class="lines">
 
 
-552
-553</pre>
+644
+645</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 552</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 644</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_hover_selection'>set_hover_selection</span><span class='lparen'>(</span><span class='id identifier rubyid_hover'>hover</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7820,11 +7991,11 @@
       <pre class="lines">
 
 
-559
-560</pre>
+651
+652</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 559</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 651</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_level_indentation'>set_level_indentation</span><span class='lparen'>(</span><span class='id identifier rubyid_indentation'>indentation</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7894,11 +8065,11 @@
       <pre class="lines">
 
 
-566
-567</pre>
+658
+659</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 566</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 658</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_model'>set_model</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -7961,11 +8132,11 @@
       <pre class="lines">
 
 
-573
-574</pre>
+665
+666</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 573</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 665</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_reorderable'>set_reorderable</span><span class='lparen'>(</span><span class='id identifier rubyid_reorderable'>reorderable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8063,11 +8234,11 @@
       <pre class="lines">
 
 
-583
-584</pre>
+675
+676</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 583</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 675</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_row_separator_func'>set_row_separator_func</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8130,11 +8301,11 @@
       <pre class="lines">
 
 
-590
-591</pre>
+682
+683</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 590</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 682</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_rubber_banding'>set_rubber_banding</span><span class='lparen'>(</span><span class='id identifier rubyid_enable'>enable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8197,11 +8368,11 @@
       <pre class="lines">
 
 
-597
-598</pre>
+689
+690</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 597</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 689</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_rules_hint'>set_rules_hint</span><span class='lparen'>(</span><span class='id identifier rubyid_setting'>setting</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8264,11 +8435,11 @@
       <pre class="lines">
 
 
-604
-605</pre>
+696
+697</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 604</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 696</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_search_column'>set_search_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8338,11 +8509,11 @@
       <pre class="lines">
 
 
-611
-612</pre>
+703
+704</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 611</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 703</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_search_entry'>set_search_entry</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8462,11 +8633,11 @@
       <pre class="lines">
 
 
-623
-624</pre>
+715
+716</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 623</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 715</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_search_equal_func'>set_search_equal_func</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8553,11 +8724,11 @@
       <pre class="lines">
 
 
-632
-633</pre>
+724
+725</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 632</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 724</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_search_position_func'>set_search_position_func</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8620,11 +8791,11 @@
       <pre class="lines">
 
 
-639
-640</pre>
+731
+732</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 639</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 731</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_show_expanders'>set_show_expanders</span><span class='lparen'>(</span><span class='id identifier rubyid_enabled'>enabled</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8741,11 +8912,11 @@
       <pre class="lines">
 
 
-649
-650</pre>
+741
+742</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 649</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 741</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_cell'>set_tooltip_cell</span><span class='lparen'>(</span><span class='id identifier rubyid_tooltip'>tooltip</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_cell'>cell</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8808,11 +8979,11 @@
       <pre class="lines">
 
 
-656
-657</pre>
+748
+749</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 656</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 748</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_column'>set_tooltip_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8886,11 +9057,11 @@
       <pre class="lines">
 
 
-664
-665</pre>
+756
+757</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 664</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 756</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_row'>set_tooltip_row</span><span class='lparen'>(</span><span class='id identifier rubyid_tooltip'>tooltip</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -8960,11 +9131,11 @@
       <pre class="lines">
 
 
-671
-672</pre>
+763
+764</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 671</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 763</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_vadjustment'>set_vadjustment</span><span class='lparen'>(</span><span class='id identifier rubyid_adjustment'>adjustment</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -9060,11 +9231,11 @@
       <pre class="lines">
 
 
-681
-682</pre>
+773
+774</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 681</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 773</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_tree_to_widget_coords'>tree_to_widget_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_tx'>tx</span><span class='comma'>,</span><span class='id identifier rubyid_ty'>ty</span><span class='comma'>,</span><span class='id identifier rubyid_wx'>wx</span><span class='comma'>,</span><span class='id identifier rubyid_wy'>wy</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -9112,11 +9283,11 @@
       <pre class="lines">
 
 
-687
-688</pre>
+779
+780</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 687</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 779</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unset_rows_drag_dest'>unset_rows_drag_dest</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -9164,11 +9335,11 @@
       <pre class="lines">
 
 
-693
-694</pre>
+785
+786</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 693</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 785</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unset_rows_drag_source'>unset_rows_drag_source</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -9264,11 +9435,11 @@
       <pre class="lines">
 
 
-703
-704</pre>
+795
+796</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 703</span>
+      <pre class="code"><span class="info file"># File 'gtk_treeview.rb', line 795</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_widget_to_tree_coords'>widget_to_tree_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_wx'>wx</span><span class='comma'>,</span><span class='id identifier rubyid_wy'>wy</span><span class='comma'>,</span><span class='id identifier rubyid_tx'>tx</span><span class='comma'>,</span><span class='id identifier rubyid_ty'>ty</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -9282,7 +9453,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:59:37 2013 by
+  Generated on Tue Dec 24 15:45:38 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

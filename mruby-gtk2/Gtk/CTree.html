@@ -113,7 +113,30 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"change-focus-row-expansion" {|object| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) object</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -1423,11 +1446,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+17
+18</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 17</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span><span class='id identifier rubyid_tree_column'>tree_column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1512,11 +1535,11 @@
       <pre class="lines">
 
 
-19
-20</pre>
+26
+27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 26</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_titles'>new_with_titles</span><span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span><span class='comma'>,</span><span class='id identifier rubyid_tree_column'>tree_column</span><span class='comma'>,</span><span class='id identifier rubyid_titles'>titles</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1585,11 +1608,11 @@
       <pre class="lines">
 
 
-26
-27</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 33</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_collapse'>collapse</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1652,11 +1675,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+40
+41</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 40</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_collapse_recursive'>collapse_recursive</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1730,11 +1753,11 @@
       <pre class="lines">
 
 
-41
-42</pre>
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_collapse_to_depth'>collapse_to_depth</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_depth'>depth</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1797,11 +1820,11 @@
       <pre class="lines">
 
 
-48
-49</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_expand'>expand</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1864,11 +1887,11 @@
       <pre class="lines">
 
 
-55
-56</pre>
+62
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_expand_recursive'>expand_recursive</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1942,11 +1965,11 @@
       <pre class="lines">
 
 
-63
-64</pre>
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 70</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_expand_to_depth'>expand_to_depth</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_depth'>depth</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2020,11 +2043,11 @@
       <pre class="lines">
 
 
-71
-72</pre>
+78
+79</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 71</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 78</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2175,11 +2198,11 @@
       <pre class="lines">
 
 
-86
-87</pre>
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 86</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_node_info'>get_node_info</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_spacing'>spacing</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap_closed'>pixmap_closed</span><span class='comma'>,</span><span class='id identifier rubyid_mask_closed'>mask_closed</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap_opened'>pixmap_opened</span><span class='comma'>,</span><span class='id identifier rubyid_mask_opened'>mask_opened</span><span class='comma'>,</span><span class='id identifier rubyid_is_leaf'>is_leaf</span><span class='comma'>,</span><span class='id identifier rubyid_expanded'>expanded</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2253,11 +2276,11 @@
       <pre class="lines">
 
 
-94
-95</pre>
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 94</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 101</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_is_ancestor'>is_ancestor</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_child'>child</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2331,11 +2354,11 @@
       <pre class="lines">
 
 
-102
-103</pre>
+109
+110</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 102</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 109</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_is_hot_spot'>is_hot_spot</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2398,11 +2421,11 @@
       <pre class="lines">
 
 
-109
-110</pre>
+116
+117</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_is_viewable'>is_viewable</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2501,11 +2524,11 @@
       <pre class="lines">
 
 
-118
-119</pre>
+125
+126</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 118</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 125</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_move'>move</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_new_parent'>new_parent</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_new_sibling'>new_sibling</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2584,11 +2607,11 @@
       <pre class="lines">
 
 
-126
-127</pre>
+133
+134</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 126</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 133</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_get_cell_type'>node_get_cell_type</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2684,11 +2707,11 @@
       <pre class="lines">
 
 
-136
-137</pre>
+143
+144</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 136</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 143</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_get_pixmap'>node_get_pixmap</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap'>pixmap</span><span class='comma'>,</span><span class='id identifier rubyid_mask'>mask</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2806,11 +2829,11 @@
       <pre class="lines">
 
 
-148
-149</pre>
+155
+156</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 148</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 155</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_get_pixtext'>node_get_pixtext</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_spacing'>spacing</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap'>pixmap</span><span class='comma'>,</span><span class='id identifier rubyid_mask'>mask</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2873,11 +2896,11 @@
       <pre class="lines">
 
 
-155
-156</pre>
+162
+163</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 155</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 162</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_get_selectable'>node_get_selectable</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2962,11 +2985,11 @@
       <pre class="lines">
 
 
-164
-165</pre>
+171
+172</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 164</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 171</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_get_text'>node_get_text</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3034,11 +3057,11 @@
       <pre class="lines">
 
 
-171
-172</pre>
+178
+179</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 171</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 178</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_is_visible'>node_is_visible</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3134,11 +3157,11 @@
       <pre class="lines">
 
 
-181
-182</pre>
+188
+189</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 181</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 188</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_moveto'>node_moveto</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_row_align'>row_align</span><span class='comma'>,</span><span class='id identifier rubyid_col_align'>col_align</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3212,11 +3235,11 @@
       <pre class="lines">
 
 
-189
-190</pre>
+196
+197</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 189</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 196</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_background'>node_set_background</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_color'>color</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3301,11 +3324,11 @@
       <pre class="lines">
 
 
-198
-199</pre>
+205
+206</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 198</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 205</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_cell_style'>node_set_cell_style</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_style'>style</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3379,11 +3402,11 @@
       <pre class="lines">
 
 
-206
-207</pre>
+213
+214</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 206</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 213</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_foreground'>node_set_foreground</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_color'>color</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3486,11 +3509,11 @@
       <pre class="lines">
 
 
-216
-217</pre>
+223
+224</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 216</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 223</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_pixmap'>node_set_pixmap</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap'>pixmap</span><span class='comma'>,</span><span class='id identifier rubyid_mask'>mask</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3615,11 +3638,11 @@
       <pre class="lines">
 
 
-228
-229</pre>
+235
+236</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 228</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 235</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_pixtext'>node_set_pixtext</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_spacing'>spacing</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap'>pixmap</span><span class='comma'>,</span><span class='id identifier rubyid_mask'>mask</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3693,11 +3716,11 @@
       <pre class="lines">
 
 
-236
-237</pre>
+243
+244</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 236</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 243</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_row_data'>node_set_row_data</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3799,11 +3822,11 @@
       <pre class="lines">
 
 
-246
-247</pre>
+253
+254</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 246</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 253</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_row_data_full'>node_set_row_data_full</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3877,11 +3900,11 @@
       <pre class="lines">
 
 
-254
-255</pre>
+261
+262</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 254</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 261</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_row_style'>node_set_row_style</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_style'>style</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3955,11 +3978,11 @@
       <pre class="lines">
 
 
-262
-263</pre>
+269
+270</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 262</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 269</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_selectable'>node_set_selectable</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_selectable'>selectable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4055,11 +4078,11 @@
       <pre class="lines">
 
 
-272
-273</pre>
+279
+280</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 272</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 279</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_shift'>node_set_shift</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_vertical'>vertical</span><span class='comma'>,</span><span class='id identifier rubyid_horizontal'>horizontal</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4144,11 +4167,11 @@
       <pre class="lines">
 
 
-281
-282</pre>
+288
+289</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 281</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 288</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_node_set_text'>node_set_text</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_column'>column</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4222,11 +4245,11 @@
       <pre class="lines">
 
 
-289
-290</pre>
+296
+297</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 289</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 296</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_real_select_recursive'>real_select_recursive</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_state'>state</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4289,11 +4312,11 @@
       <pre class="lines">
 
 
-296
-297</pre>
+303
+304</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 296</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 303</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_remove_node'>remove_node</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4356,11 +4379,11 @@
       <pre class="lines">
 
 
-303
-304</pre>
+310
+311</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 303</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 310</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select'>select</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4423,11 +4446,11 @@
       <pre class="lines">
 
 
-310
-311</pre>
+317
+318</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 310</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 317</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_recursive'>select_recursive</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4495,11 +4518,11 @@
       <pre class="lines">
 
 
-317
-318</pre>
+324
+325</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 317</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 324</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_expander_style'>set_expander_style</span><span class='lparen'>(</span><span class='id identifier rubyid_expander_style'>expander_style</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4562,11 +4585,11 @@
       <pre class="lines">
 
 
-324
-325</pre>
+331
+332</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 324</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 331</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_indent'>set_indent</span><span class='lparen'>(</span><span class='id identifier rubyid_indent'>indent</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4634,11 +4657,11 @@
       <pre class="lines">
 
 
-331
-332</pre>
+338
+339</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 331</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 338</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_line_style'>set_line_style</span><span class='lparen'>(</span><span class='id identifier rubyid_line_style'>line_style</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4817,11 +4840,11 @@
       <pre class="lines">
 
 
-346
-347</pre>
+353
+354</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 346</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 353</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_node_info'>set_node_info</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span><span class='id identifier rubyid_spacing'>spacing</span><span class='comma'>,</span><span class='id identifier rubyid_is_leaf'>is_leaf</span><span class='comma'>,</span><span class='id identifier rubyid_expanded'>expanded</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap_closed'>pixmap_closed</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_mask_closed'>mask_closed</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_pixmap_opened'>pixmap_opened</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_mask_opened'>mask_opened</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4884,11 +4907,11 @@
       <pre class="lines">
 
 
-353
-354</pre>
+360
+361</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 353</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 360</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_show_stub'>set_show_stub</span><span class='lparen'>(</span><span class='id identifier rubyid_show_stub'>show_stub</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4951,11 +4974,11 @@
       <pre class="lines">
 
 
-360
-361</pre>
+367
+368</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 360</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 367</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_spacing'>set_spacing</span><span class='lparen'>(</span><span class='id identifier rubyid_spacing'>spacing</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5018,11 +5041,11 @@
       <pre class="lines">
 
 
-367
-368</pre>
+374
+375</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 367</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 374</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sort_node'>sort_node</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5085,11 +5108,11 @@
       <pre class="lines">
 
 
-374
-375</pre>
+381
+382</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 374</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 381</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sort_recursive'>sort_recursive</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5152,11 +5175,11 @@
       <pre class="lines">
 
 
-381
-382</pre>
+388
+389</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 381</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 388</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_toggle_expansion'>toggle_expansion</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5219,11 +5242,11 @@
       <pre class="lines">
 
 
-388
-389</pre>
+395
+396</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 388</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 395</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_toggle_expansion_recursive'>toggle_expansion_recursive</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5286,11 +5309,11 @@
       <pre class="lines">
 
 
-395
-396</pre>
+402
+403</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 395</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 402</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unselect'>unselect</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5353,11 +5376,11 @@
       <pre class="lines">
 
 
-402
-403</pre>
+409
+410</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 402</span>
+      <pre class="code"><span class="info file"># File 'gtk_ctree.rb', line 409</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unselect_recursive'>unselect_recursive</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5371,7 +5394,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:56:00 2013 by
+  Generated on Tue Dec 24 15:41:54 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

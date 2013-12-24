@@ -113,7 +113,46 @@
 </dl>
 <div class="clear"></div>
 
-<div id="subclasses">
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"create-menu-proxy" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"set-tooltip" {|tooltips, tip_text, tip_private| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(<span class='object_link'><a href="Tooltips.html" title="Gtk::Tooltips (class)">Tooltips</a></span>) tooltips</p>
+</li><li>
+<p>(String) tip_text</p>
+</li><li>
+<p>(String) tip_private</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"toolbar-reconfigured" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
   <h2>Direct Known Subclasses</h2>
   <p class="children"><span class='object_link'><a href="SeparatorToolItem.html" title="Gtk::SeparatorToolItem (class)">SeparatorToolItem</a></span>, <span class='object_link'><a href="ToolButton.html" title="Gtk::ToolButton (class)">ToolButton</a></span></p>
 </div>
@@ -956,11 +995,11 @@
       <pre class="lines">
 
 
-9
-10</pre>
+26
+27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 9</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 26</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1019,11 +1058,11 @@
       <pre class="lines">
 
 
-15
-16</pre>
+32
+33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 32</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_ellipsize_mode'>get_ellipsize_mode</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1071,11 +1110,11 @@
       <pre class="lines">
 
 
-21
-22</pre>
+38
+39</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 21</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_expand'>get_expand</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1123,11 +1162,11 @@
       <pre class="lines">
 
 
-27
-28</pre>
+44
+45</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_homogeneous'>get_homogeneous</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1175,11 +1214,11 @@
       <pre class="lines">
 
 
-33
-34</pre>
+50
+51</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 33</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_icon_size'>get_icon_size</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1227,11 +1266,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 56</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_is_important'>get_is_important</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1284,11 +1323,11 @@
       <pre class="lines">
 
 
-45
-46</pre>
+62
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_orientation'>get_orientation</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1351,11 +1390,11 @@
       <pre class="lines">
 
 
-52
-53</pre>
+69
+70</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 69</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_proxy_menu_item'>get_proxy_menu_item</span><span class='lparen'>(</span><span class='id identifier rubyid_menu_item_id'>menu_item_id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1408,11 +1447,11 @@
       <pre class="lines">
 
 
-58
-59</pre>
+75
+76</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 75</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_relief_style'>get_relief_style</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1460,11 +1499,11 @@
       <pre class="lines">
 
 
-64
-65</pre>
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 64</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_text_alignment'>get_text_alignment</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1517,11 +1556,11 @@
       <pre class="lines">
 
 
-70
-71</pre>
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 70</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 87</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_text_orientation'>get_text_orientation</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1569,11 +1608,11 @@
       <pre class="lines">
 
 
-76
-77</pre>
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 76</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_text_size_group'>get_text_size_group</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1626,11 +1665,11 @@
       <pre class="lines">
 
 
-82
-83</pre>
+99
+100</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 82</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 99</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_toolbar_style'>get_toolbar_style</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1678,11 +1717,11 @@
       <pre class="lines">
 
 
-88
-89</pre>
+105
+106</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 88</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 105</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_use_drag_window'>get_use_drag_window</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1730,11 +1769,11 @@
       <pre class="lines">
 
 
-94
-95</pre>
+111
+112</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 94</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 111</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_visible_horizontal'>get_visible_horizontal</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1782,11 +1821,11 @@
       <pre class="lines">
 
 
-100
-101</pre>
+117
+118</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 100</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 117</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_visible_vertical'>get_visible_vertical</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1834,11 +1873,11 @@
       <pre class="lines">
 
 
-106
-107</pre>
+123
+124</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 106</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 123</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_rebuild_menu'>rebuild_menu</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1886,11 +1925,11 @@
       <pre class="lines">
 
 
-112
-113</pre>
+129
+130</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 112</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 129</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_retrieve_proxy_menu_item'>retrieve_proxy_menu_item</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1953,11 +1992,11 @@
       <pre class="lines">
 
 
-119
-120</pre>
+136
+137</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 136</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_expand'>set_expand</span><span class='lparen'>(</span><span class='id identifier rubyid_expand'>expand</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2020,11 +2059,11 @@
       <pre class="lines">
 
 
-126
-127</pre>
+143
+144</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 126</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 143</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_homogeneous'>set_homogeneous</span><span class='lparen'>(</span><span class='id identifier rubyid_homogeneous'>homogeneous</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2087,11 +2126,11 @@
       <pre class="lines">
 
 
-133
-134</pre>
+150
+151</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 133</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 150</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_is_important'>set_is_important</span><span class='lparen'>(</span><span class='id identifier rubyid_is_important'>is_important</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2165,11 +2204,11 @@
       <pre class="lines">
 
 
-141
-142</pre>
+158
+159</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 141</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 158</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_proxy_menu_item'>set_proxy_menu_item</span><span class='lparen'>(</span><span class='id identifier rubyid_menu_item_id'>menu_item_id</span><span class='comma'>,</span><span class='id identifier rubyid_menu_item'>menu_item</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2268,11 +2307,11 @@
       <pre class="lines">
 
 
-150
-151</pre>
+167
+168</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 167</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip'>set_tooltip</span><span class='lparen'>(</span><span class='id identifier rubyid_tooltips'>tooltips</span><span class='comma'>,</span><span class='id identifier rubyid_tip_text'>tip_text</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span><span class='id identifier rubyid_tip_private'>tip_private</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2335,11 +2374,11 @@
       <pre class="lines">
 
 
-157
-158</pre>
+174
+175</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 157</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 174</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_markup'>set_tooltip_markup</span><span class='lparen'>(</span><span class='id identifier rubyid_markup'>markup</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2402,11 +2441,11 @@
       <pre class="lines">
 
 
-164
-165</pre>
+181
+182</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 164</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 181</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_text'>set_tooltip_text</span><span class='lparen'>(</span><span class='id identifier rubyid_text'>text</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2469,11 +2508,11 @@
       <pre class="lines">
 
 
-171
-172</pre>
+188
+189</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 171</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 188</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_use_drag_window'>set_use_drag_window</span><span class='lparen'>(</span><span class='id identifier rubyid_use_drag_window'>use_drag_window</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2536,11 +2575,11 @@
       <pre class="lines">
 
 
-178
-179</pre>
+195
+196</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 178</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 195</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_visible_horizontal'>set_visible_horizontal</span><span class='lparen'>(</span><span class='id identifier rubyid_visible_horizontal'>visible_horizontal</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2603,11 +2642,11 @@
       <pre class="lines">
 
 
-185
-186</pre>
+202
+203</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 185</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 202</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_visible_vertical'>set_visible_vertical</span><span class='lparen'>(</span><span class='id identifier rubyid_visible_vertical'>visible_vertical</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2655,11 +2694,11 @@
       <pre class="lines">
 
 
-191
-192</pre>
+208
+209</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 191</span>
+      <pre class="code"><span class="info file"># File 'gtk_toolitem.rb', line 208</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_toolbar_reconfigured'>toolbar_reconfigured</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2673,7 +2712,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 15:59:21 2013 by
+  Generated on Tue Dec 24 15:45:23 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>

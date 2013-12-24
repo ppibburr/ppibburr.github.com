@@ -109,7 +109,79 @@
 </dl>
 <div class="clear"></div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Signals</p>
+<dl class="rdoc-list"><dt>"activate-cursor-item" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"item-activated" {|path| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(FFI::Pointer) path</p>
+</li></ul>
 
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"move-cursor" {|step, count| ... }</dt>
+<dd>
+<p><b>params</b></p>
+<ul><li>
+<p>(Integer) step</p>
+</li><li>
+<p>(Integer) count</p>
+</li></ul>
+
+<p><b>returns</b></p>
+<ul><li>
+<p>(Boolean)</p>
+</li></ul>
+</dd><dt>"select-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"select-cursor-item" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"selection-changed" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"toggle-cursor-item" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd><dt>"unselect-all" {|| ... }</dt>
+<dd>
+<p><b>returns</b></p>
+<ul><li>
+<p>(NilClass)</p>
+</li></ul>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -1776,11 +1848,11 @@
       <pre class="lines">
 
 
-10
-11</pre>
+48
+49</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 48</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1843,11 +1915,11 @@
       <pre class="lines">
 
 
-17
-18</pre>
+55
+56</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_area'>new_with_area</span><span class='lparen'>(</span><span class='id identifier rubyid_area'>area</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1910,11 +1982,11 @@
       <pre class="lines">
 
 
-24
-25</pre>
+62
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 62</span>
 
 <span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_new_with_model'>new_with_model</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -1994,11 +2066,11 @@
       <pre class="lines">
 
 
-32
-33</pre>
+70
+71</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 70</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_convert_widget_to_bin_window_coords'>convert_widget_to_bin_window_coords</span><span class='lparen'>(</span><span class='id identifier rubyid_wx'>wx</span><span class='comma'>,</span><span class='id identifier rubyid_wy'>wy</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2061,11 +2133,11 @@
       <pre class="lines">
 
 
-39
-40</pre>
+77
+78</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 77</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_drag_icon'>create_drag_icon</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2155,11 +2227,11 @@
       <pre class="lines">
 
 
-48
-49</pre>
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 86</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_enable_model_drag_dest'>enable_model_drag_dest</span><span class='lparen'>(</span><span class='id identifier rubyid_targets'>targets</span><span class='comma'>,</span><span class='id identifier rubyid_n_targets'>n_targets</span><span class='comma'>,</span><span class='id identifier rubyid_actions'>actions</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2265,11 +2337,11 @@
       <pre class="lines">
 
 
-58
-59</pre>
+96
+97</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 96</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_enable_model_drag_source'>enable_model_drag_source</span><span class='lparen'>(</span><span class='id identifier rubyid_start_button_mask'>start_button_mask</span><span class='comma'>,</span><span class='id identifier rubyid_targets'>targets</span><span class='comma'>,</span><span class='id identifier rubyid_n_targets'>n_targets</span><span class='comma'>,</span><span class='id identifier rubyid_actions'>actions</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2317,11 +2389,11 @@
       <pre class="lines">
 
 
-64
-65</pre>
+102
+103</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 64</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 102</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_activate_on_single_click'>get_activate_on_single_click</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2402,11 +2474,11 @@
       <pre class="lines">
 
 
-72
-73</pre>
+110
+111</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 72</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 110</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_cell_rect'>get_cell_rect</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_cell'>cell</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2454,11 +2526,11 @@
       <pre class="lines">
 
 
-78
-79</pre>
+116
+117</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 78</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 116</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_column_spacing'>get_column_spacing</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2506,11 +2578,11 @@
       <pre class="lines">
 
 
-84
-85</pre>
+122
+123</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 84</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 122</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_columns'>get_columns</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2558,11 +2630,11 @@
       <pre class="lines">
 
 
-90
-91</pre>
+128
+129</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 90</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 128</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_cursor'>get_cursor</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2636,11 +2708,11 @@
       <pre class="lines">
 
 
-98
-99</pre>
+136
+137</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 98</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 136</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_dest_item_at_pos'>get_dest_item_at_pos</span><span class='lparen'>(</span><span class='id identifier rubyid_drag_x'>drag_x</span><span class='comma'>,</span><span class='id identifier rubyid_drag_y'>drag_y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2688,11 +2760,11 @@
       <pre class="lines">
 
 
-104
-105</pre>
+142
+143</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 104</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 142</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_drag_dest_item'>get_drag_dest_item</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2766,11 +2838,11 @@
       <pre class="lines">
 
 
-112
-113</pre>
+150
+151</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 112</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 150</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_item_at_pos'>get_item_at_pos</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2833,11 +2905,11 @@
       <pre class="lines">
 
 
-119
-120</pre>
+157
+158</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 157</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_item_column'>get_item_column</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2890,11 +2962,11 @@
       <pre class="lines">
 
 
-125
-126</pre>
+163
+164</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 125</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 163</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_item_orientation'>get_item_orientation</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -2942,11 +3014,11 @@
       <pre class="lines">
 
 
-131
-132</pre>
+169
+170</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 131</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 169</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_item_padding'>get_item_padding</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3009,11 +3081,11 @@
       <pre class="lines">
 
 
-138
-139</pre>
+176
+177</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 138</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 176</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_item_row'>get_item_row</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3061,11 +3133,11 @@
       <pre class="lines">
 
 
-144
-145</pre>
+182
+183</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 144</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 182</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_item_width'>get_item_width</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3113,11 +3185,11 @@
       <pre class="lines">
 
 
-150
-151</pre>
+188
+189</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 150</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 188</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_margin'>get_margin</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3165,11 +3237,11 @@
       <pre class="lines">
 
 
-156
-157</pre>
+194
+195</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 156</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 194</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_markup_column'>get_markup_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3217,11 +3289,11 @@
       <pre class="lines">
 
 
-162
-163</pre>
+200
+201</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 162</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 200</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_model'>get_model</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3295,11 +3367,11 @@
       <pre class="lines">
 
 
-170
-171</pre>
+208
+209</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 170</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 208</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_path_at_pos'>get_path_at_pos</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3347,11 +3419,11 @@
       <pre class="lines">
 
 
-176
-177</pre>
+214
+215</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 176</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 214</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_pixbuf_column'>get_pixbuf_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3399,11 +3471,11 @@
       <pre class="lines">
 
 
-182
-183</pre>
+220
+221</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 182</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 220</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_reorderable'>get_reorderable</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3451,11 +3523,11 @@
       <pre class="lines">
 
 
-188
-189</pre>
+226
+227</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 188</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 226</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_row_spacing'>get_row_spacing</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3503,11 +3575,11 @@
       <pre class="lines">
 
 
-194
-195</pre>
+232
+233</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 194</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 232</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_selected_items'>get_selected_items</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3560,11 +3632,11 @@
       <pre class="lines">
 
 
-200
-201</pre>
+238
+239</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 200</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 238</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_selection_mode'>get_selection_mode</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3612,11 +3684,11 @@
       <pre class="lines">
 
 
-206
-207</pre>
+244
+245</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 206</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 244</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_spacing'>get_spacing</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3664,11 +3736,11 @@
       <pre class="lines">
 
 
-212
-213</pre>
+250
+251</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 212</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 250</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_text_column'>get_text_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3716,11 +3788,11 @@
       <pre class="lines">
 
 
-218
-219</pre>
+256
+257</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 218</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 256</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tooltip_column'>get_tooltip_column</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3805,11 +3877,11 @@
       <pre class="lines">
 
 
-227
-228</pre>
+265
+266</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 227</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 265</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_tooltip_context'>get_tooltip_context</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='comma'>,</span><span class='id identifier rubyid_keyboard_tip'>keyboard_tip</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3857,11 +3929,11 @@
       <pre class="lines">
 
 
-233
-234</pre>
+271
+272</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 233</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 271</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_visible_range'>get_visible_range</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3924,11 +3996,11 @@
       <pre class="lines">
 
 
-240
-241</pre>
+278
+279</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 240</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 278</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_item_activated'>item_activated</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -3991,11 +4063,11 @@
       <pre class="lines">
 
 
-247
-248</pre>
+285
+286</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 247</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 285</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_path_is_selected'>path_is_selected</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4091,11 +4163,11 @@
       <pre class="lines">
 
 
-257
-258</pre>
+295
+296</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 295</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_scroll_to_path'>scroll_to_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_use_align'>use_align</span><span class='comma'>,</span><span class='id identifier rubyid_row_align'>row_align</span><span class='comma'>,</span><span class='id identifier rubyid_col_align'>col_align</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4143,11 +4215,11 @@
       <pre class="lines">
 
 
-263
-264</pre>
+301
+302</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 263</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 301</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_all'>select_all</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4210,11 +4282,11 @@
       <pre class="lines">
 
 
-270
-271</pre>
+308
+309</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 270</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 308</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_select_path'>select_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4312,11 +4384,11 @@
       <pre class="lines">
 
 
-280
-281</pre>
+318
+319</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 280</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 318</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_selected_foreach'>selected_foreach</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4379,11 +4451,11 @@
       <pre class="lines">
 
 
-287
-288</pre>
+325
+326</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 287</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 325</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_activate_on_single_click'>set_activate_on_single_click</span><span class='lparen'>(</span><span class='id identifier rubyid_single'>single</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4446,11 +4518,11 @@
       <pre class="lines">
 
 
-294
-295</pre>
+332
+333</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 294</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 332</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_column_spacing'>set_column_spacing</span><span class='lparen'>(</span><span class='id identifier rubyid_column_spacing'>column_spacing</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4513,11 +4585,11 @@
       <pre class="lines">
 
 
-301
-302</pre>
+339
+340</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 301</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 339</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_columns'>set_columns</span><span class='lparen'>(</span><span class='id identifier rubyid_columns'>columns</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4609,11 +4681,11 @@
       <pre class="lines">
 
 
-310
-311</pre>
+348
+349</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 310</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 348</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_cursor'>set_cursor</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_start_editing'>start_editing</span><span class='comma'>,</span><span class='id identifier rubyid_cell'>cell</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4699,11 +4771,11 @@
       <pre class="lines">
 
 
-318
-319</pre>
+356
+357</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 318</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 356</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_drag_dest_item'>set_drag_dest_item</span><span class='lparen'>(</span><span class='id identifier rubyid_pos'>pos</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4771,11 +4843,11 @@
       <pre class="lines">
 
 
-325
-326</pre>
+363
+364</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 325</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 363</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_item_orientation'>set_item_orientation</span><span class='lparen'>(</span><span class='id identifier rubyid_orientation'>orientation</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4838,11 +4910,11 @@
       <pre class="lines">
 
 
-332
-333</pre>
+370
+371</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 332</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 370</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_item_padding'>set_item_padding</span><span class='lparen'>(</span><span class='id identifier rubyid_item_padding'>item_padding</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4905,11 +4977,11 @@
       <pre class="lines">
 
 
-339
-340</pre>
+377
+378</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 339</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 377</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_item_width'>set_item_width</span><span class='lparen'>(</span><span class='id identifier rubyid_item_width'>item_width</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -4972,11 +5044,11 @@
       <pre class="lines">
 
 
-346
-347</pre>
+384
+385</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 346</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 384</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_margin'>set_margin</span><span class='lparen'>(</span><span class='id identifier rubyid_margin'>margin</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5039,11 +5111,11 @@
       <pre class="lines">
 
 
-353
-354</pre>
+391
+392</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 353</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 391</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_markup_column'>set_markup_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5113,11 +5185,11 @@
       <pre class="lines">
 
 
-360
-361</pre>
+398
+399</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 360</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 398</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_model'>set_model</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5180,11 +5252,11 @@
       <pre class="lines">
 
 
-367
-368</pre>
+405
+406</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 367</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 405</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_pixbuf_column'>set_pixbuf_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5247,11 +5319,11 @@
       <pre class="lines">
 
 
-374
-375</pre>
+412
+413</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 374</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 412</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_reorderable'>set_reorderable</span><span class='lparen'>(</span><span class='id identifier rubyid_reorderable'>reorderable</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5314,11 +5386,11 @@
       <pre class="lines">
 
 
-381
-382</pre>
+419
+420</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 381</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 419</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_row_spacing'>set_row_spacing</span><span class='lparen'>(</span><span class='id identifier rubyid_row_spacing'>row_spacing</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5386,11 +5458,11 @@
       <pre class="lines">
 
 
-388
-389</pre>
+426
+427</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 388</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 426</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_selection_mode'>set_selection_mode</span><span class='lparen'>(</span><span class='id identifier rubyid_mode'>mode</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5453,11 +5525,11 @@
       <pre class="lines">
 
 
-395
-396</pre>
+433
+434</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 395</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 433</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_spacing'>set_spacing</span><span class='lparen'>(</span><span class='id identifier rubyid_spacing'>spacing</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5520,11 +5592,11 @@
       <pre class="lines">
 
 
-402
-403</pre>
+440
+441</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 402</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 440</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_text_column'>set_text_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5616,11 +5688,11 @@
       <pre class="lines">
 
 
-411
-412</pre>
+449
+450</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 411</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 449</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_cell'>set_tooltip_cell</span><span class='lparen'>(</span><span class='id identifier rubyid_tooltip'>tooltip</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span><span class='comma'>,</span><span class='id identifier rubyid_cell'>cell</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5683,11 +5755,11 @@
       <pre class="lines">
 
 
-418
-419</pre>
+456
+457</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 418</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 456</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_column'>set_tooltip_column</span><span class='lparen'>(</span><span class='id identifier rubyid_column'>column</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5761,11 +5833,11 @@
       <pre class="lines">
 
 
-426
-427</pre>
+464
+465</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 426</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 464</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_tooltip_item'>set_tooltip_item</span><span class='lparen'>(</span><span class='id identifier rubyid_tooltip'>tooltip</span><span class='comma'>,</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5813,11 +5885,11 @@
       <pre class="lines">
 
 
-432
-433</pre>
+470
+471</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 432</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 470</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unselect_all'>unselect_all</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5880,11 +5952,11 @@
       <pre class="lines">
 
 
-439
-440</pre>
+477
+478</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 439</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 477</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unselect_path'>unselect_path</span><span class='lparen'>(</span><span class='id identifier rubyid_path'>path</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5932,11 +6004,11 @@
       <pre class="lines">
 
 
-445
-446</pre>
+483
+484</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 445</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 483</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unset_model_drag_dest'>unset_model_drag_dest</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -5984,11 +6056,11 @@
       <pre class="lines">
 
 
-451
-452</pre>
+489
+490</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 451</span>
+      <pre class="code"><span class="info file"># File 'gtk_iconview.rb', line 489</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_unset_model_drag_source'>unset_model_drag_source</span><span class='lparen'>(</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
@@ -6002,7 +6074,7 @@
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 23 16:08:53 2013 by
+  Generated on Tue Dec 24 15:55:45 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.6.1 (ruby-1.9.3).
 </div>
