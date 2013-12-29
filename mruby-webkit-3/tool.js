@@ -85,7 +85,7 @@ function makeFunc(j,t,d) { return function() {
 init();
 fill_interfaces();
 
-q = ["ifaces_summary", "class_methods_summary", "constants_summary","enums_summary","flags_summary", "enums_details", "flags_details", "instance_methods_summary", "signals_summary", "class_methods_details", "instance_methods_details", "signals_details"];
+q = ["inherits_summary", "ifaces_summary", "class_methods_summary", "constants_summary","enums_summary","flags_summary", "enums_details", "flags_details", "instance_methods_summary", "signals_summary", "class_methods_details", "instance_methods_details", "signals_details"];
 for (i in q)
 {
   ele = document.getElementById(q[i]+"_header")
@@ -114,23 +114,26 @@ for (i in q)
   }
 }
 
+  e=document.getElementById("inherits_summary_toggle");
+  e ? e.click() : null;
+
 if (typeDisplayed == "namespace")
 {
   e=document.getElementById("enums_summary_toggle");
-  e.click();
+  e ? e.click() : null;
 
   e=document.getElementById("flags_summary_toggle");
-  e.click();
+  e ? e.click() : null;
 
   e=document.getElementById("constants_summary_toggle");
-  e.click();
+  e ? e.click() : null;
 
   e=document.getElementById("enums_details_toggle");
-  e.click();
+  e ? e.click() : null;
 
   e=document.getElementById("flags_details_toggle");
-  e.click();
+  e ? e.click() : null;
 
   e=document.getElementById("constants_details_toggle");
-  e.click();
+  e ? e.click() : null;
 }
