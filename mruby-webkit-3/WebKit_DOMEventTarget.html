@@ -92,6 +92,8 @@
     <div class=summary id=instance_methods_summary>
 <div>&nbsp;&nbsp;<a href=#instance_dispatch_event>- (NilClass) <b>dispatch_event</b>(event)</a>&nbsp;&nbsp;</div>
 <div> webkit_dom_event_target_dispatch_event </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_event_listener>- (Boolean) <b>add_event_listener</b>(name, bubble) {|node, event| ... }</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_event_target_add_event_listener </div>
 </div></div><br>
     <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
     <div class=details id=instance_methods_details>
@@ -102,6 +104,21 @@
 <br>
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_add_event_listener">add_event_listener</a></b>(name, bubble) {|node, event| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b> the event name </li>
+<li class=param> (Boolean) <b>bubble</b> whether or not bubble </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=WebKit_DOMEventTarget.html>WebKit::DOMEventTarget</a>) <b>node</b> the target</li>
+<li class=param> (<a href=WebKit_DOMEvent.html>WebKit::DOMEvent</a>) <b>event</b> the event</li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
 </div>
 </div>
     
