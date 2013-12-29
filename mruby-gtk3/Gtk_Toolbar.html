@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Toolbar class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Toolbar</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Container.html>Gtk::Container</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_ToolShell.html>Gtk::ToolShell</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Orientable.html>Gtk::Orientable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_get_drop_index>- (Integer) <b>get_drop_index</b>(x, y)</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_get_drop_index </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_icon_size>- (Integer) <b>get_icon_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_get_icon_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_item_index>- (Integer) <b>get_item_index</b>(item)</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_get_item_index </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_n_items>- (Integer) <b>get_n_items</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_get_n_items </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_nth_item>- (Gtk::ToolItem) <b>get_nth_item</b>(n)</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_get_nth_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_relief_style>- (Integer) <b>get_relief_style</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_get_relief_style </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_arrow>- (Boolean) <b>get_show_arrow</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_get_show_arrow </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_style>- (Integer) <b>get_style</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_get_style </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert>- (NilClass) <b>insert</b>(item, pos)</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_insert </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_drop_highlight_item>- (NilClass) <b>set_drop_highlight_item</b>(index_, tool_item)</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_set_drop_highlight_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_icon_size>- (NilClass) <b>set_icon_size</b>(icon_size)</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_set_icon_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_arrow>- (NilClass) <b>set_show_arrow</b>(show_arrow)</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_set_show_arrow </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_style>- (NilClass) <b>set_style</b>(style)</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_set_style </div>
+<div>&nbsp;&nbsp;<a href=#instance_unset_icon_size>- (NilClass) <b>unset_icon_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_unset_icon_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_unset_style>- (NilClass) <b>unset_style</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toolbar_unset_style </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_focus-home-or-end>* (Boolean) <b>"focus-home-or-end"</b> {|focus_home| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_orientation-changed>* (NilClass) <b>"orientation-changed"</b> {|orientation| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_popup-context-menu>* (Boolean) <b>"popup-context-menu"</b> {|x, y, button_number| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_style-changed>* (NilClass) <b>"style-changed"</b> {|style| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_drop_index">get_drop_index</a></b>(x, y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_icon_size">get_icon_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_item_index">get_item_index</a></b>(item)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_ToolItem.html>Gtk::ToolItem</a>) <b>item</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_n_items">get_n_items</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_ToolItem.html>Gtk::ToolItem</a>) <b><a name="instance_get_nth_item">get_nth_item</a></b>(n)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>n</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_ToolItem.html>Gtk::ToolItem</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_relief_style">get_relief_style</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::ReliefStyle </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_arrow">get_show_arrow</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_style">get_style</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::ToolbarStyle </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_insert">insert</a></b>(item, pos)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_ToolItem.html>Gtk::ToolItem</a>) <b>item</b>  </li>
+<li class=param> (Integer) <b>pos</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_drop_highlight_item">set_drop_highlight_item</a></b>(index_, tool_item)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>index_</b>  </li>
+<li class=param> (<a href=#Gtk_ToolItem.html>Gtk::ToolItem</a>) <b>tool_item</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_icon_size">set_icon_size</a></b>(icon_size)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>icon_size</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_arrow">set_show_arrow</a></b>(show_arrow)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_arrow</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_style">set_style</a></b>(style)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>style</b>  a member of enum Gtk::ToolbarStyle </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unset_icon_size">unset_icon_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unset_style">unset_style</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_focus-home-or-end">focus-home-or-end"</a></b> {|focus_home| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>focus_home</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_orientation-changed">orientation-changed"</a></b> {|orientation| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>orientation</b>  a member of enum Gtk::Orientation </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_popup-context-menu">popup-context-menu"</a></b> {|x, y, button_number| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<li class=param> (Integer) <b>button_number</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_style-changed">style-changed"</a></b> {|style| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>style</b>  a member of enum Gtk::ToolbarStyle </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

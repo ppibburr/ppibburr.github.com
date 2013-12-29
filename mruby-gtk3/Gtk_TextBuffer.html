@@ -1,0 +1,886 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=TextBuffer class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::TextBuffer</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::TextBuffer) <b>new</b>(table)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_mark>- (NilClass) <b>add_mark</b>(mark, where)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_add_mark </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_selection_clipboard>- (NilClass) <b>add_selection_clipboard</b>(clipboard)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_add_selection_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_apply_tag>- (NilClass) <b>apply_tag</b>(tag, start, end_)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_apply_tag </div>
+<div>&nbsp;&nbsp;<a href=#instance_apply_tag_by_name>- (NilClass) <b>apply_tag_by_name</b>(name, start, end_)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_apply_tag_by_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_backspace>- (Boolean) <b>backspace</b>(iter, interactive, default_editable)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_backspace </div>
+<div>&nbsp;&nbsp;<a href=#instance_begin_user_action>- (NilClass) <b>begin_user_action</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_begin_user_action </div>
+<div>&nbsp;&nbsp;<a href=#instance_copy_clipboard>- (NilClass) <b>copy_clipboard</b>(clipboard)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_copy_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_create_child_anchor>- (Gtk::TextChildAnchor) <b>create_child_anchor</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_create_child_anchor </div>
+<div>&nbsp;&nbsp;<a href=#instance_create_mark>- (Gtk::TextMark) <b>create_mark</b>(where, left_gravity, mark_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_create_mark </div>
+<div>&nbsp;&nbsp;<a href=#instance_cut_clipboard>- (NilClass) <b>cut_clipboard</b>(clipboard, default_editable)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_cut_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_delete>- (NilClass) <b>delete</b>(start, end_)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_delete </div>
+<div>&nbsp;&nbsp;<a href=#instance_delete_interactive>- (Boolean) <b>delete_interactive</b>(start_iter, end_iter, default_editable)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_delete_interactive </div>
+<div>&nbsp;&nbsp;<a href=#instance_delete_mark>- (NilClass) <b>delete_mark</b>(mark)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_delete_mark </div>
+<div>&nbsp;&nbsp;<a href=#instance_delete_mark_by_name>- (NilClass) <b>delete_mark_by_name</b>(name)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_delete_mark_by_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_delete_selection>- (Boolean) <b>delete_selection</b>(interactive, default_editable)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_delete_selection </div>
+<div>&nbsp;&nbsp;<a href=#instance_deserialize>- (Boolean) <b>deserialize</b>(content_buffer, format, iter, data, length)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_deserialize </div>
+<div>&nbsp;&nbsp;<a href=#instance_deserialize_get_can_create_tags>- (Boolean) <b>deserialize_get_can_create_tags</b>(format)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_deserialize_get_can_create_tags </div>
+<div>&nbsp;&nbsp;<a href=#instance_deserialize_set_can_create_tags>- (NilClass) <b>deserialize_set_can_create_tags</b>(format, can_create_tags)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_deserialize_set_can_create_tags </div>
+<div>&nbsp;&nbsp;<a href=#instance_end_user_action>- (NilClass) <b>end_user_action</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_end_user_action </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_bounds>- (Array&lt;FFI::Pointer, FFI::Pointer&gt;) <b>get_bounds</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_bounds </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_char_count>- (Integer) <b>get_char_count</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_char_count </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_copy_target_list>- (FFI::Pointer) <b>get_copy_target_list</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_copy_target_list </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_deserialize_formats>- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b>get_deserialize_formats</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_deserialize_formats </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_end_iter>- (FFI::Pointer) <b>get_end_iter</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_end_iter </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_has_selection>- (Boolean) <b>get_has_selection</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_has_selection </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_insert>- (Gtk::TextMark) <b>get_insert</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_insert </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_at_child_anchor>- (FFI::Pointer) <b>get_iter_at_child_anchor</b>(anchor)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_iter_at_child_anchor </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_at_line>- (FFI::Pointer) <b>get_iter_at_line</b>(line_number)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_iter_at_line </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_at_line_index>- (FFI::Pointer) <b>get_iter_at_line_index</b>(line_number, byte_index)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_iter_at_line_index </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_at_line_offset>- (FFI::Pointer) <b>get_iter_at_line_offset</b>(line_number, char_offset)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_iter_at_line_offset </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_at_mark>- (FFI::Pointer) <b>get_iter_at_mark</b>(mark)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_iter_at_mark </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_at_offset>- (FFI::Pointer) <b>get_iter_at_offset</b>(char_offset)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_iter_at_offset </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_line_count>- (Integer) <b>get_line_count</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_line_count </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_mark>- (Gtk::TextMark) <b>get_mark</b>(name)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_mark </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_modified>- (Boolean) <b>get_modified</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_modified </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_paste_target_list>- (FFI::Pointer) <b>get_paste_target_list</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_paste_target_list </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_selection_bound>- (Gtk::TextMark) <b>get_selection_bound</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_selection_bound </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_selection_bounds>- (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;) <b>get_selection_bounds</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_selection_bounds </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_serialize_formats>- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b>get_serialize_formats</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_serialize_formats </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_slice>- (String) <b>get_slice</b>(start, end_, include_hidden_chars)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_slice </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_start_iter>- (FFI::Pointer) <b>get_start_iter</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_start_iter </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tag_table>- (Gtk::TextTagTable) <b>get_tag_table</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_tag_table </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_text>- (String) <b>get_text</b>(start, end_, include_hidden_chars)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_get_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert>- (NilClass) <b>insert</b>(iter, text, len)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_insert </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_at_cursor>- (NilClass) <b>insert_at_cursor</b>(text, len)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_insert_at_cursor </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_child_anchor>- (NilClass) <b>insert_child_anchor</b>(iter, anchor)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_insert_child_anchor </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_interactive>- (Boolean) <b>insert_interactive</b>(iter, text, len, default_editable)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_insert_interactive </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_interactive_at_cursor>- (Boolean) <b>insert_interactive_at_cursor</b>(text, len, default_editable)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_insert_interactive_at_cursor </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_pixbuf>- (NilClass) <b>insert_pixbuf</b>(iter, pixbuf)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_insert_pixbuf </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_range>- (NilClass) <b>insert_range</b>(iter, start, end_)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_insert_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_range_interactive>- (Boolean) <b>insert_range_interactive</b>(iter, start, end_, default_editable)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_insert_range_interactive </div>
+<div>&nbsp;&nbsp;<a href=#instance_move_mark>- (NilClass) <b>move_mark</b>(mark, where)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_move_mark </div>
+<div>&nbsp;&nbsp;<a href=#instance_move_mark_by_name>- (NilClass) <b>move_mark_by_name</b>(name, where)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_move_mark_by_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_paste_clipboard>- (NilClass) <b>paste_clipboard</b>(clipboard, default_editable, override_location)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_paste_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_place_cursor>- (NilClass) <b>place_cursor</b>(where)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_place_cursor </div>
+<div>&nbsp;&nbsp;<a href=#instance_register_deserialize_format>- (FFI::Pointer) <b>register_deserialize_format</b>(mime_type) {|register_buffer, content_buffer, iter, data, length, create_tags| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_register_deserialize_format </div>
+<div>&nbsp;&nbsp;<a href=#instance_register_deserialize_tagset>- (FFI::Pointer) <b>register_deserialize_tagset</b>(tagset_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_register_deserialize_tagset </div>
+<div>&nbsp;&nbsp;<a href=#instance_register_serialize_format>- (FFI::Pointer) <b>register_serialize_format</b>(mime_type) {|register_buffer, content_buffer, start, end, length| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_register_serialize_format </div>
+<div>&nbsp;&nbsp;<a href=#instance_register_serialize_tagset>- (FFI::Pointer) <b>register_serialize_tagset</b>(tagset_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_register_serialize_tagset </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_all_tags>- (NilClass) <b>remove_all_tags</b>(start, end_)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_remove_all_tags </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_selection_clipboard>- (NilClass) <b>remove_selection_clipboard</b>(clipboard)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_remove_selection_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_tag>- (NilClass) <b>remove_tag</b>(tag, start, end_)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_remove_tag </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_tag_by_name>- (NilClass) <b>remove_tag_by_name</b>(name, start, end_)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_remove_tag_by_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_range>- (NilClass) <b>select_range</b>(ins, bound)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_select_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_serialize>- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b>serialize</b>(content_buffer, format, start, end_)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_serialize </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_modified>- (NilClass) <b>set_modified</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_set_modified </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_text>- (NilClass) <b>set_text</b>(text, len)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_set_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_unregister_deserialize_format>- (NilClass) <b>unregister_deserialize_format</b>(format)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_unregister_deserialize_format </div>
+<div>&nbsp;&nbsp;<a href=#instance_unregister_serialize_format>- (NilClass) <b>unregister_serialize_format</b>(format)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_buffer_unregister_serialize_format </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_apply-tag>* (NilClass) <b>"apply-tag"</b> {|tag, start, end_| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_begin-user-action>* (NilClass) <b>"begin-user-action"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_changed>* (NilClass) <b>"changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_delete-range>* (NilClass) <b>"delete-range"</b> {|start, end_| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_end-user-action>* (NilClass) <b>"end-user-action"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_insert-child-anchor>* (NilClass) <b>"insert-child-anchor"</b> {|iter, anchor| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_insert-pixbuf>* (NilClass) <b>"insert-pixbuf"</b> {|iter, pixbuf| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_insert-text>* (NilClass) <b>"insert-text"</b> {|pos, new_text, new_text_length| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_mark-deleted>* (NilClass) <b>"mark-deleted"</b> {|mark| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_mark-set>* (NilClass) <b>"mark-set"</b> {|location, mark| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_modified-changed>* (NilClass) <b>"modified-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_paste-done>* (NilClass) <b>"paste-done"</b> {|clipboard| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_remove-tag>* (NilClass) <b>"remove-tag"</b> {|tag, start, end_| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b><a name="class_new">new</a></b>(table)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextTagTable.html>Gtk::TextTagTable</a>) <b>table</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_mark">add_mark</a></b>(mark, where)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<li class=param> (FFI::Pointer) <b>where</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_selection_clipboard">add_selection_clipboard</a></b>(clipboard)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Clipboard.html>Gtk::Clipboard</a>) <b>clipboard</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_apply_tag">apply_tag</a></b>(tag, start, end_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextTag.html>Gtk::TextTag</a>) <b>tag</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_apply_tag_by_name">apply_tag_by_name</a></b>(name, start, end_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_backspace">backspace</a></b>(iter, interactive, default_editable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (Boolean) <b>interactive</b>  </li>
+<li class=param> (Boolean) <b>default_editable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_begin_user_action">begin_user_action</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_copy_clipboard">copy_clipboard</a></b>(clipboard)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Clipboard.html>Gtk::Clipboard</a>) <b>clipboard</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TextChildAnchor.html>Gtk::TextChildAnchor</a>) <b><a name="instance_create_child_anchor">create_child_anchor</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TextChildAnchor.html>Gtk::TextChildAnchor</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b><a name="instance_create_mark">create_mark</a></b>(where, left_gravity, mark_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>where</b>  </li>
+<li class=param> (Boolean) <b>left_gravity</b>  </li>
+<li class=param> (String) <b>mark_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_cut_clipboard">cut_clipboard</a></b>(clipboard, default_editable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Clipboard.html>Gtk::Clipboard</a>) <b>clipboard</b>  </li>
+<li class=param> (Boolean) <b>default_editable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_delete">delete</a></b>(start, end_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_delete_interactive">delete_interactive</a></b>(start_iter, end_iter, default_editable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>start_iter</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_iter</b>  </li>
+<li class=param> (Boolean) <b>default_editable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_delete_mark">delete_mark</a></b>(mark)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_delete_mark_by_name">delete_mark_by_name</a></b>(name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_delete_selection">delete_selection</a></b>(interactive, default_editable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>interactive</b>  </li>
+<li class=param> (Boolean) <b>default_editable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_deserialize">deserialize</a></b>(content_buffer, format, iter, data, length)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b>content_buffer</b>  </li>
+<li class=param> (FFI::Pointer) <b>format</b>  </li>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (Array&lt;FFI::Pointer&gt;) <b>data</b>  </li>
+<li class=param> (Integer) <b>length</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_deserialize_get_can_create_tags">deserialize_get_can_create_tags</a></b>(format)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>format</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_deserialize_set_can_create_tags">deserialize_set_can_create_tags</a></b>(format, can_create_tags)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>format</b>  </li>
+<li class=param> (Boolean) <b>can_create_tags</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_end_user_action">end_user_action</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;FFI::Pointer, FFI::Pointer&gt;) <b><a name="instance_get_bounds">get_bounds</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;FFI::Pointer, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_char_count">get_char_count</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_copy_target_list">get_copy_target_list</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b><a name="instance_get_deserialize_formats">get_deserialize_formats</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Array<FFI::Pointer>, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_end_iter">get_end_iter</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_has_selection">get_has_selection</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b><a name="instance_get_insert">get_insert</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_iter_at_child_anchor">get_iter_at_child_anchor</a></b>(anchor)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextChildAnchor.html>Gtk::TextChildAnchor</a>) <b>anchor</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_iter_at_line">get_iter_at_line</a></b>(line_number)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>line_number</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_iter_at_line_index">get_iter_at_line_index</a></b>(line_number, byte_index)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>line_number</b>  </li>
+<li class=param> (Integer) <b>byte_index</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_iter_at_line_offset">get_iter_at_line_offset</a></b>(line_number, char_offset)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>line_number</b>  </li>
+<li class=param> (Integer) <b>char_offset</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_iter_at_mark">get_iter_at_mark</a></b>(mark)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_iter_at_offset">get_iter_at_offset</a></b>(char_offset)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>char_offset</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_line_count">get_line_count</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b><a name="instance_get_mark">get_mark</a></b>(name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_modified">get_modified</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_paste_target_list">get_paste_target_list</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b><a name="instance_get_selection_bound">get_selection_bound</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;) <b><a name="instance_get_selection_bounds">get_selection_bounds</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b><a name="instance_get_serialize_formats">get_serialize_formats</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Array<FFI::Pointer>, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_slice">get_slice</a></b>(start, end_, include_hidden_chars)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<li class=param> (Boolean) <b>include_hidden_chars</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_start_iter">get_start_iter</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TextTagTable.html>Gtk::TextTagTable</a>) <b><a name="instance_get_tag_table">get_tag_table</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TextTagTable.html>Gtk::TextTagTable</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_text">get_text</a></b>(start, end_, include_hidden_chars)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<li class=param> (Boolean) <b>include_hidden_chars</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_insert">insert</a></b>(iter, text, len)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_insert_at_cursor">insert_at_cursor</a></b>(text, len)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_insert_child_anchor">insert_child_anchor</a></b>(iter, anchor)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (<a href=#Gtk_TextChildAnchor.html>Gtk::TextChildAnchor</a>) <b>anchor</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_insert_interactive">insert_interactive</a></b>(iter, text, len, default_editable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<li class=param> (Boolean) <b>default_editable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_insert_interactive_at_cursor">insert_interactive_at_cursor</a></b>(text, len, default_editable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<li class=param> (Boolean) <b>default_editable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_insert_pixbuf">insert_pixbuf</a></b>(iter, pixbuf)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (GdkPixbuf::Pixbuf) <b>pixbuf</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_insert_range">insert_range</a></b>(iter, start, end_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_insert_range_interactive">insert_range_interactive</a></b>(iter, start, end_, default_editable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<li class=param> (Boolean) <b>default_editable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_mark">move_mark</a></b>(mark, where)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<li class=param> (FFI::Pointer) <b>where</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_mark_by_name">move_mark_by_name</a></b>(name, where)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<li class=param> (FFI::Pointer) <b>where</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_paste_clipboard">paste_clipboard</a></b>(clipboard, default_editable, override_location)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Clipboard.html>Gtk::Clipboard</a>) <b>clipboard</b>  </li>
+<li class=param> (Boolean) <b>default_editable</b>  </li>
+<li class=param> (FFI::Pointer) <b>override_location</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_place_cursor">place_cursor</a></b>(where)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>where</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_register_deserialize_format">register_deserialize_format</a></b>(mime_type) {|register_buffer, content_buffer, iter, data, length, create_tags| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>mime_type</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b>register_buffer</b> </li>
+<li class=param> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b>content_buffer</b> </li>
+<li class=param> (FFI::Pointer) <b>iter</b> </li>
+<li class=param> (Integer) <b>data</b> </li>
+<li class=param> (Integer) <b>length</b> </li>
+<li class=param> (Boolean) <b>create_tags</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_register_deserialize_tagset">register_deserialize_tagset</a></b>(tagset_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>tagset_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_register_serialize_format">register_serialize_format</a></b>(mime_type) {|register_buffer, content_buffer, start, end, length| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>mime_type</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b>register_buffer</b> </li>
+<li class=param> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b>content_buffer</b> </li>
+<li class=param> (FFI::Pointer) <b>start</b> </li>
+<li class=param> (FFI::Pointer) <b>end</b> </li>
+<li class=param> (Integer) <b>length</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Integer) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_register_serialize_tagset">register_serialize_tagset</a></b>(tagset_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>tagset_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_all_tags">remove_all_tags</a></b>(start, end_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_selection_clipboard">remove_selection_clipboard</a></b>(clipboard)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Clipboard.html>Gtk::Clipboard</a>) <b>clipboard</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_tag">remove_tag</a></b>(tag, start, end_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextTag.html>Gtk::TextTag</a>) <b>tag</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_tag_by_name">remove_tag_by_name</a></b>(name, start, end_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_range">select_range</a></b>(ins, bound)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>ins</b>  </li>
+<li class=param> (FFI::Pointer) <b>bound</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b><a name="instance_serialize">serialize</a></b>(content_buffer, format, start, end_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b>content_buffer</b>  </li>
+<li class=param> (FFI::Pointer) <b>format</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Array<FFI::Pointer>, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_modified">set_modified</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_text">set_text</a></b>(text, len)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unregister_deserialize_format">unregister_deserialize_format</a></b>(format)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>format</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unregister_serialize_format">unregister_serialize_format</a></b>(format)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>format</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_apply-tag">apply-tag"</a></b> {|tag, start, end_| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextTag.html>Gtk::TextTag</a>) <b>tag</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_begin-user-action">begin-user-action"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_changed">changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_delete-range">delete-range"</a></b> {|start, end_| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_end-user-action">end-user-action"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_insert-child-anchor">insert-child-anchor"</a></b> {|iter, anchor| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (<a href=#Gtk_TextChildAnchor.html>Gtk::TextChildAnchor</a>) <b>anchor</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_insert-pixbuf">insert-pixbuf"</a></b> {|iter, pixbuf| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (GdkPixbuf::Pixbuf) <b>pixbuf</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_insert-text">insert-text"</a></b> {|pos, new_text, new_text_length| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>pos</b>  </li>
+<li class=param> (String) <b>new_text</b>  </li>
+<li class=param> (Integer) <b>new_text_length</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_mark-deleted">mark-deleted"</a></b> {|mark| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_mark-set">mark-set"</a></b> {|location, mark| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>location</b>  </li>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_modified-changed">modified-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_paste-done">paste-done"</a></b> {|clipboard| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Clipboard.html>Gtk::Clipboard</a>) <b>clipboard</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_remove-tag">remove-tag"</a></b> {|tag, start, end_| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextTag.html>Gtk::TextTag</a>) <b>tag</b>  </li>
+<li class=param> (FFI::Pointer) <b>start</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

@@ -1,0 +1,578 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=WebKit class=namespace><div class=top_nav><a href=WebKit.html>WebKit::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Module: WebKit</h2>
+<div id=constants_summary_header class=summary_header><b>Constants</b><small id=constants_summary_toggle>(Collapse)</small></div>
+<div class=constant_summary id=constants_summary>
+<div class=summary_item>&lt (Fixnum) <b>MAJOR_VERSION</b> = 1 &nbsp;&nbsp;</div>
+<br>
+<div class=summary_item>&lt (Fixnum) <b>MICRO_VERSION</b> = 2 &nbsp;&nbsp;</div>
+<br>
+<div class=summary_item>&lt (Fixnum) <b>MINOR_VERSION</b> = 10 &nbsp;&nbsp;</div>
+<br>
+<div class=summary_item>&lt (Fixnum) <b>USER_AGENT_MAJOR_VERSION</b> = 537 &nbsp;&nbsp;</div>
+<br>
+<div class=summary_item>&lt (Fixnum) <b>USER_AGENT_MINOR_VERSION</b> = 6 &nbsp;&nbsp;</div>
+<br>
+</div>
+<div id=enums_summary_header class=summary_header><b>Enums</b><small id=enums_summary_toggle>(Collapse)</small></div>
+<div class=enum_summary id=enums_summary>
+<div class=enum_root><a href=#enum_CacheModel>&nbsp;&nbsp;&gt (Class) <b>CacheModel</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_ContextMenuAction>&nbsp;&nbsp;&gt (Class) <b>ContextMenuAction</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_DownloadError>&nbsp;&nbsp;&gt (Class) <b>DownloadError</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_DownloadStatus>&nbsp;&nbsp;&gt (Class) <b>DownloadStatus</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_EditingBehavior>&nbsp;&nbsp;&gt (Class) <b>EditingBehavior</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_InsertAction>&nbsp;&nbsp;&gt (Class) <b>InsertAction</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_LoadStatus>&nbsp;&nbsp;&gt (Class) <b>LoadStatus</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_NavigationResponse>&nbsp;&nbsp;&gt (Class) <b>NavigationResponse</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_NetworkError>&nbsp;&nbsp;&gt (Class) <b>NetworkError</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_PluginError>&nbsp;&nbsp;&gt (Class) <b>PluginError</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_PolicyError>&nbsp;&nbsp;&gt (Class) <b>PolicyError</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_SelectionAffinity>&nbsp;&nbsp;&gt (Class) <b>SelectionAffinity</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_WebNavigationReason>&nbsp;&nbsp;&gt (Class) <b>WebNavigationReason</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_WebViewTargetInfo>&nbsp;&nbsp;&gt (Class) <b>WebViewTargetInfo</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_WebViewViewMode>&nbsp;&nbsp;&gt (Class) <b>WebViewViewMode</b>&nbsp;&nbsp;</a></div>
+</div>
+<div id=flags_summary_header class=summary_header><b>Flags</b><small id=flags_summary_toggle>(Collapse)</small></div>
+<div class=enum_summary id=flags_summary>
+<div class=enum_root><a href=#enum_HitTestResultContext>&nbsp;&nbsp;&gt (Class) <b>HitTestResultContext</b>&nbsp;&nbsp;</a></div>
+<div class=enum_root><a href=#enum_HitTestResultContext>&nbsp;&nbsp;&gt (Class) <b>HitTestResultContext</b>&nbsp;&nbsp;</a></div>
+</div>
+<div id=ifaces_summary_header class=summary_header><b>Interfaces</b><small id=ifaces_summary_toggle>(Collapse)</small></div>
+<div id=ifaces_summary class=summary>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMAttr.html><b>DOMAttr</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMBarInfo.html><b>DOMBarInfo</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMBlob.html><b>DOMBlob</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMCDATASection.html><b>DOMCDATASection</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMCSSRule.html><b>DOMCSSRule</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMCSSRuleList.html><b>DOMCSSRuleList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMCSSStyleDeclaration.html><b>DOMCSSStyleDeclaration</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMCSSStyleSheet.html><b>DOMCSSStyleSheet</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMCSSValue.html><b>DOMCSSValue</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMCharacterData.html><b>DOMCharacterData</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMComment.html><b>DOMComment</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMConsole.html><b>DOMConsole</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMApplicationCache.html><b>DOMDOMApplicationCache</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMImplementation.html><b>DOMDOMImplementation</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMMimeType.html><b>DOMDOMMimeType</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMMimeTypeArray.html><b>DOMDOMMimeTypeArray</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMPlugin.html><b>DOMDOMPlugin</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMPluginArray.html><b>DOMDOMPluginArray</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMSecurityPolicy.html><b>DOMDOMSecurityPolicy</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMSelection.html><b>DOMDOMSelection</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMSettableTokenList.html><b>DOMDOMSettableTokenList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMStringList.html><b>DOMDOMStringList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMStringMap.html><b>DOMDOMStringMap</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMTokenList.html><b>DOMDOMTokenList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDOMWindow.html><b>DOMDOMWindow</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDatabase.html><b>DOMDatabase</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDocument.html><b>DOMDocument</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDocumentFragment.html><b>DOMDocumentFragment</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMDocumentType.html><b>DOMDocumentType</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMElement.html><b>DOMElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMEntityReference.html><b>DOMEntityReference</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMEvent.html><b>DOMEvent</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMFile.html><b>DOMFile</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMFileList.html><b>DOMFileList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMGamepad.html><b>DOMGamepad</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMGamepadList.html><b>DOMGamepadList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMGeolocation.html><b>DOMGeolocation</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLAnchorElement.html><b>DOMHTMLAnchorElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLAppletElement.html><b>DOMHTMLAppletElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLAreaElement.html><b>DOMHTMLAreaElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLAudioElement.html><b>DOMHTMLAudioElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLBRElement.html><b>DOMHTMLBRElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLBaseElement.html><b>DOMHTMLBaseElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLBaseFontElement.html><b>DOMHTMLBaseFontElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLBodyElement.html><b>DOMHTMLBodyElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLButtonElement.html><b>DOMHTMLButtonElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLCanvasElement.html><b>DOMHTMLCanvasElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLCollection.html><b>DOMHTMLCollection</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLDListElement.html><b>DOMHTMLDListElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLDetailsElement.html><b>DOMHTMLDetailsElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLDirectoryElement.html><b>DOMHTMLDirectoryElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLDivElement.html><b>DOMHTMLDivElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLDocument.html><b>DOMHTMLDocument</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLElement.html><b>DOMHTMLElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLEmbedElement.html><b>DOMHTMLEmbedElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLFieldSetElement.html><b>DOMHTMLFieldSetElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLFontElement.html><b>DOMHTMLFontElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLFormElement.html><b>DOMHTMLFormElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLFrameElement.html><b>DOMHTMLFrameElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLFrameSetElement.html><b>DOMHTMLFrameSetElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLHRElement.html><b>DOMHTMLHRElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLHeadElement.html><b>DOMHTMLHeadElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLHeadingElement.html><b>DOMHTMLHeadingElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLHtmlElement.html><b>DOMHTMLHtmlElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLIFrameElement.html><b>DOMHTMLIFrameElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLImageElement.html><b>DOMHTMLImageElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLInputElement.html><b>DOMHTMLInputElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLKeygenElement.html><b>DOMHTMLKeygenElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLLIElement.html><b>DOMHTMLLIElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLLabelElement.html><b>DOMHTMLLabelElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLLegendElement.html><b>DOMHTMLLegendElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLLinkElement.html><b>DOMHTMLLinkElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLMapElement.html><b>DOMHTMLMapElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLMarqueeElement.html><b>DOMHTMLMarqueeElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLMediaElement.html><b>DOMHTMLMediaElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLMenuElement.html><b>DOMHTMLMenuElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLMetaElement.html><b>DOMHTMLMetaElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLModElement.html><b>DOMHTMLModElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLOListElement.html><b>DOMHTMLOListElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLObjectElement.html><b>DOMHTMLObjectElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLOptGroupElement.html><b>DOMHTMLOptGroupElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLOptionElement.html><b>DOMHTMLOptionElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLOptionsCollection.html><b>DOMHTMLOptionsCollection</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLParagraphElement.html><b>DOMHTMLParagraphElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLParamElement.html><b>DOMHTMLParamElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLPreElement.html><b>DOMHTMLPreElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLQuoteElement.html><b>DOMHTMLQuoteElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLScriptElement.html><b>DOMHTMLScriptElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLSelectElement.html><b>DOMHTMLSelectElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLStyleElement.html><b>DOMHTMLStyleElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLTableCaptionElement.html><b>DOMHTMLTableCaptionElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLTableCellElement.html><b>DOMHTMLTableCellElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLTableColElement.html><b>DOMHTMLTableColElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLTableElement.html><b>DOMHTMLTableElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLTableRowElement.html><b>DOMHTMLTableRowElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLTableSectionElement.html><b>DOMHTMLTableSectionElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLTextAreaElement.html><b>DOMHTMLTextAreaElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLTitleElement.html><b>DOMHTMLTitleElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLUListElement.html><b>DOMHTMLUListElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHTMLVideoElement.html><b>DOMHTMLVideoElement</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMHistory.html><b>DOMHistory</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMLocation.html><b>DOMLocation</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMMediaError.html><b>DOMMediaError</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMMediaList.html><b>DOMMediaList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMMediaQueryList.html><b>DOMMediaQueryList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMMemoryInfo.html><b>DOMMemoryInfo</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMMessagePort.html><b>DOMMessagePort</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMMouseEvent.html><b>DOMMouseEvent</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMNamedNodeMap.html><b>DOMNamedNodeMap</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMNavigator.html><b>DOMNavigator</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMNode.html><b>DOMNode</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMNodeFilter.html><b>DOMNodeFilter</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMNodeIterator.html><b>DOMNodeIterator</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMNodeList.html><b>DOMNodeList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMObject.html><b>DOMObject</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMProcessingInstruction.html><b>DOMProcessingInstruction</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMRange.html><b>DOMRange</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMScreen.html><b>DOMScreen</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMStorage.html><b>DOMStorage</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMStorageInfo.html><b>DOMStorageInfo</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMStyleMedia.html><b>DOMStyleMedia</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMStyleSheet.html><b>DOMStyleSheet</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMStyleSheetList.html><b>DOMStyleSheetList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMText.html><b>DOMText</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMTimeRanges.html><b>DOMTimeRanges</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMTreeWalker.html><b>DOMTreeWalker</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMUIEvent.html><b>DOMUIEvent</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMValidityState.html><b>DOMValidityState</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMWebKitAnimation.html><b>DOMWebKitAnimation</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMWebKitAnimationList.html><b>DOMWebKitAnimationList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMWebKitNamedFlow.html><b>DOMWebKitNamedFlow</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMWebKitPoint.html><b>DOMWebKitPoint</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMXPathExpression.html><b>DOMXPathExpression</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMXPathNSResolver.html><b>DOMXPathNSResolver</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_DOMXPathResult.html><b>DOMXPathResult</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_Download.html><b>Download</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_FaviconDatabase.html><b>FaviconDatabase</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_FileChooserRequest.html><b>FileChooserRequest</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_GeolocationPolicyDecision.html><b>GeolocationPolicyDecision</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_HitTestResult.html><b>HitTestResult</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_IconDatabase.html><b>IconDatabase</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_NetworkRequest.html><b>NetworkRequest</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_NetworkResponse.html><b>NetworkResponse</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_SecurityOrigin.html><b>SecurityOrigin</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_SoupAuthDialog.html><b>SoupAuthDialog</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_ViewportAttributes.html><b>ViewportAttributes</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebBackForwardList.html><b>WebBackForwardList</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebDataSource.html><b>WebDataSource</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebDatabase.html><b>WebDatabase</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebFrame.html><b>WebFrame</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebHistoryItem.html><b>WebHistoryItem</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebInspector.html><b>WebInspector</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebNavigationAction.html><b>WebNavigationAction</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebPlugin.html><b>WebPlugin</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebPluginDatabase.html><b>WebPluginDatabase</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebPolicyDecision.html><b>WebPolicyDecision</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebResource.html><b>WebResource</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebSettings.html><b>WebSettings</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebView.html><b>WebView</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Class) <a href=WebKit_WebWindowFeatures.html><b>WebWindowFeatures</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Module) <a href=WebKit_DOMEventTarget.html><b>DOMEventTarget</b></a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;(Module) <a href=WebKit_SpellChecker.html><b>SpellChecker</b></a>&nbsp;&nbsp;</div>
+</div>
+<div id=enums_details_header class=details_header><b>Enums Details</b><small id=enums_details_toggle>(Collapse)</small></div>
+<div class=enum_details id=enums_details>
+<div class=enum><div class=enum_root><a name=enum_CacheModel>&nbsp;&nbsp;&gt (Class) <b>CacheModel</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>DEFAULT</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DOCUMENT_BROWSER</b> = 3 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>WEB_BROWSER</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DOCUMENT_VIEWER</b> = 1 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_ContextMenuAction>&nbsp;&nbsp;&gt (Class) <b>ContextMenuAction</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>NO_GUESSES_FOUND</b> = 22 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>STOP</b> = 12 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CUT</b> = 15 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DELETE</b> = 17 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>TOGGLE_MEDIA_CONTROLS</b> = 34 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>LEARN_SPELLING</b> = 24 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>COPY</b> = 14 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>OPEN_LINK_IN_NEW_WINDOW</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DOWNLOAD_LINK_TO_DISK</b> = 3 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>COPY_IMAGE_URL_TO_CLIPBOARD</b> = 8 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>RELOAD</b> = 13 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>GO_FORWARD</b> = 11 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>NO_ACTION</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>PASTE</b> = 16 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>OPEN_LINK</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>INPUT_METHODS</b> = 19 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>IGNORE_GRAMMAR</b> = 25 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FONT_MENU</b> = 26 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>OUTLINE</b> = 30 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>COPY_IMAGE_TO_CLIPBOARD</b> = 7 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>SPELLING_GUESS</b> = 21 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>OPEN_FRAME_IN_NEW_WINDOW</b> = 9 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>TOGGLE_MEDIA_LOOP</b> = 35 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>UNICODE</b> = 20 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>OPEN_IMAGE_IN_NEW_WINDOW</b> = 5 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>INSPECT_ELEMENT</b> = 31 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>MEDIA_PLAY_PAUSE</b> = 37 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>MEDIA_MUTE</b> = 38 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>BOLD</b> = 27 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DOWNLOAD_IMAGE_TO_DISK</b> = 6 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>ENTER_VIDEO_FULLSCREEN</b> = 36 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>ITALIC</b> = 28 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>UNDERLINE</b> = 29 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>COPY_MEDIA_LINK_TO_CLIPBOARD</b> = 33 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>COPY_LINK_TO_CLIPBOARD</b> = 4 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>GO_BACK</b> = 10 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>OPEN_MEDIA_IN_NEW_WINDOW</b> = 32 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>SELECT_ALL</b> = 18 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>IGNORE_SPELLING</b> = 23 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_DownloadError>&nbsp;&nbsp;&gt (Class) <b>DownloadError</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>DESTINATION</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>NETWORK</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CANCELLED_BY_USER</b> = 0 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_DownloadStatus>&nbsp;&nbsp;&gt (Class) <b>DownloadStatus</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>CANCELLED</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>ERROR</b> = -1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>STARTED</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CREATED</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FINISHED</b> = 3 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_EditingBehavior>&nbsp;&nbsp;&gt (Class) <b>EditingBehavior</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>MAC</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>WINDOWS</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>UNIX</b> = 2 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_InsertAction>&nbsp;&nbsp;&gt (Class) <b>InsertAction</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>TYPED</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>PASTED</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DROPPED</b> = 2 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_LoadStatus>&nbsp;&nbsp;&gt (Class) <b>LoadStatus</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>FAILED</b> = 4 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FINISHED</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>COMMITTED</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>PROVISIONAL</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FIRST_VISUALLY_NON_EMPTY_LAYOUT</b> = 3 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_NavigationResponse>&nbsp;&nbsp;&gt (Class) <b>NavigationResponse</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>IGNORE</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DOWNLOAD</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>ACCEPT</b> = 0 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_NetworkError>&nbsp;&nbsp;&gt (Class) <b>NetworkError</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>FAILED</b> = 399 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CANCELLED</b> = 302 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>TRANSPORT</b> = 300 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FILE_DOES_NOT_EXIST</b> = 303 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>UNKNOWN_PROTOCOL</b> = 301 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_PluginError>&nbsp;&nbsp;&gt (Class) <b>PluginError</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>FAILED</b> = 299 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CONNECTION_CANCELLED</b> = 203 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CANNOT_LOAD_PLUGIN</b> = 201 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>WILL_HANDLE_LOAD</b> = 204 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>JAVA_UNAVAILABLE</b> = 202 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CANNOT_FIND_PLUGIN</b> = 200 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_PolicyError>&nbsp;&nbsp;&gt (Class) <b>PolicyError</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>FAILED</b> = 199 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CANNOT_SHOW_MIME_TYPE</b> = 100 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CANNOT_USE_RESTRICTED_PORT</b> = 103 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>CANNOT_SHOW_URL</b> = 101 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FRAME_LOAD_INTERRUPTED_BY_POLICY_CHANGE</b> = 102 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_SelectionAffinity>&nbsp;&nbsp;&gt (Class) <b>SelectionAffinity</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>DOWNSTREAM</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>UPSTREAM</b> = 0 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_WebNavigationReason>&nbsp;&nbsp;&gt (Class) <b>WebNavigationReason</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>BACK_FORWARD</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>LINK_CLICKED</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>RELOAD</b> = 3 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FORM_SUBMITTED</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>OTHER</b> = 5 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FORM_RESUBMITTED</b> = 4 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_WebViewTargetInfo>&nbsp;&nbsp;&gt (Class) <b>WebViewTargetInfo</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>TEXT</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>HTML</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>URI_LIST</b> = 3 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>IMAGE</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>NETSCAPE_URL</b> = 4 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_WebViewViewMode>&nbsp;&nbsp;&gt (Class) <b>WebViewViewMode</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>MAXIMIZED</b> = 3 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FLOATING</b> = 1 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>FULLSCREEN</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>WINDOWED</b> = 0 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>MINIMIZED</b> = 4 &nbsp;&nbsp;</li>
+</div>
+<br>
+</div>
+<div id=flags_details_header class=details_header><b>Flags Details</b><small id=flags_details_toggle>(Collapse)</small></div>
+<div class=enum_details id=flags_details>
+<div class=enum><div class=enum_root><a name=enum_HitTestResultContext>&nbsp;&nbsp;&gt (Class) <b>HitTestResultContext</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>SELECTION</b> = 32 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>EDITABLE</b> = 64 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DOCUMENT</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>IMAGE</b> = 8 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>LINK</b> = 4 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>MEDIA</b> = 16 &nbsp;&nbsp;</li>
+</div>
+<br>
+<div class=enum><div class=enum_root><a name=enum_HitTestResultContext>&nbsp;&nbsp;&gt (Class) <b>HitTestResultContext</b>&nbsp;&nbsp;</a></div><br>
+<li class=enum_member>&lt (Integer) <b>SELECTION</b> = 32 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>EDITABLE</b> = 64 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>DOCUMENT</b> = 2 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>IMAGE</b> = 8 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>LINK</b> = 4 &nbsp;&nbsp;</li>
+<li class=enum_member>&lt (Integer) <b>MEDIA</b> = 16 &nbsp;&nbsp;</li>
+</div>
+<br>
+</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_application_cache_get_database_directory_path>+ (String) <b>application_cache_get_database_directory_path</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_application_cache_get_database_directory_path </div>
+<div>&nbsp;&nbsp;<a href=#class_check_version>+ (Boolean) <b>check_version</b>(major, minor, micro)</a>&nbsp;&nbsp;</div>
+<div> webkit_check_version </div>
+<div>&nbsp;&nbsp;<a href=#class_context_menu_item_get_action>+ (Integer) <b>context_menu_item_get_action</b>(item)</a>&nbsp;&nbsp;</div>
+<div> webkit_context_menu_item_get_action </div>
+<div>&nbsp;&nbsp;<a href=#class_geolocation_policy_allow>+ (NilClass) <b>geolocation_policy_allow</b>(decision)</a>&nbsp;&nbsp;</div>
+<div> webkit_geolocation_policy_allow </div>
+<div>&nbsp;&nbsp;<a href=#class_geolocation_policy_deny>+ (NilClass) <b>geolocation_policy_deny</b>(decision)</a>&nbsp;&nbsp;</div>
+<div> webkit_geolocation_policy_deny </div>
+<div>&nbsp;&nbsp;<a href=#class_get_cache_model>+ (Integer) <b>get_cache_model</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_get_cache_model </div>
+<div>&nbsp;&nbsp;<a href=#class_get_default_session>+ (Soup::Session) <b>get_default_session</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_get_default_session </div>
+<div>&nbsp;&nbsp;<a href=#class_get_default_web_database_quota>+ (Integer) <b>get_default_web_database_quota</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_get_default_web_database_quota </div>
+<div>&nbsp;&nbsp;<a href=#class_get_favicon_database>+ (WebKit::FaviconDatabase) <b>get_favicon_database</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_get_favicon_database </div>
+<div>&nbsp;&nbsp;<a href=#class_get_icon_database>+ (WebKit::IconDatabase) <b>get_icon_database</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_get_icon_database </div>
+<div>&nbsp;&nbsp;<a href=#class_get_web_database_directory_path>+ (String) <b>get_web_database_directory_path</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_get_web_database_directory_path </div>
+<div>&nbsp;&nbsp;<a href=#class_get_web_plugin_database>+ (WebKit::WebPluginDatabase) <b>get_web_plugin_database</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_get_web_plugin_database </div>
+<div>&nbsp;&nbsp;<a href=#class_major_version>+ (Integer) <b>major_version</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_major_version </div>
+<div>&nbsp;&nbsp;<a href=#class_micro_version>+ (Integer) <b>micro_version</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_micro_version </div>
+<div>&nbsp;&nbsp;<a href=#class_minor_version>+ (Integer) <b>minor_version</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_minor_version </div>
+<div>&nbsp;&nbsp;<a href=#class_network_error_quark>+ (Integer) <b>network_error_quark</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_network_error_quark </div>
+<div>&nbsp;&nbsp;<a href=#class_plugin_error_quark>+ (Integer) <b>plugin_error_quark</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_plugin_error_quark </div>
+<div>&nbsp;&nbsp;<a href=#class_policy_error_quark>+ (Integer) <b>policy_error_quark</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_policy_error_quark </div>
+<div>&nbsp;&nbsp;<a href=#class_remove_all_web_databases>+ (NilClass) <b>remove_all_web_databases</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_remove_all_web_databases </div>
+<div>&nbsp;&nbsp;<a href=#class_set_cache_model>+ (NilClass) <b>set_cache_model</b>(cache_model)</a>&nbsp;&nbsp;</div>
+<div> webkit_set_cache_model </div>
+<div>&nbsp;&nbsp;<a href=#class_set_default_web_database_quota>+ (NilClass) <b>set_default_web_database_quota</b>(defaultQuota)</a>&nbsp;&nbsp;</div>
+<div> webkit_set_default_web_database_quota </div>
+<div>&nbsp;&nbsp;<a href=#class_set_text_checker>+ (NilClass) <b>set_text_checker</b>(checker)</a>&nbsp;&nbsp;</div>
+<div> webkit_set_text_checker </div>
+<div>&nbsp;&nbsp;<a href=#class_set_web_database_directory_path>+ (NilClass) <b>set_web_database_directory_path</b>(path)</a>&nbsp;&nbsp;</div>
+<div> webkit_set_web_database_directory_path </div>
+</div></div><br>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (String) <b><a name="class_application_cache_get_database_directory_path">application_cache_get_database_directory_path</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Boolean) <b><a name="class_check_version">check_version</a></b>(major, minor, micro)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>major</b>  </li>
+<li class=param> (Integer) <b>minor</b>  </li>
+<li class=param> (Integer) <b>micro</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_context_menu_item_get_action">context_menu_item_get_action</a></b>(item)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gtk::MenuItem) <b>item</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum WebKit::ContextMenuAction </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_geolocation_policy_allow">geolocation_policy_allow</a></b>(decision)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_GeolocationPolicyDecision.html>WebKit::GeolocationPolicyDecision</a>) <b>decision</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_geolocation_policy_deny">geolocation_policy_deny</a></b>(decision)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_GeolocationPolicyDecision.html>WebKit::GeolocationPolicyDecision</a>) <b>decision</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_get_cache_model">get_cache_model</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum WebKit::CacheModel </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Soup::Session) <b><a name="class_get_default_session">get_default_session</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Soup::Session)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_get_default_web_database_quota">get_default_web_database_quota</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#WebKit_FaviconDatabase.html>WebKit::FaviconDatabase</a>) <b><a name="class_get_favicon_database">get_favicon_database</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_FaviconDatabase.html>WebKit::FaviconDatabase</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#WebKit_IconDatabase.html>WebKit::IconDatabase</a>) <b><a name="class_get_icon_database">get_icon_database</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_IconDatabase.html>WebKit::IconDatabase</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (String) <b><a name="class_get_web_database_directory_path">get_web_database_directory_path</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#WebKit_WebPluginDatabase.html>WebKit::WebPluginDatabase</a>) <b><a name="class_get_web_plugin_database">get_web_plugin_database</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebPluginDatabase.html>WebKit::WebPluginDatabase</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_major_version">major_version</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_micro_version">micro_version</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_minor_version">minor_version</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_network_error_quark">network_error_quark</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_plugin_error_quark">plugin_error_quark</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Integer) <b><a name="class_policy_error_quark">policy_error_quark</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_remove_all_web_databases">remove_all_web_databases</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_set_cache_model">set_cache_model</a></b>(cache_model)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>cache_model</b>  a member of enum WebKit::CacheModel </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_set_default_web_database_quota">set_default_web_database_quota</a></b>(defaultQuota)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>defaultQuota</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_set_text_checker">set_text_checker</a></b>(checker)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (GObject::Object) <b>checker</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_set_web_database_directory_path">set_web_database_directory_path</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

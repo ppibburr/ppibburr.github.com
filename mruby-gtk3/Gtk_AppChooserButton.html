@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=AppChooserButton class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::AppChooserButton</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_ComboBox.html>Gtk::ComboBox</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_AppChooser.html>Gtk::AppChooser</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_CellLayout.html>Gtk::CellLayout</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_CellEditable.html>Gtk::CellEditable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>(content_type)</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_append_custom_item>- (NilClass) <b>append_custom_item</b>(name, label, icon)</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_append_custom_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_append_separator>- (NilClass) <b>append_separator</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_append_separator </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_heading>- (String) <b>get_heading</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_get_heading </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_default_item>- (Boolean) <b>get_show_default_item</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_get_show_default_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_dialog_item>- (Boolean) <b>get_show_dialog_item</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_get_show_dialog_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_active_custom_item>- (NilClass) <b>set_active_custom_item</b>(name)</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_set_active_custom_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_heading>- (NilClass) <b>set_heading</b>(heading)</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_set_heading </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_default_item>- (NilClass) <b>set_show_default_item</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_set_show_default_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_dialog_item>- (NilClass) <b>set_show_dialog_item</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_app_chooser_button_set_show_dialog_item </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_custom-item-activated>* (NilClass) <b>"custom-item-activated"</b> {|item_name| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>(content_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>content_type</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_append_custom_item">append_custom_item</a></b>(name, label, icon)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<li class=param> (String) <b>label</b>  </li>
+<li class=param> (FFI::Pointer) <b>icon</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_append_separator">append_separator</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_heading">get_heading</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_default_item">get_show_default_item</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_dialog_item">get_show_dialog_item</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_active_custom_item">set_active_custom_item</a></b>(name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_heading">set_heading</a></b>(heading)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>heading</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_default_item">set_show_default_item</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_dialog_item">set_show_dialog_item</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_custom-item-activated">custom-item-activated"</a></b> {|item_name| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>item_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

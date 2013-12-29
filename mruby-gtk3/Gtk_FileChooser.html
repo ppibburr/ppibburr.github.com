@@ -1,0 +1,518 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=FileChooser class=iface><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Module: Gtk::FileChooser</h2>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_filter>- (NilClass) <b>add_filter</b>(filter)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_add_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_shortcut_folder>- (Boolean) <b>add_shortcut_folder</b>(folder)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_add_shortcut_folder </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_shortcut_folder_uri>- (Boolean) <b>add_shortcut_folder_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_add_shortcut_folder_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_action>- (Integer) <b>get_action</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_action </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_create_folders>- (Boolean) <b>get_create_folders</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_create_folders </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_folder>- (String) <b>get_current_folder</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_current_folder </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_folder_file>- (FFI::Pointer) <b>get_current_folder_file</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_current_folder_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_folder_uri>- (String) <b>get_current_folder_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_current_folder_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_do_overwrite_confirmation>- (Boolean) <b>get_do_overwrite_confirmation</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_do_overwrite_confirmation </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_extra_widget>- (Gtk::Widget) <b>get_extra_widget</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_extra_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_file>- (FFI::Pointer) <b>get_file</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_filename>- (String) <b>get_filename</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_filename </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_filenames>- (FFI::Pointer) <b>get_filenames</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_filenames </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_files>- (FFI::Pointer) <b>get_files</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_files </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_filter>- (Gtk::FileFilter) <b>get_filter</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_local_only>- (Boolean) <b>get_local_only</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_local_only </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preview_file>- (FFI::Pointer) <b>get_preview_file</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_preview_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preview_filename>- (String) <b>get_preview_filename</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_preview_filename </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preview_uri>- (String) <b>get_preview_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_preview_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preview_widget>- (Gtk::Widget) <b>get_preview_widget</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_preview_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preview_widget_active>- (Boolean) <b>get_preview_widget_active</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_preview_widget_active </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_select_multiple>- (Boolean) <b>get_select_multiple</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_select_multiple </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_hidden>- (Boolean) <b>get_show_hidden</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_show_hidden </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_uri>- (String) <b>get_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_uris>- (FFI::Pointer) <b>get_uris</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_uris </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_use_preview_label>- (Boolean) <b>get_use_preview_label</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_get_use_preview_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_list_filters>- (FFI::Pointer) <b>list_filters</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_list_filters </div>
+<div>&nbsp;&nbsp;<a href=#instance_list_shortcut_folder_uris>- (FFI::Pointer) <b>list_shortcut_folder_uris</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_list_shortcut_folder_uris </div>
+<div>&nbsp;&nbsp;<a href=#instance_list_shortcut_folders>- (FFI::Pointer) <b>list_shortcut_folders</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_list_shortcut_folders </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_filter>- (NilClass) <b>remove_filter</b>(filter)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_remove_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_shortcut_folder>- (Boolean) <b>remove_shortcut_folder</b>(folder)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_remove_shortcut_folder </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_shortcut_folder_uri>- (Boolean) <b>remove_shortcut_folder_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_remove_shortcut_folder_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_all>- (NilClass) <b>select_all</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_select_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_file>- (Boolean) <b>select_file</b>(file)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_select_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_filename>- (Boolean) <b>select_filename</b>(filename)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_select_filename </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_uri>- (Boolean) <b>select_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_select_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_action>- (NilClass) <b>set_action</b>(action)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_action </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_create_folders>- (NilClass) <b>set_create_folders</b>(create_folders)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_create_folders </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_folder>- (Boolean) <b>set_current_folder</b>(filename)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_current_folder </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_folder_file>- (Boolean) <b>set_current_folder_file</b>(file)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_current_folder_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_folder_uri>- (Boolean) <b>set_current_folder_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_current_folder_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_name>- (NilClass) <b>set_current_name</b>(name)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_current_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_do_overwrite_confirmation>- (NilClass) <b>set_do_overwrite_confirmation</b>(do_overwrite_confirmation)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_do_overwrite_confirmation </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_extra_widget>- (NilClass) <b>set_extra_widget</b>(extra_widget)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_extra_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_file>- (Boolean) <b>set_file</b>(file)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_filename>- (Boolean) <b>set_filename</b>(filename)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_filename </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_filter>- (NilClass) <b>set_filter</b>(filter)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_local_only>- (NilClass) <b>set_local_only</b>(local_only)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_local_only </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_preview_widget>- (NilClass) <b>set_preview_widget</b>(preview_widget)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_preview_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_preview_widget_active>- (NilClass) <b>set_preview_widget_active</b>(active)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_preview_widget_active </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_select_multiple>- (NilClass) <b>set_select_multiple</b>(select_multiple)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_select_multiple </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_hidden>- (NilClass) <b>set_show_hidden</b>(show_hidden)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_show_hidden </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_uri>- (Boolean) <b>set_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_use_preview_label>- (NilClass) <b>set_use_preview_label</b>(use_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_set_use_preview_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_all>- (NilClass) <b>unselect_all</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_unselect_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_file>- (NilClass) <b>unselect_file</b>(file)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_unselect_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_filename>- (NilClass) <b>unselect_filename</b>(filename)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_unselect_filename </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_uri>- (NilClass) <b>unselect_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_file_chooser_unselect_uri </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_filter">add_filter</a></b>(filter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_FileFilter.html>Gtk::FileFilter</a>) <b>filter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_add_shortcut_folder">add_shortcut_folder</a></b>(folder)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>folder</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_add_shortcut_folder_uri">add_shortcut_folder_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_action">get_action</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::FileChooserAction </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_create_folders">get_create_folders</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_current_folder">get_current_folder</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_current_folder_file">get_current_folder_file</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_current_folder_uri">get_current_folder_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_do_overwrite_confirmation">get_do_overwrite_confirmation</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_extra_widget">get_extra_widget</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_file">get_file</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_filename">get_filename</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_filenames">get_filenames</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_files">get_files</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_FileFilter.html>Gtk::FileFilter</a>) <b><a name="instance_get_filter">get_filter</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_FileFilter.html>Gtk::FileFilter</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_local_only">get_local_only</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_preview_file">get_preview_file</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_preview_filename">get_preview_filename</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_preview_uri">get_preview_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_preview_widget">get_preview_widget</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_preview_widget_active">get_preview_widget_active</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_select_multiple">get_select_multiple</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_hidden">get_show_hidden</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_uri">get_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_uris">get_uris</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_use_preview_label">get_use_preview_label</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_list_filters">list_filters</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_list_shortcut_folder_uris">list_shortcut_folder_uris</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_list_shortcut_folders">list_shortcut_folders</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_filter">remove_filter</a></b>(filter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_FileFilter.html>Gtk::FileFilter</a>) <b>filter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_remove_shortcut_folder">remove_shortcut_folder</a></b>(folder)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>folder</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_remove_shortcut_folder_uri">remove_shortcut_folder_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_all">select_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_select_file">select_file</a></b>(file)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>file</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_select_filename">select_filename</a></b>(filename)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>filename</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_select_uri">select_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_action">set_action</a></b>(action)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>action</b>  a member of enum Gtk::FileChooserAction </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_create_folders">set_create_folders</a></b>(create_folders)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>create_folders</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_set_current_folder">set_current_folder</a></b>(filename)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>filename</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_set_current_folder_file">set_current_folder_file</a></b>(file)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>file</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_set_current_folder_uri">set_current_folder_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_current_name">set_current_name</a></b>(name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_do_overwrite_confirmation">set_do_overwrite_confirmation</a></b>(do_overwrite_confirmation)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>do_overwrite_confirmation</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_extra_widget">set_extra_widget</a></b>(extra_widget)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>extra_widget</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_set_file">set_file</a></b>(file)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>file</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_set_filename">set_filename</a></b>(filename)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>filename</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_filter">set_filter</a></b>(filter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_FileFilter.html>Gtk::FileFilter</a>) <b>filter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_local_only">set_local_only</a></b>(local_only)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>local_only</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_preview_widget">set_preview_widget</a></b>(preview_widget)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>preview_widget</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_preview_widget_active">set_preview_widget_active</a></b>(active)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>active</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_select_multiple">set_select_multiple</a></b>(select_multiple)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>select_multiple</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_hidden">set_show_hidden</a></b>(show_hidden)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_hidden</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_set_uri">set_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_use_preview_label">set_use_preview_label</a></b>(use_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>use_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_all">unselect_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_file">unselect_file</a></b>(file)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>file</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_filename">unselect_filename</a></b>(filename)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>filename</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_uri">unselect_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

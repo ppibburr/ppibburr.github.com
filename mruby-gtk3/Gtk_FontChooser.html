@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=FontChooser class=iface><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Module: Gtk::FontChooser</h2>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_get_font>- (String) <b>get_font</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_get_font </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_font_desc>- (FFI::Pointer) <b>get_font_desc</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_get_font_desc </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_font_face>- (Pango::FontFace) <b>get_font_face</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_get_font_face </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_font_family>- (Pango::FontFamily) <b>get_font_family</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_get_font_family </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_font_size>- (Integer) <b>get_font_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_get_font_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preview_text>- (String) <b>get_preview_text</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_get_preview_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_preview_entry>- (Boolean) <b>get_show_preview_entry</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_get_show_preview_entry </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_filter_func>- (NilClass) <b>set_filter_func</b>() {|family, face, data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_set_filter_func </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_font>- (NilClass) <b>set_font</b>(fontname)</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_set_font </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_font_desc>- (NilClass) <b>set_font_desc</b>(font_desc)</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_set_font_desc </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_preview_text>- (NilClass) <b>set_preview_text</b>(text)</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_set_preview_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_preview_entry>- (NilClass) <b>set_show_preview_entry</b>(show_preview_entry)</a>&nbsp;&nbsp;</div>
+<div> gtk_font_chooser_set_show_preview_entry </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_font">get_font</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_font_desc">get_font_desc</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Pango::FontFace) <b><a name="instance_get_font_face">get_font_face</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Pango::FontFace)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Pango::FontFamily) <b><a name="instance_get_font_family">get_font_family</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Pango::FontFamily)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_font_size">get_font_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_preview_text">get_preview_text</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_preview_entry">get_show_preview_entry</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_filter_func">set_filter_func</a></b>() {|family, face, data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (Pango::FontFamily) <b>family</b> </li>
+<li class=param> (Pango::FontFace) <b>face</b> </li>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_font">set_font</a></b>(fontname)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>fontname</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_font_desc">set_font_desc</a></b>(font_desc)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>font_desc</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_preview_text">set_preview_text</a></b>(text)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>text</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_preview_entry">set_show_preview_entry</a></b>(show_preview_entry)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_preview_entry</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

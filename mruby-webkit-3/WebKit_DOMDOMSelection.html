@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=DOMDOMSelection class=class><div class=top_nav><a href=WebKit.html>WebKit::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: WebKit::DOMDOMSelection</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=WebKit_DOMObject.html>WebKit::DOMObject</a></div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_range>- (NilClass) <b>add_range</b>(range)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_add_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_collapse>- (NilClass) <b>collapse</b>(node, index)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_collapse </div>
+<div>&nbsp;&nbsp;<a href=#instance_collapse_to_end>- (NilClass) <b>collapse_to_end</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_collapse_to_end </div>
+<div>&nbsp;&nbsp;<a href=#instance_collapse_to_start>- (NilClass) <b>collapse_to_start</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_collapse_to_start </div>
+<div>&nbsp;&nbsp;<a href=#instance_contains_node>- (Boolean) <b>contains_node</b>(node, allowPartial)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_contains_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_delete_from_document>- (NilClass) <b>delete_from_document</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_delete_from_document </div>
+<div>&nbsp;&nbsp;<a href=#instance_empty>- (NilClass) <b>empty</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_empty </div>
+<div>&nbsp;&nbsp;<a href=#instance_extend>- (NilClass) <b>extend</b>(node, offset)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_extend </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_anchor_node>- (WebKit::DOMNode) <b>get_anchor_node</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_anchor_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_anchor_offset>- (Integer) <b>get_anchor_offset</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_anchor_offset </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_base_node>- (WebKit::DOMNode) <b>get_base_node</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_base_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_base_offset>- (Integer) <b>get_base_offset</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_base_offset </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_extent_node>- (WebKit::DOMNode) <b>get_extent_node</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_extent_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_extent_offset>- (Integer) <b>get_extent_offset</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_extent_offset </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_focus_node>- (WebKit::DOMNode) <b>get_focus_node</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_focus_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_focus_offset>- (Integer) <b>get_focus_offset</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_focus_offset </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_is_collapsed>- (Boolean) <b>get_is_collapsed</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_is_collapsed </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_range_at>- (WebKit::DOMRange) <b>get_range_at</b>(index)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_range_at </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_range_count>- (Integer) <b>get_range_count</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_get_range_count </div>
+<div>&nbsp;&nbsp;<a href=#instance_modify>- (NilClass) <b>modify</b>(alter, direction, granularity)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_modify </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_all_ranges>- (NilClass) <b>remove_all_ranges</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_remove_all_ranges </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_all_children>- (NilClass) <b>select_all_children</b>(node)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_select_all_children </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_base_and_extent>- (NilClass) <b>set_base_and_extent</b>(baseNode, baseOffset, extentNode, extentOffset)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_set_base_and_extent </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_position>- (NilClass) <b>set_position</b>(node, offset)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_dom_selection_set_position </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_range">add_range</a></b>(range)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>range</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_collapse">collapse</a></b>(node, index)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>node</b>  </li>
+<li class=param> (Integer) <b>index</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_collapse_to_end">collapse_to_end</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_collapse_to_start">collapse_to_start</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_contains_node">contains_node</a></b>(node, allowPartial)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>node</b>  </li>
+<li class=param> (Boolean) <b>allowPartial</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_delete_from_document">delete_from_document</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_empty">empty</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_extend">extend</a></b>(node, offset)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>node</b>  </li>
+<li class=param> (Integer) <b>offset</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_anchor_node">get_anchor_node</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_anchor_offset">get_anchor_offset</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_base_node">get_base_node</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_base_offset">get_base_offset</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_extent_node">get_extent_node</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_extent_offset">get_extent_offset</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_focus_node">get_focus_node</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_focus_offset">get_focus_offset</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_is_collapsed">get_is_collapsed</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b><a name="instance_get_range_at">get_range_at</a></b>(index)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>index</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_range_count">get_range_count</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_modify">modify</a></b>(alter, direction, granularity)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>alter</b>  </li>
+<li class=param> (String) <b>direction</b>  </li>
+<li class=param> (String) <b>granularity</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_all_ranges">remove_all_ranges</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_all_children">select_all_children</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_base_and_extent">set_base_and_extent</a></b>(baseNode, baseOffset, extentNode, extentOffset)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>baseNode</b>  </li>
+<li class=param> (Integer) <b>baseOffset</b>  </li>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>extentNode</b>  </li>
+<li class=param> (Integer) <b>extentOffset</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_position">set_position</a></b>(node, offset)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>node</b>  </li>
+<li class=param> (Integer) <b>offset</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

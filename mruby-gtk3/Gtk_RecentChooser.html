@@ -1,0 +1,287 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=RecentChooser class=iface><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Module: Gtk::RecentChooser</h2>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_filter>- (NilClass) <b>add_filter</b>(filter)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_add_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_item>- (FFI::Pointer) <b>get_current_item</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_current_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_uri>- (String) <b>get_current_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_current_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_filter>- (Gtk::RecentFilter) <b>get_filter</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_items>- (FFI::Pointer) <b>get_items</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_items </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_limit>- (Integer) <b>get_limit</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_limit </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_local_only>- (Boolean) <b>get_local_only</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_local_only </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_select_multiple>- (Boolean) <b>get_select_multiple</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_select_multiple </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_icons>- (Boolean) <b>get_show_icons</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_show_icons </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_not_found>- (Boolean) <b>get_show_not_found</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_show_not_found </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_private>- (Boolean) <b>get_show_private</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_show_private </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_tips>- (Boolean) <b>get_show_tips</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_show_tips </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_sort_type>- (Integer) <b>get_sort_type</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_sort_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_uris>- (Array&lt;Array<String>, Integer&gt;) <b>get_uris</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_get_uris </div>
+<div>&nbsp;&nbsp;<a href=#instance_list_filters>- (FFI::Pointer) <b>list_filters</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_list_filters </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_filter>- (NilClass) <b>remove_filter</b>(filter)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_remove_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_all>- (NilClass) <b>select_all</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_select_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_uri>- (Boolean) <b>select_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_select_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_uri>- (Boolean) <b>set_current_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_current_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_filter>- (NilClass) <b>set_filter</b>(filter)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_limit>- (NilClass) <b>set_limit</b>(limit)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_limit </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_local_only>- (NilClass) <b>set_local_only</b>(local_only)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_local_only </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_select_multiple>- (NilClass) <b>set_select_multiple</b>(select_multiple)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_select_multiple </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_icons>- (NilClass) <b>set_show_icons</b>(show_icons)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_show_icons </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_not_found>- (NilClass) <b>set_show_not_found</b>(show_not_found)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_show_not_found </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_private>- (NilClass) <b>set_show_private</b>(show_private)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_show_private </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_tips>- (NilClass) <b>set_show_tips</b>(show_tips)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_show_tips </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_sort_func>- (NilClass) <b>set_sort_func</b>() {|a, b| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_sort_func </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_sort_type>- (NilClass) <b>set_sort_type</b>(sort_type)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_set_sort_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_all>- (NilClass) <b>unselect_all</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_unselect_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_uri>- (NilClass) <b>unselect_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> gtk_recent_chooser_unselect_uri </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_filter">add_filter</a></b>(filter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_RecentFilter.html>Gtk::RecentFilter</a>) <b>filter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_current_item">get_current_item</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_current_uri">get_current_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_RecentFilter.html>Gtk::RecentFilter</a>) <b><a name="instance_get_filter">get_filter</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_RecentFilter.html>Gtk::RecentFilter</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_items">get_items</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_limit">get_limit</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_local_only">get_local_only</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_select_multiple">get_select_multiple</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_icons">get_show_icons</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_not_found">get_show_not_found</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_private">get_show_private</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_tips">get_show_tips</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_sort_type">get_sort_type</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::RecentSortType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Array<String>, Integer&gt;) <b><a name="instance_get_uris">get_uris</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Array<String>, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_list_filters">list_filters</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_filter">remove_filter</a></b>(filter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_RecentFilter.html>Gtk::RecentFilter</a>) <b>filter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_all">select_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_select_uri">select_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_set_current_uri">set_current_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_filter">set_filter</a></b>(filter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_RecentFilter.html>Gtk::RecentFilter</a>) <b>filter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_limit">set_limit</a></b>(limit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>limit</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_local_only">set_local_only</a></b>(local_only)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>local_only</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_select_multiple">set_select_multiple</a></b>(select_multiple)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>select_multiple</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_icons">set_show_icons</a></b>(show_icons)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_icons</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_not_found">set_show_not_found</a></b>(show_not_found)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_not_found</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_private">set_show_private</a></b>(show_private)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_private</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_tips">set_show_tips</a></b>(show_tips)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_tips</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_sort_func">set_sort_func</a></b>() {|a, b| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>a</b> </li>
+<li class=param> (FFI::Pointer) <b>b</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Integer) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_sort_type">set_sort_type</a></b>(sort_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>sort_type</b>  a member of enum Gtk::RecentSortType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_all">unselect_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_uri">unselect_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

@@ -1,0 +1,513 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=StyleContext class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::StyleContext</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::StyleContext) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_new </div>
+<div>&nbsp;&nbsp;<a href=#class_add_provider_for_screen>+ (NilClass) <b>add_provider_for_screen</b>(screen, provider, priority)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_add_provider_for_screen </div>
+<div>&nbsp;&nbsp;<a href=#class_remove_provider_for_screen>+ (NilClass) <b>remove_provider_for_screen</b>(screen, provider)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_remove_provider_for_screen </div>
+<div>&nbsp;&nbsp;<a href=#class_reset_widgets>+ (NilClass) <b>reset_widgets</b>(screen)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_reset_widgets </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_class>- (NilClass) <b>add_class</b>(class_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_add_class </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_provider>- (NilClass) <b>add_provider</b>(provider, priority)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_add_provider </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_region>- (NilClass) <b>add_region</b>(region_name, flags)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_add_region </div>
+<div>&nbsp;&nbsp;<a href=#instance_cancel_animations>- (NilClass) <b>cancel_animations</b>(region_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_cancel_animations </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_background_color>- (FFI::Pointer) <b>get_background_color</b>(state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_background_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_border>- (FFI::Pointer) <b>get_border</b>(state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_border </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_border_color>- (FFI::Pointer) <b>get_border_color</b>(state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_border_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_color>- (FFI::Pointer) <b>get_color</b>(state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_direction>- (Integer) <b>get_direction</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_direction </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_font>- (FFI::Pointer) <b>get_font</b>(state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_font </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_frame_clock>- (Gdk::FrameClock) <b>get_frame_clock</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_frame_clock </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_junction_sides>- (Integer) <b>get_junction_sides</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_junction_sides </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_margin>- (FFI::Pointer) <b>get_margin</b>(state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_margin </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_padding>- (FFI::Pointer) <b>get_padding</b>(state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_padding </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_parent>- (Gtk::StyleContext) <b>get_parent</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_parent </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_path>- (FFI::Pointer) <b>get_path</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_property>- (FFI::Pointer) <b>get_property</b>(property, state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_property </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_screen>- (Gdk::Screen) <b>get_screen</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_screen </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_section>- (FFI::Pointer) <b>get_section</b>(property)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_section </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_state>- (Integer) <b>get_state</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_state </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_style_property>- (NilClass) <b>get_style_property</b>(property_name, value)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_get_style_property </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_class>- (Boolean) <b>has_class</b>(class_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_has_class </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_region>- (Array&lt;Boolean, Integer&gt;) <b>has_region</b>(region_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_has_region </div>
+<div>&nbsp;&nbsp;<a href=#instance_invalidate>- (NilClass) <b>invalidate</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_invalidate </div>
+<div>&nbsp;&nbsp;<a href=#instance_list_classes>- (FFI::Pointer) <b>list_classes</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_list_classes </div>
+<div>&nbsp;&nbsp;<a href=#instance_list_regions>- (FFI::Pointer) <b>list_regions</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_list_regions </div>
+<div>&nbsp;&nbsp;<a href=#instance_lookup_color>- (Array&lt;Boolean, FFI::Pointer&gt;) <b>lookup_color</b>(color_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_lookup_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_lookup_icon_set>- (FFI::Pointer) <b>lookup_icon_set</b>(stock_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_lookup_icon_set </div>
+<div>&nbsp;&nbsp;<a href=#instance_notify_state_change>- (NilClass) <b>notify_state_change</b>(window, state, state_value, region_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_notify_state_change </div>
+<div>&nbsp;&nbsp;<a href=#instance_pop_animatable_region>- (NilClass) <b>pop_animatable_region</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_pop_animatable_region </div>
+<div>&nbsp;&nbsp;<a href=#instance_push_animatable_region>- (NilClass) <b>push_animatable_region</b>(region_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_push_animatable_region </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_class>- (NilClass) <b>remove_class</b>(class_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_remove_class </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_provider>- (NilClass) <b>remove_provider</b>(provider)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_remove_provider </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_region>- (NilClass) <b>remove_region</b>(region_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_remove_region </div>
+<div>&nbsp;&nbsp;<a href=#instance_restore>- (NilClass) <b>restore</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_restore </div>
+<div>&nbsp;&nbsp;<a href=#instance_save>- (NilClass) <b>save</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_save </div>
+<div>&nbsp;&nbsp;<a href=#instance_scroll_animations>- (NilClass) <b>scroll_animations</b>(window, dx, dy)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_scroll_animations </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_background>- (NilClass) <b>set_background</b>(window)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_set_background </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_direction>- (NilClass) <b>set_direction</b>(direction)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_set_direction </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_frame_clock>- (NilClass) <b>set_frame_clock</b>(frame_clock)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_set_frame_clock </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_junction_sides>- (NilClass) <b>set_junction_sides</b>(sides)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_set_junction_sides </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_parent>- (NilClass) <b>set_parent</b>(parent)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_set_parent </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_path>- (NilClass) <b>set_path</b>(path)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_set_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_screen>- (NilClass) <b>set_screen</b>(screen)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_set_screen </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_state>- (NilClass) <b>set_state</b>(flags)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_set_state </div>
+<div>&nbsp;&nbsp;<a href=#instance_state_is_running>- (Array&lt;Boolean, Float&gt;) <b>state_is_running</b>(state)</a>&nbsp;&nbsp;</div>
+<div> gtk_style_context_state_is_running </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_changed>* (NilClass) <b>"changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_StyleContext.html>Gtk::StyleContext</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_StyleContext.html>Gtk::StyleContext</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_add_provider_for_screen">add_provider_for_screen</a></b>(screen, provider, priority)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Screen) <b>screen</b>  </li>
+<li class=param> (FFI::Pointer) <b>provider</b>  </li>
+<li class=param> (Integer) <b>priority</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_remove_provider_for_screen">remove_provider_for_screen</a></b>(screen, provider)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Screen) <b>screen</b>  </li>
+<li class=param> (FFI::Pointer) <b>provider</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_reset_widgets">reset_widgets</a></b>(screen)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Screen) <b>screen</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_class">add_class</a></b>(class_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>class_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_provider">add_provider</a></b>(provider, priority)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>provider</b>  </li>
+<li class=param> (Integer) <b>priority</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_region">add_region</a></b>(region_name, flags)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>region_name</b>  </li>
+<li class=param> (Integer) <b>flags</b>  a member of enum Gtk::RegionFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_cancel_animations">cancel_animations</a></b>(region_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>region_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_background_color">get_background_color</a></b>(state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_border">get_border</a></b>(state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_border_color">get_border_color</a></b>(state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_color">get_color</a></b>(state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_direction">get_direction</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::TextDirection </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_font">get_font</a></b>(state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Gdk::FrameClock) <b><a name="instance_get_frame_clock">get_frame_clock</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gdk::FrameClock)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_junction_sides">get_junction_sides</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::JunctionSides </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_margin">get_margin</a></b>(state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_padding">get_padding</a></b>(state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_StyleContext.html>Gtk::StyleContext</a>) <b><a name="instance_get_parent">get_parent</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_StyleContext.html>Gtk::StyleContext</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_path">get_path</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_property">get_property</a></b>(property, state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>property</b>  </li>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Gdk::Screen) <b><a name="instance_get_screen">get_screen</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gdk::Screen)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_section">get_section</a></b>(property)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>property</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_state">get_state</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::StateFlags </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_get_style_property">get_style_property</a></b>(property_name, value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>property_name</b>  </li>
+<li class=param> (FFI::Pointer) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_has_class">has_class</a></b>(class_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>class_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, Integer&gt;) <b><a name="instance_has_region">has_region</a></b>(region_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>region_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_invalidate">invalidate</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_list_classes">list_classes</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_list_regions">list_regions</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer&gt;) <b><a name="instance_lookup_color">lookup_color</a></b>(color_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>color_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_lookup_icon_set">lookup_icon_set</a></b>(stock_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>stock_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_notify_state_change">notify_state_change</a></b>(window, state, state_value, region_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Window) <b>window</b>  </li>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateType </li>
+<li class=param> (Boolean) <b>state_value</b>  </li>
+<li class=param> (void) <b>region_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_pop_animatable_region">pop_animatable_region</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_push_animatable_region">push_animatable_region</a></b>(region_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>region_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_class">remove_class</a></b>(class_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>class_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_provider">remove_provider</a></b>(provider)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>provider</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_region">remove_region</a></b>(region_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>region_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_restore">restore</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_save">save</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_scroll_animations">scroll_animations</a></b>(window, dx, dy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Window) <b>window</b>  </li>
+<li class=param> (Integer) <b>dx</b>  </li>
+<li class=param> (Integer) <b>dy</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_background">set_background</a></b>(window)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Window) <b>window</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_direction">set_direction</a></b>(direction)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>direction</b>  a member of enum Gtk::TextDirection </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_frame_clock">set_frame_clock</a></b>(frame_clock)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::FrameClock) <b>frame_clock</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_junction_sides">set_junction_sides</a></b>(sides)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>sides</b>  a member of enum Gtk::JunctionSides </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_parent">set_parent</a></b>(parent)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_StyleContext.html>Gtk::StyleContext</a>) <b>parent</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_path">set_path</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_screen">set_screen</a></b>(screen)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Screen) <b>screen</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_state">set_state</a></b>(flags)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>flags</b>  a member of enum Gtk::StateFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, Float&gt;) <b><a name="instance_state_is_running">state_is_running</a></b>(state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>state</b>  a member of enum Gtk::StateType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, Float&gt;)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_changed">changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+
