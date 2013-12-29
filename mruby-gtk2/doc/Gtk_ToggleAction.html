@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=ToggleAction class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::ToggleAction</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Action.html>Gtk::Action</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::ToggleAction) <b>new</b>(name, stock_id, label, tooltip)</a>&nbsp;&nbsp;</div>
+<div> gtk_toggle_action_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_get_active>- (Boolean) <b>get_active</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toggle_action_get_active </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_draw_as_radio>- (Boolean) <b>get_draw_as_radio</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toggle_action_get_draw_as_radio </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_active>- (NilClass) <b>set_active</b>(is_active)</a>&nbsp;&nbsp;</div>
+<div> gtk_toggle_action_set_active </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_draw_as_radio>- (NilClass) <b>set_draw_as_radio</b>(draw_as_radio)</a>&nbsp;&nbsp;</div>
+<div> gtk_toggle_action_set_draw_as_radio </div>
+<div>&nbsp;&nbsp;<a href=#instance_toggled>- (NilClass) <b>toggled</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_toggle_action_toggled </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_toggled>* (NilClass) <b>"toggled"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_ToggleAction.html>Gtk::ToggleAction</a>) <b><a name="class_new">new</a></b>(name, stock_id, label, tooltip)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<li class=param> (String) <b>stock_id</b>  </li>
+<li class=param> (String) <b>label</b>  </li>
+<li class=param> (String) <b>tooltip</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_ToggleAction.html>Gtk::ToggleAction</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_active">get_active</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_draw_as_radio">get_draw_as_radio</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_active">set_active</a></b>(is_active)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>is_active</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_draw_as_radio">set_draw_as_radio</a></b>(draw_as_radio)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>draw_as_radio</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_toggled">toggled</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_toggled">toggled"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

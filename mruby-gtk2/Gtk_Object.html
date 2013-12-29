@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Object class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Object</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::InitiallyUnowned</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_add_arg_type>+ (NilClass) <b>add_arg_type</b>(arg_name, arg_type, arg_flags, arg_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_object_add_arg_type </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_destroy>- (NilClass) <b>destroy</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_object_destroy </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_data>- (NilClass) <b>remove_data</b>(key)</a>&nbsp;&nbsp;</div>
+<div> gtk_object_remove_data </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_data_by_id>- (NilClass) <b>remove_data_by_id</b>(data_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_object_remove_data_by_id </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_no_notify>- (NilClass) <b>remove_no_notify</b>(key)</a>&nbsp;&nbsp;</div>
+<div> gtk_object_remove_no_notify </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_no_notify_by_id>- (NilClass) <b>remove_no_notify_by_id</b>(key_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_object_remove_no_notify_by_id </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_data>- (NilClass) <b>set_data</b>(key, data)</a>&nbsp;&nbsp;</div>
+<div> gtk_object_set_data </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_data_by_id>- (NilClass) <b>set_data_by_id</b>(data_id, data)</a>&nbsp;&nbsp;</div>
+<div> gtk_object_set_data_by_id </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_data_by_id_full>- (NilClass) <b>set_data_by_id_full</b>(data_id, data) {|data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_object_set_data_by_id_full </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_data_full>- (NilClass) <b>set_data_full</b>(key, data) {|data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_object_set_data_full </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_user_data>- (NilClass) <b>set_user_data</b>(data)</a>&nbsp;&nbsp;</div>
+<div> gtk_object_set_user_data </div>
+<div>&nbsp;&nbsp;<a href=#instance_sink>- (NilClass) <b>sink</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_object_sink </div>
+<div>&nbsp;&nbsp;<a href=#instance_unref>- (NilClass) <b>unref</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_object_unref </div>
+<div>&nbsp;&nbsp;<a href=#instance_weakref>- (NilClass) <b>weakref</b>(data) {|data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_object_weakref </div>
+<div>&nbsp;&nbsp;<a href=#instance_weakunref>- (NilClass) <b>weakunref</b>(data) {|data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_object_weakunref </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_destroy>* (NilClass) <b>"destroy"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_add_arg_type">add_arg_type</a></b>(arg_name, arg_type, arg_flags, arg_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>arg_name</b>  </li>
+<li class=param> (Integer) <b>arg_type</b>  </li>
+<li class=param> (Integer) <b>arg_flags</b>  </li>
+<li class=param> (Integer) <b>arg_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_destroy">destroy</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_data">remove_data</a></b>(key)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_data_by_id">remove_data_by_id</a></b>(data_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>data_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_no_notify">remove_no_notify</a></b>(key)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_no_notify_by_id">remove_no_notify_by_id</a></b>(key_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>key_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_data">set_data</a></b>(key, data)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_data_by_id">set_data_by_id</a></b>(data_id, data)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>data_id</b>  </li>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_data_by_id_full">set_data_by_id_full</a></b>(data_id, data) {|data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>data_id</b>  </li>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_data_full">set_data_full</a></b>(key, data) {|data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_user_data">set_user_data</a></b>(data)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_sink">sink</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unref">unref</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_weakref">weakref</a></b>(data) {|data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_weakunref">weakunref</a></b>(data) {|data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_destroy">destroy"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Dialog class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Dialog</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Window.html>Gtk::Window</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_action_widget>- (NilClass) <b>add_action_widget</b>(child, response_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_add_action_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_button>- (Gtk::Widget) <b>add_button</b>(button_text, response_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_add_button </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_action_area>- (Gtk::Widget) <b>get_action_area</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_get_action_area </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_content_area>- (Gtk::Widget) <b>get_content_area</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_get_content_area </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_has_separator>- (Boolean) <b>get_has_separator</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_get_has_separator </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_response_for_widget>- (Integer) <b>get_response_for_widget</b>(widget)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_get_response_for_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_widget_for_response>- (Gtk::Widget) <b>get_widget_for_response</b>(response_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_get_widget_for_response </div>
+<div>&nbsp;&nbsp;<a href=#instance_response>- (NilClass) <b>response</b>(response_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_response </div>
+<div>&nbsp;&nbsp;<a href=#instance_run>- (Integer) <b>run</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_run </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_alternative_button_order_from_array>- (NilClass) <b>set_alternative_button_order_from_array</b>(n_params, new_order)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_set_alternative_button_order_from_array </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_default_response>- (NilClass) <b>set_default_response</b>(response_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_set_default_response </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_has_separator>- (NilClass) <b>set_has_separator</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_set_has_separator </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_response_sensitive>- (NilClass) <b>set_response_sensitive</b>(response_id, setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_dialog_set_response_sensitive </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_close>* (NilClass) <b>"close"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_response>* (NilClass) <b>"response"</b> {|response_id| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_action_widget">add_action_widget</a></b>(child, response_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>response_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_add_button">add_button</a></b>(button_text, response_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>button_text</b>  </li>
+<li class=param> (Integer) <b>response_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_action_area">get_action_area</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_content_area">get_content_area</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_has_separator">get_has_separator</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_response_for_widget">get_response_for_widget</a></b>(widget)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_widget_for_response">get_widget_for_response</a></b>(response_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>response_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_response">response</a></b>(response_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>response_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_run">run</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_alternative_button_order_from_array">set_alternative_button_order_from_array</a></b>(n_params, new_order)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>n_params</b>  </li>
+<li class=param> (Array&lt;FFI::Pointer&gt;) <b>new_order</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_default_response">set_default_response</a></b>(response_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>response_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_has_separator">set_has_separator</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_response_sensitive">set_response_sensitive</a></b>(response_id, setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>response_id</b>  </li>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_close">close"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_response">response"</a></b> {|response_id| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>response_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

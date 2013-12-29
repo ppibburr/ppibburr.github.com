@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Builder class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Builder</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Builder) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_from_file>- (Integer) <b>add_from_file</b>(filename)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_add_from_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_from_string>- (Integer) <b>add_from_string</b>(buffer, length)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_add_from_string </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_objects_from_file>- (Integer) <b>add_objects_from_file</b>(filename, object_ids)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_add_objects_from_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_objects_from_string>- (Integer) <b>add_objects_from_string</b>(buffer, length, object_ids)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_add_objects_from_string </div>
+<div>&nbsp;&nbsp;<a href=#instance_connect_signals>- (NilClass) <b>connect_signals</b>(user_data)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_connect_signals </div>
+<div>&nbsp;&nbsp;<a href=#instance_connect_signals_full>- (NilClass) <b>connect_signals_full</b>() {|builder, object, signal_name, handler_name, connect_object, flags| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_connect_signals_full </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_object>- (GObject::Object) <b>get_object</b>(name)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_get_object </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_objects>- (FFI::Pointer) <b>get_objects</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_get_objects </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_translation_domain>- (String) <b>get_translation_domain</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_get_translation_domain </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_type_from_name>- (Integer) <b>get_type_from_name</b>(type_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_get_type_from_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_translation_domain>- (NilClass) <b>set_translation_domain</b>(domain)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_set_translation_domain </div>
+<div>&nbsp;&nbsp;<a href=#instance_value_from_string>- (Array&lt;Boolean, FFI::Pointer&gt;) <b>value_from_string</b>(pspec, string)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_value_from_string </div>
+<div>&nbsp;&nbsp;<a href=#instance_value_from_string_type>- (Array&lt;Boolean, FFI::Pointer&gt;) <b>value_from_string_type</b>(type, string)</a>&nbsp;&nbsp;</div>
+<div> gtk_builder_value_from_string_type </div>
+</div></div><br>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Builder.html>Gtk::Builder</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Builder.html>Gtk::Builder</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_add_from_file">add_from_file</a></b>(filename)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>filename</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_add_from_string">add_from_string</a></b>(buffer, length)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>buffer</b>  </li>
+<li class=param> (Integer) <b>length</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_add_objects_from_file">add_objects_from_file</a></b>(filename, object_ids)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>filename</b>  </li>
+<li class=param> (String) <b>object_ids</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_add_objects_from_string">add_objects_from_string</a></b>(buffer, length, object_ids)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>buffer</b>  </li>
+<li class=param> (Integer) <b>length</b>  </li>
+<li class=param> (String) <b>object_ids</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_connect_signals">connect_signals</a></b>(user_data)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>user_data</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_connect_signals_full">connect_signals_full</a></b>() {|builder, object, signal_name, handler_name, connect_object, flags| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Builder.html>Gtk::Builder</a>) <b>builder</b> </li>
+<li class=param> (GObject::Object) <b>object</b> </li>
+<li class=param> (String) <b>signal_name</b> </li>
+<li class=param> (String) <b>handler_name</b> </li>
+<li class=param> (GObject::Object) <b>connect_object</b> </li>
+<li class=param> (Integer) <b>flags</b>  a member of enum GObject::ConnectFlags</li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (GObject::Object) <b><a name="instance_get_object">get_object</a></b>(name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (GObject::Object)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_objects">get_objects</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_translation_domain">get_translation_domain</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_type_from_name">get_type_from_name</a></b>(type_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>type_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_translation_domain">set_translation_domain</a></b>(domain)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>domain</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer&gt;) <b><a name="instance_value_from_string">value_from_string</a></b>(pspec, string)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (GObject::ParamSpec) <b>pspec</b>  </li>
+<li class=param> (String) <b>string</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer&gt;) <b><a name="instance_value_from_string_type">value_from_string_type</a></b>(type, string)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>type</b>  </li>
+<li class=param> (String) <b>string</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer&gt;)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

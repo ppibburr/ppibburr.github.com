@@ -1,0 +1,711 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=PrintSettings class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::PrintSettings</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::PrintSettings) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_from_file>+ (Gtk::PrintSettings) <b>new_from_file</b>(file_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_new_from_file </div>
+<div>&nbsp;&nbsp;<a href=#class_new_from_key_file>+ (Gtk::PrintSettings) <b>new_from_key_file</b>(key_file, group_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_new_from_key_file </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_copy>- (Gtk::PrintSettings) <b>copy</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_copy </div>
+<div>&nbsp;&nbsp;<a href=#instance_foreach>- (NilClass) <b>foreach</b>() {|key, value| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_foreach </div>
+<div>&nbsp;&nbsp;<a href=#instance_get>- (String) <b>get</b>(key)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_bool>- (Boolean) <b>get_bool</b>(key)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_bool </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_collate>- (Boolean) <b>get_collate</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_collate </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_default_source>- (String) <b>get_default_source</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_default_source </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_dither>- (String) <b>get_dither</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_dither </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_double>- (Float) <b>get_double</b>(key)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_double </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_double_with_default>- (Float) <b>get_double_with_default</b>(key, def_)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_double_with_default </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_duplex>- (Integer) <b>get_duplex</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_duplex </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_finishings>- (String) <b>get_finishings</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_finishings </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_int>- (Integer) <b>get_int</b>(key)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_int </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_int_with_default>- (Integer) <b>get_int_with_default</b>(key, def_)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_int_with_default </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_length>- (Float) <b>get_length</b>(key, unit)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_length </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_media_type>- (String) <b>get_media_type</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_media_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_n_copies>- (Integer) <b>get_n_copies</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_n_copies </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_number_up>- (Integer) <b>get_number_up</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_number_up </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_number_up_layout>- (Integer) <b>get_number_up_layout</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_number_up_layout </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_orientation>- (Integer) <b>get_orientation</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_orientation </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_output_bin>- (String) <b>get_output_bin</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_output_bin </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_page_ranges>- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b>get_page_ranges</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_page_ranges </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_page_set>- (Integer) <b>get_page_set</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_page_set </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_paper_height>- (Float) <b>get_paper_height</b>(unit)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_paper_height </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_paper_size>- (FFI::Pointer) <b>get_paper_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_paper_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_paper_width>- (Float) <b>get_paper_width</b>(unit)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_paper_width </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_print_pages>- (Integer) <b>get_print_pages</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_print_pages </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_printer>- (String) <b>get_printer</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_printer </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_printer_lpi>- (Float) <b>get_printer_lpi</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_printer_lpi </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_quality>- (Integer) <b>get_quality</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_quality </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_resolution>- (Integer) <b>get_resolution</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_resolution </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_resolution_x>- (Integer) <b>get_resolution_x</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_resolution_x </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_resolution_y>- (Integer) <b>get_resolution_y</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_resolution_y </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_reverse>- (Boolean) <b>get_reverse</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_reverse </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_scale>- (Float) <b>get_scale</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_scale </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_use_color>- (Boolean) <b>get_use_color</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_get_use_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_key>- (Boolean) <b>has_key</b>(key)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_has_key </div>
+<div>&nbsp;&nbsp;<a href=#instance_load_file>- (Boolean) <b>load_file</b>(file_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_load_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_load_key_file>- (Boolean) <b>load_key_file</b>(key_file, group_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_load_key_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_set>- (NilClass) <b>set</b>(key, value)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_bool>- (NilClass) <b>set_bool</b>(key, value)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_bool </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_collate>- (NilClass) <b>set_collate</b>(collate)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_collate </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_default_source>- (NilClass) <b>set_default_source</b>(default_source)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_default_source </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_dither>- (NilClass) <b>set_dither</b>(dither)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_dither </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_double>- (NilClass) <b>set_double</b>(key, value)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_double </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_duplex>- (NilClass) <b>set_duplex</b>(duplex)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_duplex </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_finishings>- (NilClass) <b>set_finishings</b>(finishings)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_finishings </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_int>- (NilClass) <b>set_int</b>(key, value)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_int </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_length>- (NilClass) <b>set_length</b>(key, value, unit)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_length </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_media_type>- (NilClass) <b>set_media_type</b>(media_type)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_media_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_n_copies>- (NilClass) <b>set_n_copies</b>(num_copies)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_n_copies </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_number_up>- (NilClass) <b>set_number_up</b>(number_up)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_number_up </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_number_up_layout>- (NilClass) <b>set_number_up_layout</b>(number_up_layout)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_number_up_layout </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_orientation>- (NilClass) <b>set_orientation</b>(orientation)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_orientation </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_output_bin>- (NilClass) <b>set_output_bin</b>(output_bin)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_output_bin </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_page_ranges>- (NilClass) <b>set_page_ranges</b>(page_ranges, num_ranges)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_page_ranges </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_page_set>- (NilClass) <b>set_page_set</b>(page_set)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_page_set </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_paper_height>- (NilClass) <b>set_paper_height</b>(height, unit)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_paper_height </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_paper_size>- (NilClass) <b>set_paper_size</b>(paper_size)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_paper_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_paper_width>- (NilClass) <b>set_paper_width</b>(width, unit)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_paper_width </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_print_pages>- (NilClass) <b>set_print_pages</b>(pages)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_print_pages </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_printer>- (NilClass) <b>set_printer</b>(printer)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_printer </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_printer_lpi>- (NilClass) <b>set_printer_lpi</b>(lpi)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_printer_lpi </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_quality>- (NilClass) <b>set_quality</b>(quality)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_quality </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_resolution>- (NilClass) <b>set_resolution</b>(resolution)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_resolution </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_resolution_xy>- (NilClass) <b>set_resolution_xy</b>(resolution_x, resolution_y)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_resolution_xy </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_reverse>- (NilClass) <b>set_reverse</b>(reverse)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_reverse </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_scale>- (NilClass) <b>set_scale</b>(scale)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_scale </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_use_color>- (NilClass) <b>set_use_color</b>(use_color)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_set_use_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_to_file>- (Boolean) <b>to_file</b>(file_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_to_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_to_key_file>- (NilClass) <b>to_key_file</b>(key_file, group_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_to_key_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_unset>- (NilClass) <b>unset</b>(key)</a>&nbsp;&nbsp;</div>
+<div> gtk_print_settings_unset </div>
+</div></div><br>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_PrintSettings.html>Gtk::PrintSettings</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_PrintSettings.html>Gtk::PrintSettings</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_PrintSettings.html>Gtk::PrintSettings</a>) <b><a name="class_new_from_file">new_from_file</a></b>(file_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>file_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_PrintSettings.html>Gtk::PrintSettings</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_PrintSettings.html>Gtk::PrintSettings</a>) <b><a name="class_new_from_key_file">new_from_key_file</a></b>(key_file, group_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>key_file</b>  </li>
+<li class=param> (String) <b>group_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_PrintSettings.html>Gtk::PrintSettings</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_PrintSettings.html>Gtk::PrintSettings</a>) <b><a name="instance_copy">copy</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_PrintSettings.html>Gtk::PrintSettings</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_foreach">foreach</a></b>() {|key, value| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (String) <b>key</b> </li>
+<li class=param> (String) <b>value</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get">get</a></b>(key)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_bool">get_bool</a></b>(key)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_collate">get_collate</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_default_source">get_default_source</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_dither">get_dither</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_double">get_double</a></b>(key)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_double_with_default">get_double_with_default</a></b>(key, def_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (Float) <b>def_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_duplex">get_duplex</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::PrintDuplex </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_finishings">get_finishings</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_int">get_int</a></b>(key)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_int_with_default">get_int_with_default</a></b>(key, def_)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (Integer) <b>def_</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_length">get_length</a></b>(key, unit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (Integer) <b>unit</b>  a member of enum Gtk::Unit </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_media_type">get_media_type</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_n_copies">get_n_copies</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_number_up">get_number_up</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_number_up_layout">get_number_up_layout</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::NumberUpLayout </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_orientation">get_orientation</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::PageOrientation </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_output_bin">get_output_bin</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b><a name="instance_get_page_ranges">get_page_ranges</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Array<FFI::Pointer>, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_page_set">get_page_set</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::PageSet </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_paper_height">get_paper_height</a></b>(unit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>unit</b>  a member of enum Gtk::Unit </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_paper_size">get_paper_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_paper_width">get_paper_width</a></b>(unit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>unit</b>  a member of enum Gtk::Unit </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_print_pages">get_print_pages</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::PrintPages </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_printer">get_printer</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_printer_lpi">get_printer_lpi</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_quality">get_quality</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::PrintQuality </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_resolution">get_resolution</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_resolution_x">get_resolution_x</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_resolution_y">get_resolution_y</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_reverse">get_reverse</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_scale">get_scale</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_use_color">get_use_color</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_has_key">has_key</a></b>(key)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_load_file">load_file</a></b>(file_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>file_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_load_key_file">load_key_file</a></b>(key_file, group_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>key_file</b>  </li>
+<li class=param> (String) <b>group_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set">set</a></b>(key, value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_bool">set_bool</a></b>(key, value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (Boolean) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_collate">set_collate</a></b>(collate)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>collate</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_default_source">set_default_source</a></b>(default_source)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>default_source</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_dither">set_dither</a></b>(dither)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>dither</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_double">set_double</a></b>(key, value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (Float) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_duplex">set_duplex</a></b>(duplex)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>duplex</b>  a member of enum Gtk::PrintDuplex </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_finishings">set_finishings</a></b>(finishings)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>finishings</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_int">set_int</a></b>(key, value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (Integer) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_length">set_length</a></b>(key, value, unit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<li class=param> (Float) <b>value</b>  </li>
+<li class=param> (Integer) <b>unit</b>  a member of enum Gtk::Unit </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_media_type">set_media_type</a></b>(media_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>media_type</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_n_copies">set_n_copies</a></b>(num_copies)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>num_copies</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_number_up">set_number_up</a></b>(number_up)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>number_up</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_number_up_layout">set_number_up_layout</a></b>(number_up_layout)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>number_up_layout</b>  a member of enum Gtk::NumberUpLayout </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_orientation">set_orientation</a></b>(orientation)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>orientation</b>  a member of enum Gtk::PageOrientation </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_output_bin">set_output_bin</a></b>(output_bin)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>output_bin</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_page_ranges">set_page_ranges</a></b>(page_ranges, num_ranges)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Array&lt;FFI::Pointer&gt;) <b>page_ranges</b>  </li>
+<li class=param> (Integer) <b>num_ranges</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_page_set">set_page_set</a></b>(page_set)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>page_set</b>  a member of enum Gtk::PageSet </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_paper_height">set_paper_height</a></b>(height, unit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>height</b>  </li>
+<li class=param> (Integer) <b>unit</b>  a member of enum Gtk::Unit </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_paper_size">set_paper_size</a></b>(paper_size)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>paper_size</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_paper_width">set_paper_width</a></b>(width, unit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>width</b>  </li>
+<li class=param> (Integer) <b>unit</b>  a member of enum Gtk::Unit </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_print_pages">set_print_pages</a></b>(pages)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>pages</b>  a member of enum Gtk::PrintPages </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_printer">set_printer</a></b>(printer)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>printer</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_printer_lpi">set_printer_lpi</a></b>(lpi)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>lpi</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_quality">set_quality</a></b>(quality)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>quality</b>  a member of enum Gtk::PrintQuality </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_resolution">set_resolution</a></b>(resolution)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>resolution</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_resolution_xy">set_resolution_xy</a></b>(resolution_x, resolution_y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>resolution_x</b>  </li>
+<li class=param> (Integer) <b>resolution_y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_reverse">set_reverse</a></b>(reverse)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>reverse</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_scale">set_scale</a></b>(scale)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>scale</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_use_color">set_use_color</a></b>(use_color)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>use_color</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_to_file">to_file</a></b>(file_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>file_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_to_key_file">to_key_file</a></b>(key_file, group_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>key_file</b>  </li>
+<li class=param> (String) <b>group_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unset">unset</a></b>(key)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>key</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

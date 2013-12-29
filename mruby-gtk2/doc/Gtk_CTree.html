@@ -1,0 +1,599 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=CTree class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::CTree</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_CList.html>Gtk::CList</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>(columns, tree_column)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_with_titles>+ (Gtk::Widget) <b>new_with_titles</b>(columns, tree_column, titles)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_new_with_titles </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_collapse>- (NilClass) <b>collapse</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_collapse </div>
+<div>&nbsp;&nbsp;<a href=#instance_collapse_recursive>- (NilClass) <b>collapse_recursive</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_collapse_recursive </div>
+<div>&nbsp;&nbsp;<a href=#instance_collapse_to_depth>- (NilClass) <b>collapse_to_depth</b>(node, depth)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_collapse_to_depth </div>
+<div>&nbsp;&nbsp;<a href=#instance_expand>- (NilClass) <b>expand</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_expand </div>
+<div>&nbsp;&nbsp;<a href=#instance_expand_recursive>- (NilClass) <b>expand_recursive</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_expand_recursive </div>
+<div>&nbsp;&nbsp;<a href=#instance_expand_to_depth>- (NilClass) <b>expand_to_depth</b>(node, depth)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_expand_to_depth </div>
+<div>&nbsp;&nbsp;<a href=#instance_find>- (Boolean) <b>find</b>(node, child)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_find </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_node_info>- (Boolean) <b>get_node_info</b>(node, text, spacing, pixmap_closed, mask_closed, pixmap_opened, mask_opened, is_leaf, expanded)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_get_node_info </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_ancestor>- (Boolean) <b>is_ancestor</b>(node, child)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_is_ancestor </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_hot_spot>- (Boolean) <b>is_hot_spot</b>(x, y)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_is_hot_spot </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_viewable>- (Boolean) <b>is_viewable</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_is_viewable </div>
+<div>&nbsp;&nbsp;<a href=#instance_move>- (NilClass) <b>move</b>(node, new_parent, new_sibling)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_move </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_get_cell_type>- (Integer) <b>node_get_cell_type</b>(node, column)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_get_cell_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_get_pixmap>- (Boolean) <b>node_get_pixmap</b>(node, column, pixmap, mask)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_get_pixmap </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_get_pixtext>- (Boolean) <b>node_get_pixtext</b>(node, column, text, spacing, pixmap, mask)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_get_pixtext </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_get_selectable>- (Boolean) <b>node_get_selectable</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_get_selectable </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_get_text>- (Boolean) <b>node_get_text</b>(node, column, text)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_get_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_is_visible>- (Integer) <b>node_is_visible</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_is_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_moveto>- (NilClass) <b>node_moveto</b>(node, column, row_align, col_align)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_moveto </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_background>- (NilClass) <b>node_set_background</b>(node, color)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_background </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_cell_style>- (NilClass) <b>node_set_cell_style</b>(node, column, style)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_cell_style </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_foreground>- (NilClass) <b>node_set_foreground</b>(node, color)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_foreground </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_pixmap>- (NilClass) <b>node_set_pixmap</b>(node, column, pixmap, mask)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_pixmap </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_pixtext>- (NilClass) <b>node_set_pixtext</b>(node, column, text, spacing, pixmap, mask)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_pixtext </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_row_data>- (NilClass) <b>node_set_row_data</b>(node, data)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_row_data </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_row_data_full>- (NilClass) <b>node_set_row_data_full</b>(node, data) {|data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_row_data_full </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_row_style>- (NilClass) <b>node_set_row_style</b>(node, style)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_row_style </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_selectable>- (NilClass) <b>node_set_selectable</b>(node, selectable)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_selectable </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_shift>- (NilClass) <b>node_set_shift</b>(node, column, vertical, horizontal)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_shift </div>
+<div>&nbsp;&nbsp;<a href=#instance_node_set_text>- (NilClass) <b>node_set_text</b>(node, column, text)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_node_set_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_real_select_recursive>- (NilClass) <b>real_select_recursive</b>(node, state)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_real_select_recursive </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_node>- (NilClass) <b>remove_node</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_remove_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_select>- (NilClass) <b>select</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_select </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_recursive>- (NilClass) <b>select_recursive</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_select_recursive </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_expander_style>- (NilClass) <b>set_expander_style</b>(expander_style)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_set_expander_style </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_indent>- (NilClass) <b>set_indent</b>(indent)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_set_indent </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_line_style>- (NilClass) <b>set_line_style</b>(line_style)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_set_line_style </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_node_info>- (NilClass) <b>set_node_info</b>(node, text, spacing, is_leaf, expanded, pixmap_closed, mask_closed, pixmap_opened, mask_opened)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_set_node_info </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_stub>- (NilClass) <b>set_show_stub</b>(show_stub)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_set_show_stub </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_spacing>- (NilClass) <b>set_spacing</b>(spacing)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_set_spacing </div>
+<div>&nbsp;&nbsp;<a href=#instance_sort_node>- (NilClass) <b>sort_node</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_sort_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_sort_recursive>- (NilClass) <b>sort_recursive</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_sort_recursive </div>
+<div>&nbsp;&nbsp;<a href=#instance_toggle_expansion>- (NilClass) <b>toggle_expansion</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_toggle_expansion </div>
+<div>&nbsp;&nbsp;<a href=#instance_toggle_expansion_recursive>- (NilClass) <b>toggle_expansion_recursive</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_toggle_expansion_recursive </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect>- (NilClass) <b>unselect</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_unselect </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_recursive>- (NilClass) <b>unselect_recursive</b>(node)</a>&nbsp;&nbsp;</div>
+<div> gtk_ctree_unselect_recursive </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_change-focus-row-expansion>* (NilClass) <b>"change-focus-row-expansion"</b> {|action| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>(columns, tree_column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>columns</b>  </li>
+<li class=param> (Integer) <b>tree_column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new_with_titles">new_with_titles</a></b>(columns, tree_column, titles)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>columns</b>  </li>
+<li class=param> (Integer) <b>tree_column</b>  </li>
+<li class=param> (String) <b>titles</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_collapse">collapse</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_collapse_recursive">collapse_recursive</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_collapse_to_depth">collapse_to_depth</a></b>(node, depth)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>depth</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_expand">expand</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_expand_recursive">expand_recursive</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_expand_to_depth">expand_to_depth</a></b>(node, depth)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>depth</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_find">find</a></b>(node, child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (FFI::Pointer) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_node_info">get_node_info</a></b>(node, text, spacing, pixmap_closed, mask_closed, pixmap_opened, mask_opened, is_leaf, expanded)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>spacing</b>  </li>
+<li class=param> (Gdk::Pixmap) <b>pixmap_closed</b>  </li>
+<li class=param> (FFI::Pointer) <b>mask_closed</b>  </li>
+<li class=param> (Gdk::Pixmap) <b>pixmap_opened</b>  </li>
+<li class=param> (FFI::Pointer) <b>mask_opened</b>  </li>
+<li class=param> (Boolean) <b>is_leaf</b>  </li>
+<li class=param> (Boolean) <b>expanded</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_ancestor">is_ancestor</a></b>(node, child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (FFI::Pointer) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_hot_spot">is_hot_spot</a></b>(x, y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_viewable">is_viewable</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move">move</a></b>(node, new_parent, new_sibling)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (FFI::Pointer) <b>new_parent</b>  </li>
+<li class=param> (FFI::Pointer) <b>new_sibling</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_node_get_cell_type">node_get_cell_type</a></b>(node, column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::CellType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_node_get_pixmap">node_get_pixmap</a></b>(node, column, pixmap, mask)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (Gdk::Pixmap) <b>pixmap</b>  </li>
+<li class=param> (FFI::Pointer) <b>mask</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_node_get_pixtext">node_get_pixtext</a></b>(node, column, text, spacing, pixmap, mask)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>spacing</b>  </li>
+<li class=param> (Gdk::Pixmap) <b>pixmap</b>  </li>
+<li class=param> (FFI::Pointer) <b>mask</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_node_get_selectable">node_get_selectable</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_node_get_text">node_get_text</a></b>(node, column, text)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (String) <b>text</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_node_is_visible">node_is_visible</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::Visibility </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_moveto">node_moveto</a></b>(node, column, row_align, col_align)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (Float) <b>row_align</b>  </li>
+<li class=param> (Float) <b>col_align</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_background">node_set_background</a></b>(node, color)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (FFI::Pointer) <b>color</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_cell_style">node_set_cell_style</a></b>(node, column, style)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (<a href=#Gtk_Style.html>Gtk::Style</a>) <b>style</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_foreground">node_set_foreground</a></b>(node, color)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (FFI::Pointer) <b>color</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_pixmap">node_set_pixmap</a></b>(node, column, pixmap, mask)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (Gdk::Pixmap) <b>pixmap</b>  </li>
+<li class=param> (FFI::Pointer) <b>mask</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_pixtext">node_set_pixtext</a></b>(node, column, text, spacing, pixmap, mask)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>spacing</b>  </li>
+<li class=param> (Gdk::Pixmap) <b>pixmap</b>  </li>
+<li class=param> (FFI::Pointer) <b>mask</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_row_data">node_set_row_data</a></b>(node, data)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_row_data_full">node_set_row_data_full</a></b>(node, data) {|data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (void) <b>data</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_row_style">node_set_row_style</a></b>(node, style)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (<a href=#Gtk_Style.html>Gtk::Style</a>) <b>style</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_selectable">node_set_selectable</a></b>(node, selectable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Boolean) <b>selectable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_shift">node_set_shift</a></b>(node, column, vertical, horizontal)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (Integer) <b>vertical</b>  </li>
+<li class=param> (Integer) <b>horizontal</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_node_set_text">node_set_text</a></b>(node, column, text)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<li class=param> (String) <b>text</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_real_select_recursive">real_select_recursive</a></b>(node, state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (Integer) <b>state</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_node">remove_node</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select">select</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_recursive">select_recursive</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_expander_style">set_expander_style</a></b>(expander_style)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>expander_style</b>  a member of enum Gtk::CTreeExpanderStyle </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_indent">set_indent</a></b>(indent)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>indent</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_line_style">set_line_style</a></b>(line_style)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>line_style</b>  a member of enum Gtk::CTreeLineStyle </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_node_info">set_node_info</a></b>(node, text, spacing, is_leaf, expanded, pixmap_closed, mask_closed, pixmap_opened, mask_opened)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>spacing</b>  </li>
+<li class=param> (Boolean) <b>is_leaf</b>  </li>
+<li class=param> (Boolean) <b>expanded</b>  </li>
+<li class=param> (Gdk::Pixmap) <b>pixmap_closed</b>  </li>
+<li class=param> (FFI::Pointer) <b>mask_closed</b>  </li>
+<li class=param> (Gdk::Pixmap) <b>pixmap_opened</b>  </li>
+<li class=param> (FFI::Pointer) <b>mask_opened</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_stub">set_show_stub</a></b>(show_stub)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_stub</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_spacing">set_spacing</a></b>(spacing)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>spacing</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_sort_node">sort_node</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_sort_recursive">sort_recursive</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_toggle_expansion">toggle_expansion</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_toggle_expansion_recursive">toggle_expansion_recursive</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect">unselect</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_recursive">unselect_recursive</a></b>(node)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>node</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_change-focus-row-expansion">change-focus-row-expansion"</a></b> {|action| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>action</b>  a member of enum Gtk::CTreeExpansionType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

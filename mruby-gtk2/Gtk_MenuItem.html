@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=MenuItem class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::MenuItem</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Item.html>Gtk::Item</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Activatable.html>Gtk::Activatable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_with_label>+ (Gtk::Widget) <b>new_with_label</b>(label)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_new_with_label </div>
+<div>&nbsp;&nbsp;<a href=#class_new_with_mnemonic>+ (Gtk::Widget) <b>new_with_mnemonic</b>(label)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_new_with_mnemonic </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_activate>- (NilClass) <b>activate</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_activate </div>
+<div>&nbsp;&nbsp;<a href=#instance_deselect>- (NilClass) <b>deselect</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_deselect </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_accel_path>- (String) <b>get_accel_path</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_get_accel_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_label>- (String) <b>get_label</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_get_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_right_justified>- (Boolean) <b>get_right_justified</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_get_right_justified </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_submenu>- (Gtk::Widget) <b>get_submenu</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_get_submenu </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_use_underline>- (Boolean) <b>get_use_underline</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_get_use_underline </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_submenu>- (NilClass) <b>remove_submenu</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_remove_submenu </div>
+<div>&nbsp;&nbsp;<a href=#instance_select>- (NilClass) <b>select</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_select </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_accel_path>- (NilClass) <b>set_accel_path</b>(accel_path)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_set_accel_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_label>- (NilClass) <b>set_label</b>(label)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_set_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_right_justified>- (NilClass) <b>set_right_justified</b>(right_justified)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_set_right_justified </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_submenu>- (NilClass) <b>set_submenu</b>(submenu)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_set_submenu </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_use_underline>- (NilClass) <b>set_use_underline</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_set_use_underline </div>
+<div>&nbsp;&nbsp;<a href=#instance_toggle_size_allocate>- (NilClass) <b>toggle_size_allocate</b>(allocation)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_toggle_size_allocate </div>
+<div>&nbsp;&nbsp;<a href=#instance_toggle_size_request>- (NilClass) <b>toggle_size_request</b>(requisition)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_item_toggle_size_request </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_activate>* (NilClass) <b>"activate"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_activate-item>* (NilClass) <b>"activate-item"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_toggle-size-allocate>* (NilClass) <b>"toggle-size-allocate"</b> {|allocation| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_toggle-size-request>* (NilClass) <b>"toggle-size-request"</b> {|requisition| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new_with_label">new_with_label</a></b>(label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new_with_mnemonic">new_with_mnemonic</a></b>(label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_activate">activate</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_deselect">deselect</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_accel_path">get_accel_path</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_label">get_label</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_right_justified">get_right_justified</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_submenu">get_submenu</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_use_underline">get_use_underline</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_submenu">remove_submenu</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select">select</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accel_path">set_accel_path</a></b>(accel_path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>accel_path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_label">set_label</a></b>(label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_right_justified">set_right_justified</a></b>(right_justified)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>right_justified</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_submenu">set_submenu</a></b>(submenu)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>submenu</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_use_underline">set_use_underline</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_toggle_size_allocate">toggle_size_allocate</a></b>(allocation)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>allocation</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_toggle_size_request">toggle_size_request</a></b>(requisition)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>requisition</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_activate">activate"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_activate-item">activate-item"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_toggle-size-allocate">toggle-size-allocate"</a></b> {|allocation| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>allocation</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_toggle-size-request">toggle-size-request"</a></b> {|requisition| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>requisition</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

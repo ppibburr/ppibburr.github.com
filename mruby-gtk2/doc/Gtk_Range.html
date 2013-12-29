@@ -1,0 +1,333 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Range class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Range</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Widget.html>Gtk::Widget</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Orientable.html>Gtk::Orientable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_get_adjustment>- (Gtk::Adjustment) <b>get_adjustment</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_adjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_fill_level>- (Float) <b>get_fill_level</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_fill_level </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_flippable>- (Boolean) <b>get_flippable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_flippable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_inverted>- (Boolean) <b>get_inverted</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_inverted </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_lower_stepper_sensitivity>- (Integer) <b>get_lower_stepper_sensitivity</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_lower_stepper_sensitivity </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_min_slider_size>- (Integer) <b>get_min_slider_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_min_slider_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_range_rect>- (FFI::Pointer) <b>get_range_rect</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_range_rect </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_restrict_to_fill_level>- (Boolean) <b>get_restrict_to_fill_level</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_restrict_to_fill_level </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_round_digits>- (Integer) <b>get_round_digits</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_round_digits </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_fill_level>- (Boolean) <b>get_show_fill_level</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_show_fill_level </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_slider_range>- (Array&lt;Integer, Integer&gt;) <b>get_slider_range</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_slider_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_slider_size_fixed>- (Boolean) <b>get_slider_size_fixed</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_slider_size_fixed </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_update_policy>- (Integer) <b>get_update_policy</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_update_policy </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_upper_stepper_sensitivity>- (Integer) <b>get_upper_stepper_sensitivity</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_upper_stepper_sensitivity </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_value>- (Float) <b>get_value</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_range_get_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_adjustment>- (NilClass) <b>set_adjustment</b>(adjustment)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_adjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_fill_level>- (NilClass) <b>set_fill_level</b>(fill_level)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_fill_level </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_flippable>- (NilClass) <b>set_flippable</b>(flippable)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_flippable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_increments>- (NilClass) <b>set_increments</b>(step, page)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_increments </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_inverted>- (NilClass) <b>set_inverted</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_inverted </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_lower_stepper_sensitivity>- (NilClass) <b>set_lower_stepper_sensitivity</b>(sensitivity)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_lower_stepper_sensitivity </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_min_slider_size>- (NilClass) <b>set_min_slider_size</b>(min_size)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_min_slider_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_range>- (NilClass) <b>set_range</b>(min, max)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_restrict_to_fill_level>- (NilClass) <b>set_restrict_to_fill_level</b>(restrict_to_fill_level)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_restrict_to_fill_level </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_round_digits>- (NilClass) <b>set_round_digits</b>(round_digits)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_round_digits </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_fill_level>- (NilClass) <b>set_show_fill_level</b>(show_fill_level)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_show_fill_level </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_slider_size_fixed>- (NilClass) <b>set_slider_size_fixed</b>(size_fixed)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_slider_size_fixed </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_update_policy>- (NilClass) <b>set_update_policy</b>(policy)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_update_policy </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_upper_stepper_sensitivity>- (NilClass) <b>set_upper_stepper_sensitivity</b>(sensitivity)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_upper_stepper_sensitivity </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_value>- (NilClass) <b>set_value</b>(value)</a>&nbsp;&nbsp;</div>
+<div> gtk_range_set_value </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_adjust-bounds>* (NilClass) <b>"adjust-bounds"</b> {|new_value| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_change-value>* (Boolean) <b>"change-value"</b> {|scroll, new_value| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_move-slider>* (NilClass) <b>"move-slider"</b> {|scroll| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_value-changed>* (NilClass) <b>"value-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b><a name="instance_get_adjustment">get_adjustment</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_fill_level">get_fill_level</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_flippable">get_flippable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_inverted">get_inverted</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_lower_stepper_sensitivity">get_lower_stepper_sensitivity</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::SensitivityType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_min_slider_size">get_min_slider_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_range_rect">get_range_rect</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_restrict_to_fill_level">get_restrict_to_fill_level</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_round_digits">get_round_digits</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_fill_level">get_show_fill_level</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_slider_range">get_slider_range</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_slider_size_fixed">get_slider_size_fixed</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_update_policy">get_update_policy</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::UpdateType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_upper_stepper_sensitivity">get_upper_stepper_sensitivity</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::SensitivityType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_value">get_value</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_adjustment">set_adjustment</a></b>(adjustment)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>adjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_fill_level">set_fill_level</a></b>(fill_level)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>fill_level</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_flippable">set_flippable</a></b>(flippable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>flippable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_increments">set_increments</a></b>(step, page)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>step</b>  </li>
+<li class=param> (Float) <b>page</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_inverted">set_inverted</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_lower_stepper_sensitivity">set_lower_stepper_sensitivity</a></b>(sensitivity)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>sensitivity</b>  a member of enum Gtk::SensitivityType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_min_slider_size">set_min_slider_size</a></b>(min_size)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>min_size</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_range">set_range</a></b>(min, max)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>min</b>  </li>
+<li class=param> (Float) <b>max</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_restrict_to_fill_level">set_restrict_to_fill_level</a></b>(restrict_to_fill_level)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>restrict_to_fill_level</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_round_digits">set_round_digits</a></b>(round_digits)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>round_digits</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_fill_level">set_show_fill_level</a></b>(show_fill_level)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_fill_level</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_slider_size_fixed">set_slider_size_fixed</a></b>(size_fixed)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>size_fixed</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_update_policy">set_update_policy</a></b>(policy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>policy</b>  a member of enum Gtk::UpdateType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_upper_stepper_sensitivity">set_upper_stepper_sensitivity</a></b>(sensitivity)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>sensitivity</b>  a member of enum Gtk::SensitivityType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_value">set_value</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_adjust-bounds">adjust-bounds"</a></b> {|new_value| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>new_value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_change-value">change-value"</a></b> {|scroll, new_value| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>scroll</b>  a member of enum Gtk::ScrollType </li>
+<li class=param> (Float) <b>new_value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_move-slider">move-slider"</a></b> {|scroll| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>scroll</b>  a member of enum Gtk::ScrollType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_value-changed">value-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

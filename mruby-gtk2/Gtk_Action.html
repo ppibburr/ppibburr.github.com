@@ -1,0 +1,432 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Action class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Action</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Action) <b>new</b>(name, stock_id, label, tooltip)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_activate>- (NilClass) <b>activate</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_activate </div>
+<div>&nbsp;&nbsp;<a href=#instance_block_activate>- (NilClass) <b>block_activate</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_block_activate </div>
+<div>&nbsp;&nbsp;<a href=#instance_block_activate_from>- (NilClass) <b>block_activate_from</b>(proxy)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_block_activate_from </div>
+<div>&nbsp;&nbsp;<a href=#instance_connect_accelerator>- (NilClass) <b>connect_accelerator</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_connect_accelerator </div>
+<div>&nbsp;&nbsp;<a href=#instance_connect_proxy>- (NilClass) <b>connect_proxy</b>(proxy)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_connect_proxy </div>
+<div>&nbsp;&nbsp;<a href=#instance_create_icon>- (Gtk::Widget) <b>create_icon</b>(icon_size)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_create_icon </div>
+<div>&nbsp;&nbsp;<a href=#instance_create_menu>- (Gtk::Widget) <b>create_menu</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_create_menu </div>
+<div>&nbsp;&nbsp;<a href=#instance_create_menu_item>- (Gtk::Widget) <b>create_menu_item</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_create_menu_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_create_tool_item>- (Gtk::Widget) <b>create_tool_item</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_create_tool_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_disconnect_accelerator>- (NilClass) <b>disconnect_accelerator</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_disconnect_accelerator </div>
+<div>&nbsp;&nbsp;<a href=#instance_disconnect_proxy>- (NilClass) <b>disconnect_proxy</b>(proxy)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_disconnect_proxy </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_accel_closure>- (FFI::Pointer) <b>get_accel_closure</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_accel_closure </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_accel_path>- (String) <b>get_accel_path</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_accel_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_always_show_image>- (Boolean) <b>get_always_show_image</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_always_show_image </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_gicon>- (FFI::Pointer) <b>get_gicon</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_gicon </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_icon_name>- (String) <b>get_icon_name</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_icon_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_is_important>- (Boolean) <b>get_is_important</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_is_important </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_label>- (String) <b>get_label</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_name>- (String) <b>get_name</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_proxies>- (FFI::Pointer) <b>get_proxies</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_proxies </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_sensitive>- (Boolean) <b>get_sensitive</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_sensitive </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_short_label>- (String) <b>get_short_label</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_short_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_stock_id>- (String) <b>get_stock_id</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_stock_id </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tooltip>- (String) <b>get_tooltip</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_tooltip </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_visible>- (Boolean) <b>get_visible</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_visible_horizontal>- (Boolean) <b>get_visible_horizontal</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_visible_horizontal </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_visible_vertical>- (Boolean) <b>get_visible_vertical</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_get_visible_vertical </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_sensitive>- (Boolean) <b>is_sensitive</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_is_sensitive </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_visible>- (Boolean) <b>is_visible</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_is_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_accel_group>- (NilClass) <b>set_accel_group</b>(accel_group)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_accel_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_accel_path>- (NilClass) <b>set_accel_path</b>(accel_path)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_accel_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_always_show_image>- (NilClass) <b>set_always_show_image</b>(always_show)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_always_show_image </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_gicon>- (NilClass) <b>set_gicon</b>(icon)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_gicon </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_icon_name>- (NilClass) <b>set_icon_name</b>(icon_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_icon_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_is_important>- (NilClass) <b>set_is_important</b>(is_important)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_is_important </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_label>- (NilClass) <b>set_label</b>(label)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_sensitive>- (NilClass) <b>set_sensitive</b>(sensitive)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_sensitive </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_short_label>- (NilClass) <b>set_short_label</b>(short_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_short_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_stock_id>- (NilClass) <b>set_stock_id</b>(stock_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_stock_id </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tooltip>- (NilClass) <b>set_tooltip</b>(tooltip)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_tooltip </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_visible>- (NilClass) <b>set_visible</b>(visible)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_visible_horizontal>- (NilClass) <b>set_visible_horizontal</b>(visible_horizontal)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_visible_horizontal </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_visible_vertical>- (NilClass) <b>set_visible_vertical</b>(visible_vertical)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_set_visible_vertical </div>
+<div>&nbsp;&nbsp;<a href=#instance_unblock_activate>- (NilClass) <b>unblock_activate</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_action_unblock_activate </div>
+<div>&nbsp;&nbsp;<a href=#instance_unblock_activate_from>- (NilClass) <b>unblock_activate_from</b>(proxy)</a>&nbsp;&nbsp;</div>
+<div> gtk_action_unblock_activate_from </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_activate>* (NilClass) <b>"activate"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Action.html>Gtk::Action</a>) <b><a name="class_new">new</a></b>(name, stock_id, label, tooltip)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<li class=param> (String) <b>stock_id</b>  </li>
+<li class=param> (String) <b>label</b>  </li>
+<li class=param> (String) <b>tooltip</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Action.html>Gtk::Action</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_activate">activate</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_block_activate">block_activate</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_block_activate_from">block_activate_from</a></b>(proxy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>proxy</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_connect_accelerator">connect_accelerator</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_connect_proxy">connect_proxy</a></b>(proxy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>proxy</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_create_icon">create_icon</a></b>(icon_size)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>icon_size</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_create_menu">create_menu</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_create_menu_item">create_menu_item</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_create_tool_item">create_tool_item</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_disconnect_accelerator">disconnect_accelerator</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_disconnect_proxy">disconnect_proxy</a></b>(proxy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>proxy</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_accel_closure">get_accel_closure</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_accel_path">get_accel_path</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_always_show_image">get_always_show_image</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_gicon">get_gicon</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_icon_name">get_icon_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_is_important">get_is_important</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_label">get_label</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_name">get_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_proxies">get_proxies</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_sensitive">get_sensitive</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_short_label">get_short_label</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_stock_id">get_stock_id</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_tooltip">get_tooltip</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_visible">get_visible</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_visible_horizontal">get_visible_horizontal</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_visible_vertical">get_visible_vertical</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_sensitive">is_sensitive</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_visible">is_visible</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accel_group">set_accel_group</a></b>(accel_group)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_AccelGroup.html>Gtk::AccelGroup</a>) <b>accel_group</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accel_path">set_accel_path</a></b>(accel_path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>accel_path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_always_show_image">set_always_show_image</a></b>(always_show)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>always_show</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_gicon">set_gicon</a></b>(icon)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>icon</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_icon_name">set_icon_name</a></b>(icon_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>icon_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_is_important">set_is_important</a></b>(is_important)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>is_important</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_label">set_label</a></b>(label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_sensitive">set_sensitive</a></b>(sensitive)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>sensitive</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_short_label">set_short_label</a></b>(short_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>short_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_stock_id">set_stock_id</a></b>(stock_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>stock_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tooltip">set_tooltip</a></b>(tooltip)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>tooltip</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_visible">set_visible</a></b>(visible)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>visible</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_visible_horizontal">set_visible_horizontal</a></b>(visible_horizontal)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>visible_horizontal</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_visible_vertical">set_visible_vertical</a></b>(visible_vertical)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>visible_vertical</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unblock_activate">unblock_activate</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unblock_activate_from">unblock_activate_from</a></b>(proxy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>proxy</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_activate">activate"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

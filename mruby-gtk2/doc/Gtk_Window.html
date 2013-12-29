@@ -1,0 +1,1001 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Window class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Window</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Bin.html>Gtk::Bin</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>(type)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_new </div>
+<div>&nbsp;&nbsp;<a href=#class_get_default_icon_list>+ (FFI::Pointer) <b>get_default_icon_list</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_default_icon_list </div>
+<div>&nbsp;&nbsp;<a href=#class_get_default_icon_name>+ (String) <b>get_default_icon_name</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_default_icon_name </div>
+<div>&nbsp;&nbsp;<a href=#class_list_toplevels>+ (FFI::Pointer) <b>list_toplevels</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_list_toplevels </div>
+<div>&nbsp;&nbsp;<a href=#class_set_auto_startup_notification>+ (NilClass) <b>set_auto_startup_notification</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_auto_startup_notification </div>
+<div>&nbsp;&nbsp;<a href=#class_set_default_icon>+ (NilClass) <b>set_default_icon</b>(icon)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_default_icon </div>
+<div>&nbsp;&nbsp;<a href=#class_set_default_icon_from_file>+ (Boolean) <b>set_default_icon_from_file</b>(filename)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_default_icon_from_file </div>
+<div>&nbsp;&nbsp;<a href=#class_set_default_icon_list>+ (NilClass) <b>set_default_icon_list</b>(list)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_default_icon_list </div>
+<div>&nbsp;&nbsp;<a href=#class_set_default_icon_name>+ (NilClass) <b>set_default_icon_name</b>(name)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_default_icon_name </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_activate_default>- (Boolean) <b>activate_default</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_activate_default </div>
+<div>&nbsp;&nbsp;<a href=#instance_activate_focus>- (Boolean) <b>activate_focus</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_activate_focus </div>
+<div>&nbsp;&nbsp;<a href=#instance_activate_key>- (Boolean) <b>activate_key</b>(event)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_activate_key </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_accel_group>- (NilClass) <b>add_accel_group</b>(accel_group)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_add_accel_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_embedded_xid>- (NilClass) <b>add_embedded_xid</b>(xid)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_add_embedded_xid </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_mnemonic>- (NilClass) <b>add_mnemonic</b>(keyval, target)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_add_mnemonic </div>
+<div>&nbsp;&nbsp;<a href=#instance_begin_move_drag>- (NilClass) <b>begin_move_drag</b>(button, root_x, root_y, timestamp)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_begin_move_drag </div>
+<div>&nbsp;&nbsp;<a href=#instance_begin_resize_drag>- (NilClass) <b>begin_resize_drag</b>(edge, button, root_x, root_y, timestamp)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_begin_resize_drag </div>
+<div>&nbsp;&nbsp;<a href=#instance_deiconify>- (NilClass) <b>deiconify</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_deiconify </div>
+<div>&nbsp;&nbsp;<a href=#instance_fullscreen>- (NilClass) <b>fullscreen</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_fullscreen </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_accept_focus>- (Boolean) <b>get_accept_focus</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_accept_focus </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_decorated>- (Boolean) <b>get_decorated</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_decorated </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_default_size>- (NilClass) <b>get_default_size</b>(width, height)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_default_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_default_widget>- (Gtk::Widget) <b>get_default_widget</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_default_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_deletable>- (Boolean) <b>get_deletable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_deletable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_destroy_with_parent>- (Boolean) <b>get_destroy_with_parent</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_destroy_with_parent </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_focus>- (Gtk::Widget) <b>get_focus</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_focus </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_focus_on_map>- (Boolean) <b>get_focus_on_map</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_focus_on_map </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_frame_dimensions>- (Array&lt;Integer, Integer, Integer, Integer&gt;) <b>get_frame_dimensions</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_frame_dimensions </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_gravity>- (Integer) <b>get_gravity</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_gravity </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_group>- (Gtk::WindowGroup) <b>get_group</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_has_frame>- (Boolean) <b>get_has_frame</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_has_frame </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_icon>- (GdkPixbuf::Pixbuf) <b>get_icon</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_icon </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_icon_list>- (FFI::Pointer) <b>get_icon_list</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_icon_list </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_icon_name>- (String) <b>get_icon_name</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_icon_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_mnemonic_modifier>- (Integer) <b>get_mnemonic_modifier</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_mnemonic_modifier </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_mnemonics_visible>- (Boolean) <b>get_mnemonics_visible</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_mnemonics_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_modal>- (Boolean) <b>get_modal</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_modal </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_opacity>- (Float) <b>get_opacity</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_opacity </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_position>- (Array&lt;Integer, Integer&gt;) <b>get_position</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_position </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_resizable>- (Boolean) <b>get_resizable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_resizable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_role>- (String) <b>get_role</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_role </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_screen>- (Gdk::Screen) <b>get_screen</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_screen </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_size>- (Array&lt;Integer, Integer&gt;) <b>get_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_skip_pager_hint>- (Boolean) <b>get_skip_pager_hint</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_skip_pager_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_skip_taskbar_hint>- (Boolean) <b>get_skip_taskbar_hint</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_skip_taskbar_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_title>- (String) <b>get_title</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_title </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_transient_for>- (Gtk::Window) <b>get_transient_for</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_transient_for </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_type_hint>- (Integer) <b>get_type_hint</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_type_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_urgency_hint>- (Boolean) <b>get_urgency_hint</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_urgency_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_window_type>- (Integer) <b>get_window_type</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_get_window_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_group>- (Boolean) <b>has_group</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_has_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_toplevel_focus>- (Boolean) <b>has_toplevel_focus</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_has_toplevel_focus </div>
+<div>&nbsp;&nbsp;<a href=#instance_iconify>- (NilClass) <b>iconify</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_iconify </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_active>- (Boolean) <b>is_active</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_is_active </div>
+<div>&nbsp;&nbsp;<a href=#instance_maximize>- (NilClass) <b>maximize</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_maximize </div>
+<div>&nbsp;&nbsp;<a href=#instance_mnemonic_activate>- (Boolean) <b>mnemonic_activate</b>(keyval, modifier)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_mnemonic_activate </div>
+<div>&nbsp;&nbsp;<a href=#instance_move>- (NilClass) <b>move</b>(x, y)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_move </div>
+<div>&nbsp;&nbsp;<a href=#instance_parse_geometry>- (Boolean) <b>parse_geometry</b>(geometry)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_parse_geometry </div>
+<div>&nbsp;&nbsp;<a href=#instance_present>- (NilClass) <b>present</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_present </div>
+<div>&nbsp;&nbsp;<a href=#instance_present_with_time>- (NilClass) <b>present_with_time</b>(timestamp)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_present_with_time </div>
+<div>&nbsp;&nbsp;<a href=#instance_propagate_key_event>- (Boolean) <b>propagate_key_event</b>(event)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_propagate_key_event </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_accel_group>- (NilClass) <b>remove_accel_group</b>(accel_group)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_remove_accel_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_embedded_xid>- (NilClass) <b>remove_embedded_xid</b>(xid)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_remove_embedded_xid </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_mnemonic>- (NilClass) <b>remove_mnemonic</b>(keyval, target)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_remove_mnemonic </div>
+<div>&nbsp;&nbsp;<a href=#instance_reshow_with_initial_size>- (NilClass) <b>reshow_with_initial_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_reshow_with_initial_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_resize>- (NilClass) <b>resize</b>(width, height)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_resize </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_accept_focus>- (NilClass) <b>set_accept_focus</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_accept_focus </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_decorated>- (NilClass) <b>set_decorated</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_decorated </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_default>- (NilClass) <b>set_default</b>(default_widget)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_default </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_default_size>- (NilClass) <b>set_default_size</b>(width, height)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_default_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_deletable>- (NilClass) <b>set_deletable</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_deletable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_destroy_with_parent>- (NilClass) <b>set_destroy_with_parent</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_destroy_with_parent </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_focus>- (NilClass) <b>set_focus</b>(focus)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_focus </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_focus_on_map>- (NilClass) <b>set_focus_on_map</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_focus_on_map </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_frame_dimensions>- (NilClass) <b>set_frame_dimensions</b>(left, top, right, bottom)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_frame_dimensions </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_geometry_hints>- (NilClass) <b>set_geometry_hints</b>(geometry_widget, geometry, geom_mask)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_geometry_hints </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_gravity>- (NilClass) <b>set_gravity</b>(gravity)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_gravity </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_has_frame>- (NilClass) <b>set_has_frame</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_has_frame </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_icon>- (NilClass) <b>set_icon</b>(icon)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_icon </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_icon_from_file>- (Boolean) <b>set_icon_from_file</b>(filename)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_icon_from_file </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_icon_name>- (NilClass) <b>set_icon_name</b>(name)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_icon_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_keep_above>- (NilClass) <b>set_keep_above</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_keep_above </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_keep_below>- (NilClass) <b>set_keep_below</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_keep_below </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_mnemonic_modifier>- (NilClass) <b>set_mnemonic_modifier</b>(modifier)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_mnemonic_modifier </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_mnemonics_visible>- (NilClass) <b>set_mnemonics_visible</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_mnemonics_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_modal>- (NilClass) <b>set_modal</b>(modal)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_modal </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_opacity>- (NilClass) <b>set_opacity</b>(opacity)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_opacity </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_policy>- (NilClass) <b>set_policy</b>(allow_shrink, allow_grow, auto_shrink)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_policy </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_position>- (NilClass) <b>set_position</b>(position)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_position </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_resizable>- (NilClass) <b>set_resizable</b>(resizable)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_resizable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_role>- (NilClass) <b>set_role</b>(role)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_role </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_screen>- (NilClass) <b>set_screen</b>(screen)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_screen </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_skip_pager_hint>- (NilClass) <b>set_skip_pager_hint</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_skip_pager_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_skip_taskbar_hint>- (NilClass) <b>set_skip_taskbar_hint</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_skip_taskbar_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_startup_id>- (NilClass) <b>set_startup_id</b>(startup_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_startup_id </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_title>- (NilClass) <b>set_title</b>(title)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_title </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_transient_for>- (NilClass) <b>set_transient_for</b>(parent)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_transient_for </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_type_hint>- (NilClass) <b>set_type_hint</b>(hint)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_type_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_urgency_hint>- (NilClass) <b>set_urgency_hint</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_urgency_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_wmclass>- (NilClass) <b>set_wmclass</b>(wmclass_name, wmclass_class)</a>&nbsp;&nbsp;</div>
+<div> gtk_window_set_wmclass </div>
+<div>&nbsp;&nbsp;<a href=#instance_stick>- (NilClass) <b>stick</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_stick </div>
+<div>&nbsp;&nbsp;<a href=#instance_unfullscreen>- (NilClass) <b>unfullscreen</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_unfullscreen </div>
+<div>&nbsp;&nbsp;<a href=#instance_unmaximize>- (NilClass) <b>unmaximize</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_unmaximize </div>
+<div>&nbsp;&nbsp;<a href=#instance_unstick>- (NilClass) <b>unstick</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_window_unstick </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_activate-default>* (NilClass) <b>"activate-default"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_activate-focus>* (NilClass) <b>"activate-focus"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_frame-event>* (Boolean) <b>"frame-event"</b> {|event| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_keys-changed>* (NilClass) <b>"keys-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_set-focus>* (NilClass) <b>"set-focus"</b> {|focus| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>(type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>type</b>  a member of enum Gtk::WindowType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (FFI::Pointer) <b><a name="class_get_default_icon_list">get_default_icon_list</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (String) <b><a name="class_get_default_icon_name">get_default_icon_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (FFI::Pointer) <b><a name="class_list_toplevels">list_toplevels</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_set_auto_startup_notification">set_auto_startup_notification</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_set_default_icon">set_default_icon</a></b>(icon)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (GdkPixbuf::Pixbuf) <b>icon</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Boolean) <b><a name="class_set_default_icon_from_file">set_default_icon_from_file</a></b>(filename)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>filename</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_set_default_icon_list">set_default_icon_list</a></b>(list)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>list</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (NilClass) <b><a name="class_set_default_icon_name">set_default_icon_name</a></b>(name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_activate_default">activate_default</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_activate_focus">activate_focus</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_activate_key">activate_key</a></b>(event)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>event</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_accel_group">add_accel_group</a></b>(accel_group)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_AccelGroup.html>Gtk::AccelGroup</a>) <b>accel_group</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_embedded_xid">add_embedded_xid</a></b>(xid)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>xid</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_mnemonic">add_mnemonic</a></b>(keyval, target)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>keyval</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>target</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_begin_move_drag">begin_move_drag</a></b>(button, root_x, root_y, timestamp)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>button</b>  </li>
+<li class=param> (Integer) <b>root_x</b>  </li>
+<li class=param> (Integer) <b>root_y</b>  </li>
+<li class=param> (Integer) <b>timestamp</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_begin_resize_drag">begin_resize_drag</a></b>(edge, button, root_x, root_y, timestamp)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>edge</b>  a member of enum Gdk::WindowEdge </li>
+<li class=param> (Integer) <b>button</b>  </li>
+<li class=param> (Integer) <b>root_x</b>  </li>
+<li class=param> (Integer) <b>root_y</b>  </li>
+<li class=param> (Integer) <b>timestamp</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_deiconify">deiconify</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_fullscreen">fullscreen</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_accept_focus">get_accept_focus</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_decorated">get_decorated</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_get_default_size">get_default_size</a></b>(width, height)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>width</b>  </li>
+<li class=param> (Integer) <b>height</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_default_widget">get_default_widget</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_deletable">get_deletable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_destroy_with_parent">get_destroy_with_parent</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_focus">get_focus</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_focus_on_map">get_focus_on_map</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer, Integer, Integer&gt;) <b><a name="instance_get_frame_dimensions">get_frame_dimensions</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer, Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_gravity">get_gravity</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gdk::Gravity </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_WindowGroup.html>Gtk::WindowGroup</a>) <b><a name="instance_get_group">get_group</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_WindowGroup.html>Gtk::WindowGroup</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_has_frame">get_has_frame</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (GdkPixbuf::Pixbuf) <b><a name="instance_get_icon">get_icon</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (GdkPixbuf::Pixbuf)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_icon_list">get_icon_list</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_icon_name">get_icon_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_mnemonic_modifier">get_mnemonic_modifier</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gdk::ModifierType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_mnemonics_visible">get_mnemonics_visible</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_modal">get_modal</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_opacity">get_opacity</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_position">get_position</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_resizable">get_resizable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_role">get_role</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Gdk::Screen) <b><a name="instance_get_screen">get_screen</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gdk::Screen)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_size">get_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_skip_pager_hint">get_skip_pager_hint</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_skip_taskbar_hint">get_skip_taskbar_hint</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_title">get_title</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Window.html>Gtk::Window</a>) <b><a name="instance_get_transient_for">get_transient_for</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Window.html>Gtk::Window</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_type_hint">get_type_hint</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gdk::WindowTypeHint </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_urgency_hint">get_urgency_hint</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_window_type">get_window_type</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::WindowType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_has_group">has_group</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_has_toplevel_focus">has_toplevel_focus</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_iconify">iconify</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_active">is_active</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_maximize">maximize</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_mnemonic_activate">mnemonic_activate</a></b>(keyval, modifier)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>keyval</b>  </li>
+<li class=param> (Integer) <b>modifier</b>  a member of enum Gdk::ModifierType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move">move</a></b>(x, y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_parse_geometry">parse_geometry</a></b>(geometry)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>geometry</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_present">present</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_present_with_time">present_with_time</a></b>(timestamp)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>timestamp</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_propagate_key_event">propagate_key_event</a></b>(event)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>event</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_accel_group">remove_accel_group</a></b>(accel_group)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_AccelGroup.html>Gtk::AccelGroup</a>) <b>accel_group</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_embedded_xid">remove_embedded_xid</a></b>(xid)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>xid</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_mnemonic">remove_mnemonic</a></b>(keyval, target)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>keyval</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>target</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reshow_with_initial_size">reshow_with_initial_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_resize">resize</a></b>(width, height)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>width</b>  </li>
+<li class=param> (Integer) <b>height</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accept_focus">set_accept_focus</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_decorated">set_decorated</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_default">set_default</a></b>(default_widget)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>default_widget</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_default_size">set_default_size</a></b>(width, height)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>width</b>  </li>
+<li class=param> (Integer) <b>height</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_deletable">set_deletable</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_destroy_with_parent">set_destroy_with_parent</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_focus">set_focus</a></b>(focus)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>focus</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_focus_on_map">set_focus_on_map</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_frame_dimensions">set_frame_dimensions</a></b>(left, top, right, bottom)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>left</b>  </li>
+<li class=param> (Integer) <b>top</b>  </li>
+<li class=param> (Integer) <b>right</b>  </li>
+<li class=param> (Integer) <b>bottom</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_geometry_hints">set_geometry_hints</a></b>(geometry_widget, geometry, geom_mask)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>geometry_widget</b>  </li>
+<li class=param> (FFI::Pointer) <b>geometry</b>  </li>
+<li class=param> (Integer) <b>geom_mask</b>  a member of enum Gdk::WindowHints </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_gravity">set_gravity</a></b>(gravity)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>gravity</b>  a member of enum Gdk::Gravity </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_has_frame">set_has_frame</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_icon">set_icon</a></b>(icon)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (GdkPixbuf::Pixbuf) <b>icon</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_set_icon_from_file">set_icon_from_file</a></b>(filename)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>filename</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_icon_name">set_icon_name</a></b>(name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_keep_above">set_keep_above</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_keep_below">set_keep_below</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_mnemonic_modifier">set_mnemonic_modifier</a></b>(modifier)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>modifier</b>  a member of enum Gdk::ModifierType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_mnemonics_visible">set_mnemonics_visible</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_modal">set_modal</a></b>(modal)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>modal</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_opacity">set_opacity</a></b>(opacity)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>opacity</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_policy">set_policy</a></b>(allow_shrink, allow_grow, auto_shrink)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>allow_shrink</b>  </li>
+<li class=param> (Integer) <b>allow_grow</b>  </li>
+<li class=param> (Integer) <b>auto_shrink</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_position">set_position</a></b>(position)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>position</b>  a member of enum Gtk::WindowPosition </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_resizable">set_resizable</a></b>(resizable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>resizable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_role">set_role</a></b>(role)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>role</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_screen">set_screen</a></b>(screen)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Screen) <b>screen</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_skip_pager_hint">set_skip_pager_hint</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_skip_taskbar_hint">set_skip_taskbar_hint</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_startup_id">set_startup_id</a></b>(startup_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>startup_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_title">set_title</a></b>(title)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>title</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_transient_for">set_transient_for</a></b>(parent)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Window.html>Gtk::Window</a>) <b>parent</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_type_hint">set_type_hint</a></b>(hint)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>hint</b>  a member of enum Gdk::WindowTypeHint </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_urgency_hint">set_urgency_hint</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_wmclass">set_wmclass</a></b>(wmclass_name, wmclass_class)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>wmclass_name</b>  </li>
+<li class=param> (String) <b>wmclass_class</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_stick">stick</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unfullscreen">unfullscreen</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unmaximize">unmaximize</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unstick">unstick</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_activate-default">activate-default"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_activate-focus">activate-focus"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_frame-event">frame-event"</a></b> {|event| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>event</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_keys-changed">keys-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_set-focus">set-focus"</a></b> {|focus| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>focus</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

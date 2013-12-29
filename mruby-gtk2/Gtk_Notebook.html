@@ -1,0 +1,666 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Notebook class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Notebook</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Container.html>Gtk::Container</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_append_page>- (Integer) <b>append_page</b>(child, tab_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_append_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_append_page_menu>- (Integer) <b>append_page_menu</b>(child, tab_label, menu_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_append_page_menu </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_action_widget>- (Gtk::Widget) <b>get_action_widget</b>(pack_type)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_action_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_page>- (Integer) <b>get_current_page</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_current_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_group>- (NilClass) <b>get_group</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_group_id>- (Integer) <b>get_group_id</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_group_id </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_group_name>- (String) <b>get_group_name</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_group_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_menu_label>- (Gtk::Widget) <b>get_menu_label</b>(child)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_menu_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_menu_label_text>- (String) <b>get_menu_label_text</b>(child)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_menu_label_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_n_pages>- (Integer) <b>get_n_pages</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_n_pages </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_nth_page>- (Gtk::Widget) <b>get_nth_page</b>(page_num)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_nth_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_scrollable>- (Boolean) <b>get_scrollable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_scrollable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_border>- (Boolean) <b>get_show_border</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_show_border </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_tabs>- (Boolean) <b>get_show_tabs</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_show_tabs </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tab_detachable>- (Boolean) <b>get_tab_detachable</b>(child)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_tab_detachable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tab_hborder>- (Integer) <b>get_tab_hborder</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_tab_hborder </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tab_label>- (Gtk::Widget) <b>get_tab_label</b>(child)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_tab_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tab_label_text>- (String) <b>get_tab_label_text</b>(child)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_tab_label_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tab_pos>- (Integer) <b>get_tab_pos</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_tab_pos </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tab_reorderable>- (Boolean) <b>get_tab_reorderable</b>(child)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_tab_reorderable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tab_vborder>- (Integer) <b>get_tab_vborder</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_get_tab_vborder </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_page>- (Integer) <b>insert_page</b>(child, position, tab_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_insert_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_page_menu>- (Integer) <b>insert_page_menu</b>(child, position, tab_label, menu_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_insert_page_menu </div>
+<div>&nbsp;&nbsp;<a href=#instance_next_page>- (NilClass) <b>next_page</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_next_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_page_num>- (Integer) <b>page_num</b>(child)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_page_num </div>
+<div>&nbsp;&nbsp;<a href=#instance_popup_disable>- (NilClass) <b>popup_disable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_popup_disable </div>
+<div>&nbsp;&nbsp;<a href=#instance_popup_enable>- (NilClass) <b>popup_enable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_popup_enable </div>
+<div>&nbsp;&nbsp;<a href=#instance_prepend_page>- (Integer) <b>prepend_page</b>(child, tab_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_prepend_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_prepend_page_menu>- (Integer) <b>prepend_page_menu</b>(child, tab_label, menu_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_prepend_page_menu </div>
+<div>&nbsp;&nbsp;<a href=#instance_prev_page>- (NilClass) <b>prev_page</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_prev_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_query_tab_label_packing>- (NilClass) <b>query_tab_label_packing</b>(child, expand, fill, pack_type)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_query_tab_label_packing </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_page>- (NilClass) <b>remove_page</b>(page_num)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_remove_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_reorder_child>- (NilClass) <b>reorder_child</b>(child, position)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_reorder_child </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_action_widget>- (NilClass) <b>set_action_widget</b>(widget, pack_type)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_action_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_page>- (NilClass) <b>set_current_page</b>(page_num)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_current_page </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_group>- (NilClass) <b>set_group</b>(group)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_group_id>- (NilClass) <b>set_group_id</b>(group_id)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_group_id </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_group_name>- (NilClass) <b>set_group_name</b>(group_name)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_group_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_homogeneous_tabs>- (NilClass) <b>set_homogeneous_tabs</b>(homogeneous)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_homogeneous_tabs </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_menu_label>- (NilClass) <b>set_menu_label</b>(child, menu_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_menu_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_menu_label_text>- (NilClass) <b>set_menu_label_text</b>(child, menu_text)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_menu_label_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_scrollable>- (NilClass) <b>set_scrollable</b>(scrollable)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_scrollable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_border>- (NilClass) <b>set_show_border</b>(show_border)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_show_border </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_tabs>- (NilClass) <b>set_show_tabs</b>(show_tabs)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_show_tabs </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_border>- (NilClass) <b>set_tab_border</b>(border_width)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_border </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_detachable>- (NilClass) <b>set_tab_detachable</b>(child, detachable)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_detachable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_hborder>- (NilClass) <b>set_tab_hborder</b>(tab_hborder)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_hborder </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_label>- (NilClass) <b>set_tab_label</b>(child, tab_label)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_label </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_label_packing>- (NilClass) <b>set_tab_label_packing</b>(child, expand, fill, pack_type)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_label_packing </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_label_text>- (NilClass) <b>set_tab_label_text</b>(child, tab_text)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_label_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_pos>- (NilClass) <b>set_tab_pos</b>(pos)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_pos </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_reorderable>- (NilClass) <b>set_tab_reorderable</b>(child, reorderable)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_reorderable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tab_vborder>- (NilClass) <b>set_tab_vborder</b>(tab_vborder)</a>&nbsp;&nbsp;</div>
+<div> gtk_notebook_set_tab_vborder </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_change-current-page>* (Boolean) <b>"change-current-page"</b> {|offset| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_create-window>* (Gtk::Notebook) <b>"create-window"</b> {|page, x, y| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_focus-tab>* (Boolean) <b>"focus-tab"</b> {|type| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_move-focus-out>* (NilClass) <b>"move-focus-out"</b> {|direction| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_page-added>* (NilClass) <b>"page-added"</b> {|child, page_num| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_page-removed>* (NilClass) <b>"page-removed"</b> {|child, page_num| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_page-reordered>* (NilClass) <b>"page-reordered"</b> {|child, page_num| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_reorder-tab>* (Boolean) <b>"reorder-tab"</b> {|direction, move_to_last| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_select-page>* (Boolean) <b>"select-page"</b> {|move_focus| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_switch-page>* (NilClass) <b>"switch-page"</b> {|page, page_num| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_append_page">append_page</a></b>(child, tab_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>tab_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_append_page_menu">append_page_menu</a></b>(child, tab_label, menu_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>tab_label</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>menu_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_action_widget">get_action_widget</a></b>(pack_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>pack_type</b>  a member of enum Gtk::PackType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_current_page">get_current_page</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_get_group">get_group</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_group_id">get_group_id</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_group_name">get_group_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_menu_label">get_menu_label</a></b>(child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_menu_label_text">get_menu_label_text</a></b>(child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_n_pages">get_n_pages</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_nth_page">get_nth_page</a></b>(page_num)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>page_num</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_scrollable">get_scrollable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_border">get_show_border</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_tabs">get_show_tabs</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_tab_detachable">get_tab_detachable</a></b>(child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_tab_hborder">get_tab_hborder</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_tab_label">get_tab_label</a></b>(child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_tab_label_text">get_tab_label_text</a></b>(child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_tab_pos">get_tab_pos</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::PositionType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_tab_reorderable">get_tab_reorderable</a></b>(child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_tab_vborder">get_tab_vborder</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_insert_page">insert_page</a></b>(child, position, tab_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>position</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>tab_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_insert_page_menu">insert_page_menu</a></b>(child, position, tab_label, menu_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>position</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>tab_label</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>menu_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_next_page">next_page</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_page_num">page_num</a></b>(child)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_popup_disable">popup_disable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_popup_enable">popup_enable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_prepend_page">prepend_page</a></b>(child, tab_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>tab_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_prepend_page_menu">prepend_page_menu</a></b>(child, tab_label, menu_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>tab_label</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>menu_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_prev_page">prev_page</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_query_tab_label_packing">query_tab_label_packing</a></b>(child, expand, fill, pack_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Boolean) <b>expand</b>  </li>
+<li class=param> (Boolean) <b>fill</b>  </li>
+<li class=param> (Integer) <b>pack_type</b>  a member of enum Gtk::PackType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_page">remove_page</a></b>(page_num)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>page_num</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reorder_child">reorder_child</a></b>(child, position)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>position</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_action_widget">set_action_widget</a></b>(widget, pack_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (Integer) <b>pack_type</b>  a member of enum Gtk::PackType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_current_page">set_current_page</a></b>(page_num)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>page_num</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_group">set_group</a></b>(group)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>group</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_group_id">set_group_id</a></b>(group_id)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>group_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_group_name">set_group_name</a></b>(group_name)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>group_name</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_homogeneous_tabs">set_homogeneous_tabs</a></b>(homogeneous)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>homogeneous</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_menu_label">set_menu_label</a></b>(child, menu_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>menu_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_menu_label_text">set_menu_label_text</a></b>(child, menu_text)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (String) <b>menu_text</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_scrollable">set_scrollable</a></b>(scrollable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>scrollable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_border">set_show_border</a></b>(show_border)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_border</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_tabs">set_show_tabs</a></b>(show_tabs)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>show_tabs</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_border">set_tab_border</a></b>(border_width)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>border_width</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_detachable">set_tab_detachable</a></b>(child, detachable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Boolean) <b>detachable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_hborder">set_tab_hborder</a></b>(tab_hborder)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>tab_hborder</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_label">set_tab_label</a></b>(child, tab_label)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>tab_label</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_label_packing">set_tab_label_packing</a></b>(child, expand, fill, pack_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Boolean) <b>expand</b>  </li>
+<li class=param> (Boolean) <b>fill</b>  </li>
+<li class=param> (Integer) <b>pack_type</b>  a member of enum Gtk::PackType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_label_text">set_tab_label_text</a></b>(child, tab_text)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (String) <b>tab_text</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_pos">set_tab_pos</a></b>(pos)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>pos</b>  a member of enum Gtk::PositionType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_reorderable">set_tab_reorderable</a></b>(child, reorderable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Boolean) <b>reorderable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tab_vborder">set_tab_vborder</a></b>(tab_vborder)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>tab_vborder</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_change-current-page">change-current-page"</a></b> {|offset| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>offset</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (<a href=#Gtk_Notebook.html>Gtk::Notebook</a>) <b><a name="signal_create-window">create-window"</a></b> {|page, x, y| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>page</b>  </li>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Notebook.html>Gtk::Notebook</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_focus-tab">focus-tab"</a></b> {|type| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>type</b>  a member of enum Gtk::NotebookTab </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_move-focus-out">move-focus-out"</a></b> {|direction| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>direction</b>  a member of enum Gtk::DirectionType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_page-added">page-added"</a></b> {|child, page_num| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>page_num</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_page-removed">page-removed"</a></b> {|child, page_num| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>page_num</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_page-reordered">page-reordered"</a></b> {|child, page_num| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>page_num</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_reorder-tab">reorder-tab"</a></b> {|direction, move_to_last| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>direction</b>  a member of enum Gtk::DirectionType </li>
+<li class=param> (Boolean) <b>move_to_last</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_select-page">select-page"</a></b> {|move_focus| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>move_focus</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_switch-page">switch-page"</a></b> {|page, page_num| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>page</b>  </li>
+<li class=param> (Integer) <b>page_num</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

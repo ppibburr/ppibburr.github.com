@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=ProgressBar class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::ProgressBar</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Progress.html>Gtk::Progress</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_with_adjustment>+ (Gtk::Widget) <b>new_with_adjustment</b>(adjustment)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_new_with_adjustment </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_get_ellipsize>- (Integer) <b>get_ellipsize</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_get_ellipsize </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_fraction>- (Float) <b>get_fraction</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_get_fraction </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_orientation>- (Integer) <b>get_orientation</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_get_orientation </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_pulse_step>- (Float) <b>get_pulse_step</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_get_pulse_step </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_text>- (String) <b>get_text</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_get_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_pulse>- (NilClass) <b>pulse</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_pulse </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_activity_blocks>- (NilClass) <b>set_activity_blocks</b>(blocks)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_activity_blocks </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_activity_step>- (NilClass) <b>set_activity_step</b>(step)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_activity_step </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_bar_style>- (NilClass) <b>set_bar_style</b>(style)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_bar_style </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_discrete_blocks>- (NilClass) <b>set_discrete_blocks</b>(blocks)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_discrete_blocks </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_ellipsize>- (NilClass) <b>set_ellipsize</b>(mode)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_ellipsize </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_fraction>- (NilClass) <b>set_fraction</b>(fraction)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_fraction </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_orientation>- (NilClass) <b>set_orientation</b>(orientation)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_orientation </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_pulse_step>- (NilClass) <b>set_pulse_step</b>(fraction)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_pulse_step </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_text>- (NilClass) <b>set_text</b>(text)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_set_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_update>- (NilClass) <b>update</b>(percentage)</a>&nbsp;&nbsp;</div>
+<div> gtk_progress_bar_update </div>
+</div></div><br>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new_with_adjustment">new_with_adjustment</a></b>(adjustment)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>adjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_ellipsize">get_ellipsize</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Pango::EllipsizeMode </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_fraction">get_fraction</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_orientation">get_orientation</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::ProgressBarOrientation </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_pulse_step">get_pulse_step</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_text">get_text</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_pulse">pulse</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_activity_blocks">set_activity_blocks</a></b>(blocks)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>blocks</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_activity_step">set_activity_step</a></b>(step)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>step</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_bar_style">set_bar_style</a></b>(style)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>style</b>  a member of enum Gtk::ProgressBarStyle </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_discrete_blocks">set_discrete_blocks</a></b>(blocks)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>blocks</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_ellipsize">set_ellipsize</a></b>(mode)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>mode</b>  a member of enum Pango::EllipsizeMode </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_fraction">set_fraction</a></b>(fraction)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>fraction</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_orientation">set_orientation</a></b>(orientation)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>orientation</b>  a member of enum Gtk::ProgressBarOrientation </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_pulse_step">set_pulse_step</a></b>(fraction)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>fraction</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_text">set_text</a></b>(text)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>text</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_update">update</a></b>(percentage)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>percentage</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

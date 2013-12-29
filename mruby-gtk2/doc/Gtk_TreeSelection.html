@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=TreeSelection class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::TreeSelection</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_count_selected_rows>- (Integer) <b>count_selected_rows</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_count_selected_rows </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_mode>- (Integer) <b>get_mode</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_get_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_selected>- (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;) <b>get_selected</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_get_selected </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_selected_rows>- (Array&lt;FFI::Pointer, FFI::Pointer&gt;) <b>get_selected_rows</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_get_selected_rows </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tree_view>- (Gtk::TreeView) <b>get_tree_view</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_get_tree_view </div>
+<div>&nbsp;&nbsp;<a href=#instance_iter_is_selected>- (Boolean) <b>iter_is_selected</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_iter_is_selected </div>
+<div>&nbsp;&nbsp;<a href=#instance_path_is_selected>- (Boolean) <b>path_is_selected</b>(path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_path_is_selected </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_all>- (NilClass) <b>select_all</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_select_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_iter>- (NilClass) <b>select_iter</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_select_iter </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_path>- (NilClass) <b>select_path</b>(path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_select_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_range>- (NilClass) <b>select_range</b>(start_path, end_path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_select_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_selected_foreach>- (NilClass) <b>selected_foreach</b>() {|model, path, iter, data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_selected_foreach </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_mode>- (NilClass) <b>set_mode</b>(type)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_set_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_select_function>- (NilClass) <b>set_select_function</b>() {|selection, model, path, path_currently_selected, data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_set_select_function </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_all>- (NilClass) <b>unselect_all</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_unselect_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_iter>- (NilClass) <b>unselect_iter</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_unselect_iter </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_path>- (NilClass) <b>unselect_path</b>(path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_unselect_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_unselect_range>- (NilClass) <b>unselect_range</b>(start_path, end_path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_selection_unselect_range </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_changed>* (NilClass) <b>"changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_count_selected_rows">count_selected_rows</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_mode">get_mode</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::SelectionMode </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;) <b><a name="instance_get_selected">get_selected</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;FFI::Pointer, FFI::Pointer&gt;) <b><a name="instance_get_selected_rows">get_selected_rows</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;FFI::Pointer, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TreeView.html>Gtk::TreeView</a>) <b><a name="instance_get_tree_view">get_tree_view</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TreeView.html>Gtk::TreeView</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_iter_is_selected">iter_is_selected</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_path_is_selected">path_is_selected</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_all">select_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_iter">select_iter</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_path">select_path</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_range">select_range</a></b>(start_path, end_path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>start_path</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_selected_foreach">selected_foreach</a></b>() {|model, path, iter, data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>model</b> </li>
+<li class=param> (FFI::Pointer) <b>path</b> </li>
+<li class=param> (FFI::Pointer) <b>iter</b> </li>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_mode">set_mode</a></b>(type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>type</b>  a member of enum Gtk::SelectionMode </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_select_function">set_select_function</a></b>() {|selection, model, path, path_currently_selected, data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeSelection.html>Gtk::TreeSelection</a>) <b>selection</b> </li>
+<li class=param> (FFI::Pointer) <b>model</b> </li>
+<li class=param> (FFI::Pointer) <b>path</b> </li>
+<li class=param> (Boolean) <b>path_currently_selected</b> </li>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_all">unselect_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_iter">unselect_iter</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_path">unselect_path</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unselect_range">unselect_range</a></b>(start_path, end_path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>start_path</b>  </li>
+<li class=param> (FFI::Pointer) <b>end_path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_changed">changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

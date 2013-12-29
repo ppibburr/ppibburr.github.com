@@ -1,0 +1,756 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=TextView class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::TextView</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Container.html>Gtk::Container</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_with_buffer>+ (Gtk::Widget) <b>new_with_buffer</b>(buffer)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_new_with_buffer </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_child_at_anchor>- (NilClass) <b>add_child_at_anchor</b>(child, anchor)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_add_child_at_anchor </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_child_in_window>- (NilClass) <b>add_child_in_window</b>(child, which_window, xpos, ypos)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_add_child_in_window </div>
+<div>&nbsp;&nbsp;<a href=#instance_backward_display_line>- (Boolean) <b>backward_display_line</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_backward_display_line </div>
+<div>&nbsp;&nbsp;<a href=#instance_backward_display_line_start>- (Boolean) <b>backward_display_line_start</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_backward_display_line_start </div>
+<div>&nbsp;&nbsp;<a href=#instance_buffer_to_window_coords>- (Array&lt;Integer, Integer&gt;) <b>buffer_to_window_coords</b>(win, buffer_x, buffer_y)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_buffer_to_window_coords </div>
+<div>&nbsp;&nbsp;<a href=#instance_forward_display_line>- (Boolean) <b>forward_display_line</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_forward_display_line </div>
+<div>&nbsp;&nbsp;<a href=#instance_forward_display_line_end>- (Boolean) <b>forward_display_line_end</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_forward_display_line_end </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_accepts_tab>- (Boolean) <b>get_accepts_tab</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_accepts_tab </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_border_window_size>- (Integer) <b>get_border_window_size</b>(type)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_border_window_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_buffer>- (Gtk::TextBuffer) <b>get_buffer</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_buffer </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_cursor_visible>- (Boolean) <b>get_cursor_visible</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_cursor_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_default_attributes>- (FFI::Pointer) <b>get_default_attributes</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_default_attributes </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_editable>- (Boolean) <b>get_editable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_editable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_hadjustment>- (Gtk::Adjustment) <b>get_hadjustment</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_hadjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_indent>- (Integer) <b>get_indent</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_indent </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_at_location>- (FFI::Pointer) <b>get_iter_at_location</b>(x, y)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_iter_at_location </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_at_position>- (Array&lt;FFI::Pointer, Integer&gt;) <b>get_iter_at_position</b>(x, y)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_iter_at_position </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_iter_location>- (FFI::Pointer) <b>get_iter_location</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_iter_location </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_justification>- (Integer) <b>get_justification</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_justification </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_left_margin>- (Integer) <b>get_left_margin</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_left_margin </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_line_at_y>- (Array&lt;FFI::Pointer, Integer&gt;) <b>get_line_at_y</b>(y)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_line_at_y </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_line_yrange>- (Array&lt;Integer, Integer&gt;) <b>get_line_yrange</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_line_yrange </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_overwrite>- (Boolean) <b>get_overwrite</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_overwrite </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_pixels_above_lines>- (Integer) <b>get_pixels_above_lines</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_pixels_above_lines </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_pixels_below_lines>- (Integer) <b>get_pixels_below_lines</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_pixels_below_lines </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_pixels_inside_wrap>- (Integer) <b>get_pixels_inside_wrap</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_pixels_inside_wrap </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_right_margin>- (Integer) <b>get_right_margin</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_right_margin </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tabs>- (FFI::Pointer) <b>get_tabs</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_tabs </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_vadjustment>- (Gtk::Adjustment) <b>get_vadjustment</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_vadjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_visible_rect>- (FFI::Pointer) <b>get_visible_rect</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_visible_rect </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_window>- (Gdk::Window) <b>get_window</b>(win)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_window </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_window_type>- (Integer) <b>get_window_type</b>(window)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_window_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_wrap_mode>- (Integer) <b>get_wrap_mode</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_get_wrap_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_im_context_filter_keypress>- (Boolean) <b>im_context_filter_keypress</b>(event)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_im_context_filter_keypress </div>
+<div>&nbsp;&nbsp;<a href=#instance_move_child>- (NilClass) <b>move_child</b>(child, xpos, ypos)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_move_child </div>
+<div>&nbsp;&nbsp;<a href=#instance_move_mark_onscreen>- (Boolean) <b>move_mark_onscreen</b>(mark)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_move_mark_onscreen </div>
+<div>&nbsp;&nbsp;<a href=#instance_move_visually>- (Boolean) <b>move_visually</b>(iter, count)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_move_visually </div>
+<div>&nbsp;&nbsp;<a href=#instance_place_cursor_onscreen>- (Boolean) <b>place_cursor_onscreen</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_place_cursor_onscreen </div>
+<div>&nbsp;&nbsp;<a href=#instance_reset_im_context>- (NilClass) <b>reset_im_context</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_reset_im_context </div>
+<div>&nbsp;&nbsp;<a href=#instance_scroll_mark_onscreen>- (NilClass) <b>scroll_mark_onscreen</b>(mark)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_scroll_mark_onscreen </div>
+<div>&nbsp;&nbsp;<a href=#instance_scroll_to_iter>- (Boolean) <b>scroll_to_iter</b>(iter, within_margin, use_align, xalign, yalign)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_scroll_to_iter </div>
+<div>&nbsp;&nbsp;<a href=#instance_scroll_to_mark>- (NilClass) <b>scroll_to_mark</b>(mark, within_margin, use_align, xalign, yalign)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_scroll_to_mark </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_accepts_tab>- (NilClass) <b>set_accepts_tab</b>(accepts_tab)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_accepts_tab </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_border_window_size>- (NilClass) <b>set_border_window_size</b>(type, size)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_border_window_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_buffer>- (NilClass) <b>set_buffer</b>(buffer)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_buffer </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_cursor_visible>- (NilClass) <b>set_cursor_visible</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_cursor_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_editable>- (NilClass) <b>set_editable</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_editable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_indent>- (NilClass) <b>set_indent</b>(indent)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_indent </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_justification>- (NilClass) <b>set_justification</b>(justification)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_justification </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_left_margin>- (NilClass) <b>set_left_margin</b>(left_margin)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_left_margin </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_overwrite>- (NilClass) <b>set_overwrite</b>(overwrite)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_overwrite </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_pixels_above_lines>- (NilClass) <b>set_pixels_above_lines</b>(pixels_above_lines)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_pixels_above_lines </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_pixels_below_lines>- (NilClass) <b>set_pixels_below_lines</b>(pixels_below_lines)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_pixels_below_lines </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_pixels_inside_wrap>- (NilClass) <b>set_pixels_inside_wrap</b>(pixels_inside_wrap)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_pixels_inside_wrap </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_right_margin>- (NilClass) <b>set_right_margin</b>(right_margin)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_right_margin </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tabs>- (NilClass) <b>set_tabs</b>(tabs)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_tabs </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_wrap_mode>- (NilClass) <b>set_wrap_mode</b>(wrap_mode)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_set_wrap_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_starts_display_line>- (Boolean) <b>starts_display_line</b>(iter)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_starts_display_line </div>
+<div>&nbsp;&nbsp;<a href=#instance_window_to_buffer_coords>- (Array&lt;Integer, Integer&gt;) <b>window_to_buffer_coords</b>(win, window_x, window_y)</a>&nbsp;&nbsp;</div>
+<div> gtk_text_view_window_to_buffer_coords </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_backspace>* (NilClass) <b>"backspace"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_copy-clipboard>* (NilClass) <b>"copy-clipboard"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_cut-clipboard>* (NilClass) <b>"cut-clipboard"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_delete-from-cursor>* (NilClass) <b>"delete-from-cursor"</b> {|type, count| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_insert-at-cursor>* (NilClass) <b>"insert-at-cursor"</b> {|str| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_move-cursor>* (NilClass) <b>"move-cursor"</b> {|step, count, extend_selection| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_move-viewport>* (NilClass) <b>"move-viewport"</b> {|step, count| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_page-horizontally>* (NilClass) <b>"page-horizontally"</b> {|count, extend_selection| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_paste-clipboard>* (NilClass) <b>"paste-clipboard"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_populate-popup>* (NilClass) <b>"populate-popup"</b> {|menu| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_preedit-changed>* (NilClass) <b>"preedit-changed"</b> {|preedit| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_select-all>* (NilClass) <b>"select-all"</b> {|select| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_set-anchor>* (NilClass) <b>"set-anchor"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_set-scroll-adjustments>* (NilClass) <b>"set-scroll-adjustments"</b> {|hadjustment, vadjustment| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_toggle-cursor-visible>* (NilClass) <b>"toggle-cursor-visible"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_toggle-overwrite>* (NilClass) <b>"toggle-overwrite"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new_with_buffer">new_with_buffer</a></b>(buffer)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b>buffer</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_child_at_anchor">add_child_at_anchor</a></b>(child, anchor)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (<a href=#Gtk_TextChildAnchor.html>Gtk::TextChildAnchor</a>) <b>anchor</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_child_in_window">add_child_in_window</a></b>(child, which_window, xpos, ypos)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>which_window</b>  a member of enum Gtk::TextWindowType </li>
+<li class=param> (Integer) <b>xpos</b>  </li>
+<li class=param> (Integer) <b>ypos</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_backward_display_line">backward_display_line</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_backward_display_line_start">backward_display_line_start</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_buffer_to_window_coords">buffer_to_window_coords</a></b>(win, buffer_x, buffer_y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>win</b>  a member of enum Gtk::TextWindowType </li>
+<li class=param> (Integer) <b>buffer_x</b>  </li>
+<li class=param> (Integer) <b>buffer_y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_forward_display_line">forward_display_line</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_forward_display_line_end">forward_display_line_end</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_accepts_tab">get_accepts_tab</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_border_window_size">get_border_window_size</a></b>(type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>type</b>  a member of enum Gtk::TextWindowType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b><a name="instance_get_buffer">get_buffer</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_cursor_visible">get_cursor_visible</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_default_attributes">get_default_attributes</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_editable">get_editable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b><a name="instance_get_hadjustment">get_hadjustment</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_indent">get_indent</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_iter_at_location">get_iter_at_location</a></b>(x, y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;FFI::Pointer, Integer&gt;) <b><a name="instance_get_iter_at_position">get_iter_at_position</a></b>(x, y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;FFI::Pointer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_iter_location">get_iter_location</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_justification">get_justification</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::Justification </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_left_margin">get_left_margin</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;FFI::Pointer, Integer&gt;) <b><a name="instance_get_line_at_y">get_line_at_y</a></b>(y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;FFI::Pointer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_line_yrange">get_line_yrange</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_overwrite">get_overwrite</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_pixels_above_lines">get_pixels_above_lines</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_pixels_below_lines">get_pixels_below_lines</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_pixels_inside_wrap">get_pixels_inside_wrap</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_right_margin">get_right_margin</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_tabs">get_tabs</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b><a name="instance_get_vadjustment">get_vadjustment</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_visible_rect">get_visible_rect</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Gdk::Window) <b><a name="instance_get_window">get_window</a></b>(win)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>win</b>  a member of enum Gtk::TextWindowType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gdk::Window)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_window_type">get_window_type</a></b>(window)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Window) <b>window</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::TextWindowType </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_wrap_mode">get_wrap_mode</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::WrapMode </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_im_context_filter_keypress">im_context_filter_keypress</a></b>(event)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>event</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_child">move_child</a></b>(child, xpos, ypos)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>xpos</b>  </li>
+<li class=param> (Integer) <b>ypos</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_move_mark_onscreen">move_mark_onscreen</a></b>(mark)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_move_visually">move_visually</a></b>(iter, count)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (Integer) <b>count</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_place_cursor_onscreen">place_cursor_onscreen</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reset_im_context">reset_im_context</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_scroll_mark_onscreen">scroll_mark_onscreen</a></b>(mark)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_scroll_to_iter">scroll_to_iter</a></b>(iter, within_margin, use_align, xalign, yalign)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (Float) <b>within_margin</b>  </li>
+<li class=param> (Boolean) <b>use_align</b>  </li>
+<li class=param> (Float) <b>xalign</b>  </li>
+<li class=param> (Float) <b>yalign</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_scroll_to_mark">scroll_to_mark</a></b>(mark, within_margin, use_align, xalign, yalign)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextMark.html>Gtk::TextMark</a>) <b>mark</b>  </li>
+<li class=param> (Float) <b>within_margin</b>  </li>
+<li class=param> (Boolean) <b>use_align</b>  </li>
+<li class=param> (Float) <b>xalign</b>  </li>
+<li class=param> (Float) <b>yalign</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accepts_tab">set_accepts_tab</a></b>(accepts_tab)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>accepts_tab</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_border_window_size">set_border_window_size</a></b>(type, size)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>type</b>  a member of enum Gtk::TextWindowType </li>
+<li class=param> (Integer) <b>size</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_buffer">set_buffer</a></b>(buffer)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TextBuffer.html>Gtk::TextBuffer</a>) <b>buffer</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_cursor_visible">set_cursor_visible</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_editable">set_editable</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_indent">set_indent</a></b>(indent)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>indent</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_justification">set_justification</a></b>(justification)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>justification</b>  a member of enum Gtk::Justification </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_left_margin">set_left_margin</a></b>(left_margin)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>left_margin</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_overwrite">set_overwrite</a></b>(overwrite)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>overwrite</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_pixels_above_lines">set_pixels_above_lines</a></b>(pixels_above_lines)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>pixels_above_lines</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_pixels_below_lines">set_pixels_below_lines</a></b>(pixels_below_lines)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>pixels_below_lines</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_pixels_inside_wrap">set_pixels_inside_wrap</a></b>(pixels_inside_wrap)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>pixels_inside_wrap</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_right_margin">set_right_margin</a></b>(right_margin)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>right_margin</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tabs">set_tabs</a></b>(tabs)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>tabs</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_wrap_mode">set_wrap_mode</a></b>(wrap_mode)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>wrap_mode</b>  a member of enum Gtk::WrapMode </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_starts_display_line">starts_display_line</a></b>(iter)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_window_to_buffer_coords">window_to_buffer_coords</a></b>(win, window_x, window_y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>win</b>  a member of enum Gtk::TextWindowType </li>
+<li class=param> (Integer) <b>window_x</b>  </li>
+<li class=param> (Integer) <b>window_y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_backspace">backspace"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_copy-clipboard">copy-clipboard"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_cut-clipboard">cut-clipboard"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_delete-from-cursor">delete-from-cursor"</a></b> {|type, count| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>type</b>  a member of enum Gtk::DeleteType </li>
+<li class=param> (Integer) <b>count</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_insert-at-cursor">insert-at-cursor"</a></b> {|str| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>str</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_move-cursor">move-cursor"</a></b> {|step, count, extend_selection| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>step</b>  a member of enum Gtk::MovementStep </li>
+<li class=param> (Integer) <b>count</b>  </li>
+<li class=param> (Boolean) <b>extend_selection</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_move-viewport">move-viewport"</a></b> {|step, count| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>step</b>  a member of enum Gtk::ScrollStep </li>
+<li class=param> (Integer) <b>count</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_page-horizontally">page-horizontally"</a></b> {|count, extend_selection| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>count</b>  </li>
+<li class=param> (Boolean) <b>extend_selection</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_paste-clipboard">paste-clipboard"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_populate-popup">populate-popup"</a></b> {|menu| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Menu.html>Gtk::Menu</a>) <b>menu</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_preedit-changed">preedit-changed"</a></b> {|preedit| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>preedit</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_select-all">select-all"</a></b> {|select| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>select</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_set-anchor">set-anchor"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_set-scroll-adjustments">set-scroll-adjustments"</a></b> {|hadjustment, vadjustment| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>hadjustment</b>  </li>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>vadjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_toggle-cursor-visible">toggle-cursor-visible"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_toggle-overwrite">toggle-overwrite"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+
