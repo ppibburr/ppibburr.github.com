@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=AuthDomain class=class><div class=top_nav><a href=Soup.html>Soup::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Soup::AuthDomain</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_accepts>- (String) <b>accepts</b>(msg)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_accepts </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_path>- (NilClass) <b>add_path</b>(path)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_add_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_basic_set_auth_callback>- (NilClass) <b>basic_set_auth_callback</b>() {|domain, msg, username, password| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_basic_set_auth_callback </div>
+<div>&nbsp;&nbsp;<a href=#instance_challenge>- (NilClass) <b>challenge</b>(msg)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_challenge </div>
+<div>&nbsp;&nbsp;<a href=#instance_check_password>- (Boolean) <b>check_password</b>(msg, username, password)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_check_password </div>
+<div>&nbsp;&nbsp;<a href=#instance_covers>- (Boolean) <b>covers</b>(msg)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_covers </div>
+<div>&nbsp;&nbsp;<a href=#instance_digest_set_auth_callback>- (NilClass) <b>digest_set_auth_callback</b>() {|domain, msg, username| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_digest_set_auth_callback </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_realm>- (String) <b>get_realm</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_get_realm </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_path>- (NilClass) <b>remove_path</b>(path)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_remove_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_filter>- (NilClass) <b>set_filter</b>() {|domain, msg| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_set_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_generic_auth_callback>- (NilClass) <b>set_generic_auth_callback</b>() {|domain, msg, username| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_set_generic_auth_callback </div>
+<div>&nbsp;&nbsp;<a href=#instance_try_generic_auth_callback>- (Boolean) <b>try_generic_auth_callback</b>(msg, username)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_domain_try_generic_auth_callback </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_accepts">accepts</a></b>(msg)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_path">add_path</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_basic_set_auth_callback">basic_set_auth_callback</a></b>() {|domain, msg, username, password| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_AuthDomain.html>Soup::AuthDomain</a>) <b>domain</b> </li>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b> </li>
+<li class=param> (String) <b>username</b> </li>
+<li class=param> (String) <b>password</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_challenge">challenge</a></b>(msg)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_check_password">check_password</a></b>(msg, username, password)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (String) <b>username</b>  </li>
+<li class=param> (String) <b>password</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_covers">covers</a></b>(msg)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_digest_set_auth_callback">digest_set_auth_callback</a></b>() {|domain, msg, username| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_AuthDomain.html>Soup::AuthDomain</a>) <b>domain</b> </li>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b> </li>
+<li class=param> (String) <b>username</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(String) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_realm">get_realm</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_path">remove_path</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_filter">set_filter</a></b>() {|domain, msg| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_AuthDomain.html>Soup::AuthDomain</a>) <b>domain</b> </li>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_generic_auth_callback">set_generic_auth_callback</a></b>() {|domain, msg, username| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_AuthDomain.html>Soup::AuthDomain</a>) <b>domain</b> </li>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b> </li>
+<li class=param> (String) <b>username</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_try_generic_auth_callback">try_generic_auth_callback</a></b>(msg, username)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (String) <b>username</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

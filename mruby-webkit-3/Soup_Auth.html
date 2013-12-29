@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Auth class=class><div class=top_nav><a href=Soup.html>Soup::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Soup::Auth</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Soup::Auth) <b>new</b>(type, msg, auth_header)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_authenticate>- (NilClass) <b>authenticate</b>(username, password)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_authenticate </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_authorization>- (String) <b>get_authorization</b>(msg)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_get_authorization </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_host>- (String) <b>get_host</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_auth_get_host </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_info>- (String) <b>get_info</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_auth_get_info </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_protection_space>- (FFI::Pointer) <b>get_protection_space</b>(source_uri)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_get_protection_space </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_realm>- (String) <b>get_realm</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_auth_get_realm </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_saved_password>- (String) <b>get_saved_password</b>(user)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_get_saved_password </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_scheme_name>- (String) <b>get_scheme_name</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_auth_get_scheme_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_saved_password>- (NilClass) <b>has_saved_password</b>(username, password)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_has_saved_password </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_authenticated>- (Boolean) <b>is_authenticated</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_auth_is_authenticated </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_for_proxy>- (Boolean) <b>is_for_proxy</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_auth_is_for_proxy </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_ready>- (Boolean) <b>is_ready</b>(msg)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_is_ready </div>
+<div>&nbsp;&nbsp;<a href=#instance_save_password>- (NilClass) <b>save_password</b>(username, password)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_save_password </div>
+<div>&nbsp;&nbsp;<a href=#instance_update>- (Boolean) <b>update</b>(msg, auth_header)</a>&nbsp;&nbsp;</div>
+<div> soup_auth_update </div>
+</div></div><br>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Soup_Auth.html>Soup::Auth</a>) <b><a name="class_new">new</a></b>(type, msg, auth_header)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>type</b>  </li>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (String) <b>auth_header</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_Auth.html>Soup::Auth</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_authenticate">authenticate</a></b>(username, password)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>username</b>  </li>
+<li class=param> (String) <b>password</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_authorization">get_authorization</a></b>(msg)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_host">get_host</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_info">get_info</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_protection_space">get_protection_space</a></b>(source_uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>source_uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_realm">get_realm</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_saved_password">get_saved_password</a></b>(user)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>user</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_scheme_name">get_scheme_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_has_saved_password">has_saved_password</a></b>(username, password)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>username</b>  </li>
+<li class=param> (String) <b>password</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_authenticated">is_authenticated</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_for_proxy">is_for_proxy</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_ready">is_ready</a></b>(msg)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_save_password">save_password</a></b>(username, password)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>username</b>  </li>
+<li class=param> (String) <b>password</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_update">update</a></b>(msg, auth_header)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (String) <b>auth_header</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

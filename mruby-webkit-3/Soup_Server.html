@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Server class=class><div class=top_nav><a href=Soup.html>Soup::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Soup::Server</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_auth_domain>- (NilClass) <b>add_auth_domain</b>(auth_domain)</a>&nbsp;&nbsp;</div>
+<div> soup_server_add_auth_domain </div>
+<div>&nbsp;&nbsp;<a href=#instance_add_handler>- (NilClass) <b>add_handler</b>(path) {|server, msg, path, query, client| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_server_add_handler </div>
+<div>&nbsp;&nbsp;<a href=#instance_disconnect>- (NilClass) <b>disconnect</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_server_disconnect </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_async_context>- (FFI::Pointer) <b>get_async_context</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_server_get_async_context </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_listener>- (Soup::Socket) <b>get_listener</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_server_get_listener </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_port>- (Integer) <b>get_port</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_server_get_port </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_https>- (Boolean) <b>is_https</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_server_is_https </div>
+<div>&nbsp;&nbsp;<a href=#instance_pause_message>- (NilClass) <b>pause_message</b>(msg)</a>&nbsp;&nbsp;</div>
+<div> soup_server_pause_message </div>
+<div>&nbsp;&nbsp;<a href=#instance_quit>- (NilClass) <b>quit</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_server_quit </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_auth_domain>- (NilClass) <b>remove_auth_domain</b>(auth_domain)</a>&nbsp;&nbsp;</div>
+<div> soup_server_remove_auth_domain </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_handler>- (NilClass) <b>remove_handler</b>(path)</a>&nbsp;&nbsp;</div>
+<div> soup_server_remove_handler </div>
+<div>&nbsp;&nbsp;<a href=#instance_run>- (NilClass) <b>run</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_server_run </div>
+<div>&nbsp;&nbsp;<a href=#instance_run_async>- (NilClass) <b>run_async</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_server_run_async </div>
+<div>&nbsp;&nbsp;<a href=#instance_unpause_message>- (NilClass) <b>unpause_message</b>(msg)</a>&nbsp;&nbsp;</div>
+<div> soup_server_unpause_message </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_request-aborted>* (NilClass) <b>"request-aborted"</b> {|msg, client| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_request-finished>* (NilClass) <b>"request-finished"</b> {|msg, client| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_request-read>* (NilClass) <b>"request-read"</b> {|msg, client| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_request-started>* (NilClass) <b>"request-started"</b> {|msg, client| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_auth_domain">add_auth_domain</a></b>(auth_domain)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_AuthDomain.html>Soup::AuthDomain</a>) <b>auth_domain</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_handler">add_handler</a></b>(path) {|server, msg, path, query, client| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>path</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_Server.html>Soup::Server</a>) <b>server</b> </li>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b> </li>
+<li class=param> (String) <b>path</b> </li>
+<li class=param> (FFI::Pointer) <b>query</b> </li>
+<li class=param> (FFI::Pointer) <b>client</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_disconnect">disconnect</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_async_context">get_async_context</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Soup_Socket.html>Soup::Socket</a>) <b><a name="instance_get_listener">get_listener</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_Socket.html>Soup::Socket</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_port">get_port</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_https">is_https</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_pause_message">pause_message</a></b>(msg)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_quit">quit</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_auth_domain">remove_auth_domain</a></b>(auth_domain)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_AuthDomain.html>Soup::AuthDomain</a>) <b>auth_domain</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_handler">remove_handler</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_run">run</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_run_async">run_async</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unpause_message">unpause_message</a></b>(msg)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_request-aborted">request-aborted"</a></b> {|msg, client| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (FFI::Pointer) <b>client</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_request-finished">request-finished"</a></b> {|msg, client| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (FFI::Pointer) <b>client</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_request-read">request-read"</a></b> {|msg, client| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (FFI::Pointer) <b>client</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_request-started">request-started"</a></b> {|msg, client| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (FFI::Pointer) <b>client</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

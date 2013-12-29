@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Download class=class><div class=top_nav><a href=WebKit.html>WebKit::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: WebKit::Download</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (WebKit::Download) <b>new</b>(request)</a>&nbsp;&nbsp;</div>
+<div> webkit_download_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_cancel>- (NilClass) <b>cancel</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_cancel </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_size>- (Integer) <b>get_current_size</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_current_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_destination_uri>- (String) <b>get_destination_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_destination_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_elapsed_time>- (Float) <b>get_elapsed_time</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_elapsed_time </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_network_request>- (WebKit::NetworkRequest) <b>get_network_request</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_network_request </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_network_response>- (WebKit::NetworkResponse) <b>get_network_response</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_network_response </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_progress>- (Float) <b>get_progress</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_progress </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_status>- (Integer) <b>get_status</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_status </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_suggested_filename>- (String) <b>get_suggested_filename</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_suggested_filename </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_total_size>- (Integer) <b>get_total_size</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_total_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_uri>- (String) <b>get_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_get_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_destination_uri>- (NilClass) <b>set_destination_uri</b>(destination_uri)</a>&nbsp;&nbsp;</div>
+<div> webkit_download_set_destination_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_start>- (NilClass) <b>start</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_download_start </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_error>* (Boolean) <b>"error"</b> {|error_code, error_detail, reason| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#WebKit_Download.html>WebKit::Download</a>) <b><a name="class_new">new</a></b>(request)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>) <b>request</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_Download.html>WebKit::Download</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_cancel">cancel</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_current_size">get_current_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_destination_uri">get_destination_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_elapsed_time">get_elapsed_time</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>) <b><a name="instance_get_network_request">get_network_request</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_NetworkResponse.html>WebKit::NetworkResponse</a>) <b><a name="instance_get_network_response">get_network_response</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_NetworkResponse.html>WebKit::NetworkResponse</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_progress">get_progress</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_status">get_status</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum WebKit::DownloadStatus </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_suggested_filename">get_suggested_filename</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_total_size">get_total_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_uri">get_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_destination_uri">set_destination_uri</a></b>(destination_uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>destination_uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_start">start</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_error">error"</a></b> {|error_code, error_detail, reason| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>error_code</b>  </li>
+<li class=param> (Integer) <b>error_detail</b>  </li>
+<li class=param> (String) <b>reason</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

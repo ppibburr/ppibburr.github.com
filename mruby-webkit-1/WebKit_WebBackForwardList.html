@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=WebBackForwardList class=class><div class=top_nav><a href=WebKit.html>WebKit::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: WebKit::WebBackForwardList</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_item>- (NilClass) <b>add_item</b>(history_item)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_add_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_clear>- (NilClass) <b>clear</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_clear </div>
+<div>&nbsp;&nbsp;<a href=#instance_contains_item>- (Boolean) <b>contains_item</b>(history_item)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_contains_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_back_item>- (WebKit::WebHistoryItem) <b>get_back_item</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_back_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_back_length>- (Integer) <b>get_back_length</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_back_length </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_back_list_with_limit>- (FFI::Pointer) <b>get_back_list_with_limit</b>(limit)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_back_list_with_limit </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_item>- (WebKit::WebHistoryItem) <b>get_current_item</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_current_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_forward_item>- (WebKit::WebHistoryItem) <b>get_forward_item</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_forward_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_forward_length>- (Integer) <b>get_forward_length</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_forward_length </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_forward_list_with_limit>- (FFI::Pointer) <b>get_forward_list_with_limit</b>(limit)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_forward_list_with_limit </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_limit>- (Integer) <b>get_limit</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_limit </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_nth_item>- (WebKit::WebHistoryItem) <b>get_nth_item</b>(index)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_get_nth_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_go_back>- (NilClass) <b>go_back</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_go_back </div>
+<div>&nbsp;&nbsp;<a href=#instance_go_forward>- (NilClass) <b>go_forward</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_go_forward </div>
+<div>&nbsp;&nbsp;<a href=#instance_go_to_item>- (NilClass) <b>go_to_item</b>(history_item)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_go_to_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_limit>- (NilClass) <b>set_limit</b>(limit)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_back_forward_list_set_limit </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_item">add_item</a></b>(history_item)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>) <b>history_item</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_clear">clear</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_contains_item">contains_item</a></b>(history_item)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>) <b>history_item</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>) <b><a name="instance_get_back_item">get_back_item</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_back_length">get_back_length</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_back_list_with_limit">get_back_list_with_limit</a></b>(limit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>limit</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>) <b><a name="instance_get_current_item">get_current_item</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>) <b><a name="instance_get_forward_item">get_forward_item</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_forward_length">get_forward_length</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_forward_list_with_limit">get_forward_list_with_limit</a></b>(limit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>limit</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_limit">get_limit</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>) <b><a name="instance_get_nth_item">get_nth_item</a></b>(index)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>index</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_go_back">go_back</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_go_forward">go_forward</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_go_to_item">go_to_item</a></b>(history_item)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>) <b>history_item</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_limit">set_limit</a></b>(limit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>limit</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

@@ -1,0 +1,341 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=DOMNode class=class><div class=top_nav><a href=WebKit.html>WebKit::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: WebKit::DOMNode</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=WebKit_DOMObject.html>WebKit::DOMObject</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=WebKit_DOMEventTarget.html>WebKit::DOMEventTarget</a>&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_append_child>- (WebKit::DOMNode) <b>append_child</b>(newChild)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_append_child </div>
+<div>&nbsp;&nbsp;<a href=#instance_clone_node>- (WebKit::DOMNode) <b>clone_node</b>(deep)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_clone_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_compare_document_position>- (Integer) <b>compare_document_position</b>(other)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_compare_document_position </div>
+<div>&nbsp;&nbsp;<a href=#instance_contains>- (Boolean) <b>contains</b>(other)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_contains </div>
+<div>&nbsp;&nbsp;<a href=#instance_dispatch_event>- (Boolean) <b>dispatch_event</b>(event)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_dispatch_event </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_attributes>- (WebKit::DOMNamedNodeMap) <b>get_attributes</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_attributes </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_base_uri>- (String) <b>get_base_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_base_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_child_nodes>- (WebKit::DOMNodeList) <b>get_child_nodes</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_child_nodes </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_first_child>- (WebKit::DOMNode) <b>get_first_child</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_first_child </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_last_child>- (WebKit::DOMNode) <b>get_last_child</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_last_child </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_local_name>- (String) <b>get_local_name</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_local_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_namespace_uri>- (String) <b>get_namespace_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_namespace_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_next_sibling>- (WebKit::DOMNode) <b>get_next_sibling</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_next_sibling </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_node_name>- (String) <b>get_node_name</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_node_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_node_type>- (Integer) <b>get_node_type</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_node_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_node_value>- (String) <b>get_node_value</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_node_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_owner_document>- (WebKit::DOMDocument) <b>get_owner_document</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_owner_document </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_parent_element>- (WebKit::DOMElement) <b>get_parent_element</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_parent_element </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_parent_node>- (WebKit::DOMNode) <b>get_parent_node</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_parent_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_prefix>- (String) <b>get_prefix</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_prefix </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_previous_sibling>- (WebKit::DOMNode) <b>get_previous_sibling</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_previous_sibling </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_text_content>- (String) <b>get_text_content</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_get_text_content </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_attributes>- (Boolean) <b>has_attributes</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_has_attributes </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_child_nodes>- (Boolean) <b>has_child_nodes</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_has_child_nodes </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_before>- (WebKit::DOMNode) <b>insert_before</b>(newChild, refChild)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_insert_before </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_default_namespace>- (Boolean) <b>is_default_namespace</b>(namespaceURI)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_is_default_namespace </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_equal_node>- (Boolean) <b>is_equal_node</b>(other)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_is_equal_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_same_node>- (Boolean) <b>is_same_node</b>(other)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_is_same_node </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_supported>- (Boolean) <b>is_supported</b>(feature, version)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_is_supported </div>
+<div>&nbsp;&nbsp;<a href=#instance_lookup_namespace_uri>- (String) <b>lookup_namespace_uri</b>(prefix)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_lookup_namespace_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_lookup_prefix>- (String) <b>lookup_prefix</b>(namespaceURI)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_lookup_prefix </div>
+<div>&nbsp;&nbsp;<a href=#instance_normalize>- (NilClass) <b>normalize</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_normalize </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_child>- (WebKit::DOMNode) <b>remove_child</b>(oldChild)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_remove_child </div>
+<div>&nbsp;&nbsp;<a href=#instance_replace_child>- (WebKit::DOMNode) <b>replace_child</b>(newChild, oldChild)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_replace_child </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_node_value>- (NilClass) <b>set_node_value</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_set_node_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_prefix>- (NilClass) <b>set_prefix</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_set_prefix </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_text_content>- (NilClass) <b>set_text_content</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_node_set_text_content </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_append_child">append_child</a></b>(newChild)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>newChild</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_clone_node">clone_node</a></b>(deep)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>deep</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_compare_document_position">compare_document_position</a></b>(other)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>other</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_contains">contains</a></b>(other)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>other</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_dispatch_event">dispatch_event</a></b>(event)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMEvent.html>WebKit::DOMEvent</a>) <b>event</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNamedNodeMap.html>WebKit::DOMNamedNodeMap</a>) <b><a name="instance_get_attributes">get_attributes</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNamedNodeMap.html>WebKit::DOMNamedNodeMap</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_base_uri">get_base_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNodeList.html>WebKit::DOMNodeList</a>) <b><a name="instance_get_child_nodes">get_child_nodes</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNodeList.html>WebKit::DOMNodeList</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_first_child">get_first_child</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_last_child">get_last_child</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_local_name">get_local_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_namespace_uri">get_namespace_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_next_sibling">get_next_sibling</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_node_name">get_node_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_node_type">get_node_type</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_node_value">get_node_value</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMDocument.html>WebKit::DOMDocument</a>) <b><a name="instance_get_owner_document">get_owner_document</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMDocument.html>WebKit::DOMDocument</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMElement.html>WebKit::DOMElement</a>) <b><a name="instance_get_parent_element">get_parent_element</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMElement.html>WebKit::DOMElement</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_parent_node">get_parent_node</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_prefix">get_prefix</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_get_previous_sibling">get_previous_sibling</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_text_content">get_text_content</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_has_attributes">has_attributes</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_has_child_nodes">has_child_nodes</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_insert_before">insert_before</a></b>(newChild, refChild)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>newChild</b>  </li>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>refChild</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_default_namespace">is_default_namespace</a></b>(namespaceURI)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>namespaceURI</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_equal_node">is_equal_node</a></b>(other)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>other</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_same_node">is_same_node</a></b>(other)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>other</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_supported">is_supported</a></b>(feature, version)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>feature</b>  </li>
+<li class=param> (String) <b>version</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_lookup_namespace_uri">lookup_namespace_uri</a></b>(prefix)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>prefix</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_lookup_prefix">lookup_prefix</a></b>(namespaceURI)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>namespaceURI</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_normalize">normalize</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_remove_child">remove_child</a></b>(oldChild)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>oldChild</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b><a name="instance_replace_child">replace_child</a></b>(newChild, oldChild)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>newChild</b>  </li>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>oldChild</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_node_value">set_node_value</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_prefix">set_prefix</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_text_content">set_text_content</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

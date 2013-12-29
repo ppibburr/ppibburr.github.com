@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Logger class=class><div class=top_nav><a href=Soup.html>Soup::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Soup::Logger</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Soup_SessionFeature.html>Soup::SessionFeature</a>&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Soup::Logger) <b>new</b>(level, max_body_size)</a>&nbsp;&nbsp;</div>
+<div> soup_logger_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_attach>- (NilClass) <b>attach</b>(session)</a>&nbsp;&nbsp;</div>
+<div> soup_logger_attach </div>
+<div>&nbsp;&nbsp;<a href=#instance_detach>- (NilClass) <b>detach</b>(session)</a>&nbsp;&nbsp;</div>
+<div> soup_logger_detach </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_printer>- (NilClass) <b>set_printer</b>() {|logger, level, direction, data| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_logger_set_printer </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_request_filter>- (NilClass) <b>set_request_filter</b>() {|logger, msg| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_logger_set_request_filter </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_response_filter>- (NilClass) <b>set_response_filter</b>() {|logger, msg| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_logger_set_response_filter </div>
+</div></div><br>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Soup_Logger.html>Soup::Logger</a>) <b><a name="class_new">new</a></b>(level, max_body_size)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>level</b>  a member of enum Soup::LoggerLogLevel </li>
+<li class=param> (Integer) <b>max_body_size</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_Logger.html>Soup::Logger</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_attach">attach</a></b>(session)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Session.html>Soup::Session</a>) <b>session</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_detach">detach</a></b>(session)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Session.html>Soup::Session</a>) <b>session</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_printer">set_printer</a></b>() {|logger, level, direction, data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_Logger.html>Soup::Logger</a>) <b>logger</b> </li>
+<li class=param> (Integer) <b>level</b>  a member of enum Soup::LoggerLogLevel</li>
+<li class=param> (Integer) <b>direction</b> </li>
+<li class=param> (String) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_request_filter">set_request_filter</a></b>() {|logger, msg| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_Logger.html>Soup::Logger</a>) <b>logger</b> </li>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Integer)  a member of enum Soup::LoggerLogLevel</li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_response_filter">set_response_filter</a></b>() {|logger, msg| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_Logger.html>Soup::Logger</a>) <b>logger</b> </li>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Integer)  a member of enum Soup::LoggerLogLevel</li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

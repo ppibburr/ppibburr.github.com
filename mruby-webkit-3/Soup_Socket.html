@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Socket class=class><div class=top_nav><a href=Soup.html>Soup::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Soup::Socket</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_connect_async>- (NilClass) <b>connect_async</b>(cancellable) {|sock, status| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_socket_connect_async </div>
+<div>&nbsp;&nbsp;<a href=#instance_connect_sync>- (Integer) <b>connect_sync</b>(cancellable)</a>&nbsp;&nbsp;</div>
+<div> soup_socket_connect_sync </div>
+<div>&nbsp;&nbsp;<a href=#instance_disconnect>- (NilClass) <b>disconnect</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_socket_disconnect </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_fd>- (Integer) <b>get_fd</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_socket_get_fd </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_local_address>- (Soup::Address) <b>get_local_address</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_socket_get_local_address </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_remote_address>- (Soup::Address) <b>get_remote_address</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_socket_get_remote_address </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_connected>- (Boolean) <b>is_connected</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_socket_is_connected </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_ssl>- (Boolean) <b>is_ssl</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_socket_is_ssl </div>
+<div>&nbsp;&nbsp;<a href=#instance_listen>- (Boolean) <b>listen</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_socket_listen </div>
+<div>&nbsp;&nbsp;<a href=#instance_read>- (Array&lt;Integer, Integer&gt;) <b>read</b>(buffer, len, cancellable)</a>&nbsp;&nbsp;</div>
+<div> soup_socket_read </div>
+<div>&nbsp;&nbsp;<a href=#instance_read_until>- (Array&lt;Integer, Integer&gt;) <b>read_until</b>(buffer, len, boundary, boundary_len, got_boundary, cancellable)</a>&nbsp;&nbsp;</div>
+<div> soup_socket_read_until </div>
+<div>&nbsp;&nbsp;<a href=#instance_start_proxy_ssl>- (Boolean) <b>start_proxy_ssl</b>(ssl_host, cancellable)</a>&nbsp;&nbsp;</div>
+<div> soup_socket_start_proxy_ssl </div>
+<div>&nbsp;&nbsp;<a href=#instance_start_ssl>- (Boolean) <b>start_ssl</b>(cancellable)</a>&nbsp;&nbsp;</div>
+<div> soup_socket_start_ssl </div>
+<div>&nbsp;&nbsp;<a href=#instance_write>- (Array&lt;Integer, Integer&gt;) <b>write</b>(buffer, len, cancellable)</a>&nbsp;&nbsp;</div>
+<div> soup_socket_write </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_disconnected>* (NilClass) <b>"disconnected"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_event>* (NilClass) <b>"event"</b> {|event, connection| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_new-connection>* (NilClass) <b>"new-connection"</b> {|arg1| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_readable>* (NilClass) <b>"readable"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_writable>* (NilClass) <b>"writable"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_connect_async">connect_async</a></b>(cancellable) {|sock, status| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_Socket.html>Soup::Socket</a>) <b>sock</b> </li>
+<li class=param> (Integer) <b>status</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_connect_sync">connect_sync</a></b>(cancellable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_disconnect">disconnect</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_fd">get_fd</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Soup_Address.html>Soup::Address</a>) <b><a name="instance_get_local_address">get_local_address</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_Address.html>Soup::Address</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Soup_Address.html>Soup::Address</a>) <b><a name="instance_get_remote_address">get_remote_address</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_Address.html>Soup::Address</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_connected">is_connected</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_ssl">is_ssl</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_listen">listen</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_read">read</a></b>(buffer, len, cancellable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>buffer</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_read_until">read_until</a></b>(buffer, len, boundary, boundary_len, got_boundary, cancellable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>buffer</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<li class=param> (void) <b>boundary</b>  </li>
+<li class=param> (Integer) <b>boundary_len</b>  </li>
+<li class=param> (Boolean) <b>got_boundary</b>  </li>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_start_proxy_ssl">start_proxy_ssl</a></b>(ssl_host, cancellable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>ssl_host</b>  </li>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_start_ssl">start_ssl</a></b>(cancellable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_write">write</a></b>(buffer, len, cancellable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (void) <b>buffer</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_disconnected">disconnected"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_event">event"</a></b> {|event, connection| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>event</b>  a member of enum Gio::SocketClientEvent </li>
+<li class=param> (Gio::IOStream) <b>connection</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_new-connection">new-connection"</a></b> {|arg1| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Socket.html>Soup::Socket</a>) <b>arg1</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_readable">readable"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_writable">writable"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

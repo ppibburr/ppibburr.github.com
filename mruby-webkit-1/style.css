@@ -1,0 +1,213 @@
+    #implements_header {
+      background-color: gray;
+      border:solid black 1px;
+      margin-bottom:12px;
+
+    }
+    
+    #inherits {
+      background-color: gray;
+      border:solid black 1px;
+      margin-bottom:5px;      
+    }
+  
+    .implements {
+      /*border:solid black 1px;*/
+      margin-bottom:5px;
+      margin-left:20px;
+    }
+  
+    .implements div a {
+      text-decoration:none;
+      color:#05a;   
+      display:inline-block;
+    }
+    
+    .implements div {
+      display:inline-block;
+      text-decoration:none;
+      color:#05a; 
+      display:inline-block;    
+      background-color: #EAEAFF;
+      border:1px solid #DFDFE5;
+      border-radius:3px;
+      margin-bottom:2px; 
+    }
+  
+    .top_nav a {
+      text-decoration:none;
+      color:gray; 
+      display:inline-block;    
+      background-color: #cecFcF;
+      border:1px solid #DFDFE5;
+      border-radius:3px;
+      margin-bottom:2px;           
+    }
+    
+    .top_nav form {
+      display:inline-block;
+      margin-bottom:0px;
+    }
+  
+    .summary_header {
+      border-bottom:solid black 1px;
+      margin-bottom: 6px;
+      margin-top:12px;
+      padding-bottom: 6px;
+      margin-left: 20px;
+      margin-right: 20px;    
+    }   
+    
+    .details_header {
+      margin-top:42px;
+      margin-bottom:12px;
+    }
+    
+    .summary div a:visited {
+      color:#05A;
+      text-decoration:none;
+    }
+    
+    .summary_header small {
+      float:right;
+      display:block;
+      color:#05A;
+    }
+    
+    .summary div a {
+      color:#05A;
+      text-decoration:none;
+    }    
+    
+    .summary div {
+      margin-left:60px;
+    }     
+    
+    .summary div:nth-child(odd) {
+      display:inline-block;    
+      background-color: #EAEAFF;
+      border:1px solid #DFDFE5;
+      border-radius:3px;
+      margin-top:2px;
+    }
+    
+    .enum {
+      margin-left:40px;
+    }
+    
+    .enum_root {
+      background-color: #EAEAFF;
+      border:1px solid #DFDFE5;
+      border-radius:3px;
+      color:#05a;
+      margin-bottom:12px;
+    }
+    
+    .enum_summary {
+      margin-left:40px;
+    }
+    
+    .enum_summary a {
+      text-decoration:none;
+      color:#05a;
+    }
+    
+    .enum_summary div {
+      display:inline-block;
+    }    
+    
+    .enum_member {
+      margin-left:40px;
+
+      margin-bottom:2px;      
+    }
+    
+    .constant_summary div {
+      margin-left:60px;
+      display:inline-block;  
+      color:#05a;  
+      background-color: #EAEAFF;
+      border:1px solid #DFDFE5;
+      border-radius:3px;
+      margin-top:2px;
+    }     
+    
+    #ifaces_summary {
+      margin-left:40px;
+      display:inline-block;
+    }
+    
+    #ifaces_summary div {
+      display:inline-block;    
+      background-color: #EAEAFF;
+      border:1px solid #DFDFE5;
+      border-radius:3px;
+      margin-top:2px;
+      margin-left:2px;
+      color:#05A;   
+    }
+    
+    #ifaces_summary div a {
+      color:#05A;
+      text-decoration:none;    
+    }
+    
+    .details_header {
+      border-bottom:solid black 1px;
+      margin-bottom: 6px;
+      padding-bottom: 6px;
+      margin-left: 20px;
+      margin-right: 20px;    
+    }   
+    
+    .summary_header {
+      margin-top:35px;
+    }
+    
+    .detail div a:visited {
+      color:#05A;
+      text-decoration:none;
+    }
+    
+    .details_header small {
+      float:right;
+      display:block;
+      color:#05A;
+    }
+    
+    .details div a {
+      color:#05A;
+      text-decoration:none;
+    }    
+    
+    .details div {
+      margin-left:20px;
+    }     
+    
+    .details .signature {   
+      background-color: #EAEAFF;
+      border:1px solid #DFDFE5;
+      border-radius:3px;
+      margin-top:2px;
+      margin-bottom:2px;
+            margin-right:20px;
+    }
+    
+    .details .detail {
+      border-bottom:dotted 1px gray;
+            margin-right:20px;
+            margin-bottom:20px;
+            padding-bottom:15px;
+    } 
+
+    .parameters_header {
+      margin-left:20px
+    }
+
+    .param {
+      margin-left:40px;
+    }
+    
+    .return {
+      margin-left:40px;
+    }

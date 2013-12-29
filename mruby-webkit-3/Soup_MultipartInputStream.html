@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=MultipartInputStream class=class><div class=top_nav><a href=Soup.html>Soup::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Soup::MultipartInputStream</h2>
+    <div class=inherits id=inherits>Inherits:
+    Gio::FilterInputStream</div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>Gio::PollableInputStream&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Soup::MultipartInputStream) <b>new</b>(msg, base_stream)</a>&nbsp;&nbsp;</div>
+<div> soup_multipart_input_stream_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_get_headers>- (FFI::Pointer) <b>get_headers</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_multipart_input_stream_get_headers </div>
+<div>&nbsp;&nbsp;<a href=#instance_next_part>- (Gio::InputStream) <b>next_part</b>(cancellable)</a>&nbsp;&nbsp;</div>
+<div> soup_multipart_input_stream_next_part </div>
+<div>&nbsp;&nbsp;<a href=#instance_next_part_async>- (NilClass) <b>next_part_async</b>(io_priority, cancellable) {|source_object, res| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_multipart_input_stream_next_part_async </div>
+<div>&nbsp;&nbsp;<a href=#instance_next_part_finish>- (Gio::InputStream) <b>next_part_finish</b>(result)</a>&nbsp;&nbsp;</div>
+<div> soup_multipart_input_stream_next_part_finish </div>
+</div></div><br>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Soup_MultipartInputStream.html>Soup::MultipartInputStream</a>) <b><a name="class_new">new</a></b>(msg, base_stream)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b>  </li>
+<li class=param> (Gio::InputStream) <b>base_stream</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_MultipartInputStream.html>Soup::MultipartInputStream</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_headers">get_headers</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Gio::InputStream) <b><a name="instance_next_part">next_part</a></b>(cancellable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gio::InputStream)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_next_part_async">next_part_async</a></b>(io_priority, cancellable) {|source_object, res| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>io_priority</b>  </li>
+<li class=param> (Gio::Cancellable) <b>cancellable</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (GObject::Object) <b>source_object</b> </li>
+<li class=param> (FFI::Pointer) <b>res</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Gio::InputStream) <b><a name="instance_next_part_finish">next_part_finish</a></b>(result)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>result</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gio::InputStream)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

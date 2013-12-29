@@ -1,0 +1,427 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Message class=class><div class=top_nav><a href=Soup.html>Soup::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Soup::Message</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Soup::Message) <b>new</b>(method, uri_string)</a>&nbsp;&nbsp;</div>
+<div> soup_message_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_from_uri>+ (Soup::Message) <b>new_from_uri</b>(method, uri)</a>&nbsp;&nbsp;</div>
+<div> soup_message_new_from_uri </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_content_sniffed>- (NilClass) <b>content_sniffed</b>(content_type, params)</a>&nbsp;&nbsp;</div>
+<div> soup_message_content_sniffed </div>
+<div>&nbsp;&nbsp;<a href=#instance_disable_feature>- (NilClass) <b>disable_feature</b>(feature_type)</a>&nbsp;&nbsp;</div>
+<div> soup_message_disable_feature </div>
+<div>&nbsp;&nbsp;<a href=#instance_finished>- (NilClass) <b>finished</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_finished </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_address>- (Soup::Address) <b>get_address</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_get_address </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_first_party>- (FFI::Pointer) <b>get_first_party</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_get_first_party </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_flags>- (Integer) <b>get_flags</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_get_flags </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_http_version>- (Integer) <b>get_http_version</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_get_http_version </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_https_status>- (Array&lt;Boolean, Gio::TlsCertificate, Integer&gt;) <b>get_https_status</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_get_https_status </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_uri>- (FFI::Pointer) <b>get_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_get_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_got_body>- (NilClass) <b>got_body</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_got_body </div>
+<div>&nbsp;&nbsp;<a href=#instance_got_chunk>- (NilClass) <b>got_chunk</b>(chunk)</a>&nbsp;&nbsp;</div>
+<div> soup_message_got_chunk </div>
+<div>&nbsp;&nbsp;<a href=#instance_got_headers>- (NilClass) <b>got_headers</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_got_headers </div>
+<div>&nbsp;&nbsp;<a href=#instance_got_informational>- (NilClass) <b>got_informational</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_got_informational </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_keepalive>- (Boolean) <b>is_keepalive</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_is_keepalive </div>
+<div>&nbsp;&nbsp;<a href=#instance_restarted>- (NilClass) <b>restarted</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_restarted </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_chunk_allocator>- (NilClass) <b>set_chunk_allocator</b>() {|msg, max_len| ... }</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_chunk_allocator </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_first_party>- (NilClass) <b>set_first_party</b>(first_party)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_first_party </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_flags>- (NilClass) <b>set_flags</b>(flags)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_flags </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_http_version>- (NilClass) <b>set_http_version</b>(version)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_http_version </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_redirect>- (NilClass) <b>set_redirect</b>(status_code, redirect_uri)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_redirect </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_request>- (NilClass) <b>set_request</b>(content_type, req_use, req_body, req_length)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_request </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_response>- (NilClass) <b>set_response</b>(resp_use, resp_body, resp_length, content_type)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_response </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_status>- (NilClass) <b>set_status</b>(status_code)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_status </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_status_full>- (NilClass) <b>set_status_full</b>(status_code, reason_phrase)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_status_full </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_uri>- (NilClass) <b>set_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> soup_message_set_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_wrote_body>- (NilClass) <b>wrote_body</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_wrote_body </div>
+<div>&nbsp;&nbsp;<a href=#instance_wrote_body_data>- (NilClass) <b>wrote_body_data</b>(chunk)</a>&nbsp;&nbsp;</div>
+<div> soup_message_wrote_body_data </div>
+<div>&nbsp;&nbsp;<a href=#instance_wrote_chunk>- (NilClass) <b>wrote_chunk</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_wrote_chunk </div>
+<div>&nbsp;&nbsp;<a href=#instance_wrote_headers>- (NilClass) <b>wrote_headers</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_wrote_headers </div>
+<div>&nbsp;&nbsp;<a href=#instance_wrote_informational>- (NilClass) <b>wrote_informational</b>()</a>&nbsp;&nbsp;</div>
+<div> soup_message_wrote_informational </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_content-sniffed>* (NilClass) <b>"content-sniffed"</b> {|type, params| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_finished>* (NilClass) <b>"finished"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_got-body>* (NilClass) <b>"got-body"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_got-chunk>* (NilClass) <b>"got-chunk"</b> {|chunk| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_got-headers>* (NilClass) <b>"got-headers"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_got-informational>* (NilClass) <b>"got-informational"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_network-event>* (NilClass) <b>"network-event"</b> {|event, connection| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_restarted>* (NilClass) <b>"restarted"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_wrote-body>* (NilClass) <b>"wrote-body"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_wrote-body-data>* (NilClass) <b>"wrote-body-data"</b> {|chunk| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_wrote-chunk>* (NilClass) <b>"wrote-chunk"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_wrote-headers>* (NilClass) <b>"wrote-headers"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_wrote-informational>* (NilClass) <b>"wrote-informational"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Soup_Message.html>Soup::Message</a>) <b><a name="class_new">new</a></b>(method, uri_string)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>method</b>  </li>
+<li class=param> (String) <b>uri_string</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_Message.html>Soup::Message</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Soup_Message.html>Soup::Message</a>) <b><a name="class_new_from_uri">new_from_uri</a></b>(method, uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>method</b>  </li>
+<li class=param> (FFI::Pointer) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_Message.html>Soup::Message</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_content_sniffed">content_sniffed</a></b>(content_type, params)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>content_type</b>  </li>
+<li class=param> (FFI::Pointer) <b>params</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_disable_feature">disable_feature</a></b>(feature_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>feature_type</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_finished">finished</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Soup_Address.html>Soup::Address</a>) <b><a name="instance_get_address">get_address</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Soup_Address.html>Soup::Address</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_first_party">get_first_party</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_flags">get_flags</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Soup::MessageFlags </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_http_version">get_http_version</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Soup::HTTPVersion </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, Gio::TlsCertificate, Integer&gt;) <b><a name="instance_get_https_status">get_https_status</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, Gio::TlsCertificate, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_uri">get_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_got_body">got_body</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_got_chunk">got_chunk</a></b>(chunk)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>chunk</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_got_headers">got_headers</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_got_informational">got_informational</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_keepalive">is_keepalive</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_restarted">restarted</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_chunk_allocator">set_chunk_allocator</a></b>() {|msg, max_len| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Soup_Message.html>Soup::Message</a>) <b>msg</b> </li>
+<li class=param> (Integer) <b>max_len</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(FFI::Pointer) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_first_party">set_first_party</a></b>(first_party)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>first_party</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_flags">set_flags</a></b>(flags)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>flags</b>  a member of enum Soup::MessageFlags </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_http_version">set_http_version</a></b>(version)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>version</b>  a member of enum Soup::HTTPVersion </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_redirect">set_redirect</a></b>(status_code, redirect_uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>status_code</b>  </li>
+<li class=param> (String) <b>redirect_uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_request">set_request</a></b>(content_type, req_use, req_body, req_length)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>content_type</b>  </li>
+<li class=param> (Integer) <b>req_use</b>  a member of enum Soup::MemoryUse </li>
+<li class=param> (String) <b>req_body</b>  </li>
+<li class=param> (Integer) <b>req_length</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_response">set_response</a></b>(resp_use, resp_body, resp_length, content_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>resp_use</b>  a member of enum Soup::MemoryUse </li>
+<li class=param> (Array&lt;FFI::Pointer&gt;) <b>resp_body</b>  </li>
+<li class=param> (Integer) <b>resp_length</b>  </li>
+<li class=param> (String) <b>content_type</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_status">set_status</a></b>(status_code)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>status_code</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_status_full">set_status_full</a></b>(status_code, reason_phrase)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>status_code</b>  </li>
+<li class=param> (String) <b>reason_phrase</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_uri">set_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_wrote_body">wrote_body</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_wrote_body_data">wrote_body_data</a></b>(chunk)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>chunk</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_wrote_chunk">wrote_chunk</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_wrote_headers">wrote_headers</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_wrote_informational">wrote_informational</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_content-sniffed">content-sniffed"</a></b> {|type, params| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>type</b>  </li>
+<li class=param> (FFI::Pointer) <b>params</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_finished">finished"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_got-body">got-body"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_got-chunk">got-chunk"</a></b> {|chunk| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>chunk</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_got-headers">got-headers"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_got-informational">got-informational"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_network-event">network-event"</a></b> {|event, connection| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>event</b>  a member of enum Gio::SocketClientEvent </li>
+<li class=param> (Gio::IOStream) <b>connection</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_restarted">restarted"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_wrote-body">wrote-body"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_wrote-body-data">wrote-body-data"</a></b> {|chunk| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>chunk</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_wrote-chunk">wrote-chunk"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_wrote-headers">wrote-headers"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_wrote-informational">wrote-informational"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

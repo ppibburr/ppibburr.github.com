@@ -1,0 +1,385 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=DOMHTMLTextAreaElement class=class><div class=top_nav><a href=WebKit.html>WebKit::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: WebKit::DOMHTMLTextAreaElement</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=WebKit_DOMHTMLElement.html>WebKit::DOMHTMLElement</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=WebKit_DOMEventTarget.html>WebKit::DOMEventTarget</a>&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_check_validity>- (Boolean) <b>check_validity</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_check_validity </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_autofocus>- (Boolean) <b>get_autofocus</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_autofocus </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_cols>- (Integer) <b>get_cols</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_cols </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_default_value>- (String) <b>get_default_value</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_default_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_dir_name>- (String) <b>get_dir_name</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_dir_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_disabled>- (Boolean) <b>get_disabled</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_disabled </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_form>- (WebKit::DOMHTMLFormElement) <b>get_form</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_form </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_labels>- (WebKit::DOMNodeList) <b>get_labels</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_labels </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_max_length>- (Integer) <b>get_max_length</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_max_length </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_name>- (String) <b>get_name</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_placeholder>- (String) <b>get_placeholder</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_placeholder </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_read_only>- (Boolean) <b>get_read_only</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_read_only </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_required>- (Boolean) <b>get_required</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_required </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_rows>- (Integer) <b>get_rows</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_rows </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_selection_direction>- (String) <b>get_selection_direction</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_selection_direction </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_selection_end>- (Integer) <b>get_selection_end</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_selection_end </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_selection_start>- (Integer) <b>get_selection_start</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_selection_start </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_text_length>- (Integer) <b>get_text_length</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_text_length </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_validation_message>- (String) <b>get_validation_message</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_validation_message </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_validity>- (WebKit::DOMValidityState) <b>get_validity</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_validity </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_value>- (String) <b>get_value</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_will_validate>- (Boolean) <b>get_will_validate</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_will_validate </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_wrap>- (String) <b>get_wrap</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_get_wrap </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_edited>- (Boolean) <b>is_edited</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_is_edited </div>
+<div>&nbsp;&nbsp;<a href=#instance_select>- (NilClass) <b>select</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_select </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_autofocus>- (NilClass) <b>set_autofocus</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_autofocus </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_cols>- (NilClass) <b>set_cols</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_cols </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_custom_validity>- (NilClass) <b>set_custom_validity</b>(error)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_custom_validity </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_default_value>- (NilClass) <b>set_default_value</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_default_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_dir_name>- (NilClass) <b>set_dir_name</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_dir_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_disabled>- (NilClass) <b>set_disabled</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_disabled </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_max_length>- (NilClass) <b>set_max_length</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_max_length </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_name>- (NilClass) <b>set_name</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_name </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_placeholder>- (NilClass) <b>set_placeholder</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_placeholder </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_read_only>- (NilClass) <b>set_read_only</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_read_only </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_required>- (NilClass) <b>set_required</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_required </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_rows>- (NilClass) <b>set_rows</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_rows </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_selection_direction>- (NilClass) <b>set_selection_direction</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_selection_direction </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_selection_end>- (NilClass) <b>set_selection_end</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_selection_end </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_selection_range>- (NilClass) <b>set_selection_range</b>(start, end_, direction)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_selection_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_selection_start>- (NilClass) <b>set_selection_start</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_selection_start </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_value>- (NilClass) <b>set_value</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_wrap>- (NilClass) <b>set_wrap</b>(value)</a>&nbsp;&nbsp;</div>
+<div> webkit_dom_html_text_area_element_set_wrap </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_check_validity">check_validity</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_autofocus">get_autofocus</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_cols">get_cols</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_default_value">get_default_value</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_dir_name">get_dir_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_disabled">get_disabled</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMHTMLFormElement.html>WebKit::DOMHTMLFormElement</a>) <b><a name="instance_get_form">get_form</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMHTMLFormElement.html>WebKit::DOMHTMLFormElement</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMNodeList.html>WebKit::DOMNodeList</a>) <b><a name="instance_get_labels">get_labels</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMNodeList.html>WebKit::DOMNodeList</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_max_length">get_max_length</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_name">get_name</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_placeholder">get_placeholder</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_read_only">get_read_only</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_required">get_required</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_rows">get_rows</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_selection_direction">get_selection_direction</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_selection_end">get_selection_end</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_selection_start">get_selection_start</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_text_length">get_text_length</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_validation_message">get_validation_message</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMValidityState.html>WebKit::DOMValidityState</a>) <b><a name="instance_get_validity">get_validity</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMValidityState.html>WebKit::DOMValidityState</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_value">get_value</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_will_validate">get_will_validate</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_wrap">get_wrap</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_edited">is_edited</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select">select</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_autofocus">set_autofocus</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_cols">set_cols</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_custom_validity">set_custom_validity</a></b>(error)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>error</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_default_value">set_default_value</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_dir_name">set_dir_name</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_disabled">set_disabled</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_max_length">set_max_length</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_name">set_name</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_placeholder">set_placeholder</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_read_only">set_read_only</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_required">set_required</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_rows">set_rows</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_selection_direction">set_selection_direction</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_selection_end">set_selection_end</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_selection_range">set_selection_range</a></b>(start, end_, direction)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>start</b>  </li>
+<li class=param> (Integer) <b>end_</b>  </li>
+<li class=param> (String) <b>direction</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_selection_start">set_selection_start</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_value">set_value</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_wrap">set_wrap</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

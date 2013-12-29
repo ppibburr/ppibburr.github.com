@@ -1,0 +1,1274 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=WebView class=class><div class=top_nav><a href=WebKit.html>WebKit::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: WebKit::WebView</h2>
+    <div class=inherits id=inherits>Inherits:
+    Gtk::Container</div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>Gtk::Buildable&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_can_copy_clipboard>- (Boolean) <b>can_copy_clipboard</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_copy_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_can_cut_clipboard>- (Boolean) <b>can_cut_clipboard</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_cut_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_can_go_back>- (Boolean) <b>can_go_back</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_go_back </div>
+<div>&nbsp;&nbsp;<a href=#instance_can_go_back_or_forward>- (Boolean) <b>can_go_back_or_forward</b>(steps)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_go_back_or_forward </div>
+<div>&nbsp;&nbsp;<a href=#instance_can_go_forward>- (Boolean) <b>can_go_forward</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_go_forward </div>
+<div>&nbsp;&nbsp;<a href=#instance_can_paste_clipboard>- (Boolean) <b>can_paste_clipboard</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_paste_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_can_redo>- (Boolean) <b>can_redo</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_redo </div>
+<div>&nbsp;&nbsp;<a href=#instance_can_show_mime_type>- (Boolean) <b>can_show_mime_type</b>(mime_type)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_show_mime_type </div>
+<div>&nbsp;&nbsp;<a href=#instance_can_undo>- (Boolean) <b>can_undo</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_can_undo </div>
+<div>&nbsp;&nbsp;<a href=#instance_copy_clipboard>- (NilClass) <b>copy_clipboard</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_copy_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_cut_clipboard>- (NilClass) <b>cut_clipboard</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_cut_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_delete_selection>- (NilClass) <b>delete_selection</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_delete_selection </div>
+<div>&nbsp;&nbsp;<a href=#instance_execute_script>- (NilClass) <b>execute_script</b>(script)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_execute_script </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_back_forward_list>- (WebKit::WebBackForwardList) <b>get_back_forward_list</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_back_forward_list </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_copy_target_list>- (FFI::Pointer) <b>get_copy_target_list</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_copy_target_list </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_custom_encoding>- (String) <b>get_custom_encoding</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_custom_encoding </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_dom_document>- (WebKit::DOMDocument) <b>get_dom_document</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_dom_document </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_editable>- (Boolean) <b>get_editable</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_editable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_encoding>- (String) <b>get_encoding</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_encoding </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_focused_frame>- (WebKit::WebFrame) <b>get_focused_frame</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_focused_frame </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_full_content_zoom>- (Boolean) <b>get_full_content_zoom</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_full_content_zoom </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_hit_test_result>- (WebKit::HitTestResult) <b>get_hit_test_result</b>(event)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_hit_test_result </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_icon_pixbuf>- (GdkPixbuf::Pixbuf) <b>get_icon_pixbuf</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_icon_pixbuf </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_icon_uri>- (String) <b>get_icon_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_icon_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_inspector>- (WebKit::WebInspector) <b>get_inspector</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_inspector </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_load_status>- (Integer) <b>get_load_status</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_load_status </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_main_frame>- (WebKit::WebFrame) <b>get_main_frame</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_main_frame </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_paste_target_list>- (FFI::Pointer) <b>get_paste_target_list</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_paste_target_list </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_progress>- (Float) <b>get_progress</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_progress </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_settings>- (WebKit::WebSettings) <b>get_settings</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_settings </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_snapshot>- (FFI::Pointer) <b>get_snapshot</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_snapshot </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_title>- (String) <b>get_title</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_title </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_transparent>- (Boolean) <b>get_transparent</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_transparent </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_uri>- (String) <b>get_uri</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_view_mode>- (Integer) <b>get_view_mode</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_view_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_view_source_mode>- (Boolean) <b>get_view_source_mode</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_view_source_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_viewport_attributes>- (WebKit::ViewportAttributes) <b>get_viewport_attributes</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_viewport_attributes </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_window_features>- (WebKit::WebWindowFeatures) <b>get_window_features</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_window_features </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_zoom_level>- (Float) <b>get_zoom_level</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_get_zoom_level </div>
+<div>&nbsp;&nbsp;<a href=#instance_go_back>- (NilClass) <b>go_back</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_go_back </div>
+<div>&nbsp;&nbsp;<a href=#instance_go_back_or_forward>- (NilClass) <b>go_back_or_forward</b>(steps)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_go_back_or_forward </div>
+<div>&nbsp;&nbsp;<a href=#instance_go_forward>- (NilClass) <b>go_forward</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_go_forward </div>
+<div>&nbsp;&nbsp;<a href=#instance_go_to_back_forward_item>- (Boolean) <b>go_to_back_forward_item</b>(item)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_go_to_back_forward_item </div>
+<div>&nbsp;&nbsp;<a href=#instance_has_selection>- (Boolean) <b>has_selection</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_has_selection </div>
+<div>&nbsp;&nbsp;<a href=#instance_load_html_string>- (NilClass) <b>load_html_string</b>(content, base_uri)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_load_html_string </div>
+<div>&nbsp;&nbsp;<a href=#instance_load_request>- (NilClass) <b>load_request</b>(request)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_load_request </div>
+<div>&nbsp;&nbsp;<a href=#instance_load_string>- (NilClass) <b>load_string</b>(content, mime_type, encoding, base_uri)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_load_string </div>
+<div>&nbsp;&nbsp;<a href=#instance_load_uri>- (NilClass) <b>load_uri</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_load_uri </div>
+<div>&nbsp;&nbsp;<a href=#instance_mark_text_matches>- (Integer) <b>mark_text_matches</b>(string, case_sensitive, limit)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_mark_text_matches </div>
+<div>&nbsp;&nbsp;<a href=#instance_move_cursor>- (NilClass) <b>move_cursor</b>(step, count)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_move_cursor </div>
+<div>&nbsp;&nbsp;<a href=#instance_open>- (NilClass) <b>open</b>(uri)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_open </div>
+<div>&nbsp;&nbsp;<a href=#instance_paste_clipboard>- (NilClass) <b>paste_clipboard</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_paste_clipboard </div>
+<div>&nbsp;&nbsp;<a href=#instance_redo>- (NilClass) <b>redo</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_redo </div>
+<div>&nbsp;&nbsp;<a href=#instance_reload>- (NilClass) <b>reload</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_reload </div>
+<div>&nbsp;&nbsp;<a href=#instance_reload_bypass_cache>- (NilClass) <b>reload_bypass_cache</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_reload_bypass_cache </div>
+<div>&nbsp;&nbsp;<a href=#instance_search_text>- (Boolean) <b>search_text</b>(text, case_sensitive, forward, wrap)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_search_text </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_all>- (NilClass) <b>select_all</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_select_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_custom_encoding>- (NilClass) <b>set_custom_encoding</b>(encoding)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_custom_encoding </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_editable>- (NilClass) <b>set_editable</b>(flag)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_editable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_full_content_zoom>- (NilClass) <b>set_full_content_zoom</b>(full_content_zoom)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_full_content_zoom </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_highlight_text_matches>- (NilClass) <b>set_highlight_text_matches</b>(highlight)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_highlight_text_matches </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_maintains_back_forward_list>- (NilClass) <b>set_maintains_back_forward_list</b>(flag)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_maintains_back_forward_list </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_settings>- (NilClass) <b>set_settings</b>(settings)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_settings </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_transparent>- (NilClass) <b>set_transparent</b>(flag)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_transparent </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_view_mode>- (NilClass) <b>set_view_mode</b>(mode)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_view_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_view_source_mode>- (NilClass) <b>set_view_source_mode</b>(view_source_mode)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_view_source_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_zoom_level>- (NilClass) <b>set_zoom_level</b>(zoom_level)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_set_zoom_level </div>
+<div>&nbsp;&nbsp;<a href=#instance_stop_loading>- (NilClass) <b>stop_loading</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_stop_loading </div>
+<div>&nbsp;&nbsp;<a href=#instance_try_get_favicon_pixbuf>- (GdkPixbuf::Pixbuf) <b>try_get_favicon_pixbuf</b>(width, height)</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_try_get_favicon_pixbuf </div>
+<div>&nbsp;&nbsp;<a href=#instance_undo>- (NilClass) <b>undo</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_undo </div>
+<div>&nbsp;&nbsp;<a href=#instance_unmark_text_matches>- (NilClass) <b>unmark_text_matches</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_unmark_text_matches </div>
+<div>&nbsp;&nbsp;<a href=#instance_zoom_in>- (NilClass) <b>zoom_in</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_zoom_in </div>
+<div>&nbsp;&nbsp;<a href=#instance_zoom_out>- (NilClass) <b>zoom_out</b>()</a>&nbsp;&nbsp;</div>
+<div> webkit_web_view_zoom_out </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_close-web-view>* (Boolean) <b>"close-web-view"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_console-message>* (Boolean) <b>"console-message"</b> {|message, line_number, source_id| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_context-menu>* (Boolean) <b>"context-menu"</b> {|default_menu, hit_test_result, triggered_with_keyboard| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_copy-clipboard>* (NilClass) <b>"copy-clipboard"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_create-plugin-widget>* (Gtk::Widget) <b>"create-plugin-widget"</b> {|mime_type, uri, param| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_create-web-view>* (WebKit::WebView) <b>"create-web-view"</b> {|frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_cut-clipboard>* (NilClass) <b>"cut-clipboard"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_database-quota-exceeded>* (NilClass) <b>"database-quota-exceeded"</b> {|frame, database| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_document-load-finished>* (NilClass) <b>"document-load-finished"</b> {|web_frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_download-requested>* (Boolean) <b>"download-requested"</b> {|download| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_editing-began>* (NilClass) <b>"editing-began"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_editing-ended>* (NilClass) <b>"editing-ended"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_entering-fullscreen>* (Boolean) <b>"entering-fullscreen"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_frame-created>* (NilClass) <b>"frame-created"</b> {|web_frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_geolocation-policy-decision-cancelled>* (NilClass) <b>"geolocation-policy-decision-cancelled"</b> {|frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_geolocation-policy-decision-requested>* (Boolean) <b>"geolocation-policy-decision-requested"</b> {|frame, policy_decision| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_hovering-over-link>* (NilClass) <b>"hovering-over-link"</b> {|title, uri| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_icon-loaded>* (NilClass) <b>"icon-loaded"</b> {|icon_uri| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_leaving-fullscreen>* (Boolean) <b>"leaving-fullscreen"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_load-committed>* (NilClass) <b>"load-committed"</b> {|frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_load-error>* (Boolean) <b>"load-error"</b> {|web_frame, uri, web_error| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_load-finished>* (NilClass) <b>"load-finished"</b> {|frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_load-progress-changed>* (NilClass) <b>"load-progress-changed"</b> {|progress| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_load-started>* (NilClass) <b>"load-started"</b> {|frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_mime-type-policy-decision-requested>* (Boolean) <b>"mime-type-policy-decision-requested"</b> {|frame, request, mimetype, policy_decision| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_move-cursor>* (Boolean) <b>"move-cursor"</b> {|step, count| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_navigation-policy-decision-requested>* (Boolean) <b>"navigation-policy-decision-requested"</b> {|frame, request, navigation_action, policy_decision| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_navigation-requested>* (Integer) <b>"navigation-requested"</b> {|frame, request| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_new-window-policy-decision-requested>* (Boolean) <b>"new-window-policy-decision-requested"</b> {|frame, request, navigation_action, policy_decision| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_onload-event>* (NilClass) <b>"onload-event"</b> {|frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_paste-clipboard>* (NilClass) <b>"paste-clipboard"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_populate-popup>* (NilClass) <b>"populate-popup"</b> {|menu| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_print-requested>* (Boolean) <b>"print-requested"</b> {|web_frame| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_redo>* (NilClass) <b>"redo"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_resource-content-length-received>* (NilClass) <b>"resource-content-length-received"</b> {|web_frame, web_resource, length_received| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_resource-load-failed>* (NilClass) <b>"resource-load-failed"</b> {|web_frame, web_resource, error| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_resource-load-finished>* (NilClass) <b>"resource-load-finished"</b> {|web_frame, web_resource| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_resource-request-starting>* (NilClass) <b>"resource-request-starting"</b> {|web_frame, web_resource, request, response| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_resource-response-received>* (NilClass) <b>"resource-response-received"</b> {|web_frame, web_resource, response| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_run-file-chooser>* (Boolean) <b>"run-file-chooser"</b> {|request| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_script-alert>* (Boolean) <b>"script-alert"</b> {|frame, alert_message| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_script-confirm>* (Boolean) <b>"script-confirm"</b> {|frame, confirm_message, did_confirm| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_script-prompt>* (Boolean) <b>"script-prompt"</b> {|frame, message, default_value, value| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_select-all>* (NilClass) <b>"select-all"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_selection-changed>* (NilClass) <b>"selection-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_set-scroll-adjustments>* (NilClass) <b>"set-scroll-adjustments"</b> {|hadjustment, vadjustment| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_should-apply-style>* (Boolean) <b>"should-apply-style"</b> {|object, p0| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_should-begin-editing>* (Boolean) <b>"should-begin-editing"</b> {|object| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_should-change-selected-range>* (Boolean) <b>"should-change-selected-range"</b> {|object, p0, p1, p2| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_should-delete-range>* (Boolean) <b>"should-delete-range"</b> {|object| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_should-end-editing>* (Boolean) <b>"should-end-editing"</b> {|object| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_should-insert-node>* (Boolean) <b>"should-insert-node"</b> {|object, p0, p1| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_should-insert-text>* (Boolean) <b>"should-insert-text"</b> {|object, p0, p1| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_should-show-delete-interface-for-element>* (Boolean) <b>"should-show-delete-interface-for-element"</b> {|object| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_status-bar-text-changed>* (NilClass) <b>"status-bar-text-changed"</b> {|object| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_title-changed>* (NilClass) <b>"title-changed"</b> {|frame, title| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_undo>* (NilClass) <b>"undo"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_user-changed-contents>* (NilClass) <b>"user-changed-contents"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_viewport-attributes-changed>* (NilClass) <b>"viewport-attributes-changed"</b> {|object| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_viewport-attributes-recompute-requested>* (NilClass) <b>"viewport-attributes-recompute-requested"</b> {|object| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_web-view-ready>* (Boolean) <b>"web-view-ready"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_window-object-cleared>* (NilClass) <b>"window-object-cleared"</b> {|frame, context, window_object| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (Gtk::Widget) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gtk::Widget)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_copy_clipboard">can_copy_clipboard</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_cut_clipboard">can_cut_clipboard</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_go_back">can_go_back</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_go_back_or_forward">can_go_back_or_forward</a></b>(steps)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>steps</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_go_forward">can_go_forward</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_paste_clipboard">can_paste_clipboard</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_redo">can_redo</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_show_mime_type">can_show_mime_type</a></b>(mime_type)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>mime_type</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_can_undo">can_undo</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_copy_clipboard">copy_clipboard</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_cut_clipboard">cut_clipboard</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_delete_selection">delete_selection</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_execute_script">execute_script</a></b>(script)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>script</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebBackForwardList.html>WebKit::WebBackForwardList</a>) <b><a name="instance_get_back_forward_list">get_back_forward_list</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebBackForwardList.html>WebKit::WebBackForwardList</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_copy_target_list">get_copy_target_list</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_custom_encoding">get_custom_encoding</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_DOMDocument.html>WebKit::DOMDocument</a>) <b><a name="instance_get_dom_document">get_dom_document</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_DOMDocument.html>WebKit::DOMDocument</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_editable">get_editable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_encoding">get_encoding</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b><a name="instance_get_focused_frame">get_focused_frame</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_full_content_zoom">get_full_content_zoom</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_HitTestResult.html>WebKit::HitTestResult</a>) <b><a name="instance_get_hit_test_result">get_hit_test_result</a></b>(event)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>event</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_HitTestResult.html>WebKit::HitTestResult</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (GdkPixbuf::Pixbuf) <b><a name="instance_get_icon_pixbuf">get_icon_pixbuf</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (GdkPixbuf::Pixbuf)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_icon_uri">get_icon_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebInspector.html>WebKit::WebInspector</a>) <b><a name="instance_get_inspector">get_inspector</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebInspector.html>WebKit::WebInspector</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_load_status">get_load_status</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum WebKit::LoadStatus </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b><a name="instance_get_main_frame">get_main_frame</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_paste_target_list">get_paste_target_list</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_progress">get_progress</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebSettings.html>WebKit::WebSettings</a>) <b><a name="instance_get_settings">get_settings</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebSettings.html>WebKit::WebSettings</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_snapshot">get_snapshot</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_title">get_title</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_transparent">get_transparent</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_uri">get_uri</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_view_mode">get_view_mode</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum WebKit::WebViewViewMode </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_view_source_mode">get_view_source_mode</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_ViewportAttributes.html>WebKit::ViewportAttributes</a>) <b><a name="instance_get_viewport_attributes">get_viewport_attributes</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_ViewportAttributes.html>WebKit::ViewportAttributes</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#WebKit_WebWindowFeatures.html>WebKit::WebWindowFeatures</a>) <b><a name="instance_get_window_features">get_window_features</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebWindowFeatures.html>WebKit::WebWindowFeatures</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_zoom_level">get_zoom_level</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_go_back">go_back</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_go_back_or_forward">go_back_or_forward</a></b>(steps)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>steps</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_go_forward">go_forward</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_go_to_back_forward_item">go_to_back_forward_item</a></b>(item)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebHistoryItem.html>WebKit::WebHistoryItem</a>) <b>item</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_has_selection">has_selection</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_load_html_string">load_html_string</a></b>(content, base_uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>content</b>  </li>
+<li class=param> (String) <b>base_uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_load_request">load_request</a></b>(request)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>) <b>request</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_load_string">load_string</a></b>(content, mime_type, encoding, base_uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>content</b>  </li>
+<li class=param> (String) <b>mime_type</b>  </li>
+<li class=param> (String) <b>encoding</b>  </li>
+<li class=param> (String) <b>base_uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_load_uri">load_uri</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_mark_text_matches">mark_text_matches</a></b>(string, case_sensitive, limit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>string</b>  </li>
+<li class=param> (Boolean) <b>case_sensitive</b>  </li>
+<li class=param> (Integer) <b>limit</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_cursor">move_cursor</a></b>(step, count)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>step</b>  a member of enum Gtk::MovementStep </li>
+<li class=param> (Integer) <b>count</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_open">open</a></b>(uri)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_paste_clipboard">paste_clipboard</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_redo">redo</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reload">reload</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reload_bypass_cache">reload_bypass_cache</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_search_text">search_text</a></b>(text, case_sensitive, forward, wrap)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Boolean) <b>case_sensitive</b>  </li>
+<li class=param> (Boolean) <b>forward</b>  </li>
+<li class=param> (Boolean) <b>wrap</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_all">select_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_custom_encoding">set_custom_encoding</a></b>(encoding)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>encoding</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_editable">set_editable</a></b>(flag)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>flag</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_full_content_zoom">set_full_content_zoom</a></b>(full_content_zoom)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>full_content_zoom</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_highlight_text_matches">set_highlight_text_matches</a></b>(highlight)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>highlight</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_maintains_back_forward_list">set_maintains_back_forward_list</a></b>(flag)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>flag</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_settings">set_settings</a></b>(settings)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebSettings.html>WebKit::WebSettings</a>) <b>settings</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_transparent">set_transparent</a></b>(flag)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>flag</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_view_mode">set_view_mode</a></b>(mode)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>mode</b>  a member of enum WebKit::WebViewViewMode </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_view_source_mode">set_view_source_mode</a></b>(view_source_mode)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>view_source_mode</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_zoom_level">set_zoom_level</a></b>(zoom_level)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>zoom_level</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_stop_loading">stop_loading</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (GdkPixbuf::Pixbuf) <b><a name="instance_try_get_favicon_pixbuf">try_get_favicon_pixbuf</a></b>(width, height)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>width</b>  </li>
+<li class=param> (Integer) <b>height</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (GdkPixbuf::Pixbuf)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_undo">undo</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unmark_text_matches">unmark_text_matches</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_zoom_in">zoom_in</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_zoom_out">zoom_out</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_close-web-view">close-web-view"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_console-message">console-message"</a></b> {|message, line_number, source_id| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>message</b>  </li>
+<li class=param> (Integer) <b>line_number</b>  </li>
+<li class=param> (String) <b>source_id</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_context-menu">context-menu"</a></b> {|default_menu, hit_test_result, triggered_with_keyboard| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gtk::Widget) <b>default_menu</b>  </li>
+<li class=param> (<a href=#WebKit_HitTestResult.html>WebKit::HitTestResult</a>) <b>hit_test_result</b>  </li>
+<li class=param> (Boolean) <b>triggered_with_keyboard</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_copy-clipboard">copy-clipboard"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Gtk::Widget) <b><a name="signal_create-plugin-widget">create-plugin-widget"</a></b> {|mime_type, uri, param| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>mime_type</b>  </li>
+<li class=param> (String) <b>uri</b>  </li>
+<li class=param> (FFI::Pointer) <b>param</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gtk::Widget)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (<a href=#WebKit_WebView.html>WebKit::WebView</a>) <b><a name="signal_create-web-view">create-web-view"</a></b> {|frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#WebKit_WebView.html>WebKit::WebView</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_cut-clipboard">cut-clipboard"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_database-quota-exceeded">database-quota-exceeded"</a></b> {|frame, database| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (GObject::Object) <b>frame</b>  </li>
+<li class=param> (GObject::Object) <b>database</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_document-load-finished">document-load-finished"</a></b> {|web_frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_download-requested">download-requested"</a></b> {|download| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (GObject::Object) <b>download</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_editing-began">editing-began"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_editing-ended">editing-ended"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_entering-fullscreen">entering-fullscreen"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_frame-created">frame-created"</a></b> {|web_frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_geolocation-policy-decision-cancelled">geolocation-policy-decision-cancelled"</a></b> {|frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_geolocation-policy-decision-requested">geolocation-policy-decision-requested"</a></b> {|frame, policy_decision| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (<a href=#WebKit_GeolocationPolicyDecision.html>WebKit::GeolocationPolicyDecision</a>) <b>policy_decision</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_hovering-over-link">hovering-over-link"</a></b> {|title, uri| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>title</b>  </li>
+<li class=param> (String) <b>uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_icon-loaded">icon-loaded"</a></b> {|icon_uri| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>icon_uri</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_leaving-fullscreen">leaving-fullscreen"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_load-committed">load-committed"</a></b> {|frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_load-error">load-error"</a></b> {|web_frame, uri, web_error| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<li class=param> (String) <b>uri</b>  </li>
+<li class=param> (FFI::Pointer) <b>web_error</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_load-finished">load-finished"</a></b> {|frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_load-progress-changed">load-progress-changed"</a></b> {|progress| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>progress</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_load-started">load-started"</a></b> {|frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_mime-type-policy-decision-requested">mime-type-policy-decision-requested"</a></b> {|frame, request, mimetype, policy_decision| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>) <b>request</b>  </li>
+<li class=param> (String) <b>mimetype</b>  </li>
+<li class=param> (<a href=#WebKit_WebPolicyDecision.html>WebKit::WebPolicyDecision</a>) <b>policy_decision</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_move-cursor">move-cursor"</a></b> {|step, count| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>step</b>  a member of enum Gtk::MovementStep </li>
+<li class=param> (Integer) <b>count</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_navigation-policy-decision-requested">navigation-policy-decision-requested"</a></b> {|frame, request, navigation_action, policy_decision| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>) <b>request</b>  </li>
+<li class=param> (<a href=#WebKit_WebNavigationAction.html>WebKit::WebNavigationAction</a>) <b>navigation_action</b>  </li>
+<li class=param> (<a href=#WebKit_WebPolicyDecision.html>WebKit::WebPolicyDecision</a>) <b>policy_decision</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Integer) <b><a name="signal_navigation-requested">navigation-requested"</a></b> {|frame, request| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>) <b>request</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum WebKit::NavigationResponse </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_new-window-policy-decision-requested">new-window-policy-decision-requested"</a></b> {|frame, request, navigation_action, policy_decision| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>) <b>request</b>  </li>
+<li class=param> (<a href=#WebKit_WebNavigationAction.html>WebKit::WebNavigationAction</a>) <b>navigation_action</b>  </li>
+<li class=param> (<a href=#WebKit_WebPolicyDecision.html>WebKit::WebPolicyDecision</a>) <b>policy_decision</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_onload-event">onload-event"</a></b> {|frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_paste-clipboard">paste-clipboard"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_populate-popup">populate-popup"</a></b> {|menu| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gtk::Menu) <b>menu</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_print-requested">print-requested"</a></b> {|web_frame| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_redo">redo"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_resource-content-length-received">resource-content-length-received"</a></b> {|web_frame, web_resource, length_received| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<li class=param> (<a href=#WebKit_WebResource.html>WebKit::WebResource</a>) <b>web_resource</b>  </li>
+<li class=param> (Integer) <b>length_received</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_resource-load-failed">resource-load-failed"</a></b> {|web_frame, web_resource, error| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<li class=param> (<a href=#WebKit_WebResource.html>WebKit::WebResource</a>) <b>web_resource</b>  </li>
+<li class=param> (FFI::Pointer) <b>error</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_resource-load-finished">resource-load-finished"</a></b> {|web_frame, web_resource| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<li class=param> (<a href=#WebKit_WebResource.html>WebKit::WebResource</a>) <b>web_resource</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_resource-request-starting">resource-request-starting"</a></b> {|web_frame, web_resource, request, response| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<li class=param> (<a href=#WebKit_WebResource.html>WebKit::WebResource</a>) <b>web_resource</b>  </li>
+<li class=param> (<a href=#WebKit_NetworkRequest.html>WebKit::NetworkRequest</a>) <b>request</b>  </li>
+<li class=param> (<a href=#WebKit_NetworkResponse.html>WebKit::NetworkResponse</a>) <b>response</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_resource-response-received">resource-response-received"</a></b> {|web_frame, web_resource, response| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>web_frame</b>  </li>
+<li class=param> (<a href=#WebKit_WebResource.html>WebKit::WebResource</a>) <b>web_resource</b>  </li>
+<li class=param> (<a href=#WebKit_NetworkResponse.html>WebKit::NetworkResponse</a>) <b>response</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_run-file-chooser">run-file-chooser"</a></b> {|request| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_FileChooserRequest.html>WebKit::FileChooserRequest</a>) <b>request</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_script-alert">script-alert"</a></b> {|frame, alert_message| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (String) <b>alert_message</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_script-confirm">script-confirm"</a></b> {|frame, confirm_message, did_confirm| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (String) <b>confirm_message</b>  </li>
+<li class=param> (Boolean) <b>did_confirm</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_script-prompt">script-prompt"</a></b> {|frame, message, default_value, value| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (String) <b>message</b>  </li>
+<li class=param> (String) <b>default_value</b>  </li>
+<li class=param> (String) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_select-all">select-all"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_selection-changed">selection-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_set-scroll-adjustments">set-scroll-adjustments"</a></b> {|hadjustment, vadjustment| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gtk::Adjustment) <b>hadjustment</b>  </li>
+<li class=param> (Gtk::Adjustment) <b>vadjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_should-apply-style">should-apply-style"</a></b> {|object, p0| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMCSSStyleDeclaration.html>WebKit::DOMCSSStyleDeclaration</a>) <b>object</b>  </li>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>p0</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_should-begin-editing">should-begin-editing"</a></b> {|object| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>object</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_should-change-selected-range">should-change-selected-range"</a></b> {|object, p0, p1, p2| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>object</b>  </li>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>p0</b>  </li>
+<li class=param> (Integer) <b>p1</b>  a member of enum WebKit::SelectionAffinity </li>
+<li class=param> (Boolean) <b>p2</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_should-delete-range">should-delete-range"</a></b> {|object| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>object</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_should-end-editing">should-end-editing"</a></b> {|object| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>object</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_should-insert-node">should-insert-node"</a></b> {|object, p0, p1| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMNode.html>WebKit::DOMNode</a>) <b>object</b>  </li>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>p0</b>  </li>
+<li class=param> (Integer) <b>p1</b>  a member of enum WebKit::InsertAction </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_should-insert-text">should-insert-text"</a></b> {|object, p0, p1| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>object</b>  </li>
+<li class=param> (<a href=#WebKit_DOMRange.html>WebKit::DOMRange</a>) <b>p0</b>  </li>
+<li class=param> (Integer) <b>p1</b>  a member of enum WebKit::InsertAction </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_should-show-delete-interface-for-element">should-show-delete-interface-for-element"</a></b> {|object| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_DOMHTMLElement.html>WebKit::DOMHTMLElement</a>) <b>object</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_status-bar-text-changed">status-bar-text-changed"</a></b> {|object| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>object</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_title-changed">title-changed"</a></b> {|frame, title| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (String) <b>title</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_undo">undo"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_user-changed-contents">user-changed-contents"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_viewport-attributes-changed">viewport-attributes-changed"</a></b> {|object| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_ViewportAttributes.html>WebKit::ViewportAttributes</a>) <b>object</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_viewport-attributes-recompute-requested">viewport-attributes-recompute-requested"</a></b> {|object| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_ViewportAttributes.html>WebKit::ViewportAttributes</a>) <b>object</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_web-view-ready">web-view-ready"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_window-object-cleared">window-object-cleared"</a></b> {|frame, context, window_object| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#WebKit_WebFrame.html>WebKit::WebFrame</a>) <b>frame</b>  </li>
+<li class=param> (void) <b>context</b>  </li>
+<li class=param> (void) <b>window_object</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+
