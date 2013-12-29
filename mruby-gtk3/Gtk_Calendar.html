@@ -1,0 +1,229 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Calendar class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Calendar</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Widget.html>Gtk::Widget</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_new </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_clear_marks>- (NilClass) <b>clear_marks</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_clear_marks </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_date>- (Array&lt;Integer, Integer, Integer&gt;) <b>get_date</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_get_date </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_day_is_marked>- (Boolean) <b>get_day_is_marked</b>(day)</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_get_day_is_marked </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_detail_height_rows>- (Integer) <b>get_detail_height_rows</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_get_detail_height_rows </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_detail_width_chars>- (Integer) <b>get_detail_width_chars</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_get_detail_width_chars </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_display_options>- (Integer) <b>get_display_options</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_get_display_options </div>
+<div>&nbsp;&nbsp;<a href=#instance_mark_day>- (NilClass) <b>mark_day</b>(day)</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_mark_day </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_day>- (NilClass) <b>select_day</b>(day)</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_select_day </div>
+<div>&nbsp;&nbsp;<a href=#instance_select_month>- (NilClass) <b>select_month</b>(month, year)</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_select_month </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_detail_func>- (NilClass) <b>set_detail_func</b>() {|calendar, year, month, day| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_set_detail_func </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_detail_height_rows>- (NilClass) <b>set_detail_height_rows</b>(rows)</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_set_detail_height_rows </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_detail_width_chars>- (NilClass) <b>set_detail_width_chars</b>(chars)</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_set_detail_width_chars </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_display_options>- (NilClass) <b>set_display_options</b>(flags)</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_set_display_options </div>
+<div>&nbsp;&nbsp;<a href=#instance_unmark_day>- (NilClass) <b>unmark_day</b>(day)</a>&nbsp;&nbsp;</div>
+<div> gtk_calendar_unmark_day </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_day-selected>* (NilClass) <b>"day-selected"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_day-selected-double-click>* (NilClass) <b>"day-selected-double-click"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_month-changed>* (NilClass) <b>"month-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_next-month>* (NilClass) <b>"next-month"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_next-year>* (NilClass) <b>"next-year"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_prev-month>* (NilClass) <b>"prev-month"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_prev-year>* (NilClass) <b>"prev-year"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_clear_marks">clear_marks</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer, Integer&gt;) <b><a name="instance_get_date">get_date</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_day_is_marked">get_day_is_marked</a></b>(day)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>day</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_detail_height_rows">get_detail_height_rows</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_detail_width_chars">get_detail_width_chars</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_display_options">get_display_options</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::CalendarDisplayOptions </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_mark_day">mark_day</a></b>(day)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>day</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_day">select_day</a></b>(day)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>day</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_select_month">select_month</a></b>(month, year)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>month</b>  </li>
+<li class=param> (Integer) <b>year</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_detail_func">set_detail_func</a></b>() {|calendar, year, month, day| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Calendar.html>Gtk::Calendar</a>) <b>calendar</b> </li>
+<li class=param> (Integer) <b>year</b> </li>
+<li class=param> (Integer) <b>month</b> </li>
+<li class=param> (Integer) <b>day</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(String) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_detail_height_rows">set_detail_height_rows</a></b>(rows)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>rows</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_detail_width_chars">set_detail_width_chars</a></b>(chars)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>chars</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_display_options">set_display_options</a></b>(flags)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>flags</b>  a member of enum Gtk::CalendarDisplayOptions </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unmark_day">unmark_day</a></b>(day)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>day</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_day-selected">day-selected"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_day-selected-double-click">day-selected-double-click"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_month-changed">month-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_next-month">next-month"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_next-year">next-year"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_prev-month">prev-month"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_prev-year">prev-year"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

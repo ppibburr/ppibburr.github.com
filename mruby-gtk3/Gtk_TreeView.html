@@ -1,0 +1,1117 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=TreeView class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::TreeView</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Container.html>Gtk::Container</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Scrollable.html>Gtk::Scrollable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_with_model>+ (Gtk::Widget) <b>new_with_model</b>(model)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_new_with_model </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_append_column>- (Integer) <b>append_column</b>(column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_append_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_collapse_all>- (NilClass) <b>collapse_all</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_collapse_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_collapse_row>- (Boolean) <b>collapse_row</b>(path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_collapse_row </div>
+<div>&nbsp;&nbsp;<a href=#instance_columns_autosize>- (NilClass) <b>columns_autosize</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_columns_autosize </div>
+<div>&nbsp;&nbsp;<a href=#instance_convert_bin_window_to_tree_coords>- (Array&lt;Integer, Integer&gt;) <b>convert_bin_window_to_tree_coords</b>(bx, by)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_convert_bin_window_to_tree_coords </div>
+<div>&nbsp;&nbsp;<a href=#instance_convert_bin_window_to_widget_coords>- (Array&lt;Integer, Integer&gt;) <b>convert_bin_window_to_widget_coords</b>(bx, by)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_convert_bin_window_to_widget_coords </div>
+<div>&nbsp;&nbsp;<a href=#instance_convert_tree_to_bin_window_coords>- (Array&lt;Integer, Integer&gt;) <b>convert_tree_to_bin_window_coords</b>(tx, ty)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_convert_tree_to_bin_window_coords </div>
+<div>&nbsp;&nbsp;<a href=#instance_convert_tree_to_widget_coords>- (Array&lt;Integer, Integer&gt;) <b>convert_tree_to_widget_coords</b>(tx, ty)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_convert_tree_to_widget_coords </div>
+<div>&nbsp;&nbsp;<a href=#instance_convert_widget_to_bin_window_coords>- (Array&lt;Integer, Integer&gt;) <b>convert_widget_to_bin_window_coords</b>(wx, wy)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_convert_widget_to_bin_window_coords </div>
+<div>&nbsp;&nbsp;<a href=#instance_convert_widget_to_tree_coords>- (Array&lt;Integer, Integer&gt;) <b>convert_widget_to_tree_coords</b>(wx, wy)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_convert_widget_to_tree_coords </div>
+<div>&nbsp;&nbsp;<a href=#instance_create_row_drag_icon>- (FFI::Pointer) <b>create_row_drag_icon</b>(path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_create_row_drag_icon </div>
+<div>&nbsp;&nbsp;<a href=#instance_enable_model_drag_dest>- (NilClass) <b>enable_model_drag_dest</b>(targets, n_targets, actions)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_enable_model_drag_dest </div>
+<div>&nbsp;&nbsp;<a href=#instance_enable_model_drag_source>- (NilClass) <b>enable_model_drag_source</b>(start_button_mask, targets, n_targets, actions)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_enable_model_drag_source </div>
+<div>&nbsp;&nbsp;<a href=#instance_expand_all>- (NilClass) <b>expand_all</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_expand_all </div>
+<div>&nbsp;&nbsp;<a href=#instance_expand_row>- (Boolean) <b>expand_row</b>(path, open_all)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_expand_row </div>
+<div>&nbsp;&nbsp;<a href=#instance_expand_to_path>- (NilClass) <b>expand_to_path</b>(path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_expand_to_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_activate_on_single_click>- (Boolean) <b>get_activate_on_single_click</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_activate_on_single_click </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_background_area>- (FFI::Pointer) <b>get_background_area</b>(path, column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_background_area </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_bin_window>- (Gdk::Window) <b>get_bin_window</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_bin_window </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_cell_area>- (FFI::Pointer) <b>get_cell_area</b>(path, column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_cell_area </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_column>- (Gtk::TreeViewColumn) <b>get_column</b>(n)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_columns>- (FFI::Pointer) <b>get_columns</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_columns </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_cursor>- (Array&lt;FFI::Pointer, Gtk::TreeViewColumn&gt;) <b>get_cursor</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_cursor </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_dest_row_at_pos>- (Array&lt;Boolean, FFI::Pointer, Integer&gt;) <b>get_dest_row_at_pos</b>(drag_x, drag_y)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_dest_row_at_pos </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_drag_dest_row>- (Array&lt;FFI::Pointer, Integer&gt;) <b>get_drag_dest_row</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_drag_dest_row </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_enable_search>- (Boolean) <b>get_enable_search</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_enable_search </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_enable_tree_lines>- (Boolean) <b>get_enable_tree_lines</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_enable_tree_lines </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_expander_column>- (Gtk::TreeViewColumn) <b>get_expander_column</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_expander_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_fixed_height_mode>- (Boolean) <b>get_fixed_height_mode</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_fixed_height_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_grid_lines>- (Integer) <b>get_grid_lines</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_grid_lines </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_hadjustment>- (Gtk::Adjustment) <b>get_hadjustment</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_hadjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_headers_clickable>- (Boolean) <b>get_headers_clickable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_headers_clickable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_headers_visible>- (Boolean) <b>get_headers_visible</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_headers_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_hover_expand>- (Boolean) <b>get_hover_expand</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_hover_expand </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_hover_selection>- (Boolean) <b>get_hover_selection</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_hover_selection </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_level_indentation>- (Integer) <b>get_level_indentation</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_level_indentation </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_model>- (FFI::Pointer) <b>get_model</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_model </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_n_columns>- (Integer) <b>get_n_columns</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_n_columns </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_path_at_pos>- (Array&lt;Boolean, FFI::Pointer, Gtk::TreeViewColumn, Integer, Integer&gt;) <b>get_path_at_pos</b>(x, y)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_path_at_pos </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_reorderable>- (Boolean) <b>get_reorderable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_reorderable </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_rubber_banding>- (Boolean) <b>get_rubber_banding</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_rubber_banding </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_rules_hint>- (Boolean) <b>get_rules_hint</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_rules_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_search_column>- (Integer) <b>get_search_column</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_search_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_search_entry>- (Gtk::Entry) <b>get_search_entry</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_search_entry </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_selection>- (Gtk::TreeSelection) <b>get_selection</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_selection </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_show_expanders>- (Boolean) <b>get_show_expanders</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_show_expanders </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tooltip_column>- (Integer) <b>get_tooltip_column</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_tooltip_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tooltip_context>- (Array&lt;Boolean, Integer, Integer, FFI::Pointer, FFI::Pointer, FFI::Pointer&gt;) <b>get_tooltip_context</b>(x, y, keyboard_tip)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_tooltip_context </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_vadjustment>- (Gtk::Adjustment) <b>get_vadjustment</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_vadjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_visible_range>- (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;) <b>get_visible_range</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_visible_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_visible_rect>- (FFI::Pointer) <b>get_visible_rect</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_get_visible_rect </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_column>- (Integer) <b>insert_column</b>(column, position)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_insert_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_column_with_data_func>- (Integer) <b>insert_column_with_data_func</b>(position, title, cell) {|tree_column, cell, tree_model, iter, data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_insert_column_with_data_func </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_blank_at_pos>- (Array&lt;Boolean, FFI::Pointer, Gtk::TreeViewColumn, Integer, Integer&gt;) <b>is_blank_at_pos</b>(x, y)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_is_blank_at_pos </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_rubber_banding_active>- (Boolean) <b>is_rubber_banding_active</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_is_rubber_banding_active </div>
+<div>&nbsp;&nbsp;<a href=#instance_map_expanded_rows>- (NilClass) <b>map_expanded_rows</b>() {|tree_view, path| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_map_expanded_rows </div>
+<div>&nbsp;&nbsp;<a href=#instance_move_column_after>- (NilClass) <b>move_column_after</b>(column, base_column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_move_column_after </div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_column>- (Integer) <b>remove_column</b>(column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_remove_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_row_activated>- (NilClass) <b>row_activated</b>(path, column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_row_activated </div>
+<div>&nbsp;&nbsp;<a href=#instance_row_expanded>- (Boolean) <b>row_expanded</b>(path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_row_expanded </div>
+<div>&nbsp;&nbsp;<a href=#instance_scroll_to_cell>- (NilClass) <b>scroll_to_cell</b>(use_align, row_align, col_align, path, column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_scroll_to_cell </div>
+<div>&nbsp;&nbsp;<a href=#instance_scroll_to_point>- (NilClass) <b>scroll_to_point</b>(tree_x, tree_y)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_scroll_to_point </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_activate_on_single_click>- (NilClass) <b>set_activate_on_single_click</b>(single)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_activate_on_single_click </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_column_drag_function>- (NilClass) <b>set_column_drag_function</b>() {|tree_view, column, prev_column, next_column, data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_column_drag_function </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_cursor>- (NilClass) <b>set_cursor</b>(path, start_editing, focus_column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_cursor </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_cursor_on_cell>- (NilClass) <b>set_cursor_on_cell</b>(path, start_editing, focus_column, focus_cell)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_cursor_on_cell </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_destroy_count_func>- (NilClass) <b>set_destroy_count_func</b>() {|tree_view, path, children| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_destroy_count_func </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_drag_dest_row>- (NilClass) <b>set_drag_dest_row</b>(pos, path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_drag_dest_row </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_enable_search>- (NilClass) <b>set_enable_search</b>(enable_search)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_enable_search </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_enable_tree_lines>- (NilClass) <b>set_enable_tree_lines</b>(enabled)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_enable_tree_lines </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_expander_column>- (NilClass) <b>set_expander_column</b>(column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_expander_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_fixed_height_mode>- (NilClass) <b>set_fixed_height_mode</b>(enable)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_fixed_height_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_grid_lines>- (NilClass) <b>set_grid_lines</b>(grid_lines)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_grid_lines </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_hadjustment>- (NilClass) <b>set_hadjustment</b>(adjustment)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_hadjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_headers_clickable>- (NilClass) <b>set_headers_clickable</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_headers_clickable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_headers_visible>- (NilClass) <b>set_headers_visible</b>(headers_visible)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_headers_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_hover_expand>- (NilClass) <b>set_hover_expand</b>(expand)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_hover_expand </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_hover_selection>- (NilClass) <b>set_hover_selection</b>(hover)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_hover_selection </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_level_indentation>- (NilClass) <b>set_level_indentation</b>(indentation)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_level_indentation </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_model>- (NilClass) <b>set_model</b>(model)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_model </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_reorderable>- (NilClass) <b>set_reorderable</b>(reorderable)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_reorderable </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_row_separator_func>- (NilClass) <b>set_row_separator_func</b>() {|model, iter, data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_row_separator_func </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_rubber_banding>- (NilClass) <b>set_rubber_banding</b>(enable)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_rubber_banding </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_rules_hint>- (NilClass) <b>set_rules_hint</b>(setting)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_rules_hint </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_search_column>- (NilClass) <b>set_search_column</b>(column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_search_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_search_entry>- (NilClass) <b>set_search_entry</b>(entry)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_search_entry </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_search_equal_func>- (NilClass) <b>set_search_equal_func</b>() {|model, column, key, iter, search_data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_search_equal_func </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_search_position_func>- (NilClass) <b>set_search_position_func</b>() {|tree_view, search_dialog| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_search_position_func </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_show_expanders>- (NilClass) <b>set_show_expanders</b>(enabled)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_show_expanders </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tooltip_cell>- (NilClass) <b>set_tooltip_cell</b>(tooltip, path, column, cell)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_tooltip_cell </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tooltip_column>- (NilClass) <b>set_tooltip_column</b>(column)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_tooltip_column </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tooltip_row>- (NilClass) <b>set_tooltip_row</b>(tooltip, path)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_tooltip_row </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_vadjustment>- (NilClass) <b>set_vadjustment</b>(adjustment)</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_set_vadjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_unset_rows_drag_dest>- (NilClass) <b>unset_rows_drag_dest</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_unset_rows_drag_dest </div>
+<div>&nbsp;&nbsp;<a href=#instance_unset_rows_drag_source>- (NilClass) <b>unset_rows_drag_source</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_tree_view_unset_rows_drag_source </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_columns-changed>* (NilClass) <b>"columns-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_cursor-changed>* (NilClass) <b>"cursor-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_expand-collapse-cursor-row>* (Boolean) <b>"expand-collapse-cursor-row"</b> {|logical, expand, open_all| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_move-cursor>* (Boolean) <b>"move-cursor"</b> {|step, count| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_row-activated>* (NilClass) <b>"row-activated"</b> {|path, column| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_row-collapsed>* (NilClass) <b>"row-collapsed"</b> {|iter, path| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_row-expanded>* (NilClass) <b>"row-expanded"</b> {|iter, path| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_select-all>* (Boolean) <b>"select-all"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_select-cursor-parent>* (Boolean) <b>"select-cursor-parent"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_select-cursor-row>* (Boolean) <b>"select-cursor-row"</b> {|start_editing| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_start-interactive-search>* (Boolean) <b>"start-interactive-search"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_test-collapse-row>* (Boolean) <b>"test-collapse-row"</b> {|iter, path| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_test-expand-row>* (Boolean) <b>"test-expand-row"</b> {|iter, path| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_toggle-cursor-row>* (Boolean) <b>"toggle-cursor-row"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_unselect-all>* (Boolean) <b>"unselect-all"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new_with_model">new_with_model</a></b>(model)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>model</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_append_column">append_column</a></b>(column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_collapse_all">collapse_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_collapse_row">collapse_row</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_columns_autosize">columns_autosize</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_convert_bin_window_to_tree_coords">convert_bin_window_to_tree_coords</a></b>(bx, by)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>bx</b>  </li>
+<li class=param> (Integer) <b>by</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_convert_bin_window_to_widget_coords">convert_bin_window_to_widget_coords</a></b>(bx, by)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>bx</b>  </li>
+<li class=param> (Integer) <b>by</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_convert_tree_to_bin_window_coords">convert_tree_to_bin_window_coords</a></b>(tx, ty)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>tx</b>  </li>
+<li class=param> (Integer) <b>ty</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_convert_tree_to_widget_coords">convert_tree_to_widget_coords</a></b>(tx, ty)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>tx</b>  </li>
+<li class=param> (Integer) <b>ty</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_convert_widget_to_bin_window_coords">convert_widget_to_bin_window_coords</a></b>(wx, wy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>wx</b>  </li>
+<li class=param> (Integer) <b>wy</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_convert_widget_to_tree_coords">convert_widget_to_tree_coords</a></b>(wx, wy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>wx</b>  </li>
+<li class=param> (Integer) <b>wy</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_create_row_drag_icon">create_row_drag_icon</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_enable_model_drag_dest">enable_model_drag_dest</a></b>(targets, n_targets, actions)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Array&lt;FFI::Pointer&gt;) <b>targets</b>  </li>
+<li class=param> (Integer) <b>n_targets</b>  </li>
+<li class=param> (Integer) <b>actions</b>  a member of enum Gdk::DragAction </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_enable_model_drag_source">enable_model_drag_source</a></b>(start_button_mask, targets, n_targets, actions)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>start_button_mask</b>  a member of enum Gdk::ModifierType </li>
+<li class=param> (Array&lt;FFI::Pointer&gt;) <b>targets</b>  </li>
+<li class=param> (Integer) <b>n_targets</b>  </li>
+<li class=param> (Integer) <b>actions</b>  a member of enum Gdk::DragAction </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_expand_all">expand_all</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_expand_row">expand_row</a></b>(path, open_all)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (Boolean) <b>open_all</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_expand_to_path">expand_to_path</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_activate_on_single_click">get_activate_on_single_click</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_background_area">get_background_area</a></b>(path, column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Gdk::Window) <b><a name="instance_get_bin_window">get_bin_window</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Gdk::Window)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_cell_area">get_cell_area</a></b>(path, column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b><a name="instance_get_column">get_column</a></b>(n)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>n</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_columns">get_columns</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;FFI::Pointer, <a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>&gt;) <b><a name="instance_get_cursor">get_cursor</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;FFI::Pointer, <a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer, Integer&gt;) <b><a name="instance_get_dest_row_at_pos">get_dest_row_at_pos</a></b>(drag_x, drag_y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>drag_x</b>  </li>
+<li class=param> (Integer) <b>drag_y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;FFI::Pointer, Integer&gt;) <b><a name="instance_get_drag_dest_row">get_drag_dest_row</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;FFI::Pointer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_enable_search">get_enable_search</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_enable_tree_lines">get_enable_tree_lines</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b><a name="instance_get_expander_column">get_expander_column</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_fixed_height_mode">get_fixed_height_mode</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_grid_lines">get_grid_lines</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::TreeViewGridLines </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b><a name="instance_get_hadjustment">get_hadjustment</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_headers_clickable">get_headers_clickable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_headers_visible">get_headers_visible</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_hover_expand">get_hover_expand</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_hover_selection">get_hover_selection</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_level_indentation">get_level_indentation</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_model">get_model</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_n_columns">get_n_columns</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer, <a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>, Integer, Integer&gt;) <b><a name="instance_get_path_at_pos">get_path_at_pos</a></b>(x, y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer, <a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>, Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_reorderable">get_reorderable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_rubber_banding">get_rubber_banding</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_rules_hint">get_rules_hint</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_search_column">get_search_column</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Entry.html>Gtk::Entry</a>) <b><a name="instance_get_search_entry">get_search_entry</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Entry.html>Gtk::Entry</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_TreeSelection.html>Gtk::TreeSelection</a>) <b><a name="instance_get_selection">get_selection</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_TreeSelection.html>Gtk::TreeSelection</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_show_expanders">get_show_expanders</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_tooltip_column">get_tooltip_column</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, Integer, Integer, FFI::Pointer, FFI::Pointer, FFI::Pointer&gt;) <b><a name="instance_get_tooltip_context">get_tooltip_context</a></b>(x, y, keyboard_tip)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<li class=param> (Boolean) <b>keyboard_tip</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, Integer, Integer, FFI::Pointer, FFI::Pointer, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b><a name="instance_get_vadjustment">get_vadjustment</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;) <b><a name="instance_get_visible_range">get_visible_range</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_visible_rect">get_visible_rect</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_insert_column">insert_column</a></b>(column, position)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<li class=param> (Integer) <b>position</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_insert_column_with_data_func">insert_column_with_data_func</a></b>(position, title, cell) {|tree_column, cell, tree_model, iter, data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>position</b>  </li>
+<li class=param> (String) <b>title</b>  </li>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>tree_column</b> </li>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b> </li>
+<li class=param> (FFI::Pointer) <b>tree_model</b> </li>
+<li class=param> (FFI::Pointer) <b>iter</b> </li>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, FFI::Pointer, <a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>, Integer, Integer&gt;) <b><a name="instance_is_blank_at_pos">is_blank_at_pos</a></b>(x, y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>x</b>  </li>
+<li class=param> (Integer) <b>y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, FFI::Pointer, <a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>, Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_rubber_banding_active">is_rubber_banding_active</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_map_expanded_rows">map_expanded_rows</a></b>() {|tree_view, path| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeView.html>Gtk::TreeView</a>) <b>tree_view</b> </li>
+<li class=param> (FFI::Pointer) <b>path</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_column_after">move_column_after</a></b>(column, base_column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>base_column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_remove_column">remove_column</a></b>(column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_row_activated">row_activated</a></b>(path, column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_row_expanded">row_expanded</a></b>(path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_scroll_to_cell">scroll_to_cell</a></b>(use_align, row_align, col_align, path, column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>use_align</b>  </li>
+<li class=param> (Float) <b>row_align</b>  </li>
+<li class=param> (Float) <b>col_align</b>  </li>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_scroll_to_point">scroll_to_point</a></b>(tree_x, tree_y)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>tree_x</b>  </li>
+<li class=param> (Integer) <b>tree_y</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_activate_on_single_click">set_activate_on_single_click</a></b>(single)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>single</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_column_drag_function">set_column_drag_function</a></b>() {|tree_view, column, prev_column, next_column, data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeView.html>Gtk::TreeView</a>) <b>tree_view</b> </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b> </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>prev_column</b> </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>next_column</b> </li>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_cursor">set_cursor</a></b>(path, start_editing, focus_column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (Boolean) <b>start_editing</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>focus_column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_cursor_on_cell">set_cursor_on_cell</a></b>(path, start_editing, focus_column, focus_cell)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (Boolean) <b>start_editing</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>focus_column</b>  </li>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>focus_cell</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_destroy_count_func">set_destroy_count_func</a></b>() {|tree_view, path, children| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeView.html>Gtk::TreeView</a>) <b>tree_view</b> </li>
+<li class=param> (FFI::Pointer) <b>path</b> </li>
+<li class=param> (Integer) <b>children</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_drag_dest_row">set_drag_dest_row</a></b>(pos, path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>pos</b>  a member of enum Gtk::TreeViewDropPosition </li>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_enable_search">set_enable_search</a></b>(enable_search)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>enable_search</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_enable_tree_lines">set_enable_tree_lines</a></b>(enabled)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>enabled</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_expander_column">set_expander_column</a></b>(column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_fixed_height_mode">set_fixed_height_mode</a></b>(enable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>enable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_grid_lines">set_grid_lines</a></b>(grid_lines)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>grid_lines</b>  a member of enum Gtk::TreeViewGridLines </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_hadjustment">set_hadjustment</a></b>(adjustment)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>adjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_headers_clickable">set_headers_clickable</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_headers_visible">set_headers_visible</a></b>(headers_visible)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>headers_visible</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_hover_expand">set_hover_expand</a></b>(expand)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>expand</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_hover_selection">set_hover_selection</a></b>(hover)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>hover</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_level_indentation">set_level_indentation</a></b>(indentation)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>indentation</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_model">set_model</a></b>(model)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>model</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_reorderable">set_reorderable</a></b>(reorderable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>reorderable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_row_separator_func">set_row_separator_func</a></b>() {|model, iter, data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>model</b> </li>
+<li class=param> (FFI::Pointer) <b>iter</b> </li>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_rubber_banding">set_rubber_banding</a></b>(enable)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>enable</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_rules_hint">set_rules_hint</a></b>(setting)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>setting</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_search_column">set_search_column</a></b>(column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_search_entry">set_search_entry</a></b>(entry)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Entry.html>Gtk::Entry</a>) <b>entry</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_search_equal_func">set_search_equal_func</a></b>() {|model, column, key, iter, search_data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>model</b> </li>
+<li class=param> (Integer) <b>column</b> </li>
+<li class=param> (String) <b>key</b> </li>
+<li class=param> (FFI::Pointer) <b>iter</b> </li>
+<li class=param> (void) <b>search_data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(Boolean) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_search_position_func">set_search_position_func</a></b>() {|tree_view, search_dialog| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_TreeView.html>Gtk::TreeView</a>) <b>tree_view</b> </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>search_dialog</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_show_expanders">set_show_expanders</a></b>(enabled)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>enabled</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tooltip_cell">set_tooltip_cell</a></b>(tooltip, path, column, cell)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Tooltip.html>Gtk::Tooltip</a>) <b>tooltip</b>  </li>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tooltip_column">set_tooltip_column</a></b>(column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tooltip_row">set_tooltip_row</a></b>(tooltip, path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Tooltip.html>Gtk::Tooltip</a>) <b>tooltip</b>  </li>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_vadjustment">set_vadjustment</a></b>(adjustment)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>adjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unset_rows_drag_dest">unset_rows_drag_dest</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_unset_rows_drag_source">unset_rows_drag_source</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_columns-changed">columns-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_cursor-changed">cursor-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_expand-collapse-cursor-row">expand-collapse-cursor-row"</a></b> {|logical, expand, open_all| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>logical</b>  </li>
+<li class=param> (Boolean) <b>expand</b>  </li>
+<li class=param> (Boolean) <b>open_all</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_move-cursor">move-cursor"</a></b> {|step, count| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>step</b>  a member of enum Gtk::MovementStep </li>
+<li class=param> (Integer) <b>count</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_row-activated">row-activated"</a></b> {|path, column| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<li class=param> (<a href=#Gtk_TreeViewColumn.html>Gtk::TreeViewColumn</a>) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_row-collapsed">row-collapsed"</a></b> {|iter, path| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_row-expanded">row-expanded"</a></b> {|iter, path| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_select-all">select-all"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_select-cursor-parent">select-cursor-parent"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_select-cursor-row">select-cursor-row"</a></b> {|start_editing| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>start_editing</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_start-interactive-search">start-interactive-search"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_test-collapse-row">test-collapse-row"</a></b> {|iter, path| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_test-expand-row">test-expand-row"</a></b> {|iter, path| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>iter</b>  </li>
+<li class=param> (FFI::Pointer) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_toggle-cursor-row">toggle-cursor-row"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_unselect-all">unselect-all"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=ColorSelection class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::ColorSelection</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Box.html>Gtk::Box</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Orientable.html>Gtk::Orientable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_new </div>
+<div>&nbsp;&nbsp;<a href=#class_palette_from_string>+ (Array&lt;Boolean, Integer&gt;) <b>palette_from_string</b>(str)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_palette_from_string </div>
+<div>&nbsp;&nbsp;<a href=#class_palette_to_string>+ (String) <b>palette_to_string</b>(colors, n_colors)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_palette_to_string </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_alpha>- (Integer) <b>get_current_alpha</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_get_current_alpha </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_color>- (FFI::Pointer) <b>get_current_color</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_get_current_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_current_rgba>- (FFI::Pointer) <b>get_current_rgba</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_get_current_rgba </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_has_opacity_control>- (Boolean) <b>get_has_opacity_control</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_get_has_opacity_control </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_has_palette>- (Boolean) <b>get_has_palette</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_get_has_palette </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_previous_alpha>- (Integer) <b>get_previous_alpha</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_get_previous_alpha </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_previous_color>- (FFI::Pointer) <b>get_previous_color</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_get_previous_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_previous_rgba>- (FFI::Pointer) <b>get_previous_rgba</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_get_previous_rgba </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_adjusting>- (Boolean) <b>is_adjusting</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_is_adjusting </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_alpha>- (NilClass) <b>set_current_alpha</b>(alpha)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_set_current_alpha </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_color>- (NilClass) <b>set_current_color</b>(color)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_set_current_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_current_rgba>- (NilClass) <b>set_current_rgba</b>(rgba)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_set_current_rgba </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_has_opacity_control>- (NilClass) <b>set_has_opacity_control</b>(has_opacity)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_set_has_opacity_control </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_has_palette>- (NilClass) <b>set_has_palette</b>(has_palette)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_set_has_palette </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_previous_alpha>- (NilClass) <b>set_previous_alpha</b>(alpha)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_set_previous_alpha </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_previous_color>- (NilClass) <b>set_previous_color</b>(color)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_set_previous_color </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_previous_rgba>- (NilClass) <b>set_previous_rgba</b>(rgba)</a>&nbsp;&nbsp;</div>
+<div> gtk_color_selection_set_previous_rgba </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_color-changed>* (NilClass) <b>"color-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (Array&lt;Boolean, Integer&gt;) <b><a name="class_palette_from_string">palette_from_string</a></b>(str)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>str</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (String) <b><a name="class_palette_to_string">palette_to_string</a></b>(colors, n_colors)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Array&lt;FFI::Pointer&gt;) <b>colors</b>  </li>
+<li class=param> (Integer) <b>n_colors</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_current_alpha">get_current_alpha</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_current_color">get_current_color</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_current_rgba">get_current_rgba</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_has_opacity_control">get_has_opacity_control</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_has_palette">get_has_palette</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_previous_alpha">get_previous_alpha</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_previous_color">get_previous_color</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_previous_rgba">get_previous_rgba</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_adjusting">is_adjusting</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_current_alpha">set_current_alpha</a></b>(alpha)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>alpha</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_current_color">set_current_color</a></b>(color)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>color</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_current_rgba">set_current_rgba</a></b>(rgba)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>rgba</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_has_opacity_control">set_has_opacity_control</a></b>(has_opacity)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>has_opacity</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_has_palette">set_has_palette</a></b>(has_palette)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>has_palette</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_previous_alpha">set_previous_alpha</a></b>(alpha)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>alpha</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_previous_color">set_previous_color</a></b>(color)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>color</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_previous_rgba">set_previous_rgba</a></b>(rgba)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>rgba</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_color-changed">color-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

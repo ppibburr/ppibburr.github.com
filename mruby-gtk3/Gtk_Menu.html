@@ -1,0 +1,320 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=Menu class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::Menu</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_MenuShell.html>Gtk::MenuShell</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_from_model>+ (Gtk::Widget) <b>new_from_model</b>(model)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_new_from_model </div>
+<div>&nbsp;&nbsp;<a href=#class_get_for_attach_widget>+ (FFI::Pointer) <b>get_for_attach_widget</b>(widget)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_for_attach_widget </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_attach>- (NilClass) <b>attach</b>(child, left_attach, right_attach, top_attach, bottom_attach)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_attach </div>
+<div>&nbsp;&nbsp;<a href=#instance_attach_to_widget>- (NilClass) <b>attach_to_widget</b>(attach_widget) {|attach_widget, menu| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_attach_to_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_detach>- (NilClass) <b>detach</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_detach </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_accel_group>- (Gtk::AccelGroup) <b>get_accel_group</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_accel_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_accel_path>- (String) <b>get_accel_path</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_accel_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_active>- (Gtk::Widget) <b>get_active</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_active </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_attach_widget>- (Gtk::Widget) <b>get_attach_widget</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_attach_widget </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_monitor>- (Integer) <b>get_monitor</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_monitor </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_reserve_toggle_size>- (Boolean) <b>get_reserve_toggle_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_reserve_toggle_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_tearoff_state>- (Boolean) <b>get_tearoff_state</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_tearoff_state </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_title>- (String) <b>get_title</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_get_title </div>
+<div>&nbsp;&nbsp;<a href=#instance_popdown>- (NilClass) <b>popdown</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_popdown </div>
+<div>&nbsp;&nbsp;<a href=#instance_popup>- (NilClass) <b>popup</b>(button, activate_time, parent_menu_shell, parent_menu_item) {|menu, x, y, push_in| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_popup </div>
+<div>&nbsp;&nbsp;<a href=#instance_popup_for_device>- (NilClass) <b>popup_for_device</b>(button, activate_time, device, parent_menu_shell, parent_menu_item) {|menu, x, y, push_in| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_popup_for_device </div>
+<div>&nbsp;&nbsp;<a href=#instance_reorder_child>- (NilClass) <b>reorder_child</b>(child, position)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_reorder_child </div>
+<div>&nbsp;&nbsp;<a href=#instance_reposition>- (NilClass) <b>reposition</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_reposition </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_accel_group>- (NilClass) <b>set_accel_group</b>(accel_group)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_set_accel_group </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_accel_path>- (NilClass) <b>set_accel_path</b>(accel_path)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_set_accel_path </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_active>- (NilClass) <b>set_active</b>(index)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_set_active </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_monitor>- (NilClass) <b>set_monitor</b>(monitor_num)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_set_monitor </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_reserve_toggle_size>- (NilClass) <b>set_reserve_toggle_size</b>(reserve_toggle_size)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_set_reserve_toggle_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_screen>- (NilClass) <b>set_screen</b>(screen)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_set_screen </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_tearoff_state>- (NilClass) <b>set_tearoff_state</b>(torn_off)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_set_tearoff_state </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_title>- (NilClass) <b>set_title</b>(title)</a>&nbsp;&nbsp;</div>
+<div> gtk_menu_set_title </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_move-scroll>* (NilClass) <b>"move-scroll"</b> {|scroll_type| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new_from_model">new_from_model</a></b>(model)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gio::MenuModel) <b>model</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (FFI::Pointer) <b><a name="class_get_for_attach_widget">get_for_attach_widget</a></b>(widget)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_attach">attach</a></b>(child, left_attach, right_attach, top_attach, bottom_attach)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>left_attach</b>  </li>
+<li class=param> (Integer) <b>right_attach</b>  </li>
+<li class=param> (Integer) <b>top_attach</b>  </li>
+<li class=param> (Integer) <b>bottom_attach</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_attach_to_widget">attach_to_widget</a></b>(attach_widget) {|attach_widget, menu| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>attach_widget</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>attach_widget</b> </li>
+<li class=param> (<a href=#Gtk_Menu.html>Gtk::Menu</a>) <b>menu</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_detach">detach</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_AccelGroup.html>Gtk::AccelGroup</a>) <b><a name="instance_get_accel_group">get_accel_group</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_AccelGroup.html>Gtk::AccelGroup</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_accel_path">get_accel_path</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_active">get_active</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="instance_get_attach_widget">get_attach_widget</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_monitor">get_monitor</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_reserve_toggle_size">get_reserve_toggle_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_tearoff_state">get_tearoff_state</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (String) <b><a name="instance_get_title">get_title</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (String)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_popdown">popdown</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_popup">popup</a></b>(button, activate_time, parent_menu_shell, parent_menu_item) {|menu, x, y, push_in| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>button</b>  </li>
+<li class=param> (Integer) <b>activate_time</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>parent_menu_shell</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>parent_menu_item</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Menu.html>Gtk::Menu</a>) <b>menu</b> </li>
+<li class=param> (Integer) <b>x</b> </li>
+<li class=param> (Integer) <b>y</b> </li>
+<li class=param> (Boolean) <b>push_in</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_popup_for_device">popup_for_device</a></b>(button, activate_time, device, parent_menu_shell, parent_menu_item) {|menu, x, y, push_in| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>button</b>  </li>
+<li class=param> (Integer) <b>activate_time</b>  </li>
+<li class=param> (Gdk::Device) <b>device</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>parent_menu_shell</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>parent_menu_item</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Menu.html>Gtk::Menu</a>) <b>menu</b> </li>
+<li class=param> (Integer) <b>x</b> </li>
+<li class=param> (Integer) <b>y</b> </li>
+<li class=param> (Boolean) <b>push_in</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reorder_child">reorder_child</a></b>(child, position)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>child</b>  </li>
+<li class=param> (Integer) <b>position</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reposition">reposition</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accel_group">set_accel_group</a></b>(accel_group)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_AccelGroup.html>Gtk::AccelGroup</a>) <b>accel_group</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accel_path">set_accel_path</a></b>(accel_path)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>accel_path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_active">set_active</a></b>(index)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>index</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_monitor">set_monitor</a></b>(monitor_num)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>monitor_num</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_reserve_toggle_size">set_reserve_toggle_size</a></b>(reserve_toggle_size)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>reserve_toggle_size</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_screen">set_screen</a></b>(screen)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Screen) <b>screen</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_tearoff_state">set_tearoff_state</a></b>(torn_off)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>torn_off</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_title">set_title</a></b>(title)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>title</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_move-scroll">move-scroll"</a></b> {|scroll_type| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>scroll_type</b>  a member of enum Gtk::ScrollType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

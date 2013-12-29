@@ -1,0 +1,305 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=SpinButton class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::SpinButton</h2>
+    <div class=inherits id=inherits>Inherits:
+    <a href=Gtk_Entry.html>Gtk::Entry</a></div>
+    <div id=implements_header class=toggle>Implements:</div>
+    <div class=implements id=implements>
+<div>      &nbsp;&nbsp;<a href=Gtk_Orientable.html>Gtk::Orientable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Editable.html>Gtk::Editable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_CellEditable.html>Gtk::CellEditable</a>&nbsp;&nbsp</div>
+
+<div>      &nbsp;&nbsp;<a href=Gtk_Buildable.html>Gtk::Buildable</a>&nbsp;&nbsp</div>
+
+<div>Atk::ImplementorIface&nbsp;&nbsp</div>
+    </div></div>
+    <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=class_methods_summary>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Widget) <b>new</b>(climb_rate, digits, adjustment)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_new </div>
+<div>&nbsp;&nbsp;<a href=#class_new_with_range>+ (Gtk::Widget) <b>new_with_range</b>(min, max, step)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_new_with_range </div>
+</div></div><br>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_configure>- (NilClass) <b>configure</b>(climb_rate, digits, adjustment)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_configure </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_adjustment>- (Gtk::Adjustment) <b>get_adjustment</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_adjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_digits>- (Integer) <b>get_digits</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_digits </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_increments>- (Array&lt;Float, Float&gt;) <b>get_increments</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_increments </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_numeric>- (Boolean) <b>get_numeric</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_numeric </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_range>- (Array&lt;Float, Float&gt;) <b>get_range</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_snap_to_ticks>- (Boolean) <b>get_snap_to_ticks</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_snap_to_ticks </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_update_policy>- (Integer) <b>get_update_policy</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_update_policy </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_value>- (Float) <b>get_value</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_value_as_int>- (Integer) <b>get_value_as_int</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_value_as_int </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_wrap>- (Boolean) <b>get_wrap</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_get_wrap </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_adjustment>- (NilClass) <b>set_adjustment</b>(adjustment)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_adjustment </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_digits>- (NilClass) <b>set_digits</b>(digits)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_digits </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_increments>- (NilClass) <b>set_increments</b>(step, page)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_increments </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_numeric>- (NilClass) <b>set_numeric</b>(numeric)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_numeric </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_range>- (NilClass) <b>set_range</b>(min, max)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_range </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_snap_to_ticks>- (NilClass) <b>set_snap_to_ticks</b>(snap_to_ticks)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_snap_to_ticks </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_update_policy>- (NilClass) <b>set_update_policy</b>(policy)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_update_policy </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_value>- (NilClass) <b>set_value</b>(value)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_value </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_wrap>- (NilClass) <b>set_wrap</b>(wrap)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_set_wrap </div>
+<div>&nbsp;&nbsp;<a href=#instance_spin>- (NilClass) <b>spin</b>(direction, increment)</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_spin </div>
+<div>&nbsp;&nbsp;<a href=#instance_update>- (NilClass) <b>update</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_spin_button_update </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_change-value>* (NilClass) <b>"change-value"</b> {|scroll| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_input>* (Integer) <b>"input"</b> {|new_value| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_output>* (Integer) <b>"output"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_value-changed>* (NilClass) <b>"value-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_wrapped>* (NilClass) <b>"wrapped"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=class_methods_details>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new">new</a></b>(climb_rate, digits, adjustment)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>climb_rate</b>  </li>
+<li class=param> (Integer) <b>digits</b>  </li>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>adjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b><a name="class_new_with_range">new_with_range</a></b>(min, max, step)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>min</b>  </li>
+<li class=param> (Float) <b>max</b>  </li>
+<li class=param> (Float) <b>step</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Widget.html>Gtk::Widget</a>)  </li>
+</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_configure">configure</a></b>(climb_rate, digits, adjustment)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>climb_rate</b>  </li>
+<li class=param> (Integer) <b>digits</b>  </li>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>adjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b><a name="instance_get_adjustment">get_adjustment</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_digits">get_digits</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Float, Float&gt;) <b><a name="instance_get_increments">get_increments</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Float, Float&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_numeric">get_numeric</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Float, Float&gt;) <b><a name="instance_get_range">get_range</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Float, Float&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_snap_to_ticks">get_snap_to_ticks</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_update_policy">get_update_policy</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::SpinButtonUpdatePolicy </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Float) <b><a name="instance_get_value">get_value</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Float)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_value_as_int">get_value_as_int</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_wrap">get_wrap</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_adjustment">set_adjustment</a></b>(adjustment)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Adjustment.html>Gtk::Adjustment</a>) <b>adjustment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_digits">set_digits</a></b>(digits)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>digits</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_increments">set_increments</a></b>(step, page)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>step</b>  </li>
+<li class=param> (Float) <b>page</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_numeric">set_numeric</a></b>(numeric)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>numeric</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_range">set_range</a></b>(min, max)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>min</b>  </li>
+<li class=param> (Float) <b>max</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_snap_to_ticks">set_snap_to_ticks</a></b>(snap_to_ticks)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>snap_to_ticks</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_update_policy">set_update_policy</a></b>(policy)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>policy</b>  a member of enum Gtk::SpinButtonUpdatePolicy </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_value">set_value</a></b>(value)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_wrap">set_wrap</a></b>(wrap)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>wrap</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_spin">spin</a></b>(direction, increment)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>direction</b>  a member of enum Gtk::SpinType </li>
+<li class=param> (Float) <b>increment</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_update">update</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_change-value">change-value"</a></b> {|scroll| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>scroll</b>  a member of enum Gtk::ScrollType </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Integer) <b><a name="signal_input">input"</a></b> {|new_value| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>new_value</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Integer) <b><a name="signal_output">output"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_value-changed">value-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_wrapped">wrapped"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

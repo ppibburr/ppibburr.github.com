@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=IMContext class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::IMContext</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::Object</div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_delete_surrounding>- (Boolean) <b>delete_surrounding</b>(offset, n_chars)</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_delete_surrounding </div>
+<div>&nbsp;&nbsp;<a href=#instance_filter_keypress>- (Boolean) <b>filter_keypress</b>(event)</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_filter_keypress </div>
+<div>&nbsp;&nbsp;<a href=#instance_focus_in>- (NilClass) <b>focus_in</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_focus_in </div>
+<div>&nbsp;&nbsp;<a href=#instance_focus_out>- (NilClass) <b>focus_out</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_focus_out </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preedit_string>- (Array&lt;String, FFI::Pointer, Integer&gt;) <b>get_preedit_string</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_get_preedit_string </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_surrounding>- (Array&lt;Boolean, String, Integer&gt;) <b>get_surrounding</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_get_surrounding </div>
+<div>&nbsp;&nbsp;<a href=#instance_reset>- (NilClass) <b>reset</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_reset </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_client_window>- (NilClass) <b>set_client_window</b>(window)</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_set_client_window </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_cursor_location>- (NilClass) <b>set_cursor_location</b>(area)</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_set_cursor_location </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_surrounding>- (NilClass) <b>set_surrounding</b>(text, len, cursor_index)</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_set_surrounding </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_use_preedit>- (NilClass) <b>set_use_preedit</b>(use_preedit)</a>&nbsp;&nbsp;</div>
+<div> gtk_im_context_set_use_preedit </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_commit>* (NilClass) <b>"commit"</b> {|str| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_delete-surrounding>* (Boolean) <b>"delete-surrounding"</b> {|offset, n_chars| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_preedit-changed>* (NilClass) <b>"preedit-changed"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_preedit-end>* (NilClass) <b>"preedit-end"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_preedit-start>* (NilClass) <b>"preedit-start"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_retrieve-surrounding>* (Boolean) <b>"retrieve-surrounding"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_delete_surrounding">delete_surrounding</a></b>(offset, n_chars)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>offset</b>  </li>
+<li class=param> (Integer) <b>n_chars</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_filter_keypress">filter_keypress</a></b>(event)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>event</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_focus_in">focus_in</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_focus_out">focus_out</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;String, FFI::Pointer, Integer&gt;) <b><a name="instance_get_preedit_string">get_preedit_string</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;String, FFI::Pointer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Boolean, String, Integer&gt;) <b><a name="instance_get_surrounding">get_surrounding</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Boolean, String, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reset">reset</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_client_window">set_client_window</a></b>(window)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Gdk::Window) <b>window</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_cursor_location">set_cursor_location</a></b>(area)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>area</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_surrounding">set_surrounding</a></b>(text, len, cursor_index)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>text</b>  </li>
+<li class=param> (Integer) <b>len</b>  </li>
+<li class=param> (Integer) <b>cursor_index</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_use_preedit">set_use_preedit</a></b>(use_preedit)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>use_preedit</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_commit">commit"</a></b> {|str| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (String) <b>str</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_delete-surrounding">delete-surrounding"</a></b> {|offset, n_chars| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>offset</b>  </li>
+<li class=param> (Integer) <b>n_chars</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_preedit-changed">preedit-changed"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_preedit-end">preedit-end"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_preedit-start">preedit-start"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (Boolean) <b><a name="signal_retrieve-surrounding">retrieve-surrounding"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

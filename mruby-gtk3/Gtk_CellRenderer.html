@@ -1,0 +1,290 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=CellRenderer class=class><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Class: Gtk::CellRenderer</h2>
+    <div class=inherits id=inherits>Inherits:
+    GObject::InitiallyUnowned</div>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_activate>- (Boolean) <b>activate</b>(event, widget, path, background_area, cell_area, flags)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_activate </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_aligned_area>- (FFI::Pointer) <b>get_aligned_area</b>(widget, flags, cell_area)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_aligned_area </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_alignment>- (Array&lt;Float, Float&gt;) <b>get_alignment</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_alignment </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_fixed_size>- (Array&lt;Integer, Integer&gt;) <b>get_fixed_size</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_fixed_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_padding>- (Array&lt;Integer, Integer&gt;) <b>get_padding</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_padding </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preferred_height>- (Array&lt;Integer, Integer&gt;) <b>get_preferred_height</b>(widget)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_preferred_height </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preferred_height_for_width>- (Array&lt;Integer, Integer&gt;) <b>get_preferred_height_for_width</b>(widget, width)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_preferred_height_for_width </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preferred_size>- (Array&lt;FFI::Pointer, FFI::Pointer&gt;) <b>get_preferred_size</b>(widget)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_preferred_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preferred_width>- (Array&lt;Integer, Integer&gt;) <b>get_preferred_width</b>(widget)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_preferred_width </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_preferred_width_for_height>- (Array&lt;Integer, Integer&gt;) <b>get_preferred_width_for_height</b>(widget, height)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_preferred_width_for_height </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_request_mode>- (Integer) <b>get_request_mode</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_request_mode </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_sensitive>- (Boolean) <b>get_sensitive</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_sensitive </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_size>- (Array&lt;Integer, Integer, Integer, Integer&gt;) <b>get_size</b>(widget, cell_area)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_state>- (Integer) <b>get_state</b>(widget, cell_state)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_state </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_visible>- (Boolean) <b>get_visible</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_get_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_is_activatable>- (Boolean) <b>is_activatable</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_is_activatable </div>
+<div>&nbsp;&nbsp;<a href=#instance_render>- (NilClass) <b>render</b>(cr, widget, background_area, cell_area, flags)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_render </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_alignment>- (NilClass) <b>set_alignment</b>(xalign, yalign)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_set_alignment </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_fixed_size>- (NilClass) <b>set_fixed_size</b>(width, height)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_set_fixed_size </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_padding>- (NilClass) <b>set_padding</b>(xpad, ypad)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_set_padding </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_sensitive>- (NilClass) <b>set_sensitive</b>(sensitive)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_set_sensitive </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_visible>- (NilClass) <b>set_visible</b>(visible)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_set_visible </div>
+<div>&nbsp;&nbsp;<a href=#instance_start_editing>- (FFI::Pointer) <b>start_editing</b>(event, widget, path, background_area, cell_area, flags)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_start_editing </div>
+<div>&nbsp;&nbsp;<a href=#instance_stop_editing>- (NilClass) <b>stop_editing</b>(canceled)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_renderer_stop_editing </div>
+</div></div><br>
+    <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=signals_summary>
+<div>&nbsp;&nbsp;<a href=#signal_editing-canceled>* (NilClass) <b>"editing-canceled"</b> { ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+<div>&nbsp;&nbsp;<a href=#signal_editing-started>* (NilClass) <b>"editing-started"</b> {|editable, path| ... }</a>&nbsp;&nbsp;</div>
+<div> true_stops_emit? false</div>
+</div>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_activate">activate</a></b>(event, widget, path, background_area, cell_area, flags)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>event</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (String) <b>path</b>  </li>
+<li class=param> (FFI::Pointer) <b>background_area</b>  </li>
+<li class=param> (FFI::Pointer) <b>cell_area</b>  </li>
+<li class=param> (Integer) <b>flags</b>  a member of enum Gtk::CellRendererState </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_aligned_area">get_aligned_area</a></b>(widget, flags, cell_area)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (Integer) <b>flags</b>  a member of enum Gtk::CellRendererState </li>
+<li class=param> (FFI::Pointer) <b>cell_area</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Float, Float&gt;) <b><a name="instance_get_alignment">get_alignment</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Float, Float&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_fixed_size">get_fixed_size</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_padding">get_padding</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_preferred_height">get_preferred_height</a></b>(widget)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_preferred_height_for_width">get_preferred_height_for_width</a></b>(widget, width)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (Integer) <b>width</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;FFI::Pointer, FFI::Pointer&gt;) <b><a name="instance_get_preferred_size">get_preferred_size</a></b>(widget)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;FFI::Pointer, FFI::Pointer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_preferred_width">get_preferred_width</a></b>(widget)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer&gt;) <b><a name="instance_get_preferred_width_for_height">get_preferred_width_for_height</a></b>(widget, height)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (Integer) <b>height</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_request_mode">get_request_mode</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::SizeRequestMode </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_sensitive">get_sensitive</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Array&lt;Integer, Integer, Integer, Integer&gt;) <b><a name="instance_get_size">get_size</a></b>(widget, cell_area)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (FFI::Pointer) <b>cell_area</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Array&lt;Integer, Integer, Integer, Integer&gt;)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_get_state">get_state</a></b>(widget, cell_state)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (Integer) <b>cell_state</b>  a member of enum Gtk::CellRendererState </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Integer)  a member of enum Gtk::StateFlags </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_get_visible">get_visible</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_is_activatable">is_activatable</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (Boolean)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_render">render</a></b>(cr, widget, background_area, cell_area, flags)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>cr</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (FFI::Pointer) <b>background_area</b>  </li>
+<li class=param> (FFI::Pointer) <b>cell_area</b>  </li>
+<li class=param> (Integer) <b>flags</b>  a member of enum Gtk::CellRendererState </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_alignment">set_alignment</a></b>(xalign, yalign)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Float) <b>xalign</b>  </li>
+<li class=param> (Float) <b>yalign</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_fixed_size">set_fixed_size</a></b>(width, height)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>width</b>  </li>
+<li class=param> (Integer) <b>height</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_padding">set_padding</a></b>(xpad, ypad)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Integer) <b>xpad</b>  </li>
+<li class=param> (Integer) <b>ypad</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_sensitive">set_sensitive</a></b>(sensitive)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>sensitive</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_visible">set_visible</a></b>(visible)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>visible</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_start_editing">start_editing</a></b>(event, widget, path, background_area, cell_area, flags)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>event</b>  </li>
+<li class=param> (<a href=#Gtk_Widget.html>Gtk::Widget</a>) <b>widget</b>  </li>
+<li class=param> (String) <b>path</b>  </li>
+<li class=param> (FFI::Pointer) <b>background_area</b>  </li>
+<li class=param> (FFI::Pointer) <b>cell_area</b>  </li>
+<li class=param> (Integer) <b>flags</b>  a member of enum Gtk::CellRendererState </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_stop_editing">stop_editing</a></b>(canceled)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (Boolean) <b>canceled</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    <div id=signals_details_header class=details_header><b>Signals Details</b><small id=signals_details_toggle>(Collapse)</small></div>
+    <div class=details id=signals_details>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_editing-canceled">editing-canceled"</a></b> { ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;* (NilClass) <b><a name="signal_editing-started">editing-started"</a></b> {|editable, path| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>editable</b>  </li>
+<li class=param> (String) <b>path</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+

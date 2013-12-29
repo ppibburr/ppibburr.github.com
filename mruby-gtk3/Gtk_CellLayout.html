@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <script src=data.js></script>
+  </head>
+  <body id=CellLayout class=iface><div class=top_nav><a href=Gtk.html>Gtk::</a><form>
+    <select id=interfaces></select>
+  </form></div>
+ 
+<h2>Module: Gtk::CellLayout</h2>
+    <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
+    <div class=summary id=instance_methods_summary>
+<div>&nbsp;&nbsp;<a href=#instance_add_attribute>- (NilClass) <b>add_attribute</b>(cell, attribute, column)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_add_attribute </div>
+<div>&nbsp;&nbsp;<a href=#instance_clear>- (NilClass) <b>clear</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_clear </div>
+<div>&nbsp;&nbsp;<a href=#instance_clear_attributes>- (NilClass) <b>clear_attributes</b>(cell)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_clear_attributes </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_area>- (Gtk::CellArea) <b>get_area</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_get_area </div>
+<div>&nbsp;&nbsp;<a href=#instance_get_cells>- (FFI::Pointer) <b>get_cells</b>()</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_get_cells </div>
+<div>&nbsp;&nbsp;<a href=#instance_pack_end>- (NilClass) <b>pack_end</b>(cell, expand)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_pack_end </div>
+<div>&nbsp;&nbsp;<a href=#instance_pack_start>- (NilClass) <b>pack_start</b>(cell, expand)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_pack_start </div>
+<div>&nbsp;&nbsp;<a href=#instance_reorder>- (NilClass) <b>reorder</b>(cell, position)</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_reorder </div>
+<div>&nbsp;&nbsp;<a href=#instance_set_cell_data_func>- (NilClass) <b>set_cell_data_func</b>(cell) {|cell_layout, cell, tree_model, iter, data| ... }</a>&nbsp;&nbsp;</div>
+<div> gtk_cell_layout_set_cell_data_func </div>
+</div></div><br>
+    <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
+    <div class=details id=instance_methods_details>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_attribute">add_attribute</a></b>(cell, attribute, column)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b>  </li>
+<li class=param> (String) <b>attribute</b>  </li>
+<li class=param> (Integer) <b>column</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_clear">clear</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_clear_attributes">clear_attributes</a></b>(cell)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (<a href=#Gtk_CellArea.html>Gtk::CellArea</a>) <b><a name="instance_get_area">get_area</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (<a href=#Gtk_CellArea.html>Gtk::CellArea</a>)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_get_cells">get_cells</a></b>()&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (FFI::Pointer)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_pack_end">pack_end</a></b>(cell, expand)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b>  </li>
+<li class=param> (Boolean) <b>expand</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_pack_start">pack_start</a></b>(cell, expand)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b>  </li>
+<li class=param> (Boolean) <b>expand</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_reorder">reorder</a></b>(cell, position)&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b>  </li>
+<li class=param> (Integer) <b>position</b>  </li>
+<br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_cell_data_func">set_cell_data_func</a></b>(cell) {|cell_layout, cell, tree_model, iter, data| ... }&nbsp;&nbsp;</div>
+<div class=detail>
+<div class=parameters_header><b>parameters:</b><br></div>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b>  </li>
+<br>
+<div class=parameters_header><b>yieldparameters:</b><br></div>
+<li class=param> (FFI::Pointer) <b>cell_layout</b> </li>
+<li class=param> (<a href=#Gtk_CellRenderer.html>Gtk::CellRenderer</a>) <b>cell</b> </li>
+<li class=param> (FFI::Pointer) <b>tree_model</b> </li>
+<li class=param> (FFI::Pointer) <b>iter</b> </li>
+<li class=param> (void) <b>data</b> </li>
+<br><div class=parameters_header><b>yieldreturns:</b><br></div>
+<li class=return>(void) </li>
+<br><br>
+<div class=returns_header><b>returns:</b><br></div>
+<li class=return> (NilClass)  </li>
+</div>
+</div>
+    
+    <script src=tool.js>
+    </script> 
+  </body> 
+</html>
+
