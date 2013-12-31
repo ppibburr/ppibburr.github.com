@@ -24,34 +24,34 @@
 </ul></div></div>
     <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=class_methods_summary>
-<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::AccelGroup) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::AccelGroup) <b>new</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_new </div>
-<div>&nbsp;&nbsp;<a href=#class_from_accel_closure>+ (Gtk::AccelGroup) <b>from_accel_closure</b>(closure)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#class_from_accel_closure>+ (Gtk::AccelGroup) <b>from_accel_closure</b>(closure)</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_from_accel_closure </div>
 </div></div><br>
     <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=instance_methods_summary>
-<div>&nbsp;&nbsp;<a href=#instance_activate>- (Boolean) <b>activate</b>(accel_quark, acceleratable, accel_key, accel_mods)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_activate>- (Boolean) <b>activate</b>(accel_quark, acceleratable, accel_key, accel_mods)</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_activate </div>
-<div>&nbsp;&nbsp;<a href=#instance_connect>- (NilClass) <b>connect</b>(accel_key, accel_mods, accel_flags, closure)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_connect>- (NilClass) <b>connect</b>(accel_key, accel_mods, accel_flags, closure)</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_connect </div>
-<div>&nbsp;&nbsp;<a href=#instance_connect_by_path>- (NilClass) <b>connect_by_path</b>(accel_path, closure)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_connect_by_path>- (NilClass) <b>connect_by_path</b>(accel_path, closure)</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_connect_by_path </div>
-<div>&nbsp;&nbsp;<a href=#instance_disconnect>- (Boolean) <b>disconnect</b>(closure)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_disconnect>- (Boolean) <b>disconnect</b>(closure = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_disconnect </div>
-<div>&nbsp;&nbsp;<a href=#instance_disconnect_key>- (Boolean) <b>disconnect_key</b>(accel_key, accel_mods)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_disconnect_key>- (Boolean) <b>disconnect_key</b>(accel_key, accel_mods)</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_disconnect_key </div>
-<div>&nbsp;&nbsp;<a href=#instance_find>- (FFI::Pointer) <b>find</b>() {|key, closure, data| ... }</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_find>- (FFI::Pointer) <b>find</b>() {|key, closure, data| ... }</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_find </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_is_locked>- (Boolean) <b>get_is_locked</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_is_locked>- (Boolean) <b>get_is_locked</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_get_is_locked </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_modifier_mask>- (Integer) <b>get_modifier_mask</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_modifier_mask>- (Integer) <b>get_modifier_mask</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_get_modifier_mask </div>
-<div>&nbsp;&nbsp;<a href=#instance_lock>- (NilClass) <b>lock</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_lock>- (NilClass) <b>lock</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_lock </div>
-<div>&nbsp;&nbsp;<a href=#instance_query>- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b>query</b>(accel_key, accel_mods)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_query>- (Array&lt;Array<FFI::Pointer>, Integer&gt;) <b>query</b>(accel_key, accel_mods)</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_query </div>
-<div>&nbsp;&nbsp;<a href=#instance_unlock>- (NilClass) <b>unlock</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_unlock>- (NilClass) <b>unlock</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_accel_group_unlock </div>
 </div></div><br>
     <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
@@ -110,7 +110,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_disconnect">disconnect</a></b>(closure)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (Boolean) <b><a name="instance_disconnect">disconnect</a></b>(closure = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (FFI::Pointer) <b>closure</b>  </li>

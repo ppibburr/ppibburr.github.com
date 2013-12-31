@@ -36,44 +36,44 @@
     </div>
     <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=class_methods_summary>
-<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::TreeStore) <b>new</b>(n_columns, types)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::TreeStore) <b>new</b>(n_columns, types)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_newv </div>
 </div></div><br>
     <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=instance_methods_summary>
-<div>&nbsp;&nbsp;<a href=#instance_append>- (FFI::Pointer) <b>append</b>(parent)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_append>- (FFI::Pointer) <b>append</b>(parent = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_append </div>
-<div>&nbsp;&nbsp;<a href=#instance_clear>- (NilClass) <b>clear</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_clear>- (NilClass) <b>clear</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_clear </div>
-<div>&nbsp;&nbsp;<a href=#instance_insert>- (FFI::Pointer) <b>insert</b>(position, parent)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_insert>- (FFI::Pointer) <b>insert</b>(position, parent = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_insert </div>
-<div>&nbsp;&nbsp;<a href=#instance_insert_after>- (FFI::Pointer) <b>insert_after</b>(parent, sibling)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_after>- (FFI::Pointer) <b>insert_after</b>(parent = nil, sibling = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_insert_after </div>
-<div>&nbsp;&nbsp;<a href=#instance_insert_before>- (FFI::Pointer) <b>insert_before</b>(parent, sibling)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_before>- (FFI::Pointer) <b>insert_before</b>(parent = nil, sibling = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_insert_before </div>
-<div>&nbsp;&nbsp;<a href=#instance_insert_with_values>- (FFI::Pointer) <b>insert_with_values</b>(position, columns, values, n_values, parent)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_insert_with_values>- (FFI::Pointer) <b>insert_with_values</b>(position, columns, values, n_values, parent = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_insert_with_valuesv </div>
-<div>&nbsp;&nbsp;<a href=#instance_is_ancestor>- (Boolean) <b>is_ancestor</b>(iter, descendant)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_is_ancestor>- (Boolean) <b>is_ancestor</b>(iter, descendant)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_is_ancestor </div>
-<div>&nbsp;&nbsp;<a href=#instance_iter_depth>- (Integer) <b>iter_depth</b>(iter)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_iter_depth>- (Integer) <b>iter_depth</b>(iter)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_iter_depth </div>
-<div>&nbsp;&nbsp;<a href=#instance_iter_is_valid>- (Boolean) <b>iter_is_valid</b>(iter)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_iter_is_valid>- (Boolean) <b>iter_is_valid</b>(iter)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_iter_is_valid </div>
-<div>&nbsp;&nbsp;<a href=#instance_move_after>- (NilClass) <b>move_after</b>(iter, position)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_move_after>- (NilClass) <b>move_after</b>(iter, position = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_move_after </div>
-<div>&nbsp;&nbsp;<a href=#instance_move_before>- (NilClass) <b>move_before</b>(iter, position)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_move_before>- (NilClass) <b>move_before</b>(iter, position = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_move_before </div>
-<div>&nbsp;&nbsp;<a href=#instance_prepend>- (FFI::Pointer) <b>prepend</b>(parent)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_prepend>- (FFI::Pointer) <b>prepend</b>(parent = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_prepend </div>
-<div>&nbsp;&nbsp;<a href=#instance_remove>- (Boolean) <b>remove</b>(iter)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_remove>- (Boolean) <b>remove</b>(iter)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_remove </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_column_types>- (NilClass) <b>set_column_types</b>(n_columns, types)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_column_types>- (NilClass) <b>set_column_types</b>(n_columns, types)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_set_column_types </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_value>- (NilClass) <b>set_value</b>(iter, column, value)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_value>- (NilClass) <b>set_value</b>(iter, column, value)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_set_value </div>
-<div>&nbsp;&nbsp;<a href=#instance_set>- (NilClass) <b>set</b>(iter, columns, values, n_values)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set>- (NilClass) <b>set</b>(iter, columns, values, n_values)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_set_valuesv </div>
-<div>&nbsp;&nbsp;<a href=#instance_swap>- (NilClass) <b>swap</b>(a, b)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_swap>- (NilClass) <b>swap</b>(a, b)</a> &nbsp;&nbsp;</div>
 <div> gtk_tree_store_swap </div>
 </div></div><br>
     <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
@@ -90,7 +90,7 @@
 </div>
     <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
     <div class=details id=instance_methods_details>
-<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_append">append</a></b>(parent)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_append">append</a></b>(parent = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (FFI::Pointer) <b>parent</b>  </li>
@@ -103,7 +103,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_insert">insert</a></b>(position, parent)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_insert">insert</a></b>(position, parent = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (Integer) <b>position</b>  </li>
@@ -112,7 +112,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (FFI::Pointer)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_insert_after">insert_after</a></b>(parent, sibling)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_insert_after">insert_after</a></b>(parent = nil, sibling = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (FFI::Pointer) <b>parent</b>  </li>
@@ -121,7 +121,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (FFI::Pointer)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_insert_before">insert_before</a></b>(parent, sibling)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_insert_before">insert_before</a></b>(parent = nil, sibling = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (FFI::Pointer) <b>parent</b>  </li>
@@ -130,7 +130,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (FFI::Pointer)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_insert_with_values">insert_with_values</a></b>(position, columns, values, n_values, parent)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_insert_with_values">insert_with_values</a></b>(position, columns, values, n_values, parent = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (Integer) <b>position</b>  </li>
@@ -167,7 +167,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (Boolean)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_after">move_after</a></b>(iter, position)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_after">move_after</a></b>(iter, position = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (FFI::Pointer) <b>iter</b>  </li>
@@ -176,7 +176,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_before">move_before</a></b>(iter, position)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_move_before">move_before</a></b>(iter, position = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (FFI::Pointer) <b>iter</b>  </li>
@@ -185,7 +185,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_prepend">prepend</a></b>(parent)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (FFI::Pointer) <b><a name="instance_prepend">prepend</a></b>(parent = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (FFI::Pointer) <b>parent</b>  </li>

@@ -28,40 +28,40 @@
     </div>
     <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=class_methods_summary>
-<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::ActionGroup) <b>new</b>(name)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::ActionGroup) <b>new</b>(name)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_new </div>
 </div></div><br>
     <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=instance_methods_summary>
-<div>&nbsp;&nbsp;<a href=#instance_add_action>- (NilClass) <b>add_action</b>(action)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_add_action>- (NilClass) <b>add_action</b>(action)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_add_action </div>
-<div>&nbsp;&nbsp;<a href=#instance_add_action_with_accel>- (NilClass) <b>add_action_with_accel</b>(action, accelerator)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_add_action_with_accel>- (NilClass) <b>add_action_with_accel</b>(action, accelerator = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_add_action_with_accel </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_accel_group>- (Gtk::AccelGroup) <b>get_accel_group</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_accel_group>- (Gtk::AccelGroup) <b>get_accel_group</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_get_accel_group </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_action>- (Gtk::Action) <b>get_action</b>(action_name)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_action>- (Gtk::Action) <b>get_action</b>(action_name)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_get_action </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_name>- (String) <b>get_name</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_name>- (String) <b>get_name</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_get_name </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_sensitive>- (Boolean) <b>get_sensitive</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_sensitive>- (Boolean) <b>get_sensitive</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_get_sensitive </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_visible>- (Boolean) <b>get_visible</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_visible>- (Boolean) <b>get_visible</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_get_visible </div>
-<div>&nbsp;&nbsp;<a href=#instance_list_actions>- (FFI::Pointer) <b>list_actions</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_list_actions>- (FFI::Pointer) <b>list_actions</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_list_actions </div>
-<div>&nbsp;&nbsp;<a href=#instance_remove_action>- (NilClass) <b>remove_action</b>(action)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_action>- (NilClass) <b>remove_action</b>(action)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_remove_action </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_accel_group>- (NilClass) <b>set_accel_group</b>(accel_group)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_accel_group>- (NilClass) <b>set_accel_group</b>(accel_group = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_set_accel_group </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_sensitive>- (NilClass) <b>set_sensitive</b>(sensitive)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_sensitive>- (NilClass) <b>set_sensitive</b>(sensitive)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_set_sensitive </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_translate_func>- (NilClass) <b>set_translate_func</b>() {|path, func_data| ... }</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_translate_func>- (NilClass) <b>set_translate_func</b>() {|path, func_data| ... }</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_set_translate_func </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_translation_domain>- (NilClass) <b>set_translation_domain</b>(domain)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_translation_domain>- (NilClass) <b>set_translation_domain</b>(domain = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_set_translation_domain </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_visible>- (NilClass) <b>set_visible</b>(visible)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_visible>- (NilClass) <b>set_visible</b>(visible)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_set_visible </div>
-<div>&nbsp;&nbsp;<a href=#instance_translate_string>- (String) <b>translate_string</b>(string)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_translate_string>- (String) <b>translate_string</b>(string)</a> &nbsp;&nbsp;</div>
 <div> gtk_action_group_translate_string </div>
 </div></div><br>
     <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
@@ -96,7 +96,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_action_with_accel">add_action_with_accel</a></b>(action, accelerator)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_action_with_accel">add_action_with_accel</a></b>(action, accelerator = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (<a href=Gtk_Action.html>Gtk::Action</a>) <b>action</b>  </li>
@@ -146,7 +146,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accel_group">set_accel_group</a></b>(accel_group)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_accel_group">set_accel_group</a></b>(accel_group = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (<a href=Gtk_AccelGroup.html>Gtk::AccelGroup</a>) <b>accel_group</b>  </li>
@@ -173,7 +173,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_translation_domain">set_translation_domain</a></b>(domain)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_translation_domain">set_translation_domain</a></b>(domain = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (String) <b>domain</b>  </li>

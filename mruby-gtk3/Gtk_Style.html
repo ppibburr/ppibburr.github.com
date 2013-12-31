@@ -24,28 +24,28 @@
 </ul></div></div>
     <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=class_methods_summary>
-<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Style) <b>new</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Style) <b>new</b>()</a> DEPRECATED&nbsp;&nbsp;</div>
 <div> gtk_style_new </div>
 </div></div><br>
     <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=instance_methods_summary>
-<div>&nbsp;&nbsp;<a href=#instance_apply_default_background>- (NilClass) <b>apply_default_background</b>(cr, window, state_type, x, y, width, height)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_apply_default_background>- (NilClass) <b>apply_default_background</b>(cr, window, state_type, x, y, width, height)</a> DEPRECATED&nbsp;&nbsp;</div>
 <div> gtk_style_apply_default_background </div>
-<div>&nbsp;&nbsp;<a href=#instance_copy>- (Gtk::Style) <b>copy</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_copy>- (Gtk::Style) <b>copy</b>()</a> DEPRECATED&nbsp;&nbsp;</div>
 <div> gtk_style_copy </div>
-<div>&nbsp;&nbsp;<a href=#instance_detach>- (NilClass) <b>detach</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_detach>- (NilClass) <b>detach</b>()</a> DEPRECATED&nbsp;&nbsp;</div>
 <div> gtk_style_detach </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_style_property>- (NilClass) <b>get_style_property</b>(widget_type, property_name, value)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_style_property>- (NilClass) <b>get_style_property</b>(widget_type, property_name, value)</a> &nbsp;&nbsp;</div>
 <div> gtk_style_get_style_property </div>
-<div>&nbsp;&nbsp;<a href=#instance_has_context>- (Boolean) <b>has_context</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_has_context>- (Boolean) <b>has_context</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_style_has_context </div>
-<div>&nbsp;&nbsp;<a href=#instance_lookup_color>- (Array&lt;Boolean, FFI::Pointer&gt;) <b>lookup_color</b>(color_name)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_lookup_color>- (Array&lt;Boolean, FFI::Pointer&gt;) <b>lookup_color</b>(color_name)</a> DEPRECATED&nbsp;&nbsp;</div>
 <div> gtk_style_lookup_color </div>
-<div>&nbsp;&nbsp;<a href=#instance_lookup_icon_set>- (FFI::Pointer) <b>lookup_icon_set</b>(stock_id)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_lookup_icon_set>- (FFI::Pointer) <b>lookup_icon_set</b>(stock_id)</a> DEPRECATED&nbsp;&nbsp;</div>
 <div> gtk_style_lookup_icon_set </div>
-<div>&nbsp;&nbsp;<a href=#instance_render_icon>- (GdkPixbuf::Pixbuf) <b>render_icon</b>(source, direction, state, size, widget, detail)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_render_icon>- (GdkPixbuf::Pixbuf) <b>render_icon</b>(source, direction, state, size, widget = nil, detail = nil)</a> DEPRECATED&nbsp;&nbsp;</div>
 <div> gtk_style_render_icon </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_background>- (NilClass) <b>set_background</b>(window, state_type)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_background>- (NilClass) <b>set_background</b>(window, state_type)</a> DEPRECATED&nbsp;&nbsp;</div>
 <div> gtk_style_set_background </div>
 </div></div><br>
     <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
@@ -120,7 +120,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (FFI::Pointer)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (GdkPixbuf::Pixbuf) <b><a name="instance_render_icon">render_icon</a></b>(source, direction, state, size, widget, detail)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (GdkPixbuf::Pixbuf) <b><a name="instance_render_icon">render_icon</a></b>(source, direction, state, size, widget = nil, detail = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (FFI::Pointer) <b>source</b>  </li>

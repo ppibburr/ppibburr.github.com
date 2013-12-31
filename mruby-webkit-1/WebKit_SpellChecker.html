@@ -10,17 +10,17 @@
 <h2>Module: WebKit::SpellChecker</h2>
     <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=instance_methods_summary>
-<div>&nbsp;&nbsp;<a href=#instance_check_spelling_of_string>- (Array&lt;Integer, Integer&gt;) <b>check_spelling_of_string</b>(string)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_check_spelling_of_string>- (Array&lt;Integer, Integer&gt;) <b>check_spelling_of_string</b>(string)</a> &nbsp;&nbsp;</div>
 <div> webkit_spell_checker_check_spelling_of_string </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_autocorrect_suggestions_for_misspelled_word>- (String) <b>get_autocorrect_suggestions_for_misspelled_word</b>(word)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_autocorrect_suggestions_for_misspelled_word>- (String) <b>get_autocorrect_suggestions_for_misspelled_word</b>(word)</a> &nbsp;&nbsp;</div>
 <div> webkit_spell_checker_get_autocorrect_suggestions_for_misspelled_word </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_guesses_for_word>- (Array<String>) <b>get_guesses_for_word</b>(word, context)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_guesses_for_word>- (Array<String>) <b>get_guesses_for_word</b>(word, context = nil)</a> &nbsp;&nbsp;</div>
 <div> webkit_spell_checker_get_guesses_for_word </div>
-<div>&nbsp;&nbsp;<a href=#instance_ignore_word>- (NilClass) <b>ignore_word</b>(word)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_ignore_word>- (NilClass) <b>ignore_word</b>(word)</a> &nbsp;&nbsp;</div>
 <div> webkit_spell_checker_ignore_word </div>
-<div>&nbsp;&nbsp;<a href=#instance_learn_word>- (NilClass) <b>learn_word</b>(word)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_learn_word>- (NilClass) <b>learn_word</b>(word)</a> &nbsp;&nbsp;</div>
 <div> webkit_spell_checker_learn_word </div>
-<div>&nbsp;&nbsp;<a href=#instance_update_spell_checking_languages>- (NilClass) <b>update_spell_checking_languages</b>(languages)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_update_spell_checking_languages>- (NilClass) <b>update_spell_checking_languages</b>(languages = nil)</a> &nbsp;&nbsp;</div>
 <div> webkit_spell_checker_update_spell_checking_languages </div>
 </div></div><br>
     <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
@@ -41,7 +41,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (String)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (Array<String>) <b><a name="instance_get_guesses_for_word">get_guesses_for_word</a></b>(word, context)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (Array<String>) <b><a name="instance_get_guesses_for_word">get_guesses_for_word</a></b>(word, context = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (String) <b>word</b>  </li>
@@ -66,7 +66,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_update_spell_checking_languages">update_spell_checking_languages</a></b>(languages)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_update_spell_checking_languages">update_spell_checking_languages</a></b>(languages = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (String) <b>languages</b>  </li>

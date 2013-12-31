@@ -32,38 +32,38 @@
     </div>
     <div><div id=class_methods_summary_header class=summary_header><span><b>Class Methods Summary</b></span><small id=class_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=class_methods_summary>
-<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Application) <b>new</b>(flags, application_id)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#class_new>+ (Gtk::Application) <b>new</b>(flags, application_id = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_new </div>
 </div></div><br>
     <div><div id=instance_methods_summary_header class=summary_header><span><b>Instance Methods Summary</b></span><small id=instance_methods_summary_toggle>(Collapse)</small></div>
     <div class=summary id=instance_methods_summary>
-<div>&nbsp;&nbsp;<a href=#instance_add_accelerator>- (NilClass) <b>add_accelerator</b>(accelerator, action_name, parameter)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_add_accelerator>- (NilClass) <b>add_accelerator</b>(accelerator, action_name, parameter = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_add_accelerator </div>
-<div>&nbsp;&nbsp;<a href=#instance_add_window>- (NilClass) <b>add_window</b>(window)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_add_window>- (NilClass) <b>add_window</b>(window)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_add_window </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_active_window>- (Gtk::Window) <b>get_active_window</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_active_window>- (Gtk::Window) <b>get_active_window</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_application_get_active_window </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_app_menu>- (Gio::MenuModel) <b>get_app_menu</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_app_menu>- (Gio::MenuModel) <b>get_app_menu</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_application_get_app_menu </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_menubar>- (Gio::MenuModel) <b>get_menubar</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_menubar>- (Gio::MenuModel) <b>get_menubar</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_application_get_menubar </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_window_by_id>- (Gtk::Window) <b>get_window_by_id</b>(id)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_window_by_id>- (Gtk::Window) <b>get_window_by_id</b>(id)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_get_window_by_id </div>
-<div>&nbsp;&nbsp;<a href=#instance_get_windows>- (FFI::Pointer) <b>get_windows</b>()</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_get_windows>- (FFI::Pointer) <b>get_windows</b>()</a> &nbsp;&nbsp;</div>
 <div> gtk_application_get_windows </div>
-<div>&nbsp;&nbsp;<a href=#instance_inhibit>- (Integer) <b>inhibit</b>(flags, window, reason)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_inhibit>- (Integer) <b>inhibit</b>(flags, window = nil, reason = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_inhibit </div>
-<div>&nbsp;&nbsp;<a href=#instance_is_inhibited>- (Boolean) <b>is_inhibited</b>(flags)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_is_inhibited>- (Boolean) <b>is_inhibited</b>(flags)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_is_inhibited </div>
-<div>&nbsp;&nbsp;<a href=#instance_remove_accelerator>- (NilClass) <b>remove_accelerator</b>(action_name, parameter)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_accelerator>- (NilClass) <b>remove_accelerator</b>(action_name, parameter = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_remove_accelerator </div>
-<div>&nbsp;&nbsp;<a href=#instance_remove_window>- (NilClass) <b>remove_window</b>(window)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_remove_window>- (NilClass) <b>remove_window</b>(window)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_remove_window </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_app_menu>- (NilClass) <b>set_app_menu</b>(app_menu)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_app_menu>- (NilClass) <b>set_app_menu</b>(app_menu = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_set_app_menu </div>
-<div>&nbsp;&nbsp;<a href=#instance_set_menubar>- (NilClass) <b>set_menubar</b>(menubar)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_set_menubar>- (NilClass) <b>set_menubar</b>(menubar = nil)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_set_menubar </div>
-<div>&nbsp;&nbsp;<a href=#instance_uninhibit>- (NilClass) <b>uninhibit</b>(cookie)</a>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;<a href=#instance_uninhibit>- (NilClass) <b>uninhibit</b>(cookie)</a> &nbsp;&nbsp;</div>
 <div> gtk_application_uninhibit </div>
 </div></div><br>
     <div id=signals_summary_header class=summary_header><b>Signals</b><small id=signals_summary_toggle>(Collapse)</small></div>
@@ -75,7 +75,7 @@
 </div>
     <div id=class_methods_details_header class=details_header><b>Class Methods Details</b><small id=class_methods_details_toggle>(Collapse)</small></div>
     <div class=details id=class_methods_details>
-<div class=signature>&nbsp;&nbsp;+ (<a href=Gtk_Application.html>Gtk::Application</a>) <b><a name="class_new">new</a></b>(flags, application_id)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;+ (<a href=Gtk_Application.html>Gtk::Application</a>) <b><a name="class_new">new</a></b>(flags, application_id = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (Integer) <b>flags</b>  a member of enum Gio::ApplicationFlags </li>
@@ -87,7 +87,7 @@
 </div>
     <div id=instance_methods_details_header class=details_header><b>Instance Methods Details</b><small id=instance_methods_details_toggle>(Collapse)</small></div>
     <div class=details id=instance_methods_details>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_accelerator">add_accelerator</a></b>(accelerator, action_name, parameter)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_add_accelerator">add_accelerator</a></b>(accelerator, action_name, parameter = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (String) <b>accelerator</b>  </li>
@@ -133,7 +133,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (FFI::Pointer)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_inhibit">inhibit</a></b>(flags, window, reason)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (Integer) <b><a name="instance_inhibit">inhibit</a></b>(flags, window = nil, reason = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (Integer) <b>flags</b>  a member of enum Gtk::ApplicationInhibitFlags </li>
@@ -151,7 +151,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (Boolean)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_accelerator">remove_accelerator</a></b>(action_name, parameter)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_remove_accelerator">remove_accelerator</a></b>(action_name, parameter = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (String) <b>action_name</b>  </li>
@@ -168,7 +168,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_app_menu">set_app_menu</a></b>(app_menu)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_app_menu">set_app_menu</a></b>(app_menu = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (Gio::MenuModel) <b>app_menu</b>  </li>
@@ -176,7 +176,7 @@
 <div class=returns_header><b>returns:</b><br></div>
 <li class=return> (NilClass)  </li>
 </div>
-<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_menubar">set_menubar</a></b>(menubar)&nbsp;&nbsp;</div>
+<div class=signature>&nbsp;&nbsp;- (NilClass) <b><a name="instance_set_menubar">set_menubar</a></b>(menubar = nil)&nbsp;&nbsp;</div>
 <div class=detail>
 <div class=parameters_header><b>parameters:</b><br></div>
 <li class=param> (Gio::MenuModel) <b>menubar</b>  </li>
